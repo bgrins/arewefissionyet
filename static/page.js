@@ -51,6 +51,7 @@ async function renderCharts(data) {
   MG.data_graphic({
     title: "Skipped Tests",
     data: skippedChartData,
+    markers: markers,
     full_width: true,
     full_height: true,
     // height: 300,
@@ -62,7 +63,6 @@ async function renderCharts(data) {
   MG.data_graphic({
     title: "Failing Tests",
     data: failingChartData,
-    markers: markers,
     full_width: true,
     full_height: true,
     // height: 300,
