@@ -46,7 +46,14 @@ h1 {
   border-bottom: 1px solid #ccc;
 }
 
+/* XXX: there must be a better way to get the graphs to resize correctly */
+#grid,
+#grid > * {
+  overflow: hidden;
+}
+
 #grid {
+  padding-top: 10px;
   flex: 1;
   display: grid;
   min-height: 350px;

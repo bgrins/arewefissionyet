@@ -43,8 +43,6 @@ async function renderCharts(data) {
     data: allChartData,
     full_width: true,
     full_height: true,
-    // height: "100%",
-    // width: "100vw",
     right: 100,
     interpolate: d3.curveLinear,
     target: "#skipped-and-failing-tests",
