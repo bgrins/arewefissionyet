@@ -1,0 +1,67 @@
+:root {
+  --main-background: white;
+  --main-text-color: #343434;
+  --main-font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
+
+  --data-ftl-color: #3bddaa;
+  --data-dtd-color: #ed0083;
+  --data-properties-color: #45a1ff;
+
+  --secondary-color: #45a1ff22;
+}
+
+h1 {
+  --font-color: #424242;
+}
+
+/* description {
+  background: var(--secondary-color);
+  padding: 3px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border-bottom: solid 1px #aaa;
+  margin-bottom: 3px;
+  flex: 0;
+} */
+
+body {
+  background: var(--main-background);
+  color: var(--main-text-color);
+  font-family: var(--main-font-family);
+  font-weight: 300;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  flex: 0;
+  font-weight: 300;
+  color: var(--font-color);
+  background: #efefef;
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#grid {
+  flex: 1;
+  display: grid;
+  min-height: 350px;
+  grid-template-columns: repeat( 2, minmax(250px, 1fr) );
+  grid-template-rows: 1fr 1fr;
+}
+
+#skipped-and-failing-tests {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  max-width: 100%;
+}
+
+.mg-active-datapoint-container {
+  transform: translate(-60px, -20px);
+}
