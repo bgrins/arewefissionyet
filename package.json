@@ -1,0 +1,11 @@
+{
+  "name": "arewefissionyet",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "cache": "node scripts/fetch-test-info"
+  }
+}
