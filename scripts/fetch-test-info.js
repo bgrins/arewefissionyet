@@ -43,10 +43,10 @@ async function fetchTestInfos() {
                               .split("T")[0];
     let fileName = `cache/test-info-fission/${dateString}.json`
     let response = await fetch(url);
-    let text = await response.text();
+    let obj = await response.json();
 
-    summaryData[dateString] = text;
-    fs.writeFileSync(fileName, text);
+    summaryData[dateString] = obj;
+    fs.writeFileSync(fileName, JSON.stringify(obj));
   }
   fs.writeFileSync('skipped-failing-tests/all.json', JSON.stringify(summaryData));
 }

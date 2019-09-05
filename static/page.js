@@ -41,14 +41,9 @@ function convertJSONForChart(data) {
 
 }
 async function fetchSampleDataJSON() {
-  let r = await fetch("./skipped-failing-tests/sample.json");
+  let r = await fetch("./skipped-failing-tests/all.json");
   let obj = await r.json();
-  return convertJSONForChart({
-    "2019-09-01": obj,
-    "2019-09-02": obj,
-    "2019-09-03": obj,
-    "2019-09-04": obj,
-  })
+  return convertJSONForChart(obj)
 }
 
 function convertCSVForChart(data) {
