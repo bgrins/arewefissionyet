@@ -34,9 +34,9 @@ const getDatesBetween = (startDate, endDate) => {
 };
 
 async function fetchTestInfos() {
+  let summaryData = {};
   const url = "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.latest.source.test-info-fission/artifacts/public/test-info-fission.json";
   for (let date of getDatesBetween(new Date(2019,08,01), new Date())) {
-
     // YYYY-MM-DD
     var dateString = new Date(date.getTime() - (date.getTimezoneOffset() * 60000 ))
                               .toISOString()
@@ -44,8 +44,11 @@ async function fetchTestInfos() {
     let fileName = `cache/test-info-fission/${dateString}.json`
     let response = await fetch(url);
     let text = await response.text();
+
+    summaryData[dateString] = text;
     fs.writeFileSync(fileName, text);
   }
+  fs.writeFileSync('cache/test-info-fission/all.json', JSON.stringify(summaryData));
 }
 
 fetchTestInfos();
