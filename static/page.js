@@ -120,6 +120,6 @@ async function renderCharts({skippedChartData,failingChartData,allChartData}) {
 
 document.addEventListener("DOMContentLoaded", async function ready() {
   // let data = await fetchSampleDataCSV();
-  let data = await fetchSampleDataJSON();
+  let data = await fetchSampleDataCSV();
   await renderCharts(data);
 });
