@@ -9,15 +9,49 @@ var markers = [
   }
 ];
 
-async function fetchSampleData() {
-  let r = await fetch("./skipped-failing-tests/sample-data-from-sheet.csv");
-  let text = await r.text();
-  let data = text.split("\n");
-  data.shift(); // remove header
-  return data;
+function convertJSONForChart(data) {
+  // XXX: Clone because we are reusing the same object for stub data
+  data = JSON.parse(JSON.stringify(data));
+  console.log(data);
+  // return data;
+  let skippedValues = [];
+  let skippedChartData = [skippedValues];
+  let failingValues = [];
+  let failingChartData = [failingValues];
+  let allChartData = [skippedValues, failingValues];
+  for (let date in data) {
+    console.log(data[date])
+    let skipped = data[date].summary["skipped tests"];
+    let failed = data[date].summary["failed tests"];
+    skippedValues.push({
+      date: new Date(date),
+      value: parseInt(skipped)
+    });
+    failingValues.push({
+      date: new Date(date),
+      value: parseInt(failed)
+    });
+  }
+
+  return {
+    allChartData,
+    skippedChartData,
+    failingChartData,
+  }
+
+}
+async function fetchSampleDataJSON() {
+  let r = await fetch("./skipped-failing-tests/sample.json");
+  let obj = await r.json();
+  return convertJSONForChart({
+    "2019-09-01": obj,
+    "2019-09-02": obj,
+    "2019-09-03": obj,
+    "2019-09-04": obj,
+  })
 }
 
-async function renderCharts(data) {
+function convertCSVForChart(data) {
   let skippedValues = [];
   let skippedChartData = [skippedValues];
   let failingValues = [];
@@ -38,6 +72,22 @@ async function renderCharts(data) {
     });
   }
 
+  return {
+    allChartData,
+    skippedChartData,
+    failingChartData,
+  }
+}
+
+async function fetchSampleDataCSV() {
+  let r = await fetch("./skipped-failing-tests/sample-data-from-sheet.csv");
+  let text = await r.text();
+  let data = text.split("\n");
+  data.shift(); // remove header
+  return convertCSVForChart(data);
+}
+
+async function renderCharts({skippedChartData,failingChartData,allChartData}) {
   MG.data_graphic({
     title: "Skipped and Failing Tests",
     data: allChartData,
@@ -74,6 +124,7 @@ async function renderCharts(data) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
-  let data = await fetchSampleData();
+  // let data = await fetchSampleDataCSV();
+  let data = await fetchSampleDataJSON();
   await renderCharts(data);
 });
