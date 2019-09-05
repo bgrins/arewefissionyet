@@ -48,7 +48,7 @@ async function fetchTestInfos() {
     summaryData[dateString] = text;
     fs.writeFileSync(fileName, text);
   }
-  fs.writeFileSync('cache/test-info-fission/all.json', JSON.stringify(summaryData));
+  fs.writeFileSync('skipped-failing-tests/all.json', JSON.stringify(summaryData));
 }
 
 fetchTestInfos();
