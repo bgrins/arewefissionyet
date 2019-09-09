@@ -10,9 +10,6 @@ var markers = [
 ];
 
 function convertJSONForChart(data) {
-  // XXX: Clone because we are reusing the same object for stub data
-  data = JSON.parse(JSON.stringify(data));
-  console.log(data);
   // return data;
   let skippedValues = [];
   let skippedChartData = [skippedValues];
@@ -20,7 +17,6 @@ function convertJSONForChart(data) {
   let failingChartData = [failingValues];
   let allChartData = [skippedValues, failingValues];
   for (let date in data) {
-    console.log(data[date])
     let skipped = data[date].summary["skipped tests"];
     let failed = data[date].summary["failed tests"];
     skippedValues.push({
@@ -40,10 +36,10 @@ function convertJSONForChart(data) {
   }
 
 }
-async function fetchSampleDataJSON() {
+async function fetchDataJSON() {
   let r = await fetch("./skipped-failing-tests/all.json");
   let obj = await r.json();
-  return convertJSONForChart(obj)
+  return obj;
 }
 
 function convertCSVForChart(data) {
@@ -119,7 +115,18 @@ async function renderCharts({skippedChartData,failingChartData,allChartData}) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
-  let data = await fetchSampleDataJSON();
+  let data = await fetchDataJSON();
   // let data = await fetchSampleDataCSV();
-  await renderCharts(data);
+  let lastDay;
+  for (let date in data) {
+    lastDay = data[date];
+  }
+
+  for (let component in lastDay.tests) {
+    let componentTests = lastDay.tests[component];
+    console.log(`${component}: ${componentTests.length}`)
+  }
+
+
+  await renderCharts(convertJSONForChart(data));
 });
