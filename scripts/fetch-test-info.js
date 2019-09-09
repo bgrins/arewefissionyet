@@ -48,17 +48,25 @@ async function fetchTestInfos() {
   }
 
   console.log("Next, importing daily data from taskcluster artifacts");
-  const url = "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.latest.source.test-info-fission/artifacts/public/test-info-fission.json";
-  for (let date of getDatesBetween(new Date(2019,08,05), new Date())) {
+
+  // const url = "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.latest.source.test-info-fission/artifacts/public/test-info-fission.json";
+  for (let date of getDatesBetween(new Date(2019,08,08), new Date())) {
     // YYYY-MM-DD
     var dateString = new Date(date.getTime() - (date.getTimezoneOffset() * 60000 ))
                               .toISOString()
                               .split("T")[0];
-    let fileName = `cache/test-info-fission/${dateString}.json`
+    console.log("Fetching", dateString);
+
+    // YYYY.MM.DD
+    let tcDate = dateString.replace(new RegExp("-", "g"), ".");
+    let url =
+      `https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.pushdate.${tcDate}.latest.source.test-info-fission/artifacts/public/test-info-fission.json`;
+
     let response = await fetch(url);
     let obj = await response.json();
 
     summaryData[dateString] = obj;
+    let fileName = `cache/test-info-fission/${dateString}.json`
     fs.writeFileSync(fileName, JSON.stringify(obj));
   }
   fs.writeFileSync('skipped-failing-tests/all.json', JSON.stringify(summaryData));
