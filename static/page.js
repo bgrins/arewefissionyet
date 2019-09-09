@@ -1,12 +1,12 @@
 var markers = [
-  {
-    date: new Date("2019-08-07"),
-    label: "1st Milestone"
-  },
-  {
-    date: new Date("2019-08-24"),
-    label: "2nd Milestone"
-  }
+  // {
+  //   date: new Date("2019-08-07"),
+  //   label: "1st Milestone"
+  // },
+  // {
+  //   date: new Date("2019-08-24"),
+  //   label: "2nd Milestone"
+  // }
 ];
 
 function convertJSONForChart(data) {
