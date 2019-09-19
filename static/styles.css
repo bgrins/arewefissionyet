@@ -26,47 +26,48 @@ h1 {
 } */
 
 body {
+  display: grid;
+  margin: 0;
   background: var(--main-background);
   color: var(--main-text-color);
   font-family: var(--main-font-family);
   font-weight: 300;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "header header"
+    "graph sidebar";
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
 }
 
 h1 {
-  flex: 0;
+  grid-area: header;
   font-weight: 300;
   color: var(--font-color);
   background: #efefef;
+  padding: 5px;
   text-align: center;
   margin: 0;
-  border-bottom: 1px solid #ccc;
-}
-
-/* XXX: there must be a better way to get the graphs to resize correctly */
-#grid,
-#grid > * {
-  overflow: hidden;
-}
-
-#grid {
-  padding-top: 10px;
-  flex: 1;
-  display: grid;
-  min-height: 350px;
-  grid-template-columns: repeat( 2, minmax(250px, 1fr) );
-  grid-template-rows: 1fr 1fr;
+  /* border-bottom: 1px solid #ccc; */
+  justify-self: stretch;
 }
 
 #skipped-and-failing-tests {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  max-width: 100%;
+  width: 100%;
+  grid-area: graph;
+  display: flex;
+  align-items: center;
+}
+
+#skipped-and-failing-tests svg {
+  width: 100%;
+}
+
+#table {
+  grid-area: sidebar;
+  /* overflow-y: scroll; */
 }
 
 .mg-active-datapoint-container {

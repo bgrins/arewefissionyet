@@ -10,11 +10,8 @@ var markers = [
 ];
 
 function convertJSONForChart(data) {
-  // return data;
   let skippedValues = [];
-  let skippedChartData = [skippedValues];
   let failingValues = [];
-  let failingChartData = [failingValues];
   let allChartData = [skippedValues, failingValues];
   for (let date in data) {
     let skipped = data[date].summary["skipped tests"];
@@ -31,8 +28,6 @@ function convertJSONForChart(data) {
 
   return {
     allChartData,
-    skippedChartData,
-    failingChartData,
   }
 
 }
@@ -44,9 +39,7 @@ async function fetchDataJSON() {
 
 function convertCSVForChart(data) {
   let skippedValues = [];
-  let skippedChartData = [skippedValues];
   let failingValues = [];
-  let failingChartData = [failingValues];
   let allChartData = [skippedValues, failingValues];
   for (let row of data) {
     let vals = row.split(",");
@@ -65,8 +58,6 @@ function convertCSVForChart(data) {
 
   return {
     allChartData,
-    skippedChartData,
-    failingChartData,
   }
 }
 
@@ -78,39 +69,17 @@ async function fetchSampleDataCSV() {
   return convertCSVForChart(data);
 }
 
-async function renderCharts({skippedChartData,failingChartData,allChartData}) {
+async function renderCharts({allChartData}, numTestsThatNeedAddressing) {
   MG.data_graphic({
-    title: "Skipped and Failing Tests",
+    // title: `${numTestsThatNeedAddressing} Tests Need to be Fixed For Fission`,
     data: allChartData,
     full_width: true,
-    full_height: true,
+    // full_height: true,
+    height: window.innerHeight * .75,
     right: 100,
     interpolate: d3.curveLinear,
     target: "#skipped-and-failing-tests",
     legend: ["Skipped Tests", "Failing Tests"]
-  });
-  MG.data_graphic({
-    title: "Skipped Tests",
-    data: skippedChartData,
-    markers: markers,
-    full_width: true,
-    full_height: true,
-    // height: 300,
-    // right: 100,
-    interpolate: d3.curveLinear,
-    target: "#skipped-tests"
-    // legend: ['Skipped Tests'],
-  });
-  MG.data_graphic({
-    title: "Failing Tests",
-    data: failingChartData,
-    full_width: true,
-    full_height: true,
-    // height: 300,
-    // right: 100,
-    interpolate: d3.curveLinear,
-    target: "#failing-tests"
-    // legend: ['Failing Tests'],
   });
 }
 
@@ -122,11 +91,28 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     lastDay = data[date];
   }
 
+  let sortedComponents = [];
+  let numTestsThatNeedAddressing = lastDay.summary["skipped tests"] +
+                                   lastDay.summary["failed tests"];
+  document.querySelector("h1").textContent = numTestsThatNeedAddressing + " " + document.querySelector("h1").textContent ;
+
   for (let component in lastDay.tests) {
     let componentTests = lastDay.tests[component];
+    sortedComponents.push({ component, tests: lastDay.tests[component] });
     console.log(`${component}: ${componentTests.length}`)
   }
 
+  sortedComponents = sortedComponents.sort((a, b) => {
+    return a.tests.length < b.tests.length;
+  });
+  console.log(sortedComponents);
 
-  await renderCharts(convertJSONForChart(data));
+
+
+
+  await renderCharts(convertJSONForChart(data), numTestsThatNeedAddressing);
+
+  document.querySelector("#table").innerHTML = sortedComponents.map(c => {
+    return `<tr><td>${c.component}</td><td>${c.tests.length}</td>`;
+  }).join("");
 });
