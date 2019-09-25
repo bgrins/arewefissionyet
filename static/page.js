@@ -69,7 +69,7 @@ async function fetchSampleDataCSV() {
   return convertCSVForChart(data);
 }
 
-async function renderCharts({allChartData}, numTestsThatNeedAddressing) {
+async function renderCharts({allChartData}, sortedComponents) {
   MG.data_graphic({
     // title: `${numTestsThatNeedAddressing} Tests Need to be Fixed For Fission`,
     data: allChartData,
@@ -81,6 +81,8 @@ async function renderCharts({allChartData}, numTestsThatNeedAddressing) {
     target: "#skipped-and-failing-tests",
     legend: ["Skipped Tests", "Failing Tests"]
   });
+
+  buildStackedGraph(sortedComponents);
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
@@ -110,14 +112,12 @@ document.addEventListener("DOMContentLoaded", async function ready() {
 
 
 
-  await renderCharts(convertJSONForChart(data), numTestsThatNeedAddressing);
+  await renderCharts(convertJSONForChart(data), sortedComponents);
 
-  document.querySelector("#table").innerHTML = sortedComponents.map(c => {
-    return `<tr><td>${c.component}</td><td>${c.tests.length}</td>`;
+  document.querySelector("#table").innerHTML = sortedComponents.map((c, i) => {
+    return `<tr><td><input type="checkbox" ${i<=5 ? "checked" : ""} />${c.component}</td><td>${c.tests.length}</td>`;
   }).join("");
 });
-
-
 
 window.chartColors = {
 	red: 'rgb(255, 99, 132)',
@@ -129,94 +129,62 @@ window.chartColors = {
 	grey: 'rgb(201, 203, 207)'
 };
 
-var ctx = document.getElementById('component-specific-tests').getContext('2d');
-var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-var myChart = new Chart(ctx, {
-
-			type: 'line',
-			data: {
-				labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-				datasets: [{
-					label: 'My First dataset',
-					borderColor: window.chartColors.red,
-					backgroundColor: window.chartColors.red,
-					data: [
-						1,
-						2,
-						3,
-						4,
-						5,
-						6,
-						7
-					],
-				}, {
-					label: 'My Second dataset',
-					borderColor: window.chartColors.blue,
-					backgroundColor: window.chartColors.blue,
-					data: [
-						1,
-						2,
-						3,
-						4,
-						5,
-						6,
-						7
-					],
-				}, {
-					label: 'My Third dataset',
-					borderColor: window.chartColors.green,
-					backgroundColor: window.chartColors.green,
-					data: [
-						1,
-						2,
-						3,
-						4,
-						5,
-						6,
-						7
-					],
-				}, {
-					label: 'My Third dataset',
-					borderColor: window.chartColors.yellow,
-					backgroundColor: window.chartColors.yellow,
-					data: [
-						1,
-						2,
-						3,
-						4,
-						5,
-						6,
-						7
-					],
-				}]
-			},
-			options: {
-				responsive: true,
-				title: {
-					display: true,
-					text: 'Chart.js Line Chart - Stacked Area'
-				},
-				tooltips: {
-					mode: 'index',
-				},
-				hover: {
-					mode: 'index'
-				},
-				scales: {
-					xAxes: [{
-						scaleLabel: {
-							display: true,
-							labelString: 'Month'
-						}
-					}],
-					yAxes: [{
-						stacked: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Value'
-						}
-					}]
-				}
-			}
-});
+function buildStackedGraph(sortedComponents) {
+  // XXX: This is only using the last day, we need a more full picture here
+  // with data from each day
+  console.log(sortedComponents);
+  let ctx = document.getElementById('component-specific-tests').getContext('2d');
+  let datasets = [];
+  for (let i = 0; i < 8; i++) {
+    let componentData = sortedComponents[i];
+    datasets.push({
+      label: componentData.component,
+      // borderColor: window.chartColors.red,
+      // backgroundColor: window.chartColors.red,
+      data: [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+    });
+  }
+  var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: datasets,
+        },
+        options: {
+          responsive: true,
+          // title: {
+          // 	display: true,
+          // 	text: 'Chart.js Line Chart - Stacked Area'
+          // },
+          tooltips: {
+            mode: 'index',
+          },
+          hover: {
+            mode: 'index'
+          },
+          scales: {
+            xAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: 'Date'
+              }
+            }],
+            yAxes: [{
+              stacked: true,
+              scaleLabel: {
+                display: true,
+                labelString: 'Number of tests'
+              }
+            }]
+          }
+        }
+  });
+}
