@@ -116,3 +116,107 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     return `<tr><td>${c.component}</td><td>${c.tests.length}</td>`;
   }).join("");
 });
+
+
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+var ctx = document.getElementById('component-specific-tests').getContext('2d');
+var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+var myChart = new Chart(ctx, {
+
+			type: 'line',
+			data: {
+				labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+				datasets: [{
+					label: 'My First dataset',
+					borderColor: window.chartColors.red,
+					backgroundColor: window.chartColors.red,
+					data: [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+				}, {
+					label: 'My Second dataset',
+					borderColor: window.chartColors.blue,
+					backgroundColor: window.chartColors.blue,
+					data: [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+				}, {
+					label: 'My Third dataset',
+					borderColor: window.chartColors.green,
+					backgroundColor: window.chartColors.green,
+					data: [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+				}, {
+					label: 'My Third dataset',
+					borderColor: window.chartColors.yellow,
+					backgroundColor: window.chartColors.yellow,
+					data: [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Chart.js Line Chart - Stacked Area'
+				},
+				tooltips: {
+					mode: 'index',
+				},
+				hover: {
+					mode: 'index'
+				},
+				scales: {
+					xAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					}],
+					yAxes: [{
+						stacked: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Value'
+						}
+					}]
+				}
+			}
+});
