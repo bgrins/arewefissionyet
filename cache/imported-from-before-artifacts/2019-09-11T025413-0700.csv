@@ -1,0 +1,66 @@
+,Total Skipped,Debug Skipped,Total Failed,Debug Failed
+Total,459,53,121,0
+Core::DOM: Core & HTML,52,4,12,0
+Core::Privacy: Anti-Tracking,40,0,0,0
+Core::DOM: Security,20,1,16,0
+Core::Security: PSM,31,0,0,0
+Core::DOM: Service Workers,26,6,2,0
+Toolkit::Password Manager,19,2,9,0
+WebExtensions::General,28,0,0,0
+Firefox::General,16,0,6,0
+DevTools::Console,12,1,8,0
+Core::Document Navigation,15,1,2,0
+Core::Networking,16,0,1,0
+Toolkit::Add-ons Manager,15,0,1,0
+DevTools::Storage Inspector,0,0,15,0
+Firefox::Site Identity and Permission Panels,12,6,3,0
+Remote Protocol::Agent,13,0,2,0
+Firefox::Address Bar,13,0,0,0
+Firefox::Tracking Protection,13,10,0,0
+Firefox::Session Restore,9,1,3,0
+DevTools::General,6,1,4,0
+Core::Security,7,0,1,0
+Toolkit::Data Sanitization,8,7,0,0
+WebExtensions::Untriaged,7,3,1,0
+Core::DOM: Web Storage,0,0,7,0
+Core::XPConnect,2,0,5,0
+Toolkit::Safe Browsing,7,0,0,0
+Core::DOM: IndexedDB,5,0,1,0
+DevTools::Inspector,4,1,2,0
+Toolkit::Reader Mode,6,0,0,0
+Core::Plug-ins,3,0,2,0
+Core::Layout: Form Controls,2,2,2,0
+Core::WebRTC,4,0,0,0
+Firefox::PDF Viewer,4,0,0,0
+Firefox::Tabbed Browser,3,0,1,0
+Toolkit::General,3,1,1,0
+Core::Audio/Video: Playback,0,0,3,0
+Core::DOM: Quota Manager,3,0,0,0
+Core::Networking: Cookies,3,0,0,0
+Core::Window Management,1,1,2,0
+DevTools::Responsive Design Mode,3,1,0,0
+Toolkit::Crash Reporting,3,0,0,0
+Core::DOM: Content Processes,1,0,1,0
+Core::DOM: Push Notifications,1,0,1,0
+Core::DOM: Workers,1,0,1,0
+DevTools::Framework,1,0,1,0
+DevTools::Style Editor,1,0,1,0
+Firefox::Bookmarks & History,2,0,0,0
+Firefox::New Tab Page,2,0,0,0
+Toolkit::Find Toolbar,2,2,0,0
+Toolkit::Notifications and Alerts,1,0,1,0
+Toolkit::Telemetry,2,0,0,0
+Core::DOM: Events,1,1,0,0
+Core::DOM: Networking,1,0,0,0
+Core::Permission Manager,0,0,1,0
+Core::SVG,1,0,0,0
+Core::Widget,0,0,1,0
+Firefox::Enterprise Policies,1,0,0,0
+Firefox::File Handling,1,0,0,0
+Firefox::Keyboard Navigation,1,1,0,0
+Firefox::Private Browsing,1,0,0,0
+Firefox::Tabbed Browsing,1,0,0,0
+Firefox::Toolbars and Customization,1,0,0,0
+Toolkit::Form Manager,0,0,1,0
+Toolkit::Places,1,0,0,0
+Web Compatibility Tools::General,1,0,0,0
