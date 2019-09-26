@@ -85,45 +85,40 @@ async function renderCharts({allChartData}) {
 
 document.addEventListener("DOMContentLoaded", async function ready() {
   let data = await fetchDataJSON();
-  // let data = await fetchSampleDataCSV();
-
-  let dailyData = [];
-  let componentData = {};
-  console.log(data);
-
+  window.DAILY_DATA = [];
+  window.COMPONENT_DATA = {};
 
   for (let date in data) {
     let currentDay = data[date];
     for (let component in currentDay.tests) {
-      console.log(component, currentDay.tests[component].length);
-      componentData[component] = componentData[component] || {};
-      componentData[component][date] = currentDay.tests[component].length;
+      // console.log(component, currentDay.tests[component].length);
+      COMPONENT_DATA[component] = COMPONENT_DATA[component] || {};
+      COMPONENT_DATA[component][date] = currentDay.tests[component].length;
     }
-    dailyData.push(currentDay);
+    DAILY_DATA.push(currentDay);
 
-    // let sortedComponents = currentDay.sortedComponents = [];
-    // for (let component in currentDay.tests) {
-    //   // let componentTests = currentDay.tests[component];
-    //   sortedComponents.push({ component, tests: currentDay.tests[component].length });
-    //   // console.log(`${component}: ${componentTests.length}`)
-    // }
-    // sortedComponents = sortedComponents.sort((a, b) => {
-    //   return a.tests < b.tests;
-    // });
+    let sortedComponents = currentDay.sortedComponents = [];
+    for (let component in currentDay.tests) {
+      // let componentTests = currentDay.tests[component];
+      sortedComponents.push({ component, tests: currentDay.tests[component].length });
+      // console.log(`${component}: ${componentTests.length}`)
+    }
+    sortedComponents = sortedComponents.sort((a, b) => {
+      return a.tests < b.tests;
+    });
   }
 
-  let lastDay = dailyData[dailyData.length - 1];
+  let lastDay = DAILY_DATA[DAILY_DATA.length - 1];
   let numTestsThatNeedAddressing = lastDay.summary["skipped tests"] +
                                    lastDay.summary["failed tests"];
   document.querySelector("h1").textContent = numTestsThatNeedAddressing + " " + document.querySelector("h1").textContent ;
-
-
+  document.querySelector("#table").innerHTML = lastDay.sortedComponents.map((c, i) => {
+    return `<tr><td><input type="checkbox" ${i<=10 ? "checked" : ""} />${c.component}</td><td>${c.tests}</td>`;
+  }).join("");
+  document.querySelector("#table").addEventListener("change", buildStackedGraph);
 
   await renderCharts(convertJSONForChart(data));
-  buildStackedGraph(dailyData, componentData)
-  // document.querySelector("#table").innerHTML = lastDay.sortedComponents.map((c, i) => {
-  //   return `<tr><td><input type="checkbox" ${i<=5 ? "checked" : ""} />${c.component}</td><td>${c.tests.length}</td>`;
-  // }).join("");
+  buildStackedGraph()
 });
 
 window.chartColors = {
@@ -136,26 +131,27 @@ window.chartColors = {
 	grey: 'rgb(201, 203, 207)'
 };
 
-function buildStackedGraph(dailyData, componentData) {
+function buildStackedGraph() {
   // XXX: This is only using the last day, we need a more full picture here
   // with data from each day
-  console.log(dailyData, componentData);
+  console.log(DAILY_DATA, COMPONENT_DATA);
 
   let days = [];
-  for (let day in componentData["Core::DOM: Core & HTML"]) {
+  for (let day in COMPONENT_DATA["Core::DOM: Core & HTML"]) {
     days.push(day);
   }
 
-  let lastDay = dailyData[dailyData.length - 1]
+  let lastDay = DAILY_DATA[DAILY_DATA.length - 1]
   let datasets = [];
 
-  // let topComponents = dailyData[0].sortedComponents.slice(0, 2).map(c=>c.component);
-  let topComponents = ["Core::DOM: Core & HTML"];
+  // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
+  let topComponents = [...document.querySelectorAll("input:checked")].map(el=>el.nextSibling.data); // ["Core::DOM: Core & HTML"];
+  console.log(topComponents);
   for (let component of topComponents) {
     let data = [];
-    for (let days in componentData[component]) {
-      console.log(componentData[component][days]);
-      data.push(componentData[component][days])
+    for (let days in COMPONENT_DATA[component]) {
+      // console.log(COMPONENT_DATA[component][days]);
+      data.push(COMPONENT_DATA[component][days])
     }
     datasets.push({
       label: component,
@@ -165,12 +161,12 @@ function buildStackedGraph(dailyData, componentData) {
     });
   }
   // for (let i = 0; i < 8; i++) {
-  //   // for (let j = 0; j < dailyData.length; j++) {
-  //   //   dailyData[j].tests[]
+  //   // for (let j = 0; j < DAILY_DATA.length; j++) {
+  //   //   DAILY_DATA[j].tests[]
   //   // }
-  //   let componentData = lastDay.sortedComponents[i];
+  //   let COMPONENT_DATA = lastDay.sortedComponents[i];
   //   datasets.push({
-  //     label: componentData.component,
+  //     label: COMPONENT_DATA.component,
   //     // borderColor: window.chartColors.red,
   //     // backgroundColor: window.chartColors.red,
   //     data: [
