@@ -1,4 +1,11 @@
 
+async function getComponentLinks() {
+  let response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=2031736766&single=true&output=csv");
+  let text = await response.text();
+  // TODO: Convert this into a map from compnent id => link
+  console.log(text);
+}
+getComponentLinks();
 
 // https://github.com/FirefoxUX/photon-colors/blob/master/photon-colors.json
 window.photonColors = [
