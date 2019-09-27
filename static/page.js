@@ -113,27 +113,108 @@ document.addEventListener("DOMContentLoaded", async function ready() {
                                    lastDay.summary["failed tests"];
   document.querySelector("h1").textContent = numTestsThatNeedAddressing + " " + document.querySelector("h1").textContent ;
   document.querySelector("#table").innerHTML = lastDay.sortedComponents.map((c, i) => {
-    return `<tr><td><input type="checkbox" ${i<=10 ? "checked" : ""} />${c.component}</td><td>${c.tests}</td>`;
+    return `<tr><td><input type="checkbox" ${i<=8 ? "checked" : ""} />${c.component}</td><td>${c.tests}</td>`;
   }).join("");
   document.querySelector("#table").addEventListener("change", buildStackedGraph);
 
-  await renderCharts(convertJSONForChart(data));
+  // await renderCharts(convertJSONForChart(data));
   buildStackedGraph()
 });
 
-window.chartColors = {
-	red: 'rgb(255, 99, 132)',
-	orange: 'rgb(255, 159, 64)',
-	yellow: 'rgb(255, 205, 86)',
-	green: 'rgb(75, 192, 192)',
-	blue: 'rgb(54, 162, 235)',
-	purple: 'rgb(153, 102, 255)',
-	grey: 'rgb(201, 203, 207)'
-};
+// https://github.com/FirefoxUX/photon-colors/blob/master/photon-colors.json
+window.photonColors = [
+  { //"blue": {
+    40: "#45a1ff",
+    50: "#0a84ff",
+    60: "#0060df",
+    70: "#003eaa",
+    80: "#002275",
+    90: "#000f40"
+  },
+  { //"magenta":
+    50: "#ff1ad9",
+    60: "#ed00b5",
+    70: "#b5007f",
+    80: "#7d004f",
+    90: "#440027"
+  },
+  { //"purple": {
+    50: "#9400ff",
+    60: "#8000d7",
+    70: "#6200a4",
+    80: "#440071",
+    90: "#25003e"
+  },
+  { //"teal": {
+    50: "#00feff",
+    60: "#00c8d7",
+    70: "#008ea4",
+    80: "#005a71",
+    90: "#002d3e"
+  },
+  { //"green": {
+    50: "#30e60b",
+    60: "#12bc00",
+    70: "#058b00",
+    80: "#006504",
+    90: "#003706"
+  },
+  { //"yellow": {
+    50: "#ffe900",
+    60: "#d7b600",
+    70: "#a47f00",
+    80: "#715100",
+    90: "#3e2800"
+  },
+  { //"red": {
+    50: "#ff0039",
+    60: "#d70022",
+    70: "#a4000f",
+    80: "#5a0002",
+    90: "#3e0200"
+  },
+  { // "orange": {
+    50: "#ff9400",
+    60: "#d76e00",
+    70: "#a44900",
+    80: "#712b00",
+    90: "#3e1300"
+  },
+  { //"grey": {
+    50: "#737373",
+    60: "#4a4a4f",
+    70: "#38383d",
+    80: "#2a2a2e",
+    90: "#0c0c0d",
+  },
+  { //"ink": {
+    50: "#595E91",
+    60: "#464B76",
+    70: "#363959",
+    80: "#202340",
+    90: "#0f1126"
+  },
+];
+let currentColorIndex = 0;
+let currentColorShadeIndex = 60;
+function getNextColor() {
+  if (currentColorIndex == photonColors.length) {
+    currentColorIndex = 0;
+  }
+  if (currentColorShadeIndex == 100) {
+    currentColorShadeIndex = 50;
+  }
+  let color = photonColors[currentColorIndex][currentColorShadeIndex];
+
+  currentColorIndex++;
+  currentColorShadeIndex += 10;
+  return color;
+}
 
 function buildStackedGraph() {
-  // XXX: This is only using the last day, we need a more full picture here
-  // with data from each day
+  // TODO:
+  // - Filter out DevTools data
+  // - Filter out tests that aren't actually skpped / failing
   console.log(DAILY_DATA, COMPONENT_DATA);
 
   let days = [];
@@ -144,22 +225,53 @@ function buildStackedGraph() {
   let lastDay = DAILY_DATA[DAILY_DATA.length - 1]
   let datasets = [];
 
+  let otherComponents = [...document.querySelectorAll("input:not(:checked)")].map(el=>el.nextSibling.data);
+  let otherComponentData = [];
+  let firstRun = true;
+  for (let component of otherComponents) {
+    let data = [];
+    let i = 0;
+    for (let days in COMPONENT_DATA[component]) {
+      if (firstRun) {
+        otherComponentData.push(COMPONENT_DATA[component][days])
+      } else {
+        otherComponentData[i] += COMPONENT_DATA[component][days];
+      }
+      i++;
+    }
+
+    firstRun = false;
+  }
+
+  if (otherComponents.length) {
+    let color = getNextColor();
+    datasets.push({
+      label: `Others (${otherComponents.length})`,
+      backgroundColor: color,
+      borderColor: color,
+      data: otherComponentData,
+    });
+  }
+
   // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
   let topComponents = [...document.querySelectorAll("input:checked")].map(el=>el.nextSibling.data); // ["Core::DOM: Core & HTML"];
   console.log(topComponents);
+
   for (let component of topComponents) {
     let data = [];
     for (let days in COMPONENT_DATA[component]) {
-      // console.log(COMPONENT_DATA[component][days]);
       data.push(COMPONENT_DATA[component][days])
     }
+    let color = getNextColor();
     datasets.push({
       label: component,
-      // borderColor: window.chartColors.red,
-      // backgroundColor: window.chartColors.red,
+      backgroundColor: color,
+      borderColor: color,
       data
     });
   }
+
+  // console.log(otherComponentData)
   // for (let i = 0; i < 8; i++) {
   //   // for (let j = 0; j < DAILY_DATA.length; j++) {
   //   //   DAILY_DATA[j].tests[]
