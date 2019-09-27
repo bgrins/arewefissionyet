@@ -167,11 +167,12 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     });
   }
 
+  let firstDay = DAILY_DATA[0];
   let lastDay = DAILY_DATA[DAILY_DATA.length - 1];
   document.querySelector(
     "h1"
   ).textContent += `: ${lastDay.totalTests} Tests Remain`;
-  document.querySelector("#table").innerHTML = lastDay.sortedComponents
+  document.querySelector("#table").innerHTML = firstDay.sortedComponents
     .map((c, i) => {
       return `<tr><td><input type="checkbox" ${i <= 20 ? "checked" : ""} />${
         c.component
@@ -199,6 +200,27 @@ function buildStackedGraph() {
 
   let lastDay = DAILY_DATA[DAILY_DATA.length - 1];
   let datasets = [];
+
+  // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
+  let topComponents = [...document.querySelectorAll("input:checked")].map(
+    el => el.nextSibling.data
+  ); // ["Core::DOM: Core & HTML"];
+  console.log(topComponents);
+
+  for (let component of topComponents) {
+    let data = [];
+    for (let days in COMPONENT_DATA[component]) {
+      data.push(COMPONENT_DATA[component][days]);
+    }
+    let color = getNextColor();
+    datasets.push({
+      label: component,
+      backgroundColor: color,
+      borderColor: color,
+      data
+    });
+  }
+
 
   let otherComponents = [
     ...document.querySelectorAll("input:not(:checked)")
@@ -230,25 +252,6 @@ function buildStackedGraph() {
     });
   }
 
-  // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
-  let topComponents = [...document.querySelectorAll("input:checked")].map(
-    el => el.nextSibling.data
-  ); // ["Core::DOM: Core & HTML"];
-  console.log(topComponents);
-
-  for (let component of topComponents) {
-    let data = [];
-    for (let days in COMPONENT_DATA[component]) {
-      data.push(COMPONENT_DATA[component][days]);
-    }
-    let color = getNextColor();
-    datasets.push({
-      label: component,
-      backgroundColor: color,
-      borderColor: color,
-      data
-    });
-  }
 
   if (window.myChart) {
     window.myChart.data.datasets = datasets;
