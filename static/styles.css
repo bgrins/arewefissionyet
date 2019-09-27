@@ -10,6 +10,13 @@
   --secondary-color: #45a1ff22;
 }
 
+iframe {
+  border: none;
+  margin: 0 auto;
+  height: 500px;
+  width: 800px;
+}
+
 h1 {
   --font-color: #424242;
 }
