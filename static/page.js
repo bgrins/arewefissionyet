@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
                                    lastDay.summary["failed tests"];
   document.querySelector("h1").textContent = numTestsThatNeedAddressing + " " + document.querySelector("h1").textContent ;
   document.querySelector("#table").innerHTML = lastDay.sortedComponents.map((c, i) => {
-    return `<tr><td><input type="checkbox" ${i<=8 ? "checked" : ""} />${c.component}</td><td>${c.tests}</td>`;
+    return `<tr><td><input type="checkbox" ${i<=20 ? "checked" : ""} />${c.component}</td><td>${c.tests}</td>`;
   }).join("");
   document.querySelector("#table").addEventListener("change", buildStackedGraph);
 
@@ -211,6 +211,7 @@ function getNextColor() {
   return color;
 }
 
+
 function buildStackedGraph() {
   // TODO:
   // - Filter out DevTools data
@@ -271,36 +272,19 @@ function buildStackedGraph() {
     });
   }
 
-  // console.log(otherComponentData)
-  // for (let i = 0; i < 8; i++) {
-  //   // for (let j = 0; j < DAILY_DATA.length; j++) {
-  //   //   DAILY_DATA[j].tests[]
-  //   // }
-  //   let COMPONENT_DATA = lastDay.sortedComponents[i];
-  //   datasets.push({
-  //     label: COMPONENT_DATA.component,
-  //     // borderColor: window.chartColors.red,
-  //     // backgroundColor: window.chartColors.red,
-  //     data: [
-  //       1,
-  //       2,
-  //       3,
-  //       4,
-  //       5,
-  //       6,
-  //       7
-  //     ],
-  //   });
-  // }
-  let ctx = document.getElementById('component-specific-tests').getContext('2d');
-  var myChart = new Chart(ctx, {
+  if (window.myChart) {
+    window.smyChart.data.datasets = datasets;
+    window.myChart.update();
+  } else {
+    let ctx = document.getElementById('component-specific-tests').getContext('2d');
+    window.myChart = new Chart(ctx, {
         type: 'line',
         data: {
           labels: days,
           datasets: datasets,
         },
         options: {
-          responsive: true,
+          // responsive: true,
           // title: {
           // 	display: true,
           // 	text: 'Chart.js Line Chart - Stacked Area'
@@ -327,5 +311,6 @@ function buildStackedGraph() {
             }]
           }
         }
-  });
+    });
+  }
 }
