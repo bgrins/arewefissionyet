@@ -13,8 +13,9 @@
 iframe {
   border: none;
   margin: 0 auto;
-  height: 500px;
+  height: 400px;
   width: 800px;
+  display: block;
 }
 
 h1 {
@@ -33,12 +34,15 @@ h1 {
 } */
 
 body {
-  display: grid;
   margin: 0;
   background: var(--main-background);
   color: var(--main-text-color);
   font-family: var(--main-font-family);
   font-weight: 300;
+}
+
+#grid {
+  display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr auto;
   grid-template-areas:

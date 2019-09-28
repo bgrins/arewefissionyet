@@ -90,7 +90,7 @@ window.photonColors = [
 
 let currentColorIndex = 0;
 let currentColorShadeIndex = 0;
-let currentColorShades = [50, 90, 70, 80, 60];
+let currentColorShades = [90, 50, 70, 80, 60];
 function getNextColor() {
   if (currentColorIndex == photonColors.length) {
     currentColorIndex = 0;
