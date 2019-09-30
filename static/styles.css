@@ -1,13 +1,40 @@
+@import url("./fira/fira.css");
+
 :root {
   --main-background: white;
   --main-text-color: #343434;
   --main-font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
 
-  --data-ftl-color: #3bddaa;
-  --data-dtd-color: #ed0083;
-  --data-properties-color: #45a1ff;
+  --data-photon-green: #3bddaa;
+  --data-photon-magenta: #ed0083;
+  --data-photon-blue: #45a1ff;
 
   --secondary-color: #45a1ff22;
+  --heading-font-color: #424242;
+
+  font: 400 14px/1.5 "Fira Sans";
+}
+
+.compact-only {
+  display: none;
+}
+:root.compact .compact-only {
+  display: unset;
+}
+:root.compact .full-only {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background: var(--main-background);
+  color: var(--main-text-color);
+  font-family: var(--main-font-family);
+}
+
+a,
+:root.compact a:visited {
+  color: var(--data-photon-blue);
 }
 
 iframe {
@@ -18,8 +45,69 @@ iframe {
   display: block;
 }
 
+#footer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
 h1 {
-  --font-color: #424242;
+  grid-area: header;
+  font-weight: 300;
+  color: var(--heading-font-color);
+  background: #efefef;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+  /* border-bottom: 1px solid #ccc; */
+  justify-self: stretch;
+}
+
+.desc-box {
+  width: 230px;
+  padding-left: 33px;
+  padding-right: 17px;
+  padding-bottom: 30px;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+body.small .desc-box {
+  padding-bottom: 10px;
+}
+
+#side > .desc-box {
+  padding-top: 20px;
+}
+
+footer > .desc-box {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding-bottom: 18px;
+}
+
+body.widthLimited.small #footer > .desc-box {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.desc-box > h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.desc-box > p {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 /* description {
@@ -33,14 +121,6 @@ h1 {
   flex: 0;
 } */
 
-body {
-  margin: 0;
-  background: var(--main-background);
-  color: var(--main-text-color);
-  font-family: var(--main-font-family);
-  font-weight: 300;
-}
-
 #grid {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -53,18 +133,6 @@ body {
   align-items: center;
   overflow: auto;
   max-height: 100vh;
-}
-
-h1 {
-  grid-area: header;
-  font-weight: 300;
-  color: var(--font-color);
-  background: #efefef;
-  padding: 5px;
-  text-align: center;
-  margin: 0;
-  /* border-bottom: 1px solid #ccc; */
-  justify-self: stretch;
 }
 
 #skipped-and-failing-tests {

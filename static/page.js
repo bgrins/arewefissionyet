@@ -1,9 +1,7 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
 
 if (IN_PREVIEW) {
-  document.querySelector("#table-container").style.display = "none";
-  document.querySelector("h1").style.display = "none";
-  console.log("in preview");
+  document.documentElement.classList.add("compact");
 }
 
 async function getComponentLinks() {
@@ -297,10 +295,10 @@ function buildStackedGraph() {
     };
 
     if (IN_PREVIEW) {
-      chartOptions.options.title = {
-        display: true,
-        text: "Milestone 4"
-      };
+      // chartOptions.options.title = {
+      //   display: true,
+      //   text: "Milestone 4"
+      // };
 
       chartOptions.options.legend = {
           display: false
