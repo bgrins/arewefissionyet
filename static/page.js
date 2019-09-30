@@ -1,18 +1,23 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
+const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
+const NUM_COMPONENTS_IN_DEFAULT = 20;
 
 if (IN_PREVIEW) {
   document.documentElement.classList.add("compact");
 }
 
-async function getComponentLinks() {
+async function fetchComponentLinks() {
   let response = await fetch(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=2031736766&single=true&output=csv"
   );
   let text = await response.text();
-  // TODO: Convert this into a map from compnent id => link
-  console.log(text);
+  for (let row of text.split("\n")) {
+    let cols = row.split(",");
+    COMPONENT_LINK_TO_SPREADSHEET_MAP[cols[0]] = cols[1];
+  }
 }
-getComponentLinks();
+
+let componentLinksReady = fetchComponentLinks();
 
 // https://github.com/FirefoxUX/photon-colors/blob/master/photon-colors.json
 window.photonColors = [
@@ -22,7 +27,7 @@ window.photonColors = [
     60: "#0060df",
     70: "#003eaa",
     80: "#002275",
-    90: "#000f40"
+    90: "#333f80" // "#000f40" was too dark
   },
   {
     // "red"
@@ -125,9 +130,8 @@ function shouldIgnoreComponent(component) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
-
-  Chart.defaults.global.defaultFontFamily = 'Fira Sans';
-  Chart.defaults.global.defaultFontWeight = '300';
+  Chart.defaults.global.defaultFontFamily = "Fira Sans";
+  Chart.defaults.global.defaultFontWeight = "300";
   // Chart.defaults.global.animation.duration = 0;
 
   let data = await fetchDataJSON();
@@ -175,17 +179,28 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   document.querySelector(
     "h1"
   ).textContent += `: ${lastDay.totalTests} Tests Remain`;
-  document.querySelector("#table").innerHTML = firstDay.sortedComponents
-    .map((c, i) => {
-      return `<tr><td><input type="checkbox" ${i <= 20 ? "checked" : ""} />${
-        c.component
-      }</td><td>${c.tests}</td>`;
-    })
-    .join("");
+
   document
     .querySelector("#table")
     .addEventListener("change", buildStackedGraph);
+  document
+    .querySelector("#table")
+    .addEventListener("click", (event) => {
+      if (event.target.matches("a")) {
+        let link = COMPONENT_LINK_TO_SPREADSHEET_MAP[event.target.textContent];
+        window.open(link)
+        event.preventDefault();
+      }
+    });
 
+  document.querySelector("#table").innerHTML = firstDay.sortedComponents
+    .map((c, i) => {
+      return `<tr><td><input type="checkbox" ${
+        i <= NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
+      } /><a href=".">${c.component}</a>
+      </td><td>${c.tests}</td>`;
+    })
+    .join("");
   buildStackedGraph();
 });
 
@@ -206,7 +221,7 @@ function buildStackedGraph() {
 
   // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
   let topComponents = [...document.querySelectorAll("input:checked")].map(
-    el => el.nextSibling.data
+    el => el.nextSibling.textContent
   ); // ["Core::DOM: Core & HTML"];
   console.log(topComponents);
 
@@ -224,10 +239,9 @@ function buildStackedGraph() {
     });
   }
 
-
   let otherComponents = [
     ...document.querySelectorAll("input:not(:checked)")
-  ].map(el => el.nextSibling.data);
+  ].map(el => el.nextSibling.textContent);
   let otherComponentData = [];
   let firstRun = true;
   for (let component of otherComponents) {
@@ -254,7 +268,6 @@ function buildStackedGraph() {
       data: otherComponentData
     });
   }
-
 
   if (window.myChart) {
     window.myChart.data.datasets = datasets;
@@ -306,7 +319,7 @@ function buildStackedGraph() {
       // };
 
       chartOptions.options.legend = {
-          display: false
+        display: false
       };
     }
 
