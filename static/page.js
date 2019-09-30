@@ -125,6 +125,11 @@ function shouldIgnoreComponent(component) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
+
+  Chart.defaults.global.defaultFontFamily = 'Fira Sans';
+  Chart.defaults.global.defaultFontWeight = '300';
+  // Chart.defaults.global.animation.duration = 0;
+
   let data = await fetchDataJSON();
   window.DAILY_DATA = [];
   window.COMPONENT_DATA = {};

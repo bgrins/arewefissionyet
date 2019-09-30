@@ -66,6 +66,12 @@ h1 {
   justify-self: stretch;
 }
 
+#home-link {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
 .desc-box {
   width: 230px;
   padding-left: 33px;
