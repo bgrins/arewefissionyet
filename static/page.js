@@ -1,5 +1,6 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
+const COMPONENT_TO_COLOR_MAP = {};
 const NUM_COMPONENTS_IN_DEFAULT = 16;
 const DAILY_DATA = [];
 const COMPONENT_DATA = {};
@@ -187,6 +188,12 @@ document.addEventListener("DOMContentLoaded", async function ready() {
 
   let firstDay = DAILY_DATA[0];
   let lastDay = DAILY_DATA[DAILY_DATA.length - 1];
+
+  COMPONENT_TO_COLOR_MAP["other"] = getNextColor();
+  for (let component of lastDay.sortedComponents) {
+    COMPONENT_TO_COLOR_MAP[component.component] = getNextColor();
+  }
+
   document.querySelector(
     "h1"
   ).textContent += `: ${lastDay.totalTests} Tests Remain`;
@@ -248,7 +255,7 @@ function buildStackedGraph() {
   }
 
   if (otherComponents.length) {
-    let color = getNextColor();
+    let color = COMPONENT_TO_COLOR_MAP["other"];
     datasets.push({
       label: `Others (${otherComponents.length})`,
       backgroundColor: color,
@@ -268,7 +275,7 @@ function buildStackedGraph() {
     for (let days in COMPONENT_DATA[component]) {
       data.push(COMPONENT_DATA[component][days]);
     }
-    let color = getNextColor();
+    let color = COMPONENT_TO_COLOR_MAP[component];
     datasets.push({
       label: component,
       backgroundColor: color,
