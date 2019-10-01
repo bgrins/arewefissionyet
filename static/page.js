@@ -231,26 +231,6 @@ function buildStackedGraph() {
   let lastDay = DAILY_DATA[DAILY_DATA.length - 1];
   let datasets = [];
 
-  // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
-  let topComponents = [...document.querySelectorAll("input:checked")].map(
-    el => el.nextSibling.textContent
-  ); // ["Core::DOM: Core & HTML"];
-  console.log(topComponents);
-
-  for (let component of topComponents) {
-    let data = [];
-    for (let days in COMPONENT_DATA[component]) {
-      data.push(COMPONENT_DATA[component][days]);
-    }
-    let color = getNextColor();
-    datasets.push({
-      label: component,
-      backgroundColor: color,
-      borderColor: color,
-      data
-    });
-  }
-
   let otherComponents = [
     ...document.querySelectorAll("input:not(:checked)")
   ].map(el => el.nextSibling.textContent);
@@ -278,6 +258,26 @@ function buildStackedGraph() {
       backgroundColor: color,
       borderColor: color,
       data: otherComponentData
+    });
+  }
+
+  // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
+  let topComponents = [...document.querySelectorAll("input:checked")].map(
+    el => el.nextSibling.textContent
+  ); // ["Core::DOM: Core & HTML"];
+  console.log(topComponents);
+
+  for (let component of topComponents) {
+    let data = [];
+    for (let days in COMPONENT_DATA[component]) {
+      data.push(COMPONENT_DATA[component][days]);
+    }
+    let color = getNextColor();
+    datasets.push({
+      label: component,
+      backgroundColor: color,
+      borderColor: color,
+      data
     });
   }
 
