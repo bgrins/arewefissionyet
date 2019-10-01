@@ -194,7 +194,8 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       }
     });
 
-  document.querySelector("#table").innerHTML = firstDay.sortedComponents
+  // To show most at the start of the project, change this to `firstDay.sortedComponents`
+  document.querySelector("#table").innerHTML = lastDay.sortedComponents
     .map((c, i) => {
       return `<tr><td><input type="checkbox" ${
         i <= NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
