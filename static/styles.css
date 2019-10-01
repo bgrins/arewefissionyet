@@ -188,6 +188,11 @@ html.compact #grid {
   background: var(--main-background);
 }
 
+#table .swatch {
+  width: 20px;
+  display: inline-block;
+  margin-right: 3px;
+}
 .mg-active-datapoint-container {
   transform: translate(-60px, -20px);
 }

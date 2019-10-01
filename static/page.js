@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     .map((c, i) => {
       return `<tr><td><input type="checkbox" ${
         i < NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
-      } /><a href=".">${c.component}</a>
+      } /><span class="swatch" style="background-color: ${COMPONENT_TO_COLOR_MAP[c.component]};">&nbsp;</span><a href=".">${c.component}</a>
       </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
     })
     .join("");
@@ -237,7 +237,7 @@ function buildStackedGraph() {
 
   let otherComponents = [
     ...document.querySelectorAll("input:not(:checked)")
-  ].map(el => el.nextSibling.textContent);
+  ].map(el => el.parentNode.querySelector("a").textContent);
   let otherComponentData = [];
   let firstRun = true;
   for (let component of otherComponents) {
@@ -266,7 +266,7 @@ function buildStackedGraph() {
 
   // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
   let topComponents = [...document.querySelectorAll("input:checked")].map(
-    el => el.nextSibling.textContent
+    el => el.parentNode.querySelector("a").textContent
   ); // ["Core::DOM: Core & HTML"];
   console.log(topComponents);
 
@@ -310,6 +310,10 @@ function buildStackedGraph() {
         hover: {
           mode: "index",
           animationDuration: 0
+        },
+        legend: {
+          // Comment this out if you prefer the legend on the top
+          display: false,
         },
         scales: {
           xAxes: [
