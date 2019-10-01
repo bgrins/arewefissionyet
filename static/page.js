@@ -1,6 +1,8 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
 const NUM_COMPONENTS_IN_DEFAULT = 20;
+const DAILY_DATA = [];
+const COMPONENT_DATA = {};
 
 if (IN_PREVIEW) {
   document.documentElement.classList.add("compact");
@@ -143,11 +145,7 @@ function shouldIgnoreComponent(component) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
-  // Chart.defaults.global.animation.duration = 0;
-
   let data = await fetchDataJSON();
-  window.DAILY_DATA = [];
-  window.COMPONENT_DATA = {};
 
   // Home page: mini version of the chart, and links to other stuff
   // Fix colors
@@ -217,9 +215,6 @@ document.addEventListener("DOMContentLoaded", async function ready() {
 });
 
 function buildStackedGraph() {
-  // TODO:
-  // - Filter out DevTools data
-  // - Filter out tests that aren't actually skpped / failing
   // console.log(DAILY_DATA, COMPONENT_DATA);
   currentColorIndex = currentColorShadeIndex = 0;
 
@@ -237,7 +232,6 @@ function buildStackedGraph() {
   let otherComponentData = [];
   let firstRun = true;
   for (let component of otherComponents) {
-    let data = [];
     let i = 0;
     for (let days in COMPONENT_DATA[component]) {
       if (firstRun) {
@@ -306,7 +300,7 @@ function buildStackedGraph() {
         },
         hover: {
           mode: "index",
-          animationDuration: 0,
+          animationDuration: 0
         },
         scales: {
           xAxes: [
@@ -334,7 +328,7 @@ function buildStackedGraph() {
       chartOptions.options.tooltips = {
         mode: "nearest",
         intersect: false
-      }
+      };
 
       chartOptions.options.legend = {
         display: false
