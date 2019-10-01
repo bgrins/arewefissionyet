@@ -182,7 +182,7 @@ body.widthLimited.small #footer > .desc-box {
   grid-area: sidebar;
   /* height: 100%; */
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .mg-active-datapoint-container {
