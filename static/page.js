@@ -103,7 +103,6 @@ function getNextColor() {
   }
   let color =
     photonColors[currentColorIndex][currentColorShades[currentColorShadeIndex]];
-  console.log(color);
   currentColorIndex++;
   currentColorShadeIndex++;
   return color;
@@ -142,7 +141,9 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   // Fix colors
   // Meta redirect in awfy/sheet with meta -> potentially redirect to the right component
 
+  let lastDate;
   for (let date in data) {
+    lastDate = date;
     let currentDay = data[date];
     currentDay.totalTests = 0;
     for (let component in currentDay.tests) {
@@ -198,7 +199,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       return `<tr><td><input type="checkbox" ${
         i <= NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
       } /><a href=".">${c.component}</a>
-      </td><td>${c.tests}</td>`;
+      </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
     })
     .join("");
   buildStackedGraph();
@@ -208,7 +209,7 @@ function buildStackedGraph() {
   // TODO:
   // - Filter out DevTools data
   // - Filter out tests that aren't actually skpped / failing
-  console.log(DAILY_DATA, COMPONENT_DATA);
+  // console.log(DAILY_DATA, COMPONENT_DATA);
   currentColorIndex = currentColorShadeIndex = 0;
 
   let days = [];
