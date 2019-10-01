@@ -217,11 +217,11 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   // To show most at the start of the project, change this to `firstDay.sortedComponents`
   document.querySelector("#table").innerHTML = lastDay.sortedComponents
     .map((c, i) => {
-      return `<tr><td><input type="checkbox" ${
+      return `<tr><td><label aria-label="${c.component}"><input type="checkbox" ${
         i < NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
       } /><span class="swatch" style="background-color: ${
         COMPONENT_TO_COLOR_MAP[c.component]
-      };">&nbsp;</span><a href=".">${c.component}</a>
+      };">&nbsp;</span></label><a href=".">${c.component}</a>
       </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
     })
     .join("");
@@ -265,7 +265,7 @@ function buildStackedGraph() {
 
   let otherComponents = [
     ...document.querySelectorAll("input:not(:checked)")
-  ].map(el => el.parentNode.querySelector("a").textContent);
+  ].map(el => el.closest("td").querySelector("a").textContent);
   let otherComponentData = [];
   let firstRun = true;
   for (let component of otherComponents) {
@@ -297,7 +297,7 @@ function buildStackedGraph() {
 
   // let topComponents = DAILY_DATA[0].sortedComponents.slice(0, 2).map(c=>c.component);
   let topComponents = [...document.querySelectorAll("input:checked")].map(
-    el => el.parentNode.querySelector("a").textContent
+    el => el.closest("td").querySelector("a").textContent
   ); // ["Core::DOM: Core & HTML"];
 
   for (let component of topComponents) {
