@@ -196,9 +196,11 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     .addEventListener("change", buildStackedGraph);
   document.querySelector("#table").addEventListener("click", event => {
     if (event.target.matches("a")) {
-      let link = COMPONENT_LINK_TO_SPREADSHEET_MAP[event.target.textContent];
-      window.open(link);
       event.preventDefault();
+      let link = COMPONENT_LINK_TO_SPREADSHEET_MAP[event.target.textContent];
+      if (link) {
+        window.open(link);
+      }
     }
   });
 
