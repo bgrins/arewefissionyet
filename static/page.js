@@ -1,9 +1,12 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
 const COMPONENT_TO_COLOR_MAP = {};
-const NUM_COMPONENTS_IN_DEFAULT = 16;
 const DAILY_DATA = [];
 const COMPONENT_DATA = {};
+
+// Set this to a lower number like 16 if we only want to show a subset of components
+// and group the rest into "others":
+const NUM_COMPONENTS_IN_DEFAULT = 1000;
 
 if (IN_PREVIEW) {
   document.documentElement.classList.add("compact");
@@ -216,23 +219,48 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     .map((c, i) => {
       return `<tr><td><input type="checkbox" ${
         i < NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
-      } /><span class="swatch" style="background-color: ${COMPONENT_TO_COLOR_MAP[c.component]};">&nbsp;</span><a href=".">${c.component}</a>
+      } /><span class="swatch" style="background-color: ${
+        COMPONENT_TO_COLOR_MAP[c.component]
+      };">&nbsp;</span><a href=".">${c.component}</a>
       </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
     })
     .join("");
+
+  let dateFilterButton = document.querySelector("#date-filter");
+  let setDateFilterText = () => {
+    dateFilterButton.textContent = dateFilterButton.hasAttribute("alltime")
+      ? dateFilterButton.getAttribute("data-text-short")
+      : dateFilterButton.getAttribute("data-text-alltime");
+  };
+  setDateFilterText();
+  dateFilterButton.addEventListener("click", () => {
+    dateFilterButton.toggleAttribute(
+      "alltime",
+      !dateFilterButton.hasAttribute("alltime")
+    );
+    setDateFilterText();
+    buildStackedGraph();
+  });
+
   buildStackedGraph();
 });
 
-function buildStackedGraph() {
-  // console.log(DAILY_DATA, COMPONENT_DATA);
-  currentColorIndex = currentColorShadeIndex = 0;
+function isAllTime() {
+  return document.querySelector("#date-filter").hasAttribute("alltime");
+}
 
+function buildStackedGraph() {
+  currentColorIndex = currentColorShadeIndex = 0;
+  let allTime = isAllTime();
   let days = [];
   for (let day in COMPONENT_DATA["Core::DOM: Core & HTML"]) {
     days.push(day);
   }
 
-  let lastDay = DAILY_DATA[DAILY_DATA.length - 1];
+  if (!allTime) {
+    days = days.slice(-30);
+  }
+
   let datasets = [];
 
   let otherComponents = [
@@ -255,6 +283,9 @@ function buildStackedGraph() {
   }
 
   if (otherComponents.length) {
+    if (!allTime) {
+      otherComponents = otherComponents.slice(-30);
+    }
     let color = COMPONENT_TO_COLOR_MAP["other"];
     datasets.push({
       label: `Others (${otherComponents.length})`,
@@ -268,13 +299,17 @@ function buildStackedGraph() {
   let topComponents = [...document.querySelectorAll("input:checked")].map(
     el => el.parentNode.querySelector("a").textContent
   ); // ["Core::DOM: Core & HTML"];
-  console.log(topComponents);
 
   for (let component of topComponents) {
     let data = [];
     for (let days in COMPONENT_DATA[component]) {
       data.push(COMPONENT_DATA[component][days]);
     }
+
+    if (!allTime) {
+      data = data.slice(-30);
+    }
+
     let color = COMPONENT_TO_COLOR_MAP[component];
     datasets.push({
       label: component,
@@ -285,69 +320,70 @@ function buildStackedGraph() {
   }
 
   if (window.myChart) {
-    window.myChart.data.datasets = datasets;
-    window.myChart.update();
-  } else {
-    let ctx = document
-      .querySelector("#component-specific-tests canvas")
-      .getContext("2d");
+    window.myChart.destroy();
+    // window.myChart.data.datasets = datasets;
+    // window.myChart.update();
+  }
 
-    let chartOptions = {
-      type: "line",
-      data: {
-        labels: days,
-        datasets: datasets
-      },
-      options: {
-        maintainAspectRatio: false,
-        tooltips: {
-          mode: "nearest",
-          intersect: false
-          // If we want we could use this custom positioner like https://giphy.com/gifs/QzAGXpdTvOJXKbMlUf:
-          // position: "fixed",
-          // caretSize: 0
-        },
-        hover: {
-          mode: "index",
-          animationDuration: 0
-        },
-        legend: {
-          // Comment this out if you prefer the legend on the top
-          display: false,
-        },
-        scales: {
-          xAxes: [
-            {
-              scaleLabel: {
-                display: true,
-                labelString: "Date"
-              }
-            }
-          ],
-          yAxes: [
-            {
-              stacked: true,
-              scaleLabel: {
-                display: true,
-                labelString: "Number of broken tests"
-              }
-            }
-          ]
-        }
-      }
-    };
+  let ctx = document
+    .querySelector("#component-specific-tests canvas")
+    .getContext("2d");
 
-    if (IN_PREVIEW) {
-      chartOptions.options.tooltips = {
+  let chartOptions = {
+    type: "line",
+    data: {
+      labels: days,
+      datasets: datasets
+    },
+    options: {
+      maintainAspectRatio: false,
+      tooltips: {
         mode: "nearest",
         intersect: false
-      };
-
-      chartOptions.options.legend = {
+        // If we want we could use this custom positioner like https://giphy.com/gifs/QzAGXpdTvOJXKbMlUf:
+        // position: "fixed",
+        // caretSize: 0
+      },
+      hover: {
+        mode: "index",
+        animationDuration: 0
+      },
+      legend: {
+        // Comment this out if you prefer the legend on the top
         display: false
-      };
+      },
+      scales: {
+        xAxes: [
+          {
+            scaleLabel: {
+              display: true,
+              labelString: "Date"
+            }
+          }
+        ],
+        yAxes: [
+          {
+            stacked: true,
+            scaleLabel: {
+              display: true,
+              labelString: "Number of broken tests"
+            }
+          }
+        ]
+      }
     }
+  };
 
-    window.myChart = new Chart(ctx, chartOptions);
+  if (IN_PREVIEW) {
+    chartOptions.options.tooltips = {
+      mode: "nearest",
+      intersect: false
+    };
+
+    chartOptions.options.legend = {
+      display: false
+    };
   }
+
+  window.myChart = new Chart(ctx, chartOptions);
 }

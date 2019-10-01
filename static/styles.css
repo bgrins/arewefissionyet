@@ -188,6 +188,11 @@ html.compact #grid {
   background: var(--main-background);
 }
 
+.filters {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #table .swatch {
   width: 20px;
   display: inline-block;
