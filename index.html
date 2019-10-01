@@ -12,25 +12,31 @@
   <footer id="footer">
     <div id="desc" class="desc-box">
       <h2>What is Fission?</h2>
-      <p>Fission is...</p>
-      <p>Learn more about Fission at...</p>
+      <p>
+        Fission is the Firefox's project to implement process isolation per-site (<a href="https://godoc.org/golang.org/x/net/publicsuffix">eTLD+1</a>). In a Fission-world, a webpage serving multiple cross-site iframes will be rendered over multiple processes, while multiple tabs or iframes from the same site will share the same process.
+      </p>
+      <p>
+        You can learn more about Fission on the <a href="https://wiki.mozilla.org/Project_Fission">the wiki</a> or on <a href="https://mana.mozilla.org/wiki/display/~nkochar@mozilla.com/Project+Fission">mana</a>.
+      </p>
     </div>
 
     <div id="desc2" class="desc-box">
-      <h2>Fission in Firefox</h2>
+      <h2>Milestone 4</h2>
       <p>
-        Fission aims to..
+        Fission's current milestone M4 aims to get all Mochitests to successfully pass in a Fission world and is targeted for completion by 31 October 2019. They are currently being run as a tier2 job on mozilla-central and can be seen as M-fis suite.
       </p>
       <p>
-        Read the docs at ...
+        More details of the failing mochitests can be found in <a href="https://docs.google.com/spreadsheets/d/1kjp32JTuB4axM3wKx0iIYL2Ado-HcyeBhoY-siGxYAs/edit#gid=1560718888">this doc</a>
+        and tips to get started on fixing these tests can be found on <a href="https://wiki.mozilla.org/Project_Fission/Enabling_Tests_with_Fission">the wiki</a>.
       </p>
     </div>
     <div id="desc3" class="desc-box">
-      <h2>About this dashboard</h2>
-      <p>This is....</p>
+      <h2>Have Questions?</h2>
       <p>
-        It's available at
-          <a href="https://github.com/bgrins/arewefissionyet/">https://github.com/bgrins/arewefissionyet</a>.
+      The Fission team can be reached at #fission on slack or #domfission on IRC.
+      </p>
+      <p>
+      If you have questions about or find issues with this site, the source is available <a href="https://github.com/bgrins/arewefissionyet/">here</a>.
       </p>
     </div>
   </footer>
