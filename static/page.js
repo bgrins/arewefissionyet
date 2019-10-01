@@ -1,6 +1,6 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
-const NUM_COMPONENTS_IN_DEFAULT = 20;
+const NUM_COMPONENTS_IN_DEFAULT = 16;
 const DAILY_DATA = [];
 const COMPONENT_DATA = {};
 
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   document.querySelector("#table").innerHTML = lastDay.sortedComponents
     .map((c, i) => {
       return `<tr><td><input type="checkbox" ${
-        i <= NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
+        i < NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
       } /><a href=".">${c.component}</a>
       </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
     })
