@@ -287,7 +287,8 @@ function buildStackedGraph() {
       },
       options: {
         tooltips: {
-          mode: "index"
+          mode: "index",
+          intersect: false
         },
         hover: {
           mode: "index"
