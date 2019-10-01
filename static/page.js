@@ -330,10 +330,10 @@ function buildStackedGraph() {
     };
 
     if (IN_PREVIEW) {
-      // chartOptions.options.title = {
-      //   display: true,
-      //   text: "Milestone 4"
-      // };
+      chartOptions.options.tooltips = {
+        mode: "nearest",
+        intersect: false
+      }
 
       chartOptions.options.legend = {
         display: false
