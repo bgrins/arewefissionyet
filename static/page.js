@@ -17,6 +17,20 @@ async function fetchComponentLinks() {
   }
 }
 
+Chart.defaults.global.defaultFontFamily = "Fira Sans";
+Chart.defaults.global.defaultFontWeight = "300";
+
+// Provide a position that's fixed to the top of the chart and aligns with
+// mouse X. This isn't used right now.
+Chart.Tooltip.positioners.fixed = function(elements, eventPosition) {
+  /** @type {Chart.Tooltip} */
+  var tooltip = this;
+  return {
+      x: tooltip._eventPosition.x,
+      y: tooltip._chart.chartArea.top
+  };
+};
+
 let componentLinksReady = fetchComponentLinks();
 
 // https://github.com/FirefoxUX/photon-colors/blob/master/photon-colors.json
@@ -129,8 +143,6 @@ function shouldIgnoreComponent(component) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
-  Chart.defaults.global.defaultFontFamily = "Fira Sans";
-  Chart.defaults.global.defaultFontWeight = "300";
   // Chart.defaults.global.animation.duration = 0;
 
   let data = await fetchDataJSON();
@@ -288,7 +300,10 @@ function buildStackedGraph() {
       options: {
         tooltips: {
           mode: "index",
-          intersect: false
+          intersect: false,
+          // If we want we could use this custom positioner like https://giphy.com/gifs/QzAGXpdTvOJXKbMlUf:
+          // position: "fixed",
+          // caretSize: 0
         },
         hover: {
           mode: "index"
