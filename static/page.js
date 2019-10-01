@@ -298,14 +298,15 @@ function buildStackedGraph() {
       options: {
         maintainAspectRatio: false,
         tooltips: {
-          mode: "index",
+          mode: "nearest",
           intersect: false
           // If we want we could use this custom positioner like https://giphy.com/gifs/QzAGXpdTvOJXKbMlUf:
           // position: "fixed",
           // caretSize: 0
         },
         hover: {
-          mode: "index"
+          mode: "index",
+          animationDuration: 0,
         },
         scales: {
           xAxes: [
