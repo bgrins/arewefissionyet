@@ -26,8 +26,8 @@ Chart.Tooltip.positioners.fixed = function(elements, eventPosition) {
   /** @type {Chart.Tooltip} */
   var tooltip = this;
   return {
-      x: tooltip._eventPosition.x,
-      y: tooltip._chart.chartArea.top
+    x: tooltip._eventPosition.x,
+    y: tooltip._chart.chartArea.top
   };
 };
 
@@ -196,15 +196,13 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   document
     .querySelector("#table")
     .addEventListener("change", buildStackedGraph);
-  document
-    .querySelector("#table")
-    .addEventListener("click", (event) => {
-      if (event.target.matches("a")) {
-        let link = COMPONENT_LINK_TO_SPREADSHEET_MAP[event.target.textContent];
-        window.open(link)
-        event.preventDefault();
-      }
-    });
+  document.querySelector("#table").addEventListener("click", event => {
+    if (event.target.matches("a")) {
+      let link = COMPONENT_LINK_TO_SPREADSHEET_MAP[event.target.textContent];
+      window.open(link);
+      event.preventDefault();
+    }
+  });
 
   // To show most at the start of the project, change this to `firstDay.sortedComponents`
   document.querySelector("#table").innerHTML = lastDay.sortedComponents
@@ -288,7 +286,7 @@ function buildStackedGraph() {
     window.myChart.update();
   } else {
     let ctx = document
-      .getElementById("component-specific-tests")
+      .querySelector("#component-specific-tests canvas")
       .getContext("2d");
 
     let chartOptions = {
@@ -298,9 +296,10 @@ function buildStackedGraph() {
         datasets: datasets
       },
       options: {
+        maintainAspectRatio: false,
         tooltips: {
           mode: "index",
-          intersect: false,
+          intersect: false
           // If we want we could use this custom positioner like https://giphy.com/gifs/QzAGXpdTvOJXKbMlUf:
           // position: "fixed",
           // caretSize: 0

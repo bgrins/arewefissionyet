@@ -148,15 +148,18 @@ body.widthLimited.small #footer > .desc-box {
 #grid {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(500px, 1fr) auto;
   grid-template-areas:
     "header header"
     "graph sidebar";
   grid-gap: 5px;
   justify-items: center;
   /* align-items: center; */
-  overflow: auto;
   max-height: 100vh;
+}
+
+html.compact #grid {
+  overflow: hidden;
 }
 
 #skipped-and-failing-tests {
@@ -180,9 +183,9 @@ body.widthLimited.small #footer > .desc-box {
 
 #table-container {
   grid-area: sidebar;
-  /* height: 100%; */
   height: 100%;
   overflow-y: auto;
+  background: var(--main-background);
 }
 
 .mg-active-datapoint-container {
