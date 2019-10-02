@@ -148,7 +148,7 @@ body.widthLimited.small #footer > .desc-box {
 #grid {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: minmax(500px, 1fr) auto;
+  grid-template-columns: minmax(800px, 1fr) auto;
   grid-template-areas:
     "header header"
     "graph sidebar";
@@ -159,6 +159,7 @@ body.widthLimited.small #footer > .desc-box {
 }
 
 html.compact #grid {
+  grid-template-columns: 1fr auto;
   overflow: hidden;
 }
 
@@ -187,6 +188,12 @@ html.compact #grid {
   overflow-y: auto;
   background: var(--main-background);
 }
+
+/* @media (max-width: 800px) {
+  #table-container {
+    width: 100px;
+  }
+} */
 
 .filters {
   display: flex;
