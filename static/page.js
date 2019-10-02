@@ -214,17 +214,31 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     }
   });
 
+  const htmlForComponentCheckbox = (c, checked) => {
+    return `<tr><td><label aria-label="${c.component}"><input type="checkbox" ${
+      checked ? "checked" : ""
+    } /><span class="swatch" style="background-color: ${
+      COMPONENT_TO_COLOR_MAP[c.component]
+    };">&nbsp;</span></label><a href=".">${c.component}</a>
+    </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
+  };
+
+  let removedComponents = firstDay.sortedComponents.filter(
+    c => !COMPONENT_DATA[c.component][lastDate]
+  );
+
   // To show most at the start of the project, change this to `firstDay.sortedComponents`
-  document.querySelector("#table").innerHTML = lastDay.sortedComponents
-    .map((c, i) => {
-      return `<tr><td><label aria-label="${c.component}"><input type="checkbox" ${
-        i < NUM_COMPONENTS_IN_DEFAULT ? "checked" : ""
-      } /><span class="swatch" style="background-color: ${
-        COMPONENT_TO_COLOR_MAP[c.component]
-      };">&nbsp;</span></label><a href=".">${c.component}</a>
-      </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
-    })
-    .join("");
+  document.querySelector("#table").innerHTML =
+    lastDay.sortedComponents
+      .map((c, i) => {
+        return htmlForComponentCheckbox(c, i < NUM_COMPONENTS_IN_DEFAULT);
+      })
+      .join("") +
+    removedComponents
+      .map(c => {
+        return htmlForComponentCheckbox(c, false);
+      })
+      .join("");
 
   let dateFilterButton = document.querySelector("#date-filter");
   let setDateFilterText = () => {
