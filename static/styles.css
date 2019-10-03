@@ -3,7 +3,6 @@
 html {
   --main-background: white;
   --main-text-color: #343434;
-  --main-font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
 
   --data-photon-green: #3bddaa;
   --data-photon-magenta: #ed0083;
@@ -12,6 +11,7 @@ html {
   --secondary-color: #45a1ff22;
   --heading-font-color: #424242;
 
+  font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
   font: 400 14px/1.5 "Fira Sans";
 }
 
@@ -36,7 +36,6 @@ body {
   margin: 0;
   background: var(--main-background);
   color: var(--main-text-color);
-  font-family: var(--main-font-family);
 }
 
 html:not(.compact) body {
