@@ -1,0 +1,129 @@
+
+html {
+  --main-background: white;
+  --main-text-color: #343434;
+  --main-font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
+  --main-font: 400 14px/1.5 "Fira Sans";
+
+  --secondary-color: #45a1ff22;
+  --heading-color: #424242;
+  --heading-background: #efefef;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--main-background);
+  color: var(--main-text-color);
+  font: var(--main-font);
+  font-family: var(--main-font-family);
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--heading-color);
+  background: var(--heading-background);
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.desc-box {
+  width: 230px;
+  padding-left: 33px;
+  padding-right: 17px;
+  padding-bottom: 30px;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+footer > .desc-box {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding-bottom: 18px;
+}
+
+.desc-box > h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.desc-box > p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Light'),
+  url('woff/FiraSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Light Italic'),
+  url('woff/FiraSans-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Regular'),
+  url('woff/FiraSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Regular Italic'),
+  url('woff/FiraSans-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium'),
+  url('woff/FiraSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium Italic'),
+  url('woff/FiraSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Fira Mono';
+  src: local('Fira Mono'),
+  url('woff/FiraMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Mono';
+  src: local('Fira Mono Bold'),
+  url('woff/FiraMono-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
