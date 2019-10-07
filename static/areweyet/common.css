@@ -2,7 +2,7 @@
 html {
   --main-background: white;
   --main-text-color: #343434;
-  --main-font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
+  --main-font-family: 'Fira Sans', sans-serif;
   --main-font: 400 14px/1.5 "Fira Sans";
 
   --secondary-color: #45a1ff22;

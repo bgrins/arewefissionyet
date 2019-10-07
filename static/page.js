@@ -23,7 +23,7 @@ async function fetchComponentLinks() {
   }
 }
 
-Chart.defaults.global.defaultFontFamily = "Fira Sans";
+Chart.defaults.global.defaultFontFamily = "'Fira Sans', sans-serif";
 Chart.defaults.global.defaultFontWeight = "300";
 
 // Provide a position that's fixed to the top of the chart and aligns with
