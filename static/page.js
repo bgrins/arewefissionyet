@@ -211,6 +211,14 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     .querySelector("#table")
     .addEventListener("change", buildStackedGraph);
   document.querySelector("#table").addEventListener("click", event => {
+    if (event.target.matches("input") && event.altKey) {
+      // event.preventDefault();
+      for (let input of document.querySelectorAll("#table input:checked")){
+        input.checked = false;
+      }
+      event.target.checked = true;
+      buildStackedGraph();
+    }
     if (event.target.matches("a")) {
       event.preventDefault();
       let link = COMPONENT_LINK_TO_SPREADSHEET_MAP[event.target.textContent];
@@ -262,8 +270,8 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     buildStackedGraph();
   });
 
-  let selectAllButton = document.querySelector("#select-all");
-  selectAllButton.addEventListener("click", () => {
+  let toggleAllButton = document.querySelector("#toggle-all");
+  toggleAllButton.addEventListener("click", () => {
     if (!document.querySelector("#table input:checked")) {
       for (let input of document.querySelectorAll("#table input:not([removed=true])")){
         input.checked = true;
