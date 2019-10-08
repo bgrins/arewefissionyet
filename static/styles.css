@@ -131,6 +131,14 @@ html.tmp #table-container {
 html.tmp #table-container input {
   display: none;
 }
+html.tmp #table-container a {
+  display: inline-flex;
+  max-width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 3px;
+}
+
 
 /* @media (max-width: 800px) {
   #table-container {
