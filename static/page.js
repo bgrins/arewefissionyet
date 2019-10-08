@@ -219,8 +219,8 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     }
   });
 
-  const htmlForComponentCheckbox = (c, checked) => {
-    return `<tr><td><label aria-label="${c.component}"><input type="checkbox" ${
+  const htmlForComponentCheckbox = (c, checked, removed=false) => {
+    return `<tr><td><label aria-label="${c.component}"><input type="checkbox" removed="${removed}" ${
       checked ? "checked" : ""
     } /><span class="swatch" style="background-color: ${
       COMPONENT_TO_COLOR_MAP[c.component]
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       .join("") +
     removedComponents
       .map(c => {
-        return htmlForComponentCheckbox(c, false);
+        return htmlForComponentCheckbox(c, false, true);
       })
       .join("");
 
@@ -258,6 +258,20 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       !dateFilterButton.hasAttribute("alltime")
     );
     setDateFilterText();
+    buildStackedGraph();
+  });
+
+  let selectAllButton = document.querySelector("#select-all");
+  selectAllButton.addEventListener("click", () => {
+    if (!document.querySelector("#table input:checked")) {
+      for (let input of document.querySelectorAll("#table input:not([removed=true])")){
+        input.checked = true;
+      }
+    } else {
+      for (let input of document.querySelectorAll("#table input")){
+        input.checked = false;
+      }
+    }
     buildStackedGraph();
   });
 
