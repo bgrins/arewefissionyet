@@ -134,7 +134,7 @@ html.tmp #table-container input {
 html.tmp #table-container a {
   display: inline-block;
   text-overflow: ellipsis;
-  max-width: 170px;
+  max-width: 160px;
   white-space: nowrap;
   overflow: hidden;
   margin-right: 3px;
