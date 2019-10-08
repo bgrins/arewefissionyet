@@ -15,6 +15,10 @@ html {
 html.compact .compact-only {
   display: unset;
 }
+html.dashboard .hide-dashboard {
+  display: none;
+}
+
 html.compact .full-only {
   display: none;
 }

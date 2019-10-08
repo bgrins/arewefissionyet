@@ -1,4 +1,5 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
+const IN_DASHBOARD = new URLSearchParams(window.location.search).has("dashboard");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
 const COMPONENT_TO_COLOR_MAP = {};
 const DAILY_DATA = [];
@@ -10,6 +11,9 @@ const NUM_COMPONENTS_IN_DEFAULT = 1000;
 
 if (IN_PREVIEW) {
   document.documentElement.classList.add("compact");
+}
+if (IN_DASHBOARD) {
+  document.documentElement.classList.add("dashboard");
 }
 
 async function fetchComponentLinks() {
@@ -25,6 +29,7 @@ async function fetchComponentLinks() {
 
 Chart.defaults.global.defaultFontFamily = "'Fira Sans', sans-serif";
 Chart.defaults.global.defaultFontWeight = "300";
+Chart.defaults.global.elements.point.radius = 0;
 
 // Provide a position that's fixed to the top of the chart and aligns with
 // mouse X. This isn't used right now.
