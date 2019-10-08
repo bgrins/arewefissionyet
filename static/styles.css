@@ -80,7 +80,7 @@ h1 {
 #grid {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: minmax(750px, 1fr) auto;
+  grid-template-columns: minmax(650px, 1fr) auto;
   grid-template-areas:
     "header header"
     "graph sidebar";
