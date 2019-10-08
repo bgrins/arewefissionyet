@@ -9,6 +9,10 @@ html {
   font: 400 14px/1.5 "Fira Sans";
 }
 
+html.tmp #table-container {
+  font-size: 12px;
+}
+
 .compact-only {
   display: none;
 }
