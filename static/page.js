@@ -1,4 +1,4 @@
-const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
+const IN_EMBED = new URLSearchParams(window.location.search).has("embed");
 const IN_DASHBOARD = new URLSearchParams(window.location.search).has("dashboard");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
 const COMPONENT_TO_COLOR_MAP = {};
@@ -9,8 +9,8 @@ const COMPONENT_DATA = {};
 // and group the rest into "others":
 const NUM_COMPONENTS_IN_DEFAULT = 1000;
 
-if (IN_PREVIEW) {
-  document.documentElement.classList.add("compact");
+if (IN_EMBED) {
+  document.documentElement.classList.add("embed");
 }
 if (IN_DASHBOARD) {
   document.documentElement.classList.add("dashboard");
@@ -418,7 +418,7 @@ function buildStackedGraph() {
     }
   };
 
-  if (IN_PREVIEW) {
+  if (IN_EMBED) {
     chartOptions.options.tooltips = {
       mode: "nearest",
       intersect: false

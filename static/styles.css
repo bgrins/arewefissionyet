@@ -17,10 +17,10 @@ html.dashboard #grid {
   align-items: center;
 }
 
-.compact-only {
+.embed-only {
   display: none;
 }
-html.compact .compact-only {
+html.embed .embed-only {
   display: unset;
 }
 
@@ -28,15 +28,15 @@ html.dashboard .hide-dashboard {
   display: none !important;
 }
 
-html.compact .full-only {
+html.embed .full-only {
   display: none;
 }
-html:not(.compact) body {
+html:not(.embed) body {
   min-width: 800px;
 }
 
 a,
-html.compact a:visited {
+html.embed a:visited {
   color: var(--photon-blue);
 }
 
@@ -89,7 +89,7 @@ h1 {
   justify-items: center;
 }
 
-html.compact #grid {
+html.embed #grid {
   grid-template-columns: 1fr auto;
   overflow: hidden;
 }
