@@ -238,8 +238,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       checked ? "checked" : ""
     } /><span class="swatch" style="background-color: ${
       COMPONENT_TO_COLOR_MAP[c.component]
-    };">&nbsp;</span></label><a href=".">${c.component}</a>
-    </td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
+    };">&nbsp;</span></label><a href=".">${c.component}</a></td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
   };
 
   let removedComponents = firstDay.sortedComponents.filter(

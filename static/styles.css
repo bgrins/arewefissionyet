@@ -132,11 +132,13 @@ html.tmp #table-container input {
   display: none;
 }
 html.tmp #table-container a {
-  display: inline-flex;
+  display: inline-block;
+  text-overflow: ellipsis;
   max-width: 170px;
   white-space: nowrap;
   overflow: hidden;
   margin-right: 3px;
+  vertical-align: bottom;
 }
 
 
