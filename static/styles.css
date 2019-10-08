@@ -15,11 +15,10 @@ html {
 html.compact .compact-only {
   display: unset;
 }
-html.dashboard .hide-dashboard {
-  display: none;
-}
+
+html.dashboard .hide-dashboard,
 html.tmp .hide-tmp {
-  display: none;
+  display: none !important;
 }
 .tmp-only {
   display: none;
