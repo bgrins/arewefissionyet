@@ -18,6 +18,15 @@ html.compact .compact-only {
 html.dashboard .hide-dashboard {
   display: none;
 }
+html.tmp .hide-tmp {
+  display: none;
+}
+.tmp-only {
+  display: none;
+}
+html.tmp .tmp-only {
+  display: unset;
+}
 
 html.compact .full-only {
   display: none;
@@ -104,6 +113,14 @@ html.compact #grid {
   height: 100%;
   overflow-y: auto;
   background: var(--main-background);
+}
+
+html.tmp #table-container {
+  height: 380px;
+  overflow: hidden;
+}
+html.tmp #table-container input {
+  display: none;
 }
 
 /* @media (max-width: 800px) {
