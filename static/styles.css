@@ -9,11 +9,11 @@ html {
   font: 400 14px/1.5 "Fira Sans";
 }
 
-html.tmp #table-container {
+html.dashboard #table-container {
   font-size: 12px;
 }
 
-html.tmp #grid {
+html.dashboard #grid {
   align-items: center;
 }
 
@@ -24,15 +24,8 @@ html.compact .compact-only {
   display: unset;
 }
 
-html.dashboard .hide-dashboard,
-html.tmp .hide-tmp {
+html.dashboard .hide-dashboard {
   display: none !important;
-}
-.tmp-only {
-  display: none;
-}
-html.tmp .tmp-only {
-  display: unset;
 }
 
 html.compact .full-only {
@@ -122,16 +115,16 @@ html.compact #grid {
   background: var(--main-background);
 }
 
-html.tmp #table-container {
+html.dashboard #table-container {
   /* Match the 400px on graph */
   height: 325px;
   margin-bottom: 75px;
   overflow: hidden;
 }
-html.tmp #table-container input {
+html.dashboard #table-container input {
   display: none;
 }
-html.tmp #table-container a {
+html.dashboard #table-container a {
   display: inline-block;
   text-overflow: ellipsis;
   max-width: 160px;

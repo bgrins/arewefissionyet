@@ -6,19 +6,6 @@
     <link href='../static/styles.css' rel='stylesheet' type='text/css'>
     <script src='../static/areweyet/chart.js'></script>
     <script defer src='../static/page.js'></script>
-    <style>
-
-html.tmp #table-container a {
-  display: inline-block;
-  text-overflow: ellipsis;
-  max-width: 170px;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-right: 3px;
-  vertical-align: bottom;
-}
-
-</style>
 </head>
 <body id="grid">
   <h1 class="full-only">Fission Milestone 4 Tracking</h1>
@@ -31,12 +18,12 @@ html.tmp #table-container a {
   <div id="component-specific-tests">
     <canvas></canvas>
   </div>
-  <div id="table-container" class="full-only hide-dashboard">
-    <div class="filters hide-tmp">
+  <div id="table-container" class="full-only">
+    <div class="filters hide-dashboard">
     <button id="toggle-all">Toggle all</button>
     <button id="date-filter" alltime="true" data-text-alltime="Show data from all time" data-text-short="Show data from last month"></button>
     </div>
-    <strong id="tmp-failure-label" style="display: none;">Most test failures:</strong>
+    <strong id="dashboard-failure-label" style="display: none;">Most test failures:</strong>
     <table id="table"></table>
   </div>
 </body>

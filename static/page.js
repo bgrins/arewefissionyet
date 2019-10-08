@@ -1,6 +1,5 @@
 const IN_PREVIEW = new URLSearchParams(window.location.search).has("preview");
 const IN_DASHBOARD = new URLSearchParams(window.location.search).has("dashboard");
-const IN_TMP = new URLSearchParams(window.location.search).has("tmp");
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
 const COMPONENT_TO_COLOR_MAP = {};
 const DAILY_DATA = [];
@@ -15,10 +14,6 @@ if (IN_PREVIEW) {
 }
 if (IN_DASHBOARD) {
   document.documentElement.classList.add("dashboard");
-  Chart.defaults.global.animation.duration = 0;
-}
-if (IN_TMP) {
-  document.documentElement.classList.add("tmp");
   Chart.defaults.global.animation.duration = 0;
 }
 
@@ -258,8 +253,8 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       })
       .join("");
 
-  if (IN_TMP) {
-    document.querySelector("#tmp-failure-label").style.display = "";
+  if (IN_DASHBOARD) {
+    document.querySelector("#dashboard-failure-label").style.display = "";
   }
   let dateFilterButton = document.querySelector("#date-filter");
   let setDateFilterText = () => {
