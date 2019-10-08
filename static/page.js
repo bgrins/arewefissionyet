@@ -258,6 +258,9 @@ document.addEventListener("DOMContentLoaded", async function ready() {
       })
       .join("");
 
+  if (IN_TMP) {
+    document.querySelector("#tmp-failure-label").style.display = "";
+  }
   let dateFilterButton = document.querySelector("#date-filter");
   let setDateFilterText = () => {
     dateFilterButton.textContent = dateFilterButton.hasAttribute("alltime")
