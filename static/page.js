@@ -14,6 +14,7 @@ if (IN_PREVIEW) {
 }
 if (IN_DASHBOARD) {
   document.documentElement.classList.add("dashboard");
+  Chart.defaults.global.animation.duration = 0;
 }
 
 async function fetchComponentLinks() {
