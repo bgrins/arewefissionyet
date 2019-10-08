@@ -88,7 +88,7 @@ h1 {
 #grid {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: minmax(650px, 1fr) auto;
+  grid-template-columns: minmax(500px, 1fr) auto;
   grid-template-areas:
     "header header"
     "graph sidebar";
@@ -124,8 +124,8 @@ html.compact #grid {
 
 html.tmp #table-container {
   /* Match the 400px on graph */
-  height: 380px;
-  margin-bottom: 20px;
+  height: 325px;
+  margin-bottom: 75px;
   overflow: hidden;
 }
 html.tmp #table-container input {
