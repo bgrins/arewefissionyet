@@ -33,9 +33,12 @@ const getDatesBetween = (startDate, endDate) => {
   return dates;
 };
 
+// Fetch skipped tests per milestone:
+// https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=1560718888&single=true&output=csv
+// "Fission Target" title
+
 async function fetchTestInfos() {
   let summaryData = {};
-
 
   console.log("First, importing data from before taskcluster artifacts");
   let items = fs.readdirSync("cache/imported-from-before-artifacts");
