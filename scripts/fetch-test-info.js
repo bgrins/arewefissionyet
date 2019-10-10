@@ -96,6 +96,29 @@ async function fetchTestInfos() {
     let response = await fetch(url);
     let obj = await response.json();
 
+    for (let component in obj.tests) {
+      let lengthBeforeFilter = obj.tests[component].length;
+      obj.tests[component] = obj.tests[component].filter(obj => {
+        // obj looks like:
+        /*
+        { 'skip-if':
+            'fission || os == \'linux\' || (os == \'mac\' && debug) || (debug && os == \'win\' && bits == 64)',
+          test:
+              'browser/components/extensions/test/browser/browser_ext_devtools_network.js'
+        }
+        */
+        if (!TEST_METADATA.has(obj.test)) {
+          console.error("Found a test with no metadata from the sheet:", obj.test);
+        }
+
+        return TEST_METADATA.get(obj.test) == "M4";
+      });
+      let lengthAfterFilter = obj.tests[component].length;
+
+      if (lengthBeforeFilter != lengthAfterFilter) {
+        console.log("Component was filtered with non M4 tests", component, lengthBeforeFilter, lengthAfterFilter)
+      }
+    }
 
 
     summaryData[dateString] = obj;
