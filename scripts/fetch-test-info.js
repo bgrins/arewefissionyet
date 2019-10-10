@@ -33,8 +33,8 @@ const getDatesBetween = (startDate, endDate) => {
   return dates;
 };
 
-const TEST_METADATA = new Map();
 async function getTestMetadata() {
+  const testMetadata = new Map();
   let response = await fetch(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=1560718888&single=true&output=csv"
   );
@@ -53,8 +53,10 @@ async function getTestMetadata() {
     let cols = row.split(",");
     let testPath = cols[testPathPosition];
     let milestone = cols[milestoneColPosition];
-    TEST_METADATA.set(testPath, milestone);
+    testMetadata.set(testPath, milestone);
   }
+
+  return testMetadata;
 }
 
 // Fetch skipped tests per milestone:
@@ -65,8 +67,7 @@ async function fetchTestInfos() {
   let summaryData = {};
 
   console.log("Fetching test spreadsheet to figure out what to ignore");
-  let meta = await getTestMetadata();
-  console.log(TEST_METADATA);
+  let testMetadata = await getTestMetadata();
 
   console.log("First, importing data from before taskcluster artifacts");
   let items = fs.readdirSync("cache/imported-from-before-artifacts");
@@ -99,6 +100,7 @@ async function fetchTestInfos() {
     for (let component in obj.tests) {
       let lengthBeforeFilter = obj.tests[component].length;
       obj.tests[component] = obj.tests[component].filter(obj => {
+        return true;
         // obj looks like:
         /*
         { 'skip-if':
@@ -107,11 +109,11 @@ async function fetchTestInfos() {
               'browser/components/extensions/test/browser/browser_ext_devtools_network.js'
         }
         */
-        if (!TEST_METADATA.has(obj.test)) {
+        if (!testMetadata.has(obj.test)) {
           console.error("Found a test with no metadata from the sheet:", obj.test);
         }
 
-        return TEST_METADATA.get(obj.test) == "M4";
+        return testMetadata.get(obj.test) == "M4";
       });
       let lengthAfterFilter = obj.tests[component].length;
 
@@ -123,9 +125,9 @@ async function fetchTestInfos() {
 
     summaryData[dateString] = obj;
     let fileName = `cache/test-info-fission/${dateString}.json`
-    fs.writeFileSync(fileName, JSON.stringify(obj));
+    fs.writeFileSync(fileName, JSON.stringify(obj, null, 2));
   }
-  fs.writeFileSync('skipped-failing-tests/all.json', JSON.stringify(summaryData));
+  fs.writeFileSync('skipped-failing-tests/all.json', JSON.stringify(summaryData, null, 2));
 }
 
 fetchTestInfos();
