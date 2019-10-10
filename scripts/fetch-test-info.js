@@ -33,12 +33,40 @@ const getDatesBetween = (startDate, endDate) => {
   return dates;
 };
 
+const TEST_METADATA = new Map();
+async function getTestMetadata() {
+  let response = await fetch(
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=1560718888&single=true&output=csv"
+  );
+  let obj = await response.text();
+
+  let rows = obj.split("\n");
+  console.log(rows[0])
+  let testPathPosition = rows[0].split(",").indexOf("Test");
+  let milestoneColPosition = rows[0].split(",").indexOf("Fission Target");
+  if (!testPathPosition || !milestoneColPosition) {
+    throw new Error(`Fission spreadsheet doesn't have column for test (${testPathPosition}) or milestone: ${milestoneColPosition}`);
+  }
+
+  for (let row of rows.slice(1)) {
+    console.log(row);
+    let cols = row.split(",");
+    let testPath = cols[testPathPosition];
+    let milestone = cols[milestoneColPosition];
+    TEST_METADATA.set(testPath, milestone);
+  }
+}
+
 // Fetch skipped tests per milestone:
-// https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=1560718888&single=true&output=csv
+//
 // "Fission Target" title
 
 async function fetchTestInfos() {
   let summaryData = {};
+
+  console.log("Fetching test spreadsheet to figure out what to ignore");
+  let meta = await getTestMetadata();
+  console.log(TEST_METADATA);
 
   console.log("First, importing data from before taskcluster artifacts");
   let items = fs.readdirSync("cache/imported-from-before-artifacts");
@@ -67,6 +95,8 @@ async function fetchTestInfos() {
 
     let response = await fetch(url);
     let obj = await response.json();
+
+
 
     summaryData[dateString] = obj;
     let fileName = `cache/test-info-fission/${dateString}.json`
