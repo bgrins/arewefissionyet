@@ -116,6 +116,7 @@ async function fetchTestInfos() {
         continue;
       }
       let lengthBeforeFilter = obj.tests[component].length;
+      let seenPaths = {};
       obj.tests[component] = obj.tests[component].filter(obj => {
         // obj looks like:
         /*
@@ -125,6 +126,16 @@ async function fetchTestInfos() {
               'browser/components/extensions/test/browser/browser_ext_devtools_network.js'
         }
         */
+        if (seenPaths[obj.test]) {
+          // WebExtensions tests are weird.
+          // They're registered from 2 separate manifests to run in 2 configurations.
+          // For instance: https://github.com/bgrins/arewefissionyet/blob/4e337027ae913341d8a3b4758151f7c6d0c7fb25/cache/test-info-fission/2019-10-10.json#L1667-L1676.
+          // When this happens just skip it.
+          console.log(`Skipping duplicate entry (should be in WebExtensions). component ${component} path: ${obj.test}`);
+          return;
+        }
+        seenPaths[obj.test] = true;
+
         if (!testMetadata.has(obj.test)) {
           console.error("Found a test with no metadata from the sheet:", obj.test);
         }

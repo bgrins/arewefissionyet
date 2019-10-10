@@ -2100,15 +2100,7 @@
         "test": "toolkit/components/extensions/test/mochitest/test_ext_async_clipboard.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || toolkit == 'android')",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_async_clipboard.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || (os == 'linux' && debug) || (toolkit == 'android' && debug)))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_cache.html"
-      },
-      {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || (os == 'linux' && debug) || (toolkit == 'android' && debug))",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_cache.html"
       },
       {
@@ -2116,15 +2108,7 @@
         "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_canvas.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (\n(verify && debug && (os == 'linux')) ||\nfission)",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_canvas.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_exclude_include_globs.html"
-      },
-      {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission)",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_exclude_include_globs.html"
       },
       {
@@ -2132,15 +2116,7 @@
         "test": "toolkit/components/extensions/test/mochitest/test_ext_new_tab_processType.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || (verify && debug && (os == 'linux' || os == 'mac')))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_new_tab_processType.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_request_urlClassification.html"
-      },
-      {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission)",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_request_urlClassification.html"
       },
       {
@@ -2148,15 +2124,7 @@
         "test": "toolkit/components/extensions/test/mochitest/test_ext_runtime_disconnect.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission)",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_runtime_disconnect.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_storage_manager_capabilities.html"
-      },
-      {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission)",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_storage_manager_capabilities.html"
       },
       {
@@ -2164,23 +2132,11 @@
         "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || os == 'android')",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || (os == 'android' && debug)))",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_resources.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || (os == 'android' && debug))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_resources.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || (os == 'android' && debug)))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation.html"
-      },
-      {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || (os == 'android' && debug))",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation.html"
       },
       {
@@ -2188,23 +2144,11 @@
         "test": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation_filters.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || (os == 'android' && debug) || (verify && (os == 'linux' || os == 'mac')))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation_filters.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || os == 'android' || os == 'linux'))",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_hsts.html"
       },
       {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission || os == 'android' || os == 'linux')",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_hsts.html"
-      },
-      {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_upgrade.html"
-      },
-      {
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (fission)",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_upgrade.html"
       }
     ],
