@@ -1,11 +1,30 @@
 
 var fs = require('fs');
-let items =  fs.readdirSync("./");
+let items =  fs.readdirSync("./cache/imported-from-before-artifacts/");
+
+function shouldIgnoreComponent(component) {
+  // We used to ignore components on the frontend, but with the
+  // M4 filtering happening in
+  let ignoredComponents = [
+    "Core::Privacy: Anti-Tracking",
+    "Core::Plug-ins",
+    "DevTools::",
+    "Remote Protocol::"
+  ];
+  for (let ignoredComponent of ignoredComponents) {
+    if (component.startsWith(ignoredComponent)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+module.exports.process = function() {
 
 for (let item of items) {
   if (item.endsWith("csv")) {
     let date = item.split("T")[0];
-    let text = fs.readFileSync(item, "utf8");
+    let text = fs.readFileSync(`./cache/imported-from-before-artifacts/${item}`, "utf8");
     let rows = text.split("\n");
     let summary = rows[1].split(",")
     // We want to match something like this for the summary:
@@ -20,6 +39,9 @@ for (let item of items) {
 
     for (let j = 2; j < rows.length; j++) {
       let row = rows[j].split(",");
+      if (shouldIgnoreComponent(row[0])) {
+        continue;
+      }
       let component = obj.tests[row[0]] = [];
       // We want to match something like:
       // "tests":{"Core::Audio/Video: Playback":[{"fail-if":"fission","skip-if":"(android_version == '18' || (os == \"win\" && processor == \"aarch64\")) || (android_version >= '23')","test":"dom/media/test/test_autoplay_policy_activation.html"},{"fail-if":"fission","skip-if":"android_version == '18' || (os == \"win\" && processor == \"aarch64\")","test":"dom/media/test/test_access_control.html"}],
@@ -32,6 +54,8 @@ for (let item of items) {
         component.push({})
       }
     }
-    fs.writeFileSync(`${date}.json`, JSON.stringify(obj));
+    fs.writeFileSync(`./cache/imported-from-before-artifacts/${date}.json`, JSON.stringify(obj, null, 2));
   }
 }
+
+};

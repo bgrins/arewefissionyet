@@ -1,6 +1,7 @@
 
 var fs = require('fs');
 const fetch = require("node-fetch");
+const convertPreArtifactData = require("./convert-csv-to-json");
 
 if (!fs.existsSync('cache')) {
   fs.mkdirSync('cache');
@@ -41,7 +42,6 @@ async function getTestMetadata() {
   let obj = await response.text();
 
   let rows = obj.split("\n");
-  console.log(rows[0])
   let testPathPosition = rows[0].split(",").indexOf("Test");
   let milestoneColPosition = rows[0].split(",").indexOf("Fission Target");
   if (!testPathPosition || !milestoneColPosition) {
@@ -49,7 +49,6 @@ async function getTestMetadata() {
   }
 
   for (let row of rows.slice(1)) {
-    console.log(row);
     let cols = row.split(",");
     let testPath = cols[testPathPosition];
     let milestone = cols[milestoneColPosition];
@@ -59,12 +58,27 @@ async function getTestMetadata() {
   return testMetadata;
 }
 
-// Fetch skipped tests per milestone:
-//
-// "Fission Target" title
+function shouldIgnoreComponent(component) {
+  let ignoredComponents = [
+    "Core::Privacy: Anti-Tracking",
+    "Core::Plug-ins",
+    "DevTools::",
+    "Remote Protocol::"
+  ];
+  for (let ignoredComponent of ignoredComponents) {
+    if (component.startsWith(ignoredComponent)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 
 async function fetchTestInfos() {
   let summaryData = {};
+
+  console.log("Processing old data");
+  convertPreArtifactData.process();
 
   console.log("Fetching test spreadsheet to figure out what to ignore");
   let testMetadata = await getTestMetadata();
@@ -98,9 +112,11 @@ async function fetchTestInfos() {
     let obj = await response.json();
 
     for (let component in obj.tests) {
+      if (shouldIgnoreComponent(component)) {
+        continue;
+      }
       let lengthBeforeFilter = obj.tests[component].length;
       obj.tests[component] = obj.tests[component].filter(obj => {
-        return true;
         // obj looks like:
         /*
         { 'skip-if':
@@ -121,7 +137,6 @@ async function fetchTestInfos() {
         console.log("Component was filtered with non M4 tests", component, lengthBeforeFilter, lengthAfterFilter)
       }
     }
-
 
     summaryData[dateString] = obj;
     let fileName = `cache/test-info-fission/${dateString}.json`

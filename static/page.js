@@ -143,6 +143,7 @@ async function fetchDataJSON() {
 function shouldIgnoreComponent(component) {
   let ignoredComponents = [
     "Core::Privacy: Anti-Tracking",
+    "Core::Plug-ins",
     "DevTools::",
     "Remote Protocol::"
   ];
@@ -314,11 +315,11 @@ function buildStackedGraph() {
   let firstRun = true;
   for (let component of otherComponents) {
     let i = 0;
-    for (let days in COMPONENT_DATA[component]) {
+    for (let day of days) {
       if (firstRun) {
-        otherComponentData.push(COMPONENT_DATA[component][days]);
+        otherComponentData.push(COMPONENT_DATA[component][day] || 0);
       } else {
-        otherComponentData[i] += COMPONENT_DATA[component][days];
+        otherComponentData[i] += COMPONENT_DATA[component][day] || 0;
       }
       i++;
     }
@@ -327,9 +328,6 @@ function buildStackedGraph() {
   }
 
   if (otherComponents.length) {
-    if (!allTime) {
-      otherComponents = otherComponents.slice(-30);
-    }
     let color = COMPONENT_TO_COLOR_MAP["other"];
     datasets.push({
       label: `Others (${otherComponents.length})`,
@@ -346,12 +344,8 @@ function buildStackedGraph() {
 
   for (let component of topComponents) {
     let data = [];
-    for (let days in COMPONENT_DATA[component]) {
-      data.push(COMPONENT_DATA[component][days]);
-    }
-
-    if (!allTime) {
-      data = data.slice(-30);
+    for (let day of days) {
+      data.push(COMPONENT_DATA[component][day] || 0);
     }
 
     let color = COMPONENT_TO_COLOR_MAP[component];
