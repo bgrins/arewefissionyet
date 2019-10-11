@@ -72770,10 +72770,10 @@
   "2019-10-11": {
     "summary": {
       "components": 60,
-      "failed tests": 106,
-      "manifests": 1214,
+      "failed tests": 105,
+      "manifests": 1213,
       "skipped tests": 342,
-      "tests": 404
+      "tests": 403
     },
     "tests": {
       "Core::Audio/Video: Playback": [
@@ -73881,10 +73881,6 @@
         {
           "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_addCertException.js"
-        },
-        {
-          "fail-if": "fission",
-          "test": "browser/base/content/test/general/browser_alltabslistener.js"
         },
         {
           "skip-if": "fission",
