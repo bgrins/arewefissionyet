@@ -213,12 +213,13 @@ function makeTimeline(testsPerDay) {
     text.split("<!-- REPLACE-TIMELINE -->")[0] + "<!-- REPLACE-TIMELINE -->\n";
 
   let reversedDays = reverseObject(changesPerDay);
+  let detailsShouldBeOpened = true;
   for (let date in reversedDays) {
     let currentAdditions = changesPerDay[date].additions;
     let currentRemovals = changesPerDay[date].removals;
     let hasChanges = currentAdditions.size || currentRemovals.size;
     if (hasChanges) {
-      newText += `<details class="cd-details" open><summary><h2>${date}: ${
+      newText += `<details class="cd-details" ${detailsShouldBeOpened ? "open" : ""}><summary><h2>${date}: ${
         currentRemovals.size
       } tests fixed ${
         currentAdditions.size
@@ -238,6 +239,9 @@ function makeTimeline(testsPerDay) {
     if (hasChanges) {
       newText += `</div></details>`;
     }
+
+    // Only leave the most recent day opened
+    detailsShouldBeOpened = false;
   }
 
   newText +=
