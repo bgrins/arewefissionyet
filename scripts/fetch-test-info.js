@@ -9,8 +9,34 @@ if (!fs.existsSync("cache/test-info-fission")) {
   fs.mkdirSync("cache/test-info-fission");
 }
 
+async function run() {
+  console.log("Fetching test spreadsheet to figure out what to ignore");
+  const testMetadata = await getTestMetadata();
+
+  console.log("Fetching artifacts");
+  const testsPerDay = await fetchTestInfos(testMetadata);
+
+  makeTimeline(testsPerDay, testMetadata);
+}
+
+
+function shouldIgnoreComponent(component) {
+  let ignoredComponents = [
+    "Core::Privacy: Anti-Tracking",
+    "Core::Plug-ins",
+    "DevTools::",
+    "Remote Protocol::"
+  ];
+  for (let ignoredComponent of ignoredComponents) {
+    if (component.startsWith(ignoredComponent)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 // Returns an array of dates between the two dates
-const getDatesBetween = (startDate, endDate) => {
+function getDatesBetween(startDate, endDate) {
   const dates = [];
 
   // Strip hours minutes seconds etc.
@@ -31,7 +57,7 @@ const getDatesBetween = (startDate, endDate) => {
   }
 
   return dates;
-};
+}
 
 async function getTestMetadata() {
   const testMetadata = new Map();
@@ -49,6 +75,7 @@ async function getTestMetadata() {
     );
   }
 
+  // XXX: store bug number and assignee
   for (let row of rows.slice(1)) {
     let cols = row.split(",");
     let testPath = cols[testPathPosition];
@@ -59,29 +86,11 @@ async function getTestMetadata() {
   return testMetadata;
 }
 
-function shouldIgnoreComponent(component) {
-  let ignoredComponents = [
-    "Core::Privacy: Anti-Tracking",
-    "Core::Plug-ins",
-    "DevTools::",
-    "Remote Protocol::"
-  ];
-  for (let ignoredComponent of ignoredComponents) {
-    if (component.startsWith(ignoredComponent)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-async function fetchTestInfos() {
+async function fetchTestInfos(testMetadata) {
   let summaryData = {};
 
   console.log("Processing old data");
   convertPreArtifactData.process();
-
-  console.log("Fetching test spreadsheet to figure out what to ignore");
-  let testMetadata = await getTestMetadata();
 
   console.log("First, importing data from before taskcluster artifacts");
   let items = fs.readdirSync("cache/imported-from-before-artifacts");
@@ -175,10 +184,10 @@ async function fetchTestInfos() {
     JSON.stringify(summaryData, null, 2)
   );
 
-  makeTimeline(testsPerDay);
+  return testsPerDay;
 }
 
-function makeTimeline(testsPerDay) {
+function makeTimeline(testsPerDay, testMetadata) {
   // First, build up an object like:
   // { 2019-10-01: { additions: [ 'dom/push/test/test_permissions.html' ],
   //                 removals: [ 'dom/security/test/csp/test_upgrade_insecure.html' ]
@@ -252,8 +261,6 @@ function makeTimeline(testsPerDay) {
   // console.log(`Finished processing. We have metadata for ${totalMetadata} bindings, and ${metadataSeen} of them have been removed. So we know of ${totalMetadata - metadataSeen} still in progress.`);
 }
 
-fetchTestInfos();
-
 function reverseObject(object) {
   var newObject = {};
   var keys = [];
@@ -299,3 +306,5 @@ function getMarkupForTimelineEntry(added, date, name, metadata) {
     </div>
   </div>`;
 }
+
+run();
