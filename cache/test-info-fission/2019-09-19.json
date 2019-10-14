@@ -1097,6 +1097,10 @@
       },
       {
         "fail-if": "fission",
+        "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+      },
+      {
+        "fail-if": "fission",
         "skip-if": "fission && webrender && debug",
         "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
       }
