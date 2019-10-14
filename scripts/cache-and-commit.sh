@@ -15,6 +15,6 @@ if [[ ! `git status cache --porcelain` ]]; then
 fi
 
 echo "Adding and committing"
-git add cache/
-git add m4/timeline/index.html
-git commit -m 'Cache artifacts'
+# git add cache/
+# git add m4/timeline/index.html
+# git commit -m 'Cache artifacts'
