@@ -31144,6 +31144,10 @@
         },
         {
           "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
+          "fail-if": "fission",
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -33352,6 +33356,10 @@
         },
         {
           "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
+          "fail-if": "fission",
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -35553,6 +35561,10 @@
         {
           "fail-if": "fission",
           "test": "js/xpconnect/tests/mochitest/test_bug802557.html"
+        },
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
         },
         {
           "fail-if": "fission",
@@ -37766,6 +37778,10 @@
         },
         {
           "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
+          "fail-if": "fission",
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -39976,6 +39992,10 @@
         },
         {
           "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
+          "fail-if": "fission",
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -42172,6 +42192,10 @@
         },
         {
           "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
+          "fail-if": "fission",
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -44360,6 +44384,10 @@
         {
           "fail-if": "fission",
           "test": "js/xpconnect/tests/mochitest/test_bug802557.html"
+        },
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
         },
         {
           "fail-if": "fission",
@@ -46559,6 +46587,10 @@
           "test": "js/xpconnect/tests/mochitest/test_bug629227.html"
         },
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -48534,6 +48566,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -50373,6 +50409,10 @@
         }
       ],
       "Core::XPConnect": [
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
         {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
@@ -52214,6 +52254,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -54047,6 +54091,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -55875,6 +55923,10 @@
         }
       ],
       "Core::XPConnect": [
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
         {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
@@ -57714,6 +57766,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -59493,6 +59549,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -61269,6 +61329,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -63030,6 +63094,10 @@
         }
       ],
       "Core::XPConnect": [
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
         {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
@@ -64793,6 +64861,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -66550,6 +66622,10 @@
         }
       ],
       "Core::XPConnect": [
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
         {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
@@ -68309,6 +68385,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -70058,6 +70138,10 @@
         }
       ],
       "Core::XPConnect": [
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
         {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
@@ -71815,6 +71899,10 @@
       ],
       "Core::XPConnect": [
         {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
+        {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
         }
@@ -73562,6 +73650,10 @@
         }
       ],
       "Core::XPConnect": [
+        {
+          "fail-if": "fission",
+          "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+        },
         {
           "skip-if": "fission && webrender && debug",
           "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
