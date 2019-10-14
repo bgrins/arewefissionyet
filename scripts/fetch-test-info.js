@@ -228,7 +228,9 @@ function makeTimeline(testsPerDay, testMetadata) {
     let currentRemovals = changesPerDay[date].removals;
     let hasChanges = currentAdditions.size || currentRemovals.size;
     if (hasChanges) {
-      newText += `<details class="arewe-details" ${detailsShouldBeOpened ? "open" : ""}><summary><h2>${date}: ${
+      let dateParts = date.split('-');
+      let dateObj = new Date(dateParts[0], dateParts[1]-1, dateParts[2]);
+      newText += `<details class="arewe-details" ${detailsShouldBeOpened ? "open" : ""}><summary><h2>${date} (${new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(dateObj)}): ${
         currentRemovals.size
       } tests fixed ${
         currentAdditions.size
