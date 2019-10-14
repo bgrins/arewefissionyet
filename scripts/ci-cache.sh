@@ -13,7 +13,6 @@ node ./scripts/fetch-test-info.js
 
 if [[ ! `git status cache --porcelain` ]]; then
   echo "Abort: ran cache script but nothing changed"
-  exit 1
 fi
 
 # Travis deploy takes care of generating the commit remotely.
