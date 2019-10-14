@@ -194,14 +194,15 @@ async function fetchTestInfos(testMetadata) {
           return;
         }
 
-        if (!testMetadata.has(obj.test)) {
+        let metadata = testMetadata.get(obj.test);
+        if (!metadata) {
           console.error(
-            "Found a test with no metadata from the sheet:",
+            "Error: found a test with no metadata from the sheet:",
             obj.test
           );
         }
 
-        let inM4 = testMetadata.get(obj.test).milestone == "M4";
+        let inM4 = metadata && metadata.milestone == "M4";
         if (inM4) {
           todaySet.add(obj.test);
         }
