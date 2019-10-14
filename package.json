@@ -7,6 +7,6 @@
   },
   "scripts": {
     "cache": "node scripts/fetch-test-info",
-    "cache-and-commit": "./scripts/cache-and-commit.sh"
+    "ci-cache": "./scripts/ci-cache.sh"
   }
 }

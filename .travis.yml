@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 10
-script: scripts/cache-and-commit.sh
+script: scripts/ci-cache.sh
 branches:
   only:
   - test-travis
