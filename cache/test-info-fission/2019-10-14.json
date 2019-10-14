@@ -1,10 +1,10 @@
 {
   "summary": {
     "components": 59,
-    "failed tests": 100,
+    "failed tests": 99,
     "manifests": 1213,
     "skipped tests": 338,
-    "tests": 397
+    "tests": 396
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -220,10 +220,6 @@
       {
         "fail-if": "fission",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js"
-      },
-      {
-        "fail-if": "fission",
-        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_about_newtab.js"
       },
       {
         "skip-if": "fission",
@@ -1483,11 +1479,6 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/passwordmgr/test/browser/browser_private_window.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug))",
-        "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_upgrade.html"
       },
       {
         "fail-if": "fission",
