@@ -1,10 +1,6 @@
 @import url("./areweyet/common.css");
 
 html {
-  --photon-green: #3bddaa;
-  --photon-magenta: #ed0083;
-  --photon-blue: #45a1ff;
-
   font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
   font: 400 14px/1.5 "Fira Sans";
 }
@@ -37,7 +33,7 @@ html:not(.embed) body {
 
 a,
 html.embed a:visited {
-  color: var(--photon-blue);
+  color: var(--blue-40);
 }
 
 .iframe-container {
