@@ -19,7 +19,6 @@ async function run() {
   makeTimeline(testsPerDay, testMetadata);
 }
 
-
 function shouldIgnoreComponent(component) {
   let ignoredComponents = [
     "Core::Privacy: Anti-Tracking",
@@ -60,6 +59,15 @@ function getDatesBetween(startDate, endDate) {
 }
 
 async function getTestMetadata() {
+  // let bugToAssignees = {};
+  // let assignees = await request("https://docs.google.com/spreadsheets/d/e/2PACX-1vSBOysww1PcGcB19Ew_NOUpPnQMGkP1RQGAOAoYMRvgVMWWhmcdjyOfLjvEDCC_F6nobE7Hu6ooaj7Q/pub?gid=1164074255&single=true&output=csv");
+  // for (let row of assignees.split("\n")) {
+  //   let cols = row.split(",");
+  //   if (cols[1] && cols[2]) {
+  //     bugToAssignees["https://bugzilla.mozilla.org/show_bug.cgi?id=" + cols[1]] = cols[2].trim();
+  //   }
+  // }
+
   const testMetadata = new Map();
   let response = await fetch(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=1560718888&single=true&output=csv"
@@ -68,11 +76,38 @@ async function getTestMetadata() {
 
   let rows = obj.split("\n");
   let testPathPosition = rows[0].split(",").indexOf("Test");
+  let bugIDPosition = rows[0].split(",").indexOf("Bug ID");
   let milestoneColPosition = rows[0].split(",").indexOf("Fission Target");
-  if (!testPathPosition || !milestoneColPosition) {
+  if (!testPathPosition || !milestoneColPosition || !bugIDPosition) {
     throw new Error(
       `Fission spreadsheet doesn't have column for test (${testPathPosition}) or milestone: ${milestoneColPosition}`
     );
+  }
+
+  let bugsToFetchAssignees = new Set();
+  for (let row of rows.slice(1)) {
+    let cols = row.split(",");
+    let bugID = cols[bugIDPosition];
+    if (bugID && !isNaN(bugID)) {
+      bugsToFetchAssignees.add(bugID);
+    }
+  }
+
+  let bugList = [...bugsToFetchAssignees].join(",");
+  let bugzillaSearchURL = `https://bugzilla.mozilla.org/buglist.cgi?bug_id=${bugList}&bug_id_type=anyexact&columnlist=assigned_to&query_format=advanced&ctype=csv&human=1`;
+
+  console.log("Fetching assignee data from bugzilla", bugzillaSearchURL);
+  let assigneeResponse = await fetch(bugzillaSearchURL);
+  let assigneeObj = await assigneeResponse.text();
+
+  let bugToAssignees = {};
+  for (let row of assigneeObj.split("\n").slice(1)) {
+    let cols = row.split(",");
+    if (cols[0] && cols[1]) {
+      bugToAssignees[
+        "https://bugzilla.mozilla.org/show_bug.cgi?id=" + cols[0]
+      ] = cols[1].trim().replace(/^"(.*)"$/, "$1");
+    }
   }
 
   // XXX: store bug number and assignee
@@ -80,7 +115,16 @@ async function getTestMetadata() {
     let cols = row.split(",");
     let testPath = cols[testPathPosition];
     let milestone = cols[milestoneColPosition];
-    testMetadata.set(testPath, milestone);
+    let bugID = isNaN(cols[bugIDPosition]) ? null : cols[bugIDPosition];
+    let bug = bugID
+      ? `https://bugzilla.mozilla.org/show_bug.cgi?id=${bugID}`
+      : undefined;
+    let assignee = bug ? bugToAssignees[bug] : null;
+    testMetadata.set(testPath, {
+      milestone,
+      bug,
+      assignee
+    });
   }
 
   return testMetadata;
@@ -143,9 +187,10 @@ async function fetchTestInfos(testMetadata) {
           // They're registered from 2 separate manifests to run in 2 configurations.
           // For instance: https://github.com/bgrins/arewefissionyet/blob/4e337027ae913341d8a3b4758151f7c6d0c7fb25/cache/test-info-fission/2019-10-10.json#L1667-L1676.
           // When this happens just skip it.
-          console.log(
-            `Skipping duplicate entry (should be in WebExtensions). component ${component} path: ${obj.test}`
-          );
+          if (component != "WebExtensions::General")
+            console.error(
+              `Skipping duplicate entry (only WebExtensions should do this). component ${component} path: ${obj.test}`
+            );
           return;
         }
 
@@ -156,7 +201,7 @@ async function fetchTestInfos(testMetadata) {
           );
         }
 
-        let inM4 = testMetadata.get(obj.test) == "M4";
+        let inM4 = testMetadata.get(obj.test).milestone == "M4";
         if (inM4) {
           todaySet.add(obj.test);
         }
@@ -167,10 +212,7 @@ async function fetchTestInfos(testMetadata) {
 
       if (lengthBeforeFilter != lengthAfterFilter) {
         console.log(
-          "Component was filtered (non-M4 or duplicate entries)",
-          component,
-          lengthBeforeFilter,
-          lengthAfterFilter
+          `Component was filtered (non-M4 or duplicate entries): ${component} ${lengthBeforeFilter} -> ${lengthAfterFilter}`
         );
       }
     }
@@ -179,10 +221,7 @@ async function fetchTestInfos(testMetadata) {
     let fileName = `cache/test-info-fission/${dateString}.json`;
     fs.writeFileSync(fileName, JSON.stringify(obj, null, 2));
   }
-  fs.writeFileSync(
-    "cache/m4.json",
-    JSON.stringify(summaryData, null, 2)
-  );
+  fs.writeFileSync("cache/m4.json", JSON.stringify(summaryData, null, 2));
 
   return testsPerDay;
 }
@@ -228,11 +267,13 @@ function makeTimeline(testsPerDay, testMetadata) {
     let currentRemovals = changesPerDay[date].removals;
     let hasChanges = currentAdditions.size || currentRemovals.size;
     if (hasChanges) {
-      let dateParts = date.split('-');
-      let dateObj = new Date(dateParts[0], dateParts[1]-1, dateParts[2]);
-      newText += `<details class="arewe-details" ${detailsShouldBeOpened ? "open" : ""}><summary><h2>${date} (${new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(dateObj)}): ${
-        currentRemovals.size
-      } tests fixed ${
+      let dateParts = date.split("-");
+      let dateObj = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+      newText += `<details class="arewe-timeline-details" ${
+        detailsShouldBeOpened ? "open" : ""
+      }><summary><h2>${date} (${new Intl.DateTimeFormat("en-US", {
+        weekday: "long"
+      }).format(dateObj)}): ${currentRemovals.size} tests fixed ${
         currentAdditions.size
           ? "and " + currentAdditions.size + " new tests to fix"
           : ""
@@ -242,10 +283,18 @@ function makeTimeline(testsPerDay, testMetadata) {
 
     // TODO: fetch metadata (bug # and assignees)
     for (let addition of changesPerDay[date].additions) {
-      newText += getMarkupForTimelineEntry(true, date, addition);
+      newText += getMarkupForTimelineEntry(
+        true,
+        addition,
+        testMetadata.get(addition)
+      );
     }
     for (let removal of changesPerDay[date].removals) {
-      newText += getMarkupForTimelineEntry(false, date, removal);
+      newText += getMarkupForTimelineEntry(
+        false,
+        removal,
+        testMetadata.get(removal)
+      );
     }
     if (hasChanges) {
       newText += `</div></details>`;
@@ -279,32 +328,28 @@ function reverseObject(object) {
   return newObject;
 }
 
-function getMarkupForTimelineEntry(added, date, name, metadata) {
+function getMarkupForTimelineEntry(added, name, metadata) {
   metadata = metadata || {};
-  var link =
-    metadata.bug &&
-    `<small><a href='${metadata.bug}'>bug ${
-      metadata.bug.match(/\d+$/)[0]
-    }</a></small>`;
-  var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
+  var link = metadata.bug
+    ? `<small><a href='${metadata.bug}'>bug ${
+        metadata.bug.match(/\d+$/)[0]
+      }</a></small>`
+    : "";
+  var badge = added ? `<small>New failing test</small>` : "";
+  var name = `<span class="arewe-timeline-path">${name}</span>`;
+  // var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
   var assignee =
     (metadata.assignee && `<small>${metadata.assignee}</small>`) || "";
-  var metadata =
-    (metadata.bug &&
-      `<span style='float: right'>${assignee} ${type} ${link}</span>`) ||
-    "";
   return `
   <div class="arewe-timeline-block">
     <div class="arewe-timeline-img arewe-${added ? "addition" : "subtraction"}">
     </div>
-
     <div class="arewe-timeline-content">
+      ${badge}
       <h2>
-        <small>${
-    added ? "New failing test" : "Fixed"
-  }</small>${name}
-        ${metadata}
+        ${name}
       </h2>
+      <span style="float: right;">${assignee}${link}</span>
     </div>
   </div>`;
 }

@@ -49,7 +49,7 @@ for (let item of items) {
       // so we can get the count right
       let failedTests = parseInt(row[3]);
       let skippedTests = parseInt(row[1]);
-      console.log(row[0], failedTests + skippedTests)
+      // console.log(row[0], failedTests + skippedTests)
       for (let test = 0; test < failedTests + skippedTests; test++) {
         component.push({})
       }

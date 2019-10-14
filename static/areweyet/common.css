@@ -3,7 +3,10 @@ html {
   --main-background: white;
   --main-text-color: #343434;
   --main-font-family: 'Fira Sans', sans-serif;
-  --main-font: 400 14px/1.5 "Fira Sans";
+  --main-font: 400 14px/1.5 var(--main-font-family);
+
+  --mono-font-family: 'Fira Mono', monospace;
+  --mono-font: 400 14px/1.5 var(--mono-font-family);
 
   --secondary-color: #45a1ff22;
   --heading-color: #424242;
@@ -133,7 +136,7 @@ footer > .desc-box {
   margin-left: -10px;
   margin-right: -10px;
   margin-top: 10px;
-  border-top: solid 4px #d7e4ed;
+  border: solid 1px #d7e4ed;
   color: #7f8c97;
   background-color: #e9f0f5;
 }
@@ -232,21 +235,25 @@ footer > .desc-box {
   border: solid 1px;
   border-radius: 5px;
   background: rgba(0, 0, 255, .05);
-  font-size: 50%;
+  font-size: 90%;
   vertical-align: middle;
   margin-right: 2px;
   padding: 3px;
 }
 
-.arewe-details {
+.arewe-timeline-path {
+  font: var(--mono-font);
+}
+
+.arewe-timeline-details {
   margin: 0 auto;
   width: 95%;
 }
 
-.arewe-details summary {
+.arewe-timeline-details summary {
   cursor: pointer;
 }
 
-.arewe-details h2 {
+.arewe-timeline-details h2 {
   display: inline-block;
 }
