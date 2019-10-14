@@ -180,7 +180,7 @@ async function fetchTestInfos(testMetadata) {
     fs.writeFileSync(fileName, JSON.stringify(obj, null, 2));
   }
   fs.writeFileSync(
-    "skipped-failing-tests/all.json",
+    "cache/m4.json",
     JSON.stringify(summaryData, null, 2)
   );
 
@@ -206,12 +206,12 @@ function makeTimeline(testsPerDay, testMetadata) {
       );
       changesPerDay[date].remaining = todaySet.size;
 
-      console.log(
-        "Difference of sets:",
-        date,
-        [...changesPerDay[date].additions],
-        [...changesPerDay[date].removals]
-      );
+      // console.log(
+      //   "Difference of sets:",
+      //   date,
+      //   [...changesPerDay[date].additions],
+      //   [...changesPerDay[date].removals]
+      // );
     }
     yesterdaySet = todaySet;
   }
@@ -250,7 +250,7 @@ function makeTimeline(testsPerDay, testMetadata) {
     }
 
     // Only leave the most recent day opened
-    detailsShouldBeOpened = false;
+    // detailsShouldBeOpened = false;
   }
 
   newText +=

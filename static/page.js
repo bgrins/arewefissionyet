@@ -135,7 +135,7 @@ function getNextColor() {
 }
 
 async function fetchDataJSON() {
-  let r = await fetch("../skipped-failing-tests/all.json");
+  let r = await fetch("../cache/m4.json");
   let obj = await r.json();
   return obj;
 }

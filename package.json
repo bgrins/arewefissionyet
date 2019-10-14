@@ -6,6 +6,7 @@
     "node-fetch": "^2.6.0"
   },
   "scripts": {
-    "cache": "node scripts/fetch-test-info"
+    "cache": "node scripts/fetch-test-info",
+    "cache-and-commit": "./scripts/cache-and-commit.sh"
   }
 }
