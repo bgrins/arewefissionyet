@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - 10
 script: scripts/cache-and-commit.sh
-
+github_token: $GH_TOKEN
+keep_history: true
 branches:
   only:
-  - gh-pages
+  - test-travis
