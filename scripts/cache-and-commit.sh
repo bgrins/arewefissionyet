@@ -2,8 +2,9 @@
 # these switches turn some bugs into errors
 set -o errexit -o pipefail -o noclobber -o nounset
 
-if [[ ! `git status --porcelain` ]]; then
+if [[ `git status --porcelain` ]]; then
   echo "Abort: uncommitted changes"
+  echo `git status --porcelain`
   exit 1
 fi
 
