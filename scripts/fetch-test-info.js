@@ -228,14 +228,14 @@ function makeTimeline(testsPerDay, testMetadata) {
     let currentRemovals = changesPerDay[date].removals;
     let hasChanges = currentAdditions.size || currentRemovals.size;
     if (hasChanges) {
-      newText += `<details class="cd-details" ${detailsShouldBeOpened ? "open" : ""}><summary><h2>${date}: ${
+      newText += `<details class="arewe-details" ${detailsShouldBeOpened ? "open" : ""}><summary><h2>${date}: ${
         currentRemovals.size
       } tests fixed ${
         currentAdditions.size
           ? "and " + currentAdditions.size + " new tests to fix"
           : ""
       } (${changesPerDay[date].remaining} remaining)</h2></summary>
-      <div class="cd-timeline">`;
+      <div class="arewe-timeline">`;
     }
 
     // TODO: fetch metadata (bug # and assignees)
@@ -292,11 +292,11 @@ function getMarkupForTimelineEntry(added, date, name, metadata) {
       `<span style='float: right'>${assignee} ${type} ${link}</span>`) ||
     "";
   return `
-  <div class="cd-timeline-block">
-    <div class="cd-timeline-img cd-${added ? "addition" : "subtraction"}">
+  <div class="arewe-timeline-block">
+    <div class="arewe-timeline-img arewe-${added ? "addition" : "subtraction"}">
     </div>
 
-    <div class="cd-timeline-content">
+    <div class="arewe-timeline-content">
       <h2>
         <small>${
     added ? "New failing test" : "Fixed"

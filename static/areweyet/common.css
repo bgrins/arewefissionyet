@@ -127,9 +127,7 @@ footer > .desc-box {
   font-style: normal;
 }
 
-
-
-.cd-timeline {
+.arewe-timeline {
   position: relative;
   padding: 1em 10px;
   margin-left: -10px;
@@ -140,16 +138,16 @@ footer > .desc-box {
   background-color: #e9f0f5;
 }
 
-.cd-timeline h2 {
+.arewe-timeline h2 {
   font-weight: normal;
   margin: 0;
   padding: 0;
 }
-.cd-date {
+.arewe-date {
   font-weight: bold;
 }
 
-#cd-timeline::before {
+.arewe-timeline::before {
   /* this is the vertical line */
   content: "";
   position: absolute;
@@ -160,19 +158,19 @@ footer > .desc-box {
   background: #d7e4ed;
 }
 
-.cd-timeline-block {
+.arewe-timeline-block {
   position: relative;
   margin: 2em 0;
 }
 
-.cd-timeline-block:first-child {
+.arewe-timeline-block:first-child {
   margin-top: 0;
 }
-.cd-timeline-block:last-child {
+.arewe-timeline-block:last-child {
   margin-bottom: 0;
 }
 
-.cd-timeline-img {
+.arewe-timeline-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -181,7 +179,7 @@ footer > .desc-box {
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
-.cd-timeline-img img {
+.arewe-timeline-img img {
   display: block;
   width: 24px;
   height: 24px;
@@ -191,13 +189,13 @@ footer > .desc-box {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-subtraction {
+.arewe-timeline-img.arewe-subtraction {
   background: #75ce66;
 }
-.cd-timeline-img.cd-addition {
+.arewe-timeline-img.arewe-addition {
   background: #c03b44;
 }
-.cd-timeline-content {
+.arewe-timeline-content {
   position: relative;
   margin-left: 60px;
   background: white;
@@ -205,21 +203,21 @@ footer > .desc-box {
   padding: .5em;
   box-shadow: 0 3px 0 #d7e4ed;
 }
-.cd-timeline-content h2 {
+.arewe-timeline-content h2 {
   color: #303e49;
 }
-.cd-timeline-content p {
+.arewe-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
 }
-.cd-timeline-content .cd-read-more {
+.arewe-timeline-content .arewe-read-more {
   float: right;
   padding: .8em 1em;
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
 }
-.cd-timeline-content::before {
+.arewe-timeline-content::before {
   content: "";
   position: absolute;
   top: 16px;
@@ -230,7 +228,7 @@ footer > .desc-box {
   border-right: 7px solid white;
 }
 
-.cd-timeline-content small {
+.arewe-timeline-content small {
   border: solid 1px;
   border-radius: 5px;
   background: rgba(0, 0, 255, .05);
@@ -240,14 +238,15 @@ footer > .desc-box {
   padding: 3px;
 }
 
-.cd-details {
-
+.arewe-details {
+  margin: 0 auto;
+  width: 95%;
 }
 
-.cd-details summary {
-
+.arewe-details summary {
+  cursor: pointer;
 }
 
-.cd-details h2 {
+.arewe-details h2 {
   display: inline-block;
 }
