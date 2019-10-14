@@ -5,6 +5,7 @@ set -o errexit -o pipefail -o noclobber -o nounset
 if [[ `git status --porcelain` ]]; then
   echo "Abort: uncommitted changes"
   echo `git status --porcelain`
+  echo `git diff`
   exit 1
 fi
 
