@@ -16,7 +16,9 @@ if [[ ! `git status cache --porcelain` ]]; then
   exit 1
 fi
 
-echo "Adding and committing"
+# Travis deploy takes care of generating the commit remotely.
+# Otherwise we could do something like:
+# echo "Adding and committing"
 # git add cache/
 # git add m4/timeline/index.html
 # git commit -m 'Cache artifacts'
