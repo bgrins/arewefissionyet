@@ -1,6 +1,6 @@
+account_id = "a6d6b7ea5650b4137e422b01b59a6398"
 name = "fission-bot"
 type = "webpack"
-zone_id = ""
-private = false
-account_id = "a6d6b7ea5650b4137e422b01b59a6398"
 route = ""
+workers_dev = true
+zone_id = ""
