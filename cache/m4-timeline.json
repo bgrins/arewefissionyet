@@ -1,215 +1,113 @@
 {
-  "2019-09-20": {
+  "2019-10-15": {
     "removals": [
       {
-        "path": "dom/base/test/test_bug466080.html",
+        "path": "netwerk/test/browser/browser_cross_process_redirect.js",
         "metadata": {
           "milestone": "M4",
           "assignee": null
         }
       },
       {
-        "path": "dom/base/test/test_intersectionobservers.html",
+        "path": "browser/base/content/test/siteIdentity/browser_insecureLoginForms.js",
         "metadata": {
           "milestone": "M4",
           "assignee": null
         }
       },
       {
-        "path": "dom/tests/mochitest/general/test_storagePermissionsRejectForeign.html",
+        "path": "toolkit/components/passwordmgr/test/browser/browser_hasInsecureLoginForms.js",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-          "assignee": "afarre"
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1527828",
+          "assignee": "MattN+bmo"
         }
       },
       {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage.html",
+        "path": "toolkit/components/passwordmgr/test/browser/browser_hasInsecureLoginForms_streamConverter.js",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-          "assignee": "pbone"
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582112",
+          "assignee": "MattN+bmo"
         }
       },
       {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage_idn.xhtml",
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_exclude_include_globs.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-          "assignee": "pbone"
+          "assignee": null
         }
       },
       {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage_joined.html",
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_request_urlClassification.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-          "assignee": "pbone"
+          "assignee": null
         }
       },
       {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage_onOther.html",
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_runtime_disconnect.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576407",
+          "assignee": null
+        }
+      },
+      {
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_upgrade.html",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 262
+  },
+  "2019-10-14": {
+    "removals": [
+      {
+        "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_about_newtab.js",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      },
+      {
+        "path": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_upgrade.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588095",
+          "assignee": "MattN+bmo"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 270
+  },
+  "2019-10-13": {
+    "removals": [
+      {
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_cache.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587971",
+          "assignee": "tomica"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 272
+  },
+  "2019-10-12": {
+    "removals": [
+      {
+        "path": "dom/tests/browser/browser_noopener.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587559",
           "assignee": "kmaglione+bmo"
         }
       },
-      {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage_structured_clone.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578636",
-          "assignee": "nobody"
-        }
-      },
-      {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage_transfer.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1579291",
-          "assignee": "nobody"
-        }
-      },
-      {
-        "path": "dom/tests/mochitest/whatwg/test_postMessage_userpass.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1572575",
-          "assignee": "ahal"
-        }
-      },
-      {
-        "path": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-          "assignee": "kmaglione+bmo"
-        }
-      },
-      {
-        "path": "docshell/test/navigation/browser_test-content-chromeflags.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582156",
-          "assignee": "kmadan"
-        }
-      }
-    ],
-    "additions": [
-      {
-        "path": "dom/security/test/mixedcontentblocker/test_main.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-          "assignee": "afarre"
-        }
-      },
-      {
-        "path": "dom/serviceworkers/test/test_https_origin_after_redirect.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
-          "assignee": "echuang"
-        }
-      },
-      {
-        "path": "dom/serviceworkers/test/test_https_origin_after_redirect_cached.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
-          "assignee": "echuang"
-        }
-      }
-    ],
-    "remaining": 391
-  },
-  "2019-09-21": {
-    "removals": [
-      {
-        "path": "dom/serviceworkers/test/browser_storage_permission.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570942",
-          "assignee": "nobody"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 390
-  },
-  "2019-09-22": {
-    "removals": [],
-    "additions": [],
-    "remaining": 390
-  },
-  "2019-09-23": {
-    "removals": [],
-    "additions": [],
-    "remaining": 390
-  },
-  "2019-09-24": {
-    "removals": [
-      {
-        "path": "dom/base/test/browser_use_counters.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582744",
-          "assignee": "echen"
-        }
-      },
-      {
-        "path": "dom/html/test/test_bug871161.html",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
-        }
-      },
-      {
-        "path": "layout/svg/tests/test_filter_crossorigin.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574137",
-          "assignee": "jwatt"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 387
-  },
-  "2019-09-25": {
-    "removals": [],
-    "additions": [
-      {
-        "path": "dom/tests/mochitest/general/test_vibrator.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582832",
-          "assignee": "afarre"
-        }
-      }
-    ],
-    "remaining": 388
-  },
-  "2019-09-26": {
-    "removals": [
-      {
-        "path": "js/xpconnect/tests/mochitest/test_bug802557.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582520",
-          "assignee": "kmaglione+bmo"
-        }
-      },
-      {
-        "path": "browser/extensions/report-site-issue/test/browser/browser_report_site_issue.js",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
-        }
-      }
-    ],
-    "additions": [
       {
         "path": "dom/file/tests/test_mozfiledataurl.html",
         "metadata": {
@@ -219,15 +117,388 @@
         }
       },
       {
-        "path": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html",
+        "path": "docshell/test/navigation/test_sibling-off-domain.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586926",
+          "assignee": "kmaglione+bmo"
+        }
+      },
+      {
+        "path": "js/xpconnect/tests/mochitest/test_bug940783.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583400",
           "assignee": "kmaglione+bmo"
         }
       }
     ],
-    "remaining": 388
+    "additions": [],
+    "remaining": 273
+  },
+  "2019-10-11": {
+    "removals": [
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_autoFill_canonize.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_autocomplete_edit_completed.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_canonizeURL.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_inputHistory.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_inputHistory_emptystring.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_urlbarEnterAfterMouseOver.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_urlbarSearchSingleWordNotification.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_urlbarSearchSuggestions.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/components/urlbar/tests/browser/browser_urlbarStop.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/base/content/test/about/browser_aboutHome_search_composing.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/base/content/test/about/browser_aboutHome_search_telemetry.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
+          "assignee": "kmadan"
+        }
+      },
+      {
+        "path": "browser/base/content/test/general/browser_alltabslistener.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587784",
+          "assignee": "gijskruitbosch+bugs"
+        }
+      },
+      {
+        "path": "browser/components/extensions/test/browser/browser_ext_tabs_readerMode.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587914",
+          "assignee": "tomica"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 277
+  },
+  "2019-10-10": {
+    "removals": [
+      {
+        "path": "browser/components/originattributes/test/browser/browser_postMessage.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586713",
+          "assignee": "tihuang"
+        }
+      },
+      {
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_async_clipboard.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587221",
+          "assignee": "tomica"
+        }
+      },
+      {
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_resources.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587633",
+          "assignee": "tomica"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 290
+  },
+  "2019-10-09": {
+    "removals": [
+      {
+        "path": "dom/tests/mochitest/general/test_interfaces_secureContext.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586779",
+          "assignee": "jdai"
+        }
+      },
+      {
+        "path": "dom/push/test/test_permissions.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
+          "assignee": "perry"
+        }
+      },
+      {
+        "path": "browser/base/content/test/performance/browser_preferences_usage.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585727",
+          "assignee": "emalysz"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 293
+  },
+  "2019-10-08": {
+    "removals": [],
+    "additions": [],
+    "remaining": 296
+  },
+  "2019-10-07": {
+    "removals": [
+      {
+        "path": "dom/tests/mochitest/dom-level0/test_setting_document.domain_idn.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576480",
+          "assignee": "valentin.gosu"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 296
+  },
+  "2019-10-06": {
+    "removals": [],
+    "additions": [],
+    "remaining": 297
+  },
+  "2019-10-05": {
+    "removals": [
+      {
+        "path": "docshell/test/navigation/test_sessionhistory.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
+          "assignee": "kmaglione+bmo"
+        }
+      },
+      {
+        "path": "toolkit/components/remotebrowserutils/tests/browser/browser_httpCrossOriginOpenerPolicy.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
+          "assignee": "kmaglione+bmo"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 297
+  },
+  "2019-10-04": {
+    "removals": [
+      {
+        "path": "dom/base/test/test_shared_compartment2.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586272",
+          "assignee": "jdemooij"
+        }
+      },
+      {
+        "path": "toolkit/components/windowwatcher/test/browser_new_content_window_from_chrome_principal.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585830",
+          "assignee": "continuation"
+        }
+      },
+      {
+        "path": "browser/components/customizableui/test/browser_customization_context_menus.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586136",
+          "assignee": "gijskruitbosch+bugs"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 299
+  },
+  "2019-10-03": {
+    "removals": [],
+    "additions": [
+      {
+        "path": "toolkit/components/passwordmgr/test/mochitest/test_prompt_http.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
+          "assignee": "nobody"
+        }
+      }
+    ],
+    "remaining": 302
+  },
+  "2019-10-02": {
+    "removals": [
+      {
+        "path": "browser/components/tests/browser/browser_initial_tab_remoteType.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585498",
+          "assignee": "continuation"
+        }
+      },
+      {
+        "path": "toolkit/components/places/tests/browser/browser_bug680727.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585562",
+          "assignee": "standard8"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "path": "dom/security/test/csp/test_navigate_to.html",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      },
+      {
+        "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframeRedirect.html",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      },
+      {
+        "path": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      }
+    ],
+    "remaining": 301
+  },
+  "2019-10-01": {
+    "removals": [
+      {
+        "path": "dom/security/test/csp/test_upgrade_insecure.html",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      },
+      {
+        "path": "dom/security/test/csp/test_upgrade_insecure_navigation.html",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      }
+    ],
+    "additions": [
+      {
+        "path": "dom/push/test/test_permissions.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
+          "assignee": "perry"
+        }
+      }
+    ],
+    "remaining": 300
+  },
+  "2019-09-30": {
+    "removals": [
+      {
+        "path": "dom/tests/mochitest/ajax/offline/browser_disableAppcache.js",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 301
+  },
+  "2019-09-29": {
+    "removals": [],
+    "additions": [],
+    "remaining": 302
+  },
+  "2019-09-28": {
+    "removals": [
+      {
+        "path": "widget/tests/browser/browser_test_procinfo.js",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 302
   },
   "2019-09-27": {
     "removals": [
@@ -966,48 +1237,18 @@
     ],
     "remaining": 303
   },
-  "2019-09-28": {
+  "2019-09-26": {
     "removals": [
       {
-        "path": "widget/tests/browser/browser_test_procinfo.js",
+        "path": "js/xpconnect/tests/mochitest/test_bug802557.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 302
-  },
-  "2019-09-29": {
-    "removals": [],
-    "additions": [],
-    "remaining": 302
-  },
-  "2019-09-30": {
-    "removals": [
-      {
-        "path": "dom/tests/mochitest/ajax/offline/browser_disableAppcache.js",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 301
-  },
-  "2019-10-01": {
-    "removals": [
-      {
-        "path": "dom/security/test/csp/test_upgrade_insecure.html",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582520",
+          "assignee": "kmaglione+bmo"
         }
       },
       {
-        "path": "dom/security/test/csp/test_upgrade_insecure_navigation.html",
+        "path": "browser/extensions/report-site-issue/test/browser/browser_report_site_issue.js",
         "metadata": {
           "milestone": "M4",
           "assignee": null
@@ -1015,331 +1256,6 @@
       }
     ],
     "additions": [
-      {
-        "path": "dom/push/test/test_permissions.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-          "assignee": "perry"
-        }
-      }
-    ],
-    "remaining": 300
-  },
-  "2019-10-02": {
-    "removals": [
-      {
-        "path": "browser/components/tests/browser/browser_initial_tab_remoteType.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585498",
-          "assignee": "continuation"
-        }
-      },
-      {
-        "path": "toolkit/components/places/tests/browser/browser_bug680727.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585562",
-          "assignee": "standard8"
-        }
-      }
-    ],
-    "additions": [
-      {
-        "path": "dom/security/test/csp/test_navigate_to.html",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
-        }
-      },
-      {
-        "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframeRedirect.html",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
-        }
-      },
-      {
-        "path": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js",
-        "metadata": {
-          "milestone": "M4",
-          "assignee": null
-        }
-      }
-    ],
-    "remaining": 301
-  },
-  "2019-10-03": {
-    "removals": [],
-    "additions": [
-      {
-        "path": "toolkit/components/passwordmgr/test/mochitest/test_prompt_http.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-          "assignee": "nobody"
-        }
-      }
-    ],
-    "remaining": 302
-  },
-  "2019-10-04": {
-    "removals": [
-      {
-        "path": "dom/base/test/test_shared_compartment2.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586272",
-          "assignee": "jdemooij"
-        }
-      },
-      {
-        "path": "toolkit/components/windowwatcher/test/browser_new_content_window_from_chrome_principal.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585830",
-          "assignee": "continuation"
-        }
-      },
-      {
-        "path": "browser/components/customizableui/test/browser_customization_context_menus.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586136",
-          "assignee": "gijskruitbosch+bugs"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 299
-  },
-  "2019-10-05": {
-    "removals": [
-      {
-        "path": "docshell/test/navigation/test_sessionhistory.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-          "assignee": "kmaglione+bmo"
-        }
-      },
-      {
-        "path": "toolkit/components/remotebrowserutils/tests/browser/browser_httpCrossOriginOpenerPolicy.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-          "assignee": "kmaglione+bmo"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 297
-  },
-  "2019-10-06": {
-    "removals": [],
-    "additions": [],
-    "remaining": 297
-  },
-  "2019-10-07": {
-    "removals": [
-      {
-        "path": "dom/tests/mochitest/dom-level0/test_setting_document.domain_idn.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576480",
-          "assignee": "valentin.gosu"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 296
-  },
-  "2019-10-08": {
-    "removals": [],
-    "additions": [],
-    "remaining": 296
-  },
-  "2019-10-09": {
-    "removals": [
-      {
-        "path": "dom/tests/mochitest/general/test_interfaces_secureContext.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586779",
-          "assignee": "jdai"
-        }
-      },
-      {
-        "path": "dom/push/test/test_permissions.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-          "assignee": "perry"
-        }
-      },
-      {
-        "path": "browser/base/content/test/performance/browser_preferences_usage.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585727",
-          "assignee": "emalysz"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 293
-  },
-  "2019-10-10": {
-    "removals": [
-      {
-        "path": "browser/components/originattributes/test/browser/browser_postMessage.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586713",
-          "assignee": "tihuang"
-        }
-      },
-      {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_async_clipboard.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587221",
-          "assignee": "tomica"
-        }
-      },
-      {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_resources.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587633",
-          "assignee": "tomica"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 290
-  },
-  "2019-10-11": {
-    "removals": [
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_autoFill_canonize.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_autocomplete_edit_completed.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_canonizeURL.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_inputHistory.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_inputHistory_emptystring.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_urlbarEnterAfterMouseOver.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_urlbarSearchSingleWordNotification.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_urlbarSearchSuggestions.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/components/urlbar/tests/browser/browser_urlbarStop.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/base/content/test/about/browser_aboutHome_search_composing.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/base/content/test/about/browser_aboutHome_search_telemetry.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
-        }
-      },
-      {
-        "path": "browser/base/content/test/general/browser_alltabslistener.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587784",
-          "assignee": "gijskruitbosch+bugs"
-        }
-      },
-      {
-        "path": "browser/components/extensions/test/browser/browser_ext_tabs_readerMode.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587914",
-          "assignee": "tomica"
-        }
-      }
-    ],
-    "additions": [],
-    "remaining": 277
-  },
-  "2019-10-12": {
-    "removals": [
-      {
-        "path": "dom/tests/browser/browser_noopener.js",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587559",
-          "assignee": "kmaglione+bmo"
-        }
-      },
       {
         "path": "dom/file/tests/test_mozfiledataurl.html",
         "metadata": {
@@ -1349,122 +1265,206 @@
         }
       },
       {
-        "path": "docshell/test/navigation/test_sibling-off-domain.html",
+        "path": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586926",
-          "assignee": "kmaglione+bmo"
-        }
-      },
-      {
-        "path": "js/xpconnect/tests/mochitest/test_bug940783.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583400",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
           "assignee": "kmaglione+bmo"
         }
       }
     ],
-    "additions": [],
-    "remaining": 273
+    "remaining": 388
   },
-  "2019-10-13": {
-    "removals": [
+  "2019-09-25": {
+    "removals": [],
+    "additions": [
       {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_cache.html",
+        "path": "dom/tests/mochitest/general/test_vibrator.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587971",
-          "assignee": "tomica"
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582832",
+          "assignee": "afarre"
+        }
+      }
+    ],
+    "remaining": 388
+  },
+  "2019-09-24": {
+    "removals": [
+      {
+        "path": "dom/base/test/browser_use_counters.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582744",
+          "assignee": "echen"
+        }
+      },
+      {
+        "path": "dom/html/test/test_bug871161.html",
+        "metadata": {
+          "milestone": "M4",
+          "assignee": null
+        }
+      },
+      {
+        "path": "layout/svg/tests/test_filter_crossorigin.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574137",
+          "assignee": "jwatt"
         }
       }
     ],
     "additions": [],
-    "remaining": 272
+    "remaining": 387
   },
-  "2019-10-14": {
+  "2019-09-23": {
+    "removals": [],
+    "additions": [],
+    "remaining": 390
+  },
+  "2019-09-22": {
+    "removals": [],
+    "additions": [],
+    "remaining": 390
+  },
+  "2019-09-21": {
     "removals": [
       {
-        "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_about_newtab.js",
+        "path": "dom/serviceworkers/test/browser_storage_permission.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
-        }
-      },
-      {
-        "path": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_upgrade.html",
-        "metadata": {
-          "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588095",
-          "assignee": "MattN+bmo"
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570942",
+          "assignee": "nobody"
         }
       }
     ],
     "additions": [],
-    "remaining": 270
+    "remaining": 390
   },
-  "2019-10-15": {
+  "2019-09-20": {
     "removals": [
       {
-        "path": "netwerk/test/browser/browser_cross_process_redirect.js",
+        "path": "dom/base/test/test_bug466080.html",
         "metadata": {
           "milestone": "M4",
           "assignee": null
         }
       },
       {
-        "path": "browser/base/content/test/siteIdentity/browser_insecureLoginForms.js",
+        "path": "dom/base/test/test_intersectionobservers.html",
         "metadata": {
           "milestone": "M4",
           "assignee": null
         }
       },
       {
-        "path": "toolkit/components/passwordmgr/test/browser/browser_hasInsecureLoginForms.js",
+        "path": "dom/tests/mochitest/general/test_storagePermissionsRejectForeign.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1527828",
-          "assignee": "MattN+bmo"
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
+          "assignee": "afarre"
         }
       },
       {
-        "path": "toolkit/components/passwordmgr/test/browser/browser_hasInsecureLoginForms_streamConverter.js",
+        "path": "dom/tests/mochitest/whatwg/test_postMessage.html",
         "metadata": {
           "milestone": "M4",
-          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582112",
-          "assignee": "MattN+bmo"
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
+          "assignee": "pbone"
         }
       },
       {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_exclude_include_globs.html",
+        "path": "dom/tests/mochitest/whatwg/test_postMessage_idn.xhtml",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
+          "assignee": "pbone"
         }
       },
       {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_request_urlClassification.html",
+        "path": "dom/tests/mochitest/whatwg/test_postMessage_joined.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
+          "assignee": "pbone"
         }
       },
       {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_runtime_disconnect.html",
+        "path": "dom/tests/mochitest/whatwg/test_postMessage_onOther.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576407",
+          "assignee": "kmaglione+bmo"
         }
       },
       {
-        "path": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_upgrade.html",
+        "path": "dom/tests/mochitest/whatwg/test_postMessage_structured_clone.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578636",
+          "assignee": "nobody"
+        }
+      },
+      {
+        "path": "dom/tests/mochitest/whatwg/test_postMessage_transfer.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1579291",
+          "assignee": "nobody"
+        }
+      },
+      {
+        "path": "dom/tests/mochitest/whatwg/test_postMessage_userpass.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1572575",
+          "assignee": "ahal"
+        }
+      },
+      {
+        "path": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
+          "assignee": "kmaglione+bmo"
+        }
+      },
+      {
+        "path": "docshell/test/navigation/browser_test-content-chromeflags.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582156",
+          "assignee": "kmadan"
         }
       }
     ],
-    "additions": [],
-    "remaining": 262
+    "additions": [
+      {
+        "path": "dom/security/test/mixedcontentblocker/test_main.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
+          "assignee": "afarre"
+        }
+      },
+      {
+        "path": "dom/serviceworkers/test/test_https_origin_after_redirect.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
+          "assignee": "echuang"
+        }
+      },
+      {
+        "path": "dom/serviceworkers/test/test_https_origin_after_redirect_cached.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
+          "assignee": "echuang"
+        }
+      }
+    ],
+    "remaining": 391
   }
 }

@@ -275,6 +275,9 @@ function saveTimelineData(testsPerDay, testMetadata) {
     };
   }
 
+  // Reverse so that we render from newest to oldest:
+  changesPerDaySerialized = reverseObject(changesPerDaySerialized);
+
   console.log(`Writing metadata to ${TIMELINE_DATA_SOURCE_PATH}`);
   fs.writeFileSync(
     TIMELINE_DATA_SOURCE_PATH,
@@ -291,9 +294,6 @@ function renderTimeline() {
   var text = fs.readFileSync(TIMELINE_HTML_PATH, "utf8");
   var newText =
     text.split("<!-- REPLACE-TIMELINE -->")[0] + "<!-- REPLACE-TIMELINE -->\n";
-
-  // Reverse so that we render from newest to oldest:
-  timelineData = reverseObject(timelineData);
 
   let detailsShouldBeOpened = true;
   for (let date in timelineData) {
