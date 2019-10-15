@@ -1482,6 +1482,11 @@
       },
       {
         "fail-if": "fission",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html"
+      },
+      {
+        "fail-if": "fission",
         "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android')",
         "test": "toolkit/components/passwordmgr/test/mochitest/test_autofill_from_bfcache.html"
       },

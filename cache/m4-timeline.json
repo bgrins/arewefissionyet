@@ -35,33 +35,37 @@
         "path": "toolkit/components/extensions/test/mochitest/test_ext_exclude_include_globs.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
+          "assignee": "tomica"
         }
       },
       {
         "path": "toolkit/components/extensions/test/mochitest/test_ext_request_urlClassification.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
+          "assignee": "tomica"
         }
       },
       {
         "path": "toolkit/components/extensions/test/mochitest/test_ext_runtime_disconnect.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
+          "assignee": "tomica"
         }
       },
       {
         "path": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_upgrade.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
+          "assignee": "tomica"
         }
       }
     ],
     "additions": [],
-    "remaining": 262
+    "remaining": 263
   },
   "2019-10-14": {
     "removals": [
@@ -81,8 +85,17 @@
         }
       }
     ],
-    "additions": [],
-    "remaining": 270
+    "additions": [
+      {
+        "path": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588091",
+          "assignee": "nobody"
+        }
+      }
+    ],
+    "remaining": 271
   },
   "2019-10-13": {
     "removals": [

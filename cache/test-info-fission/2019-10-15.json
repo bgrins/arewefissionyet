@@ -1,8 +1,8 @@
 {
   "summary": {
     "components": 59,
-    "failed tests": 98,
-    "manifests": 1213,
+    "failed tests": 97,
+    "manifests": 1211,
     "skipped tests": 327,
     "tests": 384
   },
@@ -1235,7 +1235,6 @@
     ],
     "Firefox::Session Restore": [
       {
-        "fail-if": "fission",
         "skip-if": "(os == 'linux' && !e10s) || (fission && debug)",
         "test": "browser/components/sessionstore/test/browser_586068-reload.js"
       },
@@ -1463,6 +1462,11 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/passwordmgr/test/browser/browser_private_window.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html"
       },
       {
         "fail-if": "fission",
