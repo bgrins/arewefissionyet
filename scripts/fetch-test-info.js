@@ -2,6 +2,9 @@ var fs = require("fs");
 const fetch = require("node-fetch");
 const convertPreArtifactData = require("./convert-csv-to-json");
 
+const TIMELINE_DATA_SOURCE_PATH = `./cache/m4-timeline.json`;
+const TIMELINE_HTML_PATH = "./m4/timeline/index.html";
+
 if (!fs.existsSync("cache")) {
   fs.mkdirSync("cache");
 }
@@ -16,7 +19,8 @@ async function run() {
   console.log("Fetching artifacts");
   const testsPerDay = await fetchTestInfos(testMetadata);
 
-  makeTimeline(testsPerDay, testMetadata);
+  saveTimelineData(testsPerDay, testMetadata);
+  renderTimeline();
 }
 
 function shouldIgnoreComponent(component) {
@@ -227,7 +231,7 @@ async function fetchTestInfos(testMetadata) {
   return testsPerDay;
 }
 
-function makeTimeline(testsPerDay, testMetadata) {
+function saveTimelineData(testsPerDay, testMetadata) {
   // First, build up an object like:
   // { 2019-10-01: { additions: [ 'dom/push/test/test_permissions.html' ],
   //                 removals: [ 'dom/security/test/csp/test_upgrade_insecure.html' ]
@@ -256,17 +260,46 @@ function makeTimeline(testsPerDay, testMetadata) {
     yesterdaySet = todaySet;
   }
 
-  const TIMELINE_HTML_PATH = "./m4/timeline/index.html";
+  let changesPerDaySerialized = {};
+  for (let date in changesPerDay) {
+    changesPerDaySerialized[date] = {
+      removals: [...changesPerDay[date].removals].map(test => ({
+        path: test,
+        metadata: testMetadata.get(test)
+      })),
+      additions: [...changesPerDay[date].additions].map(test => ({
+        path: test,
+        metadata: testMetadata.get(test)
+      })),
+      remaining: changesPerDay[date].remaining
+    };
+  }
+
+  console.log(`Writing metadata to ${TIMELINE_DATA_SOURCE_PATH}`);
+  fs.writeFileSync(
+    TIMELINE_DATA_SOURCE_PATH,
+    JSON.stringify(changesPerDaySerialized, null, 2)
+  );
+}
+
+function renderTimeline() {
+  let timelineData = JSON.parse(fs.readFileSync(
+    TIMELINE_DATA_SOURCE_PATH,
+    "utf8"
+  ));
+
   var text = fs.readFileSync(TIMELINE_HTML_PATH, "utf8");
   var newText =
     text.split("<!-- REPLACE-TIMELINE -->")[0] + "<!-- REPLACE-TIMELINE -->\n";
 
-  let reversedDays = reverseObject(changesPerDay);
+  // Reverse so that we render from newest to oldest:
+  timelineData = reverseObject(timelineData);
+
   let detailsShouldBeOpened = true;
-  for (let date in reversedDays) {
-    let currentAdditions = changesPerDay[date].additions;
-    let currentRemovals = changesPerDay[date].removals;
-    let hasChanges = currentAdditions.size || currentRemovals.size;
+  for (let date in timelineData) {
+    let currentAdditions = timelineData[date].additions;
+    let currentRemovals = timelineData[date].removals;
+    let hasChanges = currentAdditions.length || currentRemovals.length;
     if (hasChanges) {
       let dateParts = date.split("-");
       let dateObj = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
@@ -274,27 +307,25 @@ function makeTimeline(testsPerDay, testMetadata) {
         detailsShouldBeOpened ? "open" : ""
       }><summary><h2>${date} (${new Intl.DateTimeFormat("en-US", {
         weekday: "long"
-      }).format(dateObj)}): ${currentRemovals.size} tests fixed ${
-        currentAdditions.size
-          ? "and " + currentAdditions.size + " new tests to fix"
+      }).format(dateObj)}): ${currentRemovals.length} tests fixed ${
+        currentAdditions.length
+          ? "and " + currentAdditions.length + " new tests to fix"
           : ""
-      } (${changesPerDay[date].remaining} remaining)</h2></summary>
+      } (${timelineData[date].remaining} remaining)</h2></summary>
       <div class="arewe-timeline">`;
     }
 
     // TODO: fetch metadata (bug # and assignees)
-    for (let addition of changesPerDay[date].additions) {
+    for (let addition of timelineData[date].additions) {
       newText += getMarkupForTimelineEntry(
-        true,
         addition,
-        testMetadata.get(addition)
+        true,
       );
     }
-    for (let removal of changesPerDay[date].removals) {
+    for (let removal of timelineData[date].removals) {
       newText += getMarkupForTimelineEntry(
-        false,
         removal,
-        testMetadata.get(removal)
+        false,
       );
     }
     if (hasChanges) {
@@ -309,8 +340,6 @@ function makeTimeline(testsPerDay, testMetadata) {
     "\n<!-- END-REPLACE-TIMELINE -->" +
     text.split("<!-- END-REPLACE-TIMELINE -->")[1];
   fs.writeFileSync(TIMELINE_HTML_PATH, newText);
-
-  // console.log(`Finished processing. We have metadata for ${totalMetadata} bindings, and ${metadataSeen} of them have been removed. So we know of ${totalMetadata - metadataSeen} still in progress.`);
 }
 
 function reverseObject(object) {
@@ -329,21 +358,21 @@ function reverseObject(object) {
   return newObject;
 }
 
-function getMarkupForTimelineEntry(added, name, metadata) {
-  metadata = metadata || {};
+function getMarkupForTimelineEntry(change, isAdded) {
+  var metadata = change.metadata || {};
   var link = metadata.bug
     ? `<small><a href='${metadata.bug}'>bug ${
         metadata.bug.match(/\d+$/)[0]
       }</a></small>`
     : "";
-  var badge = added ? `<small>New failing test</small>` : "";
-  var name = `<span class="arewe-timeline-path">${name}</span>`;
+  var badge = isAdded ? `<small>New failing test</small>` : "";
+  var name = `<span class="arewe-timeline-path">${change.path}</span>`;
   // var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
   var assignee =
     (metadata.assignee && `<small>${metadata.assignee}</small>`) || "";
   return `
   <div class="arewe-timeline-block">
-    <div class="arewe-timeline-img arewe-${added ? "addition" : "subtraction"}">
+    <div class="arewe-timeline-img arewe-${isAdded ? "addition" : "subtraction"}">
     </div>
     <div class="arewe-timeline-content">
       ${badge}
