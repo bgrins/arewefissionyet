@@ -1,4 +1,43 @@
 {
+  "2019-10-16": {
+    "removals": [
+      {
+        "path": "dom/tests/mochitest/bugs/test_bug1530292.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1530413",
+          "assignee": "agakhokidze"
+        }
+      },
+      {
+        "path": "browser/base/content/test/general/browser_bug839103.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588846",
+          "assignee": "gijskruitbosch+bugs"
+        }
+      },
+      {
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_hsts.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588390",
+          "assignee": "tomica"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
+          "assignee": "valentin.gosu"
+        }
+      }
+    ],
+    "remaining": 261
+  },
   "2019-10-15": {
     "removals": [
       {
