@@ -1,5 +1,11 @@
 const Router = require('./router')
 
+/*
+- Collect JSON from m4-timeline.json (fetch from gh)
+- Summarize counts for a day, week
+- List tests fixed today
+*/
+
 /**
  * Example of how router can be used in an application
  *  */
