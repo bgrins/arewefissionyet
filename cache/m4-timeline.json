@@ -11,6 +11,15 @@
         }
       },
       {
+        "path": "uriloader/exthandler/tests/mochitest/browser_web_protocol_handlers.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586148",
+          "assignee": "gijskruitbosch+bugs",
+          "component": "Firefox::File Handling"
+        }
+      },
+      {
         "path": "browser/base/content/test/general/browser_bug462673.js",
         "metadata": {
           "milestone": "M4",
@@ -58,7 +67,7 @@
         }
       }
     ],
-    "remaining": 259
+    "remaining": 258
   },
   "2019-10-15": {
     "removals": [

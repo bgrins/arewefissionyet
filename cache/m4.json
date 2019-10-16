@@ -81235,11 +81235,11 @@
   },
   "2019-10-16": {
     "summary": {
-      "components": 59,
+      "components": 58,
       "failed tests": 96,
       "manifests": 1211,
-      "skipped tests": 321,
-      "tests": 379
+      "skipped tests": 320,
+      "tests": 378
     },
     "tests": {
       "Core::Audio/Video: Playback": [
@@ -82298,12 +82298,6 @@
         {
           "skip-if": "fission",
           "test": "browser/components/enterprisepolicies/tests/browser/browser_policy_extensionsettings.js"
-        }
-      ],
-      "Firefox::File Handling": [
-        {
-          "skip-if": "fission",
-          "test": "uriloader/exthandler/tests/mochitest/browser_web_protocol_handlers.js"
         }
       ],
       "Firefox::General": [

@@ -367,7 +367,7 @@ function getMarkupForTimelineEntry(change, isAdded) {
       }</a></small>`
     : "";
   var badge = isAdded ? `<small>New failing test</small>` : "";
-  var name = `<span title="${change.path}" class="arewe-timeline-path">${change.path.split("/").pop()}</span>`;
+  var name = `<span title="${change.path}" class="arewe-timeline-path">${change.path.split("/").shift()}/…/${change.path.split("/").pop()}</span>`;
   // var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
   var assignee =
     (metadata.assignee && `<small>${metadata.assignee}</small>`) || "";
