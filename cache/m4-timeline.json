@@ -6,7 +6,26 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1530413",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Core & HTML"
+        }
+      },
+      {
+        "path": "browser/base/content/test/general/browser_bug462673.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589031",
+          "assignee": "gijskruitbosch+bugs",
+          "component": "Firefox::General"
+        }
+      },
+      {
+        "path": "browser/base/content/test/general/browser_bug633691.js",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588835",
+          "assignee": "gijskruitbosch+bugs",
+          "component": "Firefox::General"
         }
       },
       {
@@ -14,7 +33,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588846",
-          "assignee": "gijskruitbosch+bugs"
+          "assignee": "gijskruitbosch+bugs",
+          "component": "Firefox::General"
         }
       },
       {
@@ -22,7 +42,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588390",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       }
     ],
@@ -32,11 +53,12 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
-          "assignee": "valentin.gosu"
+          "assignee": "valentin.gosu",
+          "component": "Core::Networking: Cookies"
         }
       }
     ],
-    "remaining": 261
+    "remaining": 259
   },
   "2019-10-15": {
     "removals": [
@@ -44,14 +66,16 @@
         "path": "netwerk/test/browser/browser_cross_process_redirect.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Networking"
         }
       },
       {
         "path": "browser/base/content/test/siteIdentity/browser_insecureLoginForms.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Site Identity"
         }
       },
       {
@@ -59,7 +83,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1527828",
-          "assignee": "MattN+bmo"
+          "assignee": "MattN+bmo",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -67,7 +92,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582112",
-          "assignee": "MattN+bmo"
+          "assignee": "MattN+bmo",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -75,7 +101,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       },
       {
@@ -83,7 +110,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       },
       {
@@ -91,7 +119,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       },
       {
@@ -99,7 +128,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       }
     ],
@@ -112,7 +142,8 @@
         "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_about_newtab.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Security"
         }
       },
       {
@@ -120,7 +151,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588095",
-          "assignee": "MattN+bmo"
+          "assignee": "MattN+bmo",
+          "component": "Toolkit::Password Manager"
         }
       }
     ],
@@ -130,7 +162,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588091",
-          "assignee": "nobody"
+          "assignee": "nobody",
+          "component": "Toolkit::Password Manager"
         }
       }
     ],
@@ -143,7 +176,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587971",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       }
     ],
@@ -157,7 +191,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587559",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -165,7 +200,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586911",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::DOM: File"
         }
       },
       {
@@ -173,7 +209,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586926",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::Document Navigation"
         }
       },
       {
@@ -181,7 +218,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583400",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::XPConnect"
         }
       }
     ],
@@ -195,7 +233,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -203,7 +242,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -211,7 +251,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -219,7 +260,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -227,7 +269,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -235,7 +278,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -243,7 +287,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -251,7 +296,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -259,7 +305,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::Address Bar"
         }
       },
       {
@@ -267,7 +314,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::General"
         }
       },
       {
@@ -275,7 +323,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Firefox::General"
         }
       },
       {
@@ -283,7 +332,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587784",
-          "assignee": "gijskruitbosch+bugs"
+          "assignee": "gijskruitbosch+bugs",
+          "component": "Firefox::General"
         }
       },
       {
@@ -291,7 +341,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587914",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::Untriaged"
         }
       }
     ],
@@ -305,7 +356,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586713",
-          "assignee": "tihuang"
+          "assignee": "tihuang",
+          "component": "Core::DOM: Security"
         }
       },
       {
@@ -313,7 +365,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587221",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       },
       {
@@ -321,7 +374,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587633",
-          "assignee": "tomica"
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
         }
       }
     ],
@@ -335,7 +389,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586779",
-          "assignee": "jdai"
+          "assignee": "jdai",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -343,7 +398,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-          "assignee": "perry"
+          "assignee": "perry",
+          "component": "Core::DOM: Push Notifications"
         }
       },
       {
@@ -351,7 +407,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585727",
-          "assignee": "emalysz"
+          "assignee": "emalysz",
+          "component": "Firefox::General"
         }
       }
     ],
@@ -370,7 +427,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576480",
-          "assignee": "valentin.gosu"
+          "assignee": "valentin.gosu",
+          "component": "Core::DOM: Core & HTML"
         }
       }
     ],
@@ -389,7 +447,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::Document Navigation"
         }
       },
       {
@@ -397,7 +456,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::Document Navigation"
         }
       }
     ],
@@ -411,7 +471,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586272",
-          "assignee": "jdemooij"
+          "assignee": "jdemooij",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -419,7 +480,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585830",
-          "assignee": "continuation"
+          "assignee": "continuation",
+          "component": "Core::Window Management"
         }
       },
       {
@@ -427,7 +489,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586136",
-          "assignee": "gijskruitbosch+bugs"
+          "assignee": "gijskruitbosch+bugs",
+          "component": "Firefox::Toolbars and Customization"
         }
       }
     ],
@@ -442,7 +505,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-          "assignee": "nobody"
+          "assignee": "nobody",
+          "component": "Toolkit::Password Manager"
         }
       }
     ],
@@ -455,7 +519,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585498",
-          "assignee": "continuation"
+          "assignee": "continuation",
+          "component": "Firefox::General"
         }
       },
       {
@@ -463,7 +528,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585562",
-          "assignee": "standard8"
+          "assignee": "standard8",
+          "component": "Toolkit::Places"
         }
       }
     ],
@@ -472,21 +538,24 @@
         "path": "dom/security/test/csp/test_navigate_to.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Security"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframeRedirect.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       }
     ],
@@ -498,14 +567,16 @@
         "path": "dom/security/test/csp/test_upgrade_insecure.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Security"
         }
       },
       {
         "path": "dom/security/test/csp/test_upgrade_insecure_navigation.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Security"
         }
       }
     ],
@@ -515,7 +586,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-          "assignee": "perry"
+          "assignee": "perry",
+          "component": "Core::DOM: Push Notifications"
         }
       }
     ],
@@ -527,7 +599,8 @@
         "path": "dom/tests/mochitest/ajax/offline/browser_disableAppcache.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Networking: Cache"
         }
       }
     ],
@@ -545,7 +618,8 @@
         "path": "widget/tests/browser/browser_test_procinfo.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Widget"
         }
       }
     ],
@@ -558,105 +632,120 @@
         "path": "dom/html/test/test_bug1295719_event_sequence_for_arrow_keys.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug1295719_event_sequence_for_number_keys.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug1315146.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug1323815.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug209275.xhtml",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug330705-1.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug386496.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug386996.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug388558.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug460568.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug500885.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug592802.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_filepicker_default_directory.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_input_files_not_nsIFile.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_multipleFilePicker.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -664,28 +753,32 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/tests/mochitest/bugs/test_bug265203.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/tests/mochitest/bugs/test_bug440572.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/websocket/tests/test_bug1384658.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -693,7 +786,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Push Notifications"
         }
       },
       {
@@ -701,7 +795,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Security"
         }
       },
       {
@@ -709,14 +804,16 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
         "path": "dom/serviceworkers/test/browser_download.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
@@ -724,7 +821,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
@@ -732,7 +830,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-          "assignee": "echuang"
+          "assignee": "echuang",
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
@@ -740,7 +839,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-          "assignee": "echuang"
+          "assignee": "echuang",
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
@@ -748,217 +848,248 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
         "path": "layout/forms/test/test_bug287446.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Layout: Form Controls"
         }
       },
       {
         "path": "layout/forms/test/test_bug477700.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Layout: Form Controls"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug329869.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug383369.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug455367.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug477118.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_cssBefore1.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_cssContent1.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_cssContent2.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_documentWrite1.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_documentWrite2.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynDelayedUnsecurePicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynDelayedUnsecureXHR.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecureBackground.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecurePicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecurePicturePreload.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_innerHtmlDelayedUnsecurePicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_innerHtmlUnsecurePicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_javascriptPicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_secureAll.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_securePicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureBackground.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureCSS.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframe.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframe2.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframeRedirect.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePicture.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePictureInIframe.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureRedirect.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Security: PSM"
         }
       },
       {
         "path": "js/xpconnect/tests/mochitest/test_bug629227.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::XPConnect"
         }
       },
       {
@@ -966,28 +1097,32 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Firefox::General"
         }
       },
       {
         "path": "toolkit/components/thumbnails/test/browser_thumbnails_bg_crash_during_capture.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::New Tab Page"
         }
       },
       {
         "path": "browser/components/sessionstore/test/browser_625016.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Session Restore"
         }
       },
       {
         "path": "browser/components/sessionstore/test/browser_upgrade_backup.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Session Restore"
         }
       },
       {
@@ -995,105 +1130,120 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Firefox::Site Identity and Permission Panels"
         }
       },
       {
         "path": "browser/base/content/test/siteIdentity/browser_no_mcb_for_loopback.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Site Identity and Permission Panels"
         }
       },
       {
         "path": "browser/base/content/test/tabs/browser_e10s_switchbrowser.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Tabbed Browser"
         }
       },
       {
         "path": "browser/base/content/test/tabs/browser_multiselect_tabs_open_related.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Tabbed Browser"
         }
       },
       {
         "path": "browser/base/content/test/tabs/browser_tabswitch_window_focus.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Tabbed Browser"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Tracking Protection"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Tracking Protection"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       },
       {
         "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_enable.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Add-ons Manager"
         }
       },
       {
         "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_install_disabled.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Add-ons Manager"
         }
       },
       {
         "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_theme.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Add-ons Manager"
         }
       },
       {
         "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_uninstall.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Add-ons Manager"
         }
       },
       {
         "path": "toolkit/mozapps/extensions/test/xpinstall/browser_newwindow.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Add-ons Manager"
         }
       },
       {
         "path": "toolkit/crashreporter/test/browser/browser_bug471404.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Crash Reporting"
         }
       },
       {
         "path": "toolkit/crashreporter/test/browser/browser_clearReports.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Crash Reporting"
         }
       },
       {
@@ -1101,7 +1251,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
@@ -1109,7 +1260,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
@@ -1117,7 +1269,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
@@ -1125,7 +1278,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
@@ -1133,7 +1287,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
@@ -1141,7 +1296,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
@@ -1149,28 +1305,32 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-          "assignee": "agakhokidze"
+          "assignee": "agakhokidze",
+          "component": "Toolkit::Data Sanitization"
         }
       },
       {
         "path": "toolkit/modules/tests/browser/browser_Finder_hidden_textarea.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Find Toolbar"
         }
       },
       {
         "path": "toolkit/modules/tests/browser/browser_Finder_overflowed_textarea.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Find Toolbar"
         }
       },
       {
         "path": "toolkit/content/tests/browser/browser_license_links.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::General"
         }
       },
       {
@@ -1178,7 +1338,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-          "assignee": "enndeakin"
+          "assignee": "enndeakin",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -1186,7 +1347,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-          "assignee": "enndeakin"
+          "assignee": "enndeakin",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -1194,7 +1356,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-          "assignee": "enndeakin"
+          "assignee": "enndeakin",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -1202,7 +1365,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-          "assignee": "nobody"
+          "assignee": "nobody",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -1210,7 +1374,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-          "assignee": "enndeakin"
+          "assignee": "enndeakin",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
@@ -1218,14 +1383,16 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-          "assignee": "enndeakin"
+          "assignee": "enndeakin",
+          "component": "Toolkit::Password Manager"
         }
       },
       {
         "path": "browser/components/extensions/test/browser/browser_ext_tabs_discarded.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "WebExtensions::Untriaged"
         }
       }
     ],
@@ -1234,56 +1401,64 @@
         "path": "dom/permission/tests/test_cross_origin_iframe.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/tests/mochitest/ajax/offline/browser_disableAppcache.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::Networking: Cache"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       },
       {
         "path": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Firefox::Protections UI"
         }
       },
       {
         "path": "browser/components/safebrowsing/content/test/browser_mixedcontent_aboutblocked.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Toolkit::Safe Browsing"
         }
       }
     ],
@@ -1296,14 +1471,16 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582520",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::XPConnect"
         }
       },
       {
         "path": "browser/extensions/report-site-issue/test/browser/browser_report_site_issue.js",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Web Compatibility Tools::General"
         }
       }
     ],
@@ -1313,7 +1490,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586911",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::DOM: File"
         }
       },
       {
@@ -1321,7 +1499,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::DOM: Web Storage"
         }
       }
     ],
@@ -1335,7 +1514,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582832",
-          "assignee": "afarre"
+          "assignee": "afarre",
+          "component": "Core::DOM: Core & HTML"
         }
       }
     ],
@@ -1348,14 +1528,16 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582744",
-          "assignee": "echen"
+          "assignee": "echen",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/html/test/test_bug871161.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1363,7 +1545,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574137",
-          "assignee": "jwatt"
+          "assignee": "jwatt",
+          "component": "Core::SVG"
         }
       }
     ],
@@ -1387,7 +1570,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570942",
-          "assignee": "nobody"
+          "assignee": "nobody",
+          "component": "Core::DOM: Service Workers"
         }
       }
     ],
@@ -1400,14 +1584,16 @@
         "path": "dom/base/test/test_bug466080.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
         "path": "dom/base/test/test_intersectionobservers.html",
         "metadata": {
           "milestone": "M4",
-          "assignee": null
+          "assignee": null,
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1415,7 +1601,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-          "assignee": "afarre"
+          "assignee": "afarre",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1423,7 +1610,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-          "assignee": "pbone"
+          "assignee": "pbone",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1431,7 +1619,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-          "assignee": "pbone"
+          "assignee": "pbone",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1439,7 +1628,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-          "assignee": "pbone"
+          "assignee": "pbone",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1447,7 +1637,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576407",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1455,7 +1646,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578636",
-          "assignee": "nobody"
+          "assignee": "nobody",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1463,7 +1655,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1579291",
-          "assignee": "nobody"
+          "assignee": "nobody",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1471,7 +1664,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1572575",
-          "assignee": "ahal"
+          "assignee": "ahal",
+          "component": "Core::DOM: Core & HTML"
         }
       },
       {
@@ -1479,7 +1673,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-          "assignee": "kmaglione+bmo"
+          "assignee": "kmaglione+bmo",
+          "component": "Core::DOM: Web Storage"
         }
       },
       {
@@ -1487,7 +1682,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582156",
-          "assignee": "kmadan"
+          "assignee": "kmadan",
+          "component": "Core::Document Navigation"
         }
       }
     ],
@@ -1497,7 +1693,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-          "assignee": "afarre"
+          "assignee": "afarre",
+          "component": "Core::DOM: Security"
         }
       },
       {
@@ -1505,7 +1702,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
-          "assignee": "echuang"
+          "assignee": "echuang",
+          "component": "Core::DOM: Service Workers"
         }
       },
       {
@@ -1513,7 +1711,8 @@
         "metadata": {
           "milestone": "M4",
           "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
-          "assignee": "echuang"
+          "assignee": "echuang",
+          "component": "Core::DOM: Service Workers"
         }
       }
     ],

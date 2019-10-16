@@ -3,8 +3,8 @@
     "components": 59,
     "failed tests": 96,
     "manifests": 1211,
-    "skipped tests": 323,
-    "tests": 381
+    "skipped tests": 321,
+    "tests": 379
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -1095,14 +1095,6 @@
       {
         "skip-if": "fission",
         "test": "browser/base/content/test/general/browser_bug441778.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/general/browser_bug462673.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/base/content/test/general/browser_bug633691.js"
       },
       {
         "skip-if": "fission || (os == \"linux\" && !e10s)",

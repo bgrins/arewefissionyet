@@ -114,7 +114,6 @@ async function getTestMetadata() {
     }
   }
 
-  // XXX: store bug number and assignee
   for (let row of rows.slice(1)) {
     let cols = row.split(",");
     let testPath = cols[testPathPosition];
@@ -205,6 +204,8 @@ async function fetchTestInfos(testMetadata) {
             obj.test
           );
         }
+
+        metadata.component = component;
 
         let inM4 = metadata && metadata.milestone == "M4";
         if (inM4) {
@@ -366,20 +367,21 @@ function getMarkupForTimelineEntry(change, isAdded) {
       }</a></small>`
     : "";
   var badge = isAdded ? `<small>New failing test</small>` : "";
-  var name = `<span class="arewe-timeline-path">${change.path}</span>`;
+  var name = `<span title="${change.path}" class="arewe-timeline-path">${change.path.split("/").pop()}</span>`;
   // var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
   var assignee =
     (metadata.assignee && `<small>${metadata.assignee}</small>`) || "";
+  var component =
+    (metadata.component && `<small>${metadata.component}</small>`) || "";
   return `
   <div class="arewe-timeline-block">
     <div class="arewe-timeline-img arewe-${isAdded ? "addition" : "subtraction"}">
     </div>
     <div class="arewe-timeline-content">
-      ${badge}
       <h2>
         ${name}
       </h2>
-      <span style="float: right;">${assignee}${link}</span>
+      <span style="float: right;">${badge}${component}${assignee}${link}</span>
     </div>
   </div>`;
 }
