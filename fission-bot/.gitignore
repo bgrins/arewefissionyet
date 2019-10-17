@@ -1,0 +1,6 @@
+node_modules/
+worker/
+.cargo-ok
+package-lock.json
+build-env.js
+dist/main.js
