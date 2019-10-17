@@ -274,31 +274,33 @@ function saveTimelineData(testsPerDay, testMetadata) {
         path: test,
         metadata: testMetadata.get(test)
       })),
-      remaining: changesPerDay[date].remaining,
+      remaining: changesPerDay[date].remaining
     };
   }
 
   // Reverse so that we render from newest to oldest:
-  changesPerDaySerialized = reverseObject(changesPerDaySerialized)
+  changesPerDaySerialized = reverseObject(changesPerDaySerialized);
 
   // Loop through them and write new timestamp if changed
-  let previousChangesPerDay = JSON.parse(fs.readFileSync(
-    TIMELINE_DATA_SOURCE_PATH,
-    "utf8"
-  ));
+  let previousChangesPerDay = JSON.parse(
+    fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
+  );
 
   let newUpdateTime = Date.now();
   for (let day in changesPerDaySerialized) {
-    if (previousChangesPerDay[day]) {
-      delete previousChangesPerDay.lastUpdated;
+    if (!previousChangesPerDay[day]) {
+      changesPerDaySerialized[day].lastUpdated = newUpdateTime;
+      continue;
     }
 
-    if (!previousChangesPerDay[day] || JSON.stringify(changesPerDaySerialized[day]) != JSON.stringify(previousChangesPerDay[day])) {
-      console.log("Day changed", day);
-      changesPerDaySerialized[day].lastUpdated = newUpdateTime;
-    } else {
-      console.log("Day didn't change", day);
-    }
+    let previousUpdateTime = previousChangesPerDay[day].lastUpdated;
+    delete previousChangesPerDay[day].lastUpdated;
+    let unchanged =
+      JSON.stringify(changesPerDaySerialized[day]) ==
+      JSON.stringify(previousChangesPerDay[day]);
+    changesPerDaySerialized[day].lastUpdated = unchanged
+      ? previousUpdateTime
+      : newUpdateTime;
   }
 
   fs.writeFileSync(
@@ -308,10 +310,9 @@ function saveTimelineData(testsPerDay, testMetadata) {
 }
 
 function renderTimeline() {
-  let timelineData = JSON.parse(fs.readFileSync(
-    TIMELINE_DATA_SOURCE_PATH,
-    "utf8"
-  ));
+  let timelineData = JSON.parse(
+    fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
+  );
 
   var text = fs.readFileSync(TIMELINE_HTML_PATH, "utf8");
   var newText =
@@ -339,16 +340,10 @@ function renderTimeline() {
 
     // TODO: fetch metadata (bug # and assignees)
     for (let addition of timelineData[date].additions) {
-      newText += getMarkupForTimelineEntry(
-        addition,
-        true,
-      );
+      newText += getMarkupForTimelineEntry(addition, true);
     }
     for (let removal of timelineData[date].removals) {
-      newText += getMarkupForTimelineEntry(
-        removal,
-        false,
-      );
+      newText += getMarkupForTimelineEntry(removal, false);
     }
     if (hasChanges) {
       newText += `</div></details>`;
@@ -388,7 +383,11 @@ function getMarkupForTimelineEntry(change, isAdded) {
       }</a></small>`
     : "";
   var badge = isAdded ? `<small>New failing test</small>` : "";
-  var name = `<span title="${change.path}" class="arewe-timeline-path">${change.path.split("/").shift()}/…/${change.path.split("/").pop()}</span>`;
+  var name = `<span title="${
+    change.path
+  }" class="arewe-timeline-path">${change.path
+    .split("/")
+    .shift()}/…/${change.path.split("/").pop()}</span>`;
   // var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
   var assignee =
     (metadata.assignee && `<small>${metadata.assignee}</small>`) || "";
@@ -396,7 +395,9 @@ function getMarkupForTimelineEntry(change, isAdded) {
     (metadata.component && `<small>${metadata.component}</small>`) || "";
   return `
   <div class="arewe-timeline-block">
-    <div class="arewe-timeline-img arewe-${isAdded ? "addition" : "subtraction"}">
+    <div class="arewe-timeline-img arewe-${
+      isAdded ? "addition" : "subtraction"
+    }">
     </div>
     <div class="arewe-timeline-content">
       <h2>

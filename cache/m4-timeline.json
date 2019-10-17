@@ -2,6 +2,15 @@
   "2019-10-17": {
     "removals": [
       {
+        "path": "dom/base/test/test_postMessages.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585932",
+          "assignee": "amarchesini",
+          "component": "Core::DOM: Core & HTML"
+        }
+      },
+      {
         "path": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation_filters.html",
         "metadata": {
           "milestone": "M4",
@@ -12,8 +21,8 @@
       }
     ],
     "additions": [],
-    "remaining": 257,
-    "lastUpdated": 1571348752038
+    "remaining": 256,
+    "lastUpdated": 1571350359455
   },
   "2019-10-16": {
     "removals": [
