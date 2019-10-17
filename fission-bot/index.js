@@ -16,8 +16,9 @@ async function handler(request) {
   //   let now = Date.now();
   let resp = await fetch("https://arewefissionyet.com/cache/m4-timeline.json");
   let body = await resp.json();
-  for (let date in body) {
-    let removals = body[date].removals.map(removal => {
+  let { data, updateTime } = body.data;
+  for (let date in data) {
+    let removals = data[date].removals.map(removal => {
       let metadata = removal.metadata.bug
         ? ` fixed by ${removal.metadata.assignee} in ${removal.metadata.bug}`
         : "";
@@ -29,12 +30,11 @@ async function handler(request) {
 ${removals.join("\n")}`;
     }
     let message = `
-There are ${body[date].remaining} tests remaining. I last gathered data for ${date}${removals}
+There are ${data[date].remaining} tests remaining. I last gathered data for ${date}${removals}
 `;
     // return new Response(message);
     return slackResponse(message);
   }
-  //   return new Response(JSON.stringify(body), init);
 }
 
 /**
