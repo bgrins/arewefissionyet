@@ -205,7 +205,9 @@ async function fetchTestInfos(testMetadata) {
           );
         }
 
-        metadata.component = component;
+        if (metadata) {
+          metadata.component = component;
+        }
 
         let inM4 = metadata && metadata.milestone == "M4";
         if (inM4) {
