@@ -94,6 +94,7 @@ async function handleRequest(request) {
       new Response(`Welcome to fission bot. See more:
 - https://arewefissionyet.com/
 - https://fission-bot.bgrins.workers.dev/status
+- https://fission-bot.bgrins.workers.dev/commit
 `)
   );
 
