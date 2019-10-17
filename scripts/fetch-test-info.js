@@ -63,15 +63,6 @@ function getDatesBetween(startDate, endDate) {
 }
 
 async function getTestMetadata() {
-  // let bugToAssignees = {};
-  // let assignees = await request("https://docs.google.com/spreadsheets/d/e/2PACX-1vSBOysww1PcGcB19Ew_NOUpPnQMGkP1RQGAOAoYMRvgVMWWhmcdjyOfLjvEDCC_F6nobE7Hu6ooaj7Q/pub?gid=1164074255&single=true&output=csv");
-  // for (let row of assignees.split("\n")) {
-  //   let cols = row.split(",");
-  //   if (cols[1] && cols[2]) {
-  //     bugToAssignees["https://bugzilla.mozilla.org/show_bug.cgi?id=" + cols[1]] = cols[2].trim();
-  //   }
-  // }
-
   const testMetadata = new Map();
   let response = await fetch(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRmnRUOy-KDDScK8o8Z6aKRaEtXKXb39Yn2OOPXoMgZwcMC3Oce3jgSjI5-jRK0jLS73gQYLkfSTJ_/pub?gid=1560718888&single=true&output=csv"
@@ -266,7 +257,7 @@ function saveTimelineData(testsPerDay, testMetadata) {
   // Loop through them and write new timestamp if changed
   let previousChangesPerDay = JSON.parse(
     fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
-  );
+  ).data;
 
   let newUpdateTime = Date.now();
   let changesPerDaySerialized = {
