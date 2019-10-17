@@ -298,9 +298,9 @@ function saveTimelineData(testsPerDay, testMetadata) {
     let unchanged =
       JSON.stringify(changesPerDaySerialized[day]) ==
       JSON.stringify(previousChangesPerDay[day]);
-    changesPerDaySerialized[day].lastUpdated = unchanged
-      ? previousUpdateTime
-      : newUpdateTime;
+    // changesPerDaySerialized[day].lastUpdated = unchanged
+    //   ? previousUpdateTime
+    //   : newUpdateTime;
   }
 
   fs.writeFileSync(
