@@ -3,8 +3,8 @@
     "components": 58,
     "failed tests": 96,
     "manifests": 1211,
-    "skipped tests": 319,
-    "tests": 377
+    "skipped tests": 318,
+    "tests": 376
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -48,10 +48,6 @@
       {
         "skip-if": "fission",
         "test": "dom/base/test/test_bug976673.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/base/test/test_postMessages.html"
       },
       {
         "fail-if": "fission",

@@ -263,25 +263,51 @@ function saveTimelineData(testsPerDay, testMetadata) {
     yesterdaySet = todaySet;
   }
 
-  let changesPerDaySerialized = {};
+  // Loop through them and write new timestamp if changed
+  let previousChangesPerDay = JSON.parse(
+    fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
+  );
+
+  let newUpdateTime = Date.now();
+  let changesPerDaySerialized = {
+    updateTime: newUpdateTime,
+    data: {}
+  };
+
   for (let date in changesPerDay) {
-    changesPerDaySerialized[date] = {
+    // Keep track of when a change is first detected, so that we can figure
+    // out what's specifically changed in this commit. For instance, if caching
+    // happens more than once per day then we can get changed artifacts for the
+    // same day, and we shouldn't report out everything being removed every time.
+    let previousRemovals = new Map();
+    let previousAdditions = new Map();
+    if (previousChangesPerDay[date]) {
+      previousChangesPerDay[date].removals.forEach(removal => {
+        previousRemovals.set(removal.path, removal.updateTime);
+      });
+      previousChangesPerDay[date].additions.forEach(addition => {
+        previousAdditions.set(addition.path, addition.updateTime);
+      });
+    }
+
+    changesPerDaySerialized.data[date] = {
       removals: [...changesPerDay[date].removals].map(test => ({
         path: test,
-        metadata: testMetadata.get(test)
+        updateTime: previousRemovals.get(test) || newUpdateTime,
+        metadata: testMetadata.get(test),
       })),
       additions: [...changesPerDay[date].additions].map(test => ({
         path: test,
-        metadata: testMetadata.get(test)
+        updateTime: previousAdditions.get(test) || newUpdateTime,
+        metadata: testMetadata.get(test),
       })),
       remaining: changesPerDay[date].remaining
     };
   }
 
   // Reverse so that we render from newest to oldest:
-  changesPerDaySerialized = reverseObject(changesPerDaySerialized);
+  changesPerDaySerialized.data = reverseObject(changesPerDaySerialized.data);
 
-  console.log(`Writing metadata to ${TIMELINE_DATA_SOURCE_PATH}`);
   fs.writeFileSync(
     TIMELINE_DATA_SOURCE_PATH,
     JSON.stringify(changesPerDaySerialized, null, 2)
@@ -289,10 +315,9 @@ function saveTimelineData(testsPerDay, testMetadata) {
 }
 
 function renderTimeline() {
-  let timelineData = JSON.parse(fs.readFileSync(
-    TIMELINE_DATA_SOURCE_PATH,
-    "utf8"
-  ));
+  let timelineData = JSON.parse(
+    fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
+  ).data;
 
   var text = fs.readFileSync(TIMELINE_HTML_PATH, "utf8");
   var newText =
@@ -320,16 +345,10 @@ function renderTimeline() {
 
     // TODO: fetch metadata (bug # and assignees)
     for (let addition of timelineData[date].additions) {
-      newText += getMarkupForTimelineEntry(
-        addition,
-        true,
-      );
+      newText += getMarkupForTimelineEntry(addition, true);
     }
     for (let removal of timelineData[date].removals) {
-      newText += getMarkupForTimelineEntry(
-        removal,
-        false,
-      );
+      newText += getMarkupForTimelineEntry(removal, false);
     }
     if (hasChanges) {
       newText += `</div></details>`;
@@ -369,7 +388,11 @@ function getMarkupForTimelineEntry(change, isAdded) {
       }</a></small>`
     : "";
   var badge = isAdded ? `<small>New failing test</small>` : "";
-  var name = `<span title="${change.path}" class="arewe-timeline-path">${change.path.split("/").shift()}/…/${change.path.split("/").pop()}</span>`;
+  var name = `<span title="${
+    change.path
+  }" class="arewe-timeline-path">${change.path
+    .split("/")
+    .shift()}/…/${change.path.split("/").pop()}</span>`;
   // var type = (metadata.type && `<small>${metadata.type}</small>`) || "";
   var assignee =
     (metadata.assignee && `<small>${metadata.assignee}</small>`) || "";
@@ -377,7 +400,9 @@ function getMarkupForTimelineEntry(change, isAdded) {
     (metadata.component && `<small>${metadata.component}</small>`) || "";
   return `
   <div class="arewe-timeline-block">
-    <div class="arewe-timeline-img arewe-${isAdded ? "addition" : "subtraction"}">
+    <div class="arewe-timeline-img arewe-${
+      isAdded ? "addition" : "subtraction"
+    }">
     </div>
     <div class="arewe-timeline-content">
       <h2>
