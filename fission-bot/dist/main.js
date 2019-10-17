@@ -90,6 +90,8 @@
 
 const Router = __webpack_require__(1);
 
+console.log(DEBUG2);
+
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
