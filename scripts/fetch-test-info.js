@@ -257,12 +257,12 @@ function saveTimelineData(testsPerDay, testMetadata) {
   // Loop through them and write new timestamp if changed
   let previousChangesPerDay = JSON.parse(
     fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
-  ).data;
+  );
 
   let newUpdateTime = Date.now();
   let changesPerDaySerialized = {
-    updateTime: newUpdateTime,
-    data: {}
+    updateTime: previousChangesPerDay.updateTime,
+    data: {},
   };
 
   for (let date in changesPerDay) {
@@ -272,11 +272,11 @@ function saveTimelineData(testsPerDay, testMetadata) {
     // same day, and we shouldn't report out everything being removed every time.
     let previousRemovals = new Map();
     let previousAdditions = new Map();
-    if (previousChangesPerDay[date]) {
-      previousChangesPerDay[date].removals.forEach(removal => {
+    if (previousChangesPerDay.data[date]) {
+      previousChangesPerDay.data[date].removals.forEach(removal => {
         previousRemovals.set(removal.path, removal.updateTime);
       });
-      previousChangesPerDay[date].additions.forEach(addition => {
+      previousChangesPerDay.data[date].additions.forEach(addition => {
         previousAdditions.set(addition.path, addition.updateTime);
       });
     }
@@ -285,12 +285,12 @@ function saveTimelineData(testsPerDay, testMetadata) {
       removals: [...changesPerDay[date].removals].map(test => ({
         path: test,
         updateTime: previousRemovals.get(test) || newUpdateTime,
-        metadata: testMetadata.get(test),
+        metadata: testMetadata.get(test)
       })),
       additions: [...changesPerDay[date].additions].map(test => ({
         path: test,
         updateTime: previousAdditions.get(test) || newUpdateTime,
-        metadata: testMetadata.get(test),
+        metadata: testMetadata.get(test)
       })),
       remaining: changesPerDay[date].remaining
     };
@@ -299,6 +299,13 @@ function saveTimelineData(testsPerDay, testMetadata) {
   // Reverse so that we render from newest to oldest:
   changesPerDaySerialized.data = reverseObject(changesPerDaySerialized.data);
 
+  // If we are making some changes to additions/removals then update the updateTime.
+  let somethingChanged =
+    JSON.stringify(changesPerDaySerialized.data) !=
+    JSON.stringify(previousChangesPerDay.data);
+  if (somethingChanged) {
+    changesPerDaySerialized.updateTime = newUpdateTime;
+  }
   fs.writeFileSync(
     TIMELINE_DATA_SOURCE_PATH,
     JSON.stringify(changesPerDaySerialized, null, 2)
