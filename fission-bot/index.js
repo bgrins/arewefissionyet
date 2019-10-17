@@ -3,6 +3,7 @@ const Router = require("./router");
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
+let JSON_HEADERS = new Headers([["Content-Type", "application/json"]]);
 
 /*
 TODO:
@@ -28,12 +29,29 @@ ${removals.join("\n")}`;
     let message = `
 There are ${body[date].remaining} tests remaining. I last gathered data for ${date}${removals}
 `;
-    return new Response(message);
+    // return new Response(message);
+    return slackResponse(message);
   }
-  //   const init = {
-  //     headers: { "content-type": "application/json" },
-  //   };
   //   return new Response(JSON.stringify(body), init);
+}
+
+/**
+ * slackResponse builds a message for Slack with the given text
+ * and optional attachment text
+ *
+ * @param {string} text - the message text to return
+ */
+function slackResponse(text) {
+  let content = {
+    response_type: "in_channel",
+    text: text,
+    attachments: [],
+  };
+
+  return new Response(JSON.stringify(content), {
+    headers: JSON_HEADERS,
+    status: 200,
+  });
 }
 
 async function handleRequest(request) {
