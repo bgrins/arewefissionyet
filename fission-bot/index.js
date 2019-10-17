@@ -1,6 +1,6 @@
 const Router = require("./router");
 
-console.log(DEBUG2);
+console.log(SLACK_TOKEN);
 
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
