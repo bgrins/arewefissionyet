@@ -1,4 +1,19 @@
 {
+  "2019-10-17": {
+    "removals": [
+      {
+        "path": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation_filters.html",
+        "metadata": {
+          "milestone": "M4",
+          "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589110",
+          "assignee": "tomica",
+          "component": "WebExtensions::General"
+        }
+      }
+    ],
+    "additions": [],
+    "remaining": 257
+  },
   "2019-10-16": {
     "removals": [
       {
