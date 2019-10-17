@@ -274,14 +274,33 @@ function saveTimelineData(testsPerDay, testMetadata) {
         path: test,
         metadata: testMetadata.get(test)
       })),
-      remaining: changesPerDay[date].remaining
+      remaining: changesPerDay[date].remaining,
     };
   }
 
   // Reverse so that we render from newest to oldest:
-  changesPerDaySerialized = reverseObject(changesPerDaySerialized);
+  changesPerDaySerialized = reverseObject(changesPerDaySerialized)
 
-  console.log(`Writing metadata to ${TIMELINE_DATA_SOURCE_PATH}`);
+  // Loop through them and write new timestamp if changed
+  let previousChangesPerDay = JSON.parse(fs.readFileSync(
+    TIMELINE_DATA_SOURCE_PATH,
+    "utf8"
+  ));
+
+  let newUpdateTime = Date.now();
+  for (let day in changesPerDaySerialized) {
+    if (previousChangesPerDay[day]) {
+      delete previousChangesPerDay.lastUpdated;
+    }
+
+    if (!previousChangesPerDay[day] || JSON.stringify(changesPerDaySerialized[day]) != JSON.stringify(previousChangesPerDay[day])) {
+      console.log("Day changed", day);
+      changesPerDaySerialized[day].lastUpdated = newUpdateTime;
+    } else {
+      console.log("Day didn't change", day);
+    }
+  }
+
   fs.writeFileSync(
     TIMELINE_DATA_SOURCE_PATH,
     JSON.stringify(changesPerDaySerialized, null, 2)
