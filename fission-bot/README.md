@@ -11,4 +11,4 @@ module.exports = {
 };
 ```
 
-Then do `wrangler publish`
+Then do `wrangler publish`. This is published at https://fission-bot.bgrins.workers.dev/.
