@@ -1,8 +1,17 @@
 {
-  "updateTime": 1571427994837,
+  "updateTime": 1571443052695,
   "data": {
     "2019-10-18": {
       "removals": [
+        {
+          "path": "netwerk/cookie/test/browser/browser_serviceWorker.js",
+          "updateTime": 1571443052695,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Networking: Cookies"
+          }
+        },
         {
           "path": "browser/components/enterprisepolicies/tests/browser/browser_policy_extensionsettings.js",
           "updateTime": 1571414900868,
@@ -42,10 +51,20 @@
             "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
+        },
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_new_tab_processType.html",
+          "updateTime": 1571443052695,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589266",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
+          }
         }
       ],
       "additions": [],
-      "remaining": 252
+      "remaining": 250
     },
     "2019-10-17": {
       "removals": [

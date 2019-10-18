@@ -3,8 +3,8 @@
     "components": 58,
     "failed tests": 96,
     "manifests": 1211,
-    "skipped tests": 318,
-    "tests": 376
+    "skipped tests": 314,
+    "tests": 373
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -139,7 +139,6 @@
       },
       {
         "fail-if": "fission",
-        "skip-if": "os == 'android' && debug",
         "test": "dom/indexedDB/test/test_third_party.html"
       }
     ],
@@ -365,7 +364,7 @@
         "test": "dom/serviceworkers/test/test_sanitize_domain.html"
       },
       {
-        "skip-if": "\n(os == 'android' && debug) ||\nfission",
+        "skip-if": "\nfission",
         "test": "dom/serviceworkers/test/test_third_party_iframes.html"
       }
     ],
@@ -478,10 +477,6 @@
       }
     ],
     "Core::Networking: Cookies": [
-      {
-        "skip-if": "fission && debug",
-        "test": "netwerk/cookie/test/browser/browser_serviceWorker.js"
-      },
       {
         "skip-if": "fission",
         "test": "netwerk/cookie/test/browser/browser_sharedWorker.js"
@@ -1544,10 +1539,6 @@
       {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (\n(verify && debug && (os == 'linux')) ||\n(fission && debug)))",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_canvas.html"
-      },
-      {
-        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || (verify && debug && (os == 'linux' || os == 'mac'))))",
-        "test": "toolkit/components/extensions/test/mochitest/test_ext_new_tab_processType.html"
       },
       {
         "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission && debug))",
