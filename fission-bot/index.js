@@ -52,6 +52,7 @@ async function statusHandler(request) {
 
 async function commitHandler(request) {
   try {
+    let commitTime = Date.now().toString();
     let timelineObject;
     if (request.method === "POST") {
       let body = await request.json();
@@ -64,6 +65,7 @@ async function commitHandler(request) {
       }
 
       let afterRevision = body.after;
+      commitTime = body.head_commit.timestamp;
       let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
 
       try {
@@ -105,10 +107,8 @@ async function commitHandler(request) {
       additions.length ? "\nAdditions:\n" : ""
     }${additions.join("\n")}`;
 
-    return new Response(
-      `Changes for ${new Date(
-        updateTime
-      ).toLocaleDateString()}:${removalsStr}${additionsStr}`
+    return slackResponse(
+      `I detected some Fission test changes at ${commitTime} :${removalsStr}${additionsStr}`
     );
   } catch (e) {
     return new Response(`${e.toString()}`, { status: 500 });
