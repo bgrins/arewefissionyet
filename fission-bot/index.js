@@ -57,7 +57,7 @@ async function commitHandler(request) {
 
     let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
     let commitTimeline = await fetch(commitTimelineURL);
-    commitTimeline = commitTimeline.text();
+    commitTimeline = await commitTimeline.text();
 
     return new Response(
       "Received POST " + commitTimelineURL + "\n" + commitTimeline
