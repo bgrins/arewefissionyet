@@ -84786,7 +84786,7 @@
           "test": "dom/serviceworkers/test/test_csp_upgrade-insecure_intercept.html"
         },
         {
-          "skip-if": "fission",
+          "skip-if": "fission && !serviceworker_e10s",
           "test": "dom/serviceworkers/test/test_eventsource_intercept.html"
         },
         {
@@ -84822,7 +84822,7 @@
           "test": "dom/serviceworkers/test/test_openWindow.html"
         },
         {
-          "skip-if": "fission",
+          "skip-if": "fission && !serviceworker_e10s",
           "test": "dom/serviceworkers/test/test_sanitize_domain.html"
         },
         {

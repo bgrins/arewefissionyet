@@ -262,7 +262,7 @@ function saveTimelineData(testsPerDay, testMetadata) {
   let newUpdateTime = Date.now();
   let changesPerDaySerialized = {
     updateTime: previousChangesPerDay.updateTime,
-    data: {},
+    data: {}
   };
 
   for (let date in changesPerDay) {
@@ -300,12 +300,12 @@ function saveTimelineData(testsPerDay, testMetadata) {
   changesPerDaySerialized.data = reverseObject(changesPerDaySerialized.data);
 
   // If we are making some changes to additions/removals then update the updateTime.
-  let somethingChanged =
-    JSON.stringify(changesPerDaySerialized.data) !=
-    JSON.stringify(previousChangesPerDay.data);
-  if (somethingChanged) {
-    changesPerDaySerialized.updateTime = newUpdateTime;
-  }
+  // let somethingChanged =
+  //   JSON.stringify(changesPerDaySerialized.data) !=
+  //   JSON.stringify(previousChangesPerDay.data);
+  // if (somethingChanged) {
+  changesPerDaySerialized.updateTime = newUpdateTime;
+  // }
   fs.writeFileSync(
     TIMELINE_DATA_SOURCE_PATH,
     JSON.stringify(changesPerDaySerialized, null, 2)
