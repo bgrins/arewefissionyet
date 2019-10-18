@@ -1,6 +1,52 @@
 {
-  "updateTime": 1571353358187,
+  "updateTime": 1571414900868,
   "data": {
+    "2019-10-18": {
+      "removals": [
+        {
+          "path": "browser/components/enterprisepolicies/tests/browser/browser_policy_extensionsettings.js",
+          "updateTime": 1571414900868,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585776",
+            "assignee": "kmaglione+bmo",
+            "component": "Firefox::Enterprise Policies"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_enabled.js",
+          "updateTime": 1571414900868,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589508",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_enabled2.js",
+          "updateTime": 1571414900868,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589508",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_enabled3.js",
+          "updateTime": 1571414900868,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589508",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 252
+    },
     "2019-10-17": {
       "removals": [
         {
