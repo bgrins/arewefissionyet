@@ -7,7 +7,10 @@ addEventListener("fetch", event => {
 });
 let JSON_HEADERS = new Headers([["Content-Type", "application/json"]]);
 
-function stringifyTestChange(test) {
+function stringifyTestChange(test, isRemoval = true) {
+  if (!isRemoval) {
+    return `* New failing test: ${test.path}`;
+  }
   let metadata = test.metadata.bug
     ? ` fixed by ${test.metadata.assignee} in ${test.metadata.bug}`
     : "";
@@ -24,7 +27,7 @@ async function statusHandler(request) {
   let body = await resp.json();
   let { data, updateTime } = body;
   for (let date in data) {
-    let removals = data[date].removals.map(stringifyTestChange);
+    let removals = data[date].removals.map(t => stringifyTestChange(t));
     if (removals.length) {
       removals = `, when the following tests were fixed:
 
@@ -43,50 +46,63 @@ There are ${
 }
 
 async function commitHandler(request) {
-  const { headers } = request;
-  const contentType = headers.get("content-type");
-  if (contentType.includes("application/json")) {
-    let body = await request.json();
-    let afterRevision = body.after;
-    if (!afterRevision) {
-      return new Response(
-        "Please include the `after` commit revision in the POST data",
-        { status: 500 }
+  try {
+    let timelineObject;
+    if (request.method === "POST") {
+      let body = await request.json();
+      let afterRevision = body.after;
+      let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
+
+      try {
+        let commitTimeline = await fetch(commitTimelineURL);
+        commitTimeline = await commitTimeline.text();
+        timelineObject = JSON.parse(commitTimeline);
+        // return new Response(
+        //   "Received POST " + commitTimelineURL + "\n" + commitTimeline
+        // );
+      } catch (e) {
+        return new Response(
+          `Please include the "after" commit revision in the POST data (tried fetching ${commitTimelineURL}) and got the error (${e.toString()})`,
+          { status: 500 }
+        );
+      }
+    } else {
+      let resp = await fetch(
+        "https://arewefissionyet.com/cache/m4-timeline.json"
+      );
+      timelineObject = await resp.json();
+    }
+    let { data, updateTime } = timelineObject;
+    let removals = [];
+    let additions = [];
+    for (let day in data) {
+      removals = removals.concat(
+        data[day].removals
+          .filter(t => t.updateTime == updateTime)
+          .map(t => stringifyTestChange(t))
+      );
+      additions = additions.concat(
+        data[day].additions
+          .filter(t => t.updateTime == updateTime)
+          .map(t => stringifyTestChange(t, false))
       );
     }
 
-    let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
-    let commitTimeline = await fetch(commitTimelineURL);
-    commitTimeline = await commitTimeline.text();
+    let removalsStr = `${removals.length ? "\nRemovals:\n" : ""}${removals.join(
+      "\n"
+    )}`;
+    let additionsStr = `${
+      additions.length ? "\nAdditions:\n" : ""
+    }${additions.join("\n")}`;
 
     return new Response(
-      "Received POST " + commitTimelineURL + "\n" + commitTimeline
-    ); // JSON.stringify(body));
-  }
-
-  let resp = await fetch("https://arewefissionyet.com/cache/m4-timeline.json");
-  let body = await resp.json();
-  let { data, updateTime } = body;
-
-  let removals = [];
-  let additions = [];
-  for (let date in data) {
-    removals = removals.concat(
-      data[date].removals
-        .filter(removal => removal.updateTime == updateTime)
-        .map(stringifyTestChange.bind(null, true))
+      `Changes for ${new Date(
+        updateTime
+      ).toString()}:${removalsStr}${additionsStr}`
     );
-    additions = additions.concat(
-      data[date].additions
-        .filter(additions => additions.updateTime == updateTime)
-        .map(stringifyTestChange.bind(null, false))
-    );
+  } catch (e) {
+    return new Response(`${e.toString()}`, { status: 500 });
   }
-
-  return new Response(`Changes for ${new Date(updateTime).toString()}:
-Removals: ${removals.join("\n")}
-Additions: ${additions.join("\n")}
-`);
 }
 
 /**
