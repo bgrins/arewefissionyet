@@ -50,6 +50,14 @@ async function commitHandler(request) {
     let timelineObject;
     if (request.method === "POST") {
       let body = await request.json();
+      let doWeCare = body.commits.filter(c =>
+        c.modified.includes("cache/m4-timeline.json")
+      ).length;
+
+      if (!doWeCare) {
+        return new Response("Nothing to do");
+      }
+
       let afterRevision = body.after;
       let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
 
@@ -57,9 +65,6 @@ async function commitHandler(request) {
         let commitTimeline = await fetch(commitTimelineURL);
         commitTimeline = await commitTimeline.text();
         timelineObject = JSON.parse(commitTimeline);
-        // return new Response(
-        //   "Received POST " + commitTimelineURL + "\n" + commitTimeline
-        // );
       } catch (e) {
         return new Response(
           `Please include the "after" commit revision in the POST data (tried fetching ${commitTimelineURL}) and got the error (${e.toString()})`,
