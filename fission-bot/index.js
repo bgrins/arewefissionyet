@@ -107,6 +107,9 @@ async function commitHandler(request) {
       additions.length ? "\nAdditions:\n" : ""
     }${additions.join("\n")}`;
 
+    // XXX:
+    // include link to timeline and summary of total remaining
+    // check request coming from gh
     let msg = `I detected some Fission test changes at ${commitTime}:${removalsStr}${additionsStr}`;
 
     if (removals.length || additions.length) {
