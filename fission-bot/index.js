@@ -43,7 +43,13 @@ There are ${
 }
 
 async function commitHandler(request) {
-  //   let now = Date.now();
+  const { headers } = request;
+  const contentType = headers.get("content-type");
+  if (contentType.includes("application/json")) {
+    let body = await request.json();
+    return new Response("Received POST " + JSON.stringify(body));
+  }
+
   let resp = await fetch("https://arewefissionyet.com/cache/m4-timeline.json");
   let body = await resp.json();
   let { data, updateTime } = body;
@@ -51,12 +57,16 @@ async function commitHandler(request) {
   let removals = [];
   let additions = [];
   for (let date in data) {
-    removals = removals.concat(data[date].removals.filter(
-      removal => removal.updateTime == updateTime
-    ).map(stringifyTestChange.bind(null, true)));
-    additions = additions.concat(data[date].additions.filter(
-      additions => additions.updateTime == updateTime
-    ).map(stringifyTestChange.bind(null, false)));
+    removals = removals.concat(
+      data[date].removals
+        .filter(removal => removal.updateTime == updateTime)
+        .map(stringifyTestChange.bind(null, true))
+    );
+    additions = additions.concat(
+      data[date].additions
+        .filter(additions => additions.updateTime == updateTime)
+        .map(stringifyTestChange.bind(null, false))
+    );
   }
 
   return new Response(`Changes for ${new Date(updateTime).toString()}:
