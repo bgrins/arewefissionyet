@@ -7,7 +7,8 @@ Add a file called build-env.js with:
 
 ```
 module.exports = {
-  SLACK_TOKEN: JSON.stringify("SLACKTOKENGOESHERE"),
+  SLACK_TOKEN: JSON.stringify("SLACK_TOKEN_GOES_HERE"),
+  SLACK_ENDPOINT: JSON.stringify("SLACK_ENDPOINT_GOES_HERE"),
 };
 ```
 

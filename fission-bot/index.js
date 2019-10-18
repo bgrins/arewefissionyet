@@ -107,11 +107,23 @@ async function commitHandler(request) {
       additions.length ? "\nAdditions:\n" : ""
     }${additions.join("\n")}`;
 
-    return slackResponse(
-      `I detected some Fission test changes at ${commitTime} :${removalsStr}${additionsStr}`
-    );
+    let msg = `I detected some Fission test changes at ${commitTime}:${removalsStr}${additionsStr}`;
+
+    if (removals.length || additions.length) {
+      await fetch(
+        SLACK_ENDPOINT,
+        {
+          body: JSON.stringify({ text: msg }),
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+      return new Response(`Posted`);
+    }
+    return new Response(`Nothing to post`);
   } catch (e) {
-    return new Response(`${e.toString()}`, { status: 500 });
+    // ${e.toString()} for debugging
+    return new Response(`Error`, { status: 500 });
   }
 }
 
