@@ -47,7 +47,21 @@ async function commitHandler(request) {
   const contentType = headers.get("content-type");
   if (contentType.includes("application/json")) {
     let body = await request.json();
-    return new Response("Received POST " + JSON.stringify(body));
+    let afterRevision = body.after;
+    if (!afterRevision) {
+      return new Response(
+        "Please include the `after` commit revision in the POST data",
+        { status: 500 }
+      );
+    }
+
+    let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
+    let commitTimeline = await fetch(commitTimelineURL);
+    commitTimeline = commitTimeline.text();
+
+    return new Response(
+      "Received POST " + commitTimelineURL + "\n" + commitTimeline
+    ); // JSON.stringify(body));
   }
 
   let resp = await fetch("https://arewefissionyet.com/cache/m4-timeline.json");
