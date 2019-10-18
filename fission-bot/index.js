@@ -8,13 +8,16 @@ addEventListener("fetch", event => {
 let JSON_HEADERS = new Headers([["Content-Type", "application/json"]]);
 
 function stringifyTestChange(test, isRemoval = true) {
+  let path = test.path.split("/").pop();
   if (!isRemoval) {
-    return `* New failing test: ${test.path}`;
+    return `• *New failing test*: ${path}`;
   }
   let metadata = test.metadata.bug
-    ? ` fixed by ${test.metadata.assignee} in ${test.metadata.bug}`
+    ? ` by ${test.metadata.assignee} in <${test.metadata.bug}|Bug ${
+        test.metadata.bug.match(/\d+$/)[0]
+      }>`
     : "";
-  return `* ${test.path}${metadata}`;
+  return `• *Fixed*: ${path}${metadata}`;
 }
 /*
 TODO:
@@ -28,18 +31,20 @@ async function statusHandler(request) {
   let { data, updateTime } = body;
   for (let date in data) {
     let removals = data[date].removals.map(t => stringifyTestChange(t));
-    if (removals.length) {
-      removals = `, when the following tests were fixed:
-
-${removals.join("\n")}`;
+    let additions = data[date].additions.map(t =>
+      stringifyTestChange(t, false)
+    );
+    let str = null;
+    let atDate = new Date(updateTime).toUTCString();
+    if (removals.length || additions.length) {
+      str = " with the following changes:\n\n";
+      str += `${removals.join("\n")}\n${additions.join("\n")}`;
+    } else {
+      str = ` and did not detect any changes (run time was ${new Date(
+        updateTime
+      ).toUTCString()}`;
     }
-    let message = `
-There are ${
-      data[date].remaining
-    } tests remaining. I last gathered data for ${date} at ${new Date(
-      updateTime
-    ).toString()}${removals}
-`;
+    let message = `There are ${data[date].remaining} tests remaining. I last gathered data for ${date}${str}`;
     // return new Response(message);
     return slackResponse(message);
   }
@@ -103,7 +108,7 @@ async function commitHandler(request) {
     return new Response(
       `Changes for ${new Date(
         updateTime
-      ).toString()}:${removalsStr}${additionsStr}`
+      ).toLocaleDateString()}:${removalsStr}${additionsStr}`
     );
   } catch (e) {
     return new Response(`${e.toString()}`, { status: 500 });
@@ -119,8 +124,14 @@ async function commitHandler(request) {
 function slackResponse(text) {
   let content = {
     response_type: "in_channel",
-    text: text,
-    attachments: [],
+    type: "section",
+    mrkdwn: true,
+    text,
+    // attachments: [
+    //   {
+    //     text: "Extra text to render below the body",
+    //   },
+    // ],
   };
 
   return new Response(JSON.stringify(content), {
@@ -132,6 +143,7 @@ function slackResponse(text) {
 async function handleRequest(request) {
   const r = new Router();
   r.get(".*/status", req => statusHandler(req));
+  r.post(".*/status", req => statusHandler(req));
   r.get(".*/commit", req => commitHandler(req));
   r.post(".*/commit", req => commitHandler(req));
   r.get(
