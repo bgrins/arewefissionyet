@@ -1,8 +1,11 @@
 const IN_EMBED = new URLSearchParams(window.location.search).has("embed");
-const IN_DASHBOARD = new URLSearchParams(window.location.search).has("dashboard");
+const IN_DASHBOARD = new URLSearchParams(window.location.search).has(
+  "dashboard"
+);
 const COMPONENT_LINK_TO_SPREADSHEET_MAP = {};
 const COMPONENT_TO_COLOR_MAP = {};
 const DAILY_DATA = [];
+const DAILY_TOTALS = {};
 const COMPONENT_DATA = {};
 
 // Set this to a lower number like 16 if we only want to show a subset of components
@@ -179,6 +182,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     }
 
     DAILY_DATA.push(currentDay);
+    DAILY_TOTALS[date] = currentDay.totalTests;
 
     let sortedComponents = (currentDay.sortedComponents = []);
     for (let component in currentDay.tests) {
@@ -214,7 +218,7 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   document.querySelector("#table").addEventListener("click", event => {
     if (event.target.matches("input") && event.altKey) {
       // event.preventDefault();
-      for (let input of document.querySelectorAll("#table input:checked")){
+      for (let input of document.querySelectorAll("#table input:checked")) {
         input.checked = false;
       }
       event.target.checked = true;
@@ -229,12 +233,16 @@ document.addEventListener("DOMContentLoaded", async function ready() {
     }
   });
 
-  const htmlForComponentCheckbox = (c, checked, removed=false) => {
-    return `<tr><td><label aria-label="${c.component}"><input type="checkbox" removed="${removed}" ${
+  const htmlForComponentCheckbox = (c, checked, removed = false) => {
+    return `<tr><td><label aria-label="${
+      c.component
+    }"><input type="checkbox" removed="${removed}" ${
       checked ? "checked" : ""
     } /><span class="swatch" style="background-color: ${
       COMPONENT_TO_COLOR_MAP[c.component]
-    };">&nbsp;</span></label><a href=".">${c.component}</a></td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
+    };">&nbsp;</span></label><a href=".">${
+      c.component
+    }</a></td><td>${COMPONENT_DATA[c.component][lastDate] || 0}</td>`;
   };
 
   let removedComponents = firstDay.sortedComponents.filter(
@@ -276,11 +284,13 @@ document.addEventListener("DOMContentLoaded", async function ready() {
   let toggleAllButton = document.querySelector("#toggle-all");
   toggleAllButton.addEventListener("click", () => {
     if (!document.querySelector("#table input:checked")) {
-      for (let input of document.querySelectorAll("#table input:not([removed=true])")){
+      for (let input of document.querySelectorAll(
+        "#table input:not([removed=true])"
+      )) {
         input.checked = true;
       }
     } else {
-      for (let input of document.querySelectorAll("#table input")){
+      for (let input of document.querySelectorAll("#table input")) {
         input.checked = false;
       }
     }
@@ -376,6 +386,13 @@ function buildStackedGraph() {
     options: {
       maintainAspectRatio: false,
       tooltips: {
+        callbacks: {
+          title: function(tooltipItem, data) {
+            let date = tooltipItem[0].xLabel;
+            return date + ` (${DAILY_TOTALS[date]} remaining)`;
+          }
+        },
+
         mode: "nearest",
         intersect: false
         // If we want we could use this custom positioner like https://giphy.com/gifs/QzAGXpdTvOJXKbMlUf:
