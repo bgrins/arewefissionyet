@@ -88,6 +88,7 @@ async function handleRequest(request) {
   const r = new Router();
   r.get(".*/status", req => statusHandler(req));
   r.get(".*/commit", req => commitHandler(req));
+  r.post(".*/commit", req => commitHandler(req));
   r.get(
     "/",
     () =>
