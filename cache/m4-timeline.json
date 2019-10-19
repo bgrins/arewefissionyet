@@ -1,6 +1,62 @@
 {
-  "updateTime": 1571443052695,
+  "updateTime": 1571501358188,
   "data": {
+    "2019-10-19": {
+      "removals": [
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofill_highlight.html",
+          "updateTime": 1571501358188,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582113",
+            "assignee": "MattN+bmo",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_canvas.html",
+          "updateTime": 1571501358188,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
+          }
+        },
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_storage_manager_capabilities.html",
+          "updateTime": 1571501358188,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
+          }
+        },
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html",
+          "updateTime": 1571501358188,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
+          }
+        },
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation.html",
+          "updateTime": 1571501358188,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 245
+    },
     "2019-10-18": {
       "removals": [
         {
