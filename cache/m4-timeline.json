@@ -1,6 +1,11 @@
 {
-  "updateTime": 1571501358188,
+  "updateTime": 1571587718991,
   "data": {
+    "2019-10-20": {
+      "removals": [],
+      "additions": [],
+      "remaining": 245
+    },
     "2019-10-19": {
       "removals": [
         {
@@ -64,7 +69,8 @@
           "updateTime": 1571443052695,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
+            "assignee": "valentin.gosu",
             "component": "Core::Networking: Cookies"
           }
         },
