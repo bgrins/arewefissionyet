@@ -1,10 +1,119 @@
 {
-  "updateTime": 1571674169127,
+  "updateTime": 1571695730238,
   "data": {
     "2019-10-21": {
-      "removals": [],
+      "removals": [
+        {
+          "path": "browser/components/originattributes/test/browser/browser_blobURLIsolation.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_broadcastChannel.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_cache.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_cacheAPI.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_cookieIsolation.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_favicon_firstParty.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_favicon_userContextId.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_httpauth.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_localStorageIsolation.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_permissions.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_sanitize.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_sharedworker.js",
+          "updateTime": 1571695730238,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
       "additions": [],
-      "remaining": 243
+      "remaining": 231
     },
     "2019-10-20": {
       "removals": [],
