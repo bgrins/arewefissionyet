@@ -149,9 +149,7 @@ async function fetchTestInfos(testMetadata) {
   // const url = "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.latest.source.test-info-fission/artifacts/public/test-info-fission.json";
   for (let date of getDatesBetween(new Date(2019, 08, 19), new Date())) {
     // YYYY-MM-DD
-    var dateString = new Date(date.getTime() - date.getTimezoneOffset() * 60000)
-      .toISOString()
-      .split("T")[0];
+    var dateString = dashedStringFromDate(date);
     console.log("Fetching", dateString);
 
     // YYYY.MM.DD
@@ -231,7 +229,14 @@ function saveTimelineData(testsPerDay, testMetadata) {
   //                 removals: [ 'dom/security/test/csp/test_upgrade_insecure.html' ]
   // }
   let changesPerDay = {};
+  let removalSummary = {
+    day: 0,
+    week: 0,
+    month: 0,
+  };
   let yesterdaySet;
+  var now = dateFromDashedString(dashedStringFromDate(new Date()));
+
   for (let date in testsPerDay) {
     let todaySet = testsPerDay[date];
     if (yesterdaySet) {
@@ -243,6 +248,19 @@ function saveTimelineData(testsPerDay, testMetadata) {
         [...todaySet].filter(x => !yesterdaySet.has(x))
       );
       changesPerDay[date].remaining = todaySet.size;
+
+      let daysFromNow = (now - dateFromDashedString(date)) / 24 / 60 / 60 / 1000;
+      let netRemovals = changesPerDay[date].removals.size - changesPerDay[date].additions.size;
+      if (daysFromNow == 0) {
+        console.log("Running today", netRemovals);
+        removalSummary.day += netRemovals;
+      }
+      if (daysFromNow < 7) {
+        removalSummary.week += netRemovals;
+      }
+      if (daysFromNow < 30) {
+        removalSummary.month += netRemovals;
+      }
 
       // console.log(
       //   "Difference of sets:",
@@ -262,6 +280,7 @@ function saveTimelineData(testsPerDay, testMetadata) {
   let newUpdateTime = Date.now();
   let changesPerDaySerialized = {
     updateTime: previousChangesPerDay.updateTime,
+    removalSummary,
     data: {}
   };
 
@@ -312,6 +331,18 @@ function saveTimelineData(testsPerDay, testMetadata) {
   );
 }
 
+// Convert "2019-10-21" to a Date object:
+function dateFromDashedString(dateString) {
+  let dateParts = dateString.split("-");
+  return new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+}
+
+function dashedStringFromDate(dateObj) {
+  return new Date(dateObj.getTime() - dateObj.getTimezoneOffset() * 60000)
+  .toISOString()
+  .split("T")[0];
+}
+
 function renderTimeline() {
   let timelineData = JSON.parse(
     fs.readFileSync(TIMELINE_DATA_SOURCE_PATH, "utf8")
@@ -327,8 +358,7 @@ function renderTimeline() {
     let currentRemovals = timelineData[date].removals;
     let hasChanges = currentAdditions.length || currentRemovals.length;
     if (hasChanges) {
-      let dateParts = date.split("-");
-      let dateObj = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+      let dateObj = dateFromDashedString(date);
       newText += `<details class="arewe-timeline-details" ${
         detailsShouldBeOpened ? "open" : ""
       }><summary><h2>${date} (${new Intl.DateTimeFormat("en-US", {
