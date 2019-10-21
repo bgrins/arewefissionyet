@@ -233,6 +233,7 @@ function saveTimelineData(testsPerDay, testMetadata) {
     day: 0,
     week: 0,
     month: 0,
+    remaining: 0,
   };
   let yesterdaySet;
   var now = dateFromDashedString(dashedStringFromDate(new Date()));
@@ -313,6 +314,8 @@ function saveTimelineData(testsPerDay, testMetadata) {
       })),
       remaining: changesPerDay[date].remaining
     };
+
+    changesPerDaySerialized.removalSummary.remaining = changesPerDay[date].remaining;
   }
 
   // Reverse so that we render from newest to oldest:
