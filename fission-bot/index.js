@@ -22,10 +22,9 @@ function stringifyTestChange(test, isRemoval = true) {
 /*
 TODO:
 - Summarize counts for a day, week
-- List tests fixed today
+- List tests fixed today instead of based on updateTime (which is really only relevant for the commit handler)
 */
 async function statusHandler(request) {
-  //   let now = Date.now();
   let resp = await fetch("https://arewefissionyet.com/cache/m4-timeline.json");
   let body = await resp.json();
   let { data, updateTime } = body;
@@ -37,15 +36,16 @@ async function statusHandler(request) {
     let str = null;
     let atDate = new Date(updateTime).toUTCString();
     if (removals.length || additions.length) {
-      str = " with the following changes:\n\n";
+      str = "and detected the following changes:\n\n";
       str += `${removals.join("\n")}\n${additions.join("\n")}`;
     } else {
-      str = ` and did not detect any changes (run time was ${new Date(
-        updateTime
-      ).toUTCString()}`;
+      str = "and did not detect any changes.";
     }
-    let message = `There are ${data[date].remaining} tests remaining. I last gathered data for ${date}${str}`;
-    // return new Response(message);
+    let message = `There are ${
+      data[date].remaining
+    } tests remaining. I last checked at _${new Date(
+      updateTime
+    ).toUTCString()}_ ${str}`;
     return slackResponse(message);
   }
 }
@@ -100,27 +100,20 @@ async function commitHandler(request) {
       );
     }
 
-    let removalsStr = `${removals.length ? "\nRemovals:\n" : ""}${removals.join(
-      "\n"
-    )}`;
-    let additionsStr = `${
-      additions.length ? "\nAdditions:\n" : ""
-    }${additions.join("\n")}`;
+    let removalsStr = `${removals.join("\n")}`;
+    let additionsStr = `${additions.join("\n")}`;
 
     // XXX:
     // include link to timeline and summary of total remaining
     // check request coming from gh
-    let msg = `I detected some Fission test changes at ${commitTime}:${removalsStr}${additionsStr}`;
+    let msg = `I detected some Fission test changes at _${commitTime}_:\n${removalsStr}\n${additionsStr}`;
 
     if (removals.length || additions.length) {
-      await fetch(
-        SLACK_ENDPOINT,
-        {
-          body: JSON.stringify({ text: msg }),
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
+      await fetch(SLACK_ENDPOINT, {
+        body: JSON.stringify({ text: msg }),
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      });
       return new Response(`Posted`);
     }
     return new Response(`Nothing to post`);
@@ -142,11 +135,11 @@ function slackResponse(text) {
     type: "section",
     mrkdwn: true,
     text,
-    // attachments: [
-    //   {
-    //     text: "Extra text to render below the body",
-    //   },
-    // ],
+    attachments: [
+      {
+        text: "See more at <https://arewefissionyet.com/m4/timeline/>.",
+      },
+    ],
   };
 
   return new Response(JSON.stringify(content), {
