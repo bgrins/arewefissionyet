@@ -136,10 +136,6 @@
         "test": "dom/html/test/test_multipleFilePicker.html"
       },
       {
-        "skip-if": "fission",
-        "test": "dom/tests/browser/browser_bug1004814.js"
-      },
-      {
         "fail-if": "fission",
         "skip-if": "!e10s || verify",
         "test": "dom/tests/browser/browser_localStorage_e10s.js"
@@ -157,10 +153,6 @@
       {
         "skip-if": "fission && debug",
         "test": "dom/tests/browser/browser_noopener_null_uri.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/tests/browser/browser_persist_cookies.js"
       },
       {
         "fail-if": "fission",

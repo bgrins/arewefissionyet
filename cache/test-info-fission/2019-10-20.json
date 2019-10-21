@@ -64,10 +64,6 @@
         "test": "dom/permission/tests/test_cross_origin_iframe.html"
       },
       {
-        "skip-if": "fission",
-        "test": "dom/tests/browser/browser_bug1004814.js"
-      },
-      {
         "fail-if": "fission",
         "skip-if": "!e10s || verify",
         "test": "dom/tests/browser/browser_localStorage_e10s.js"
@@ -76,10 +72,6 @@
         "fail-if": "fission",
         "skip-if": "\n!e10s ||\n(fission && debug)",
         "test": "dom/tests/browser/browser_localStorage_snapshotting_e10s.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/tests/browser/browser_persist_cookies.js"
       },
       {
         "skip-if": "fission",
