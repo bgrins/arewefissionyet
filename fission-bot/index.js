@@ -27,27 +27,22 @@ TODO:
 async function statusHandler(request) {
   let resp = await fetch("https://arewefissionyet.com/cache/m4-timeline.json");
   let body = await resp.json();
-  let { data, updateTime } = body;
+  let { data, removalSummary } = body;
+  let message = `There are *${removalSummary.remaining}* tests to go. There have been ${removalSummary.day} net tests fixed in the last day, ${removalSummary.week} in the last week, and ${removalSummary.month} in the last month.`;
+
   for (let date in data) {
     let removals = data[date].removals.map(t => stringifyTestChange(t));
     let additions = data[date].additions.map(t =>
       stringifyTestChange(t, false)
     );
-    let str = null;
-    let atDate = new Date(updateTime).toUTCString();
     if (removals.length || additions.length) {
-      str = "and detected the following changes:\n\n";
-      str += `${removals.join("\n")}\n${additions.join("\n")}`;
-    } else {
-      str = "and did not detect any changes.";
+      message += `The most recent data I have is from ${date}, when the following things changed:\n${removals.join(
+        "\n"
+      )}\n${additions.join("\n")}`;
     }
-    let message = `There are ${
-      data[date].remaining
-    } tests remaining. I last checked at _${new Date(
-      updateTime
-    ).toUTCString()}_ ${str}`;
-    return slackResponse(message);
+    break;
   }
+  return slackResponse(message);
 }
 
 async function commitHandler(request) {
