@@ -72,9 +72,10 @@ async function commitHandler(request) {
   try {
     let timelineObject;
 
-    let sig = new Headers(request.headers).get("X-Hub-Signature") || "";
-    if (sig != WEBHOOK_SIGNATURE) {
-      return new Response(`Missing or incorrect signature`);
+    let ua = new Headers(request.headers).get("User-Agent") || "";
+    let evt = new Headers(request.headers).get("X-GitHub-Event") || "";
+    if (!ua.trim().startsWith("GitHub-Hookshot") || evt != "push") {
+      return new Response(`Nothing to do ${ua}`);
     }
 
     if (request.method === "POST") {
