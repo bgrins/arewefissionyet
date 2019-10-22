@@ -1,11 +1,34 @@
 const Router = require("./router");
-
-console.log(SLACK_TOKEN);
+const JSON_HEADERS = new Headers([["Content-Type", "application/json"]]);
 
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
-let JSON_HEADERS = new Headers([["Content-Type", "application/json"]]);
+
+/**
+ * slackResponse builds a message for Slack with the given text
+ * and optional attachment text
+ *
+ * @param {string} text - the message text to return
+ */
+function slackResponse(text) {
+  let content = {
+    response_type: "in_channel",
+    type: "section",
+    mrkdwn: true,
+    text,
+    attachments: [
+      {
+        text: "See more at <https://arewefissionyet.com/m4/timeline/>",
+      },
+    ],
+  };
+
+  return new Response(JSON.stringify(content), {
+    headers: JSON_HEADERS,
+    status: 200,
+  });
+}
 
 function stringifyTestChange(test, isRemoval = true) {
   let path = test.path.split("/").pop();
@@ -101,7 +124,7 @@ async function commitHandler(request) {
     // XXX:
     // include link to timeline and summary of total remaining
     // check request coming from gh
-    let msg = `I detected some Fission test changes at _${commitTime}_:\n${removalsStr}\n${additionsStr}`;
+    let msg = `I just detected some Fission test changes:\n${removalsStr}\n${additionsStr}`;
 
     if (removals.length || additions.length) {
       await fetch(SLACK_ENDPOINT, {
@@ -116,31 +139,6 @@ async function commitHandler(request) {
     // ${e.toString()} for debugging
     return new Response(`Error`, { status: 500 });
   }
-}
-
-/**
- * slackResponse builds a message for Slack with the given text
- * and optional attachment text
- *
- * @param {string} text - the message text to return
- */
-function slackResponse(text) {
-  let content = {
-    response_type: "in_channel",
-    type: "section",
-    mrkdwn: true,
-    text,
-    attachments: [
-      {
-        text: "See more at <https://arewefissionyet.com/m4/timeline/>.",
-      },
-    ],
-  };
-
-  return new Response(JSON.stringify(content), {
-    headers: JSON_HEADERS,
-    status: 200,
-  });
 }
 
 async function handleRequest(request) {
