@@ -70,12 +70,18 @@ async function statusHandler(request) {
 
 async function commitHandler(request) {
   try {
-    let commitTime = Date.now().toString();
     let timelineObject;
+
+    let ua = new Headers(request.headers).get("User-Agent") || "";
+    let evt = new Headers(request.headers).get("X-GitHub-Event") || "";
+    if (!ua.trim().startsWith("GitHub-Hookshot") || evt != "push") {
+      return new Response(`Nothing to do ${ua}`);
+    }
+
     if (request.method === "POST") {
       let body = await request.json();
       let doWeCare = body.commits.filter(c =>
-        c.modified.includes("cache/m4-timeline.json")
+        c.modified.includes("cache/m4-timeline.json") && !c.message.startsWith("Merge branch")
       ).length;
 
       if (!doWeCare) {
@@ -83,7 +89,6 @@ async function commitHandler(request) {
       }
 
       let afterRevision = body.after;
-      commitTime = body.head_commit.timestamp;
       let commitTimelineURL = `https://raw.githubusercontent.com/bgrins/arewefissionyet/${afterRevision}/cache/m4-timeline.json`;
 
       try {
