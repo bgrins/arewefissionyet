@@ -1,12 +1,184 @@
 {
-  "updateTime": 1571699905729,
+  "updateTime": 1571760588753,
   "removalSummary": {
-    "day": 12,
-    "week": 38,
-    "month": 157,
-    "remaining": 231
+    "day": 17,
+    "week": 47,
+    "month": 174,
+    "remaining": 213
   },
   "data": {
+    "2019-10-22": {
+      "removals": [
+        {
+          "path": "dom/tests/mochitest/bugs/test_bug369306.html",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_badargs.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_badargs2.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_localfile2.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_context_menu.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_context_menu_autocomplete_interaction.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_context_menu_iframe.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_hidden_document_autofill.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_insecurePasswordConsoleWarning.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_notifications.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_notifications_password.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_notifications_username.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_private_window.js",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_downgrade.html",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_upgrade.html",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_munged_username.html",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_xhr.html",
+          "updateTime": 1571760588753,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 213
+    },
     "2019-10-21": {
       "removals": [
         {
@@ -119,12 +291,12 @@
         }
       ],
       "additions": [],
-      "remaining": 231
+      "remaining": 230
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 243
+      "remaining": 242
     },
     "2019-10-19": {
       "removals": [
@@ -180,7 +352,7 @@
         }
       ],
       "additions": [],
-      "remaining": 243
+      "remaining": 242
     },
     "2019-10-18": {
       "removals": [
@@ -246,7 +418,7 @@
         }
       ],
       "additions": [],
-      "remaining": 248
+      "remaining": 247
     },
     "2019-10-17": {
       "removals": [
@@ -272,7 +444,7 @@
         }
       ],
       "additions": [],
-      "remaining": 254
+      "remaining": 253
     },
     "2019-10-16": {
       "removals": [
@@ -349,7 +521,7 @@
           }
         }
       ],
-      "remaining": 256
+      "remaining": 255
     },
     "2019-10-15": {
       "removals": [
@@ -433,7 +605,7 @@
         }
       ],
       "additions": [],
-      "remaining": 261
+      "remaining": 260
     },
     "2019-10-14": {
       "removals": [
@@ -469,7 +641,7 @@
           }
         }
       ],
-      "remaining": 269
+      "remaining": 268
     },
     "2019-10-13": {
       "removals": [
@@ -485,7 +657,7 @@
         }
       ],
       "additions": [],
-      "remaining": 270
+      "remaining": 269
     },
     "2019-10-12": {
       "removals": [
@@ -531,7 +703,7 @@
         }
       ],
       "additions": [],
-      "remaining": 271
+      "remaining": 270
     },
     "2019-10-11": {
       "removals": [
@@ -667,7 +839,7 @@
         }
       ],
       "additions": [],
-      "remaining": 275
+      "remaining": 274
     },
     "2019-10-10": {
       "removals": [
@@ -703,7 +875,7 @@
         }
       ],
       "additions": [],
-      "remaining": 288
+      "remaining": 287
     },
     "2019-10-09": {
       "removals": [
@@ -739,12 +911,12 @@
         }
       ],
       "additions": [],
-      "remaining": 291
+      "remaining": 290
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 294
+      "remaining": 293
     },
     "2019-10-07": {
       "removals": [
@@ -760,12 +932,12 @@
         }
       ],
       "additions": [],
-      "remaining": 294
+      "remaining": 293
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 295
+      "remaining": 294
     },
     "2019-10-05": {
       "removals": [
@@ -791,7 +963,7 @@
         }
       ],
       "additions": [],
-      "remaining": 295
+      "remaining": 294
     },
     "2019-10-04": {
       "removals": [
@@ -827,7 +999,7 @@
         }
       ],
       "additions": [],
-      "remaining": 297
+      "remaining": 296
     },
     "2019-10-03": {
       "removals": [],
@@ -843,7 +1015,7 @@
           }
         }
       ],
-      "remaining": 300
+      "remaining": 299
     },
     "2019-10-02": {
       "removals": [
@@ -897,7 +1069,7 @@
           }
         }
       ],
-      "remaining": 299
+      "remaining": 298
     },
     "2019-10-01": {
       "removals": [
@@ -932,7 +1104,7 @@
           }
         }
       ],
-      "remaining": 298
+      "remaining": 297
     },
     "2019-09-30": {
       "removals": [
@@ -947,12 +1119,12 @@
         }
       ],
       "additions": [],
-      "remaining": 299
+      "remaining": 298
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 300
+      "remaining": 299
     },
     "2019-09-28": {
       "removals": [
@@ -967,7 +1139,7 @@
         }
       ],
       "additions": [],
-      "remaining": 300
+      "remaining": 299
     },
     "2019-09-27": {
       "removals": [
@@ -1906,7 +2078,7 @@
           }
         }
       ],
-      "remaining": 301
+      "remaining": 300
     },
     "2019-09-26": {
       "removals": [
@@ -1952,7 +2124,7 @@
           }
         }
       ],
-      "remaining": 386
+      "remaining": 385
     },
     "2019-09-25": {
       "removals": [],
@@ -1968,7 +2140,7 @@
           }
         }
       ],
-      "remaining": 386
+      "remaining": 385
     },
     "2019-09-24": {
       "removals": [
@@ -2003,17 +2175,17 @@
         }
       ],
       "additions": [],
-      "remaining": 385
+      "remaining": 384
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 388
+      "remaining": 387
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 388
+      "remaining": 387
     },
     "2019-09-21": {
       "removals": [
@@ -2029,7 +2201,7 @@
         }
       ],
       "additions": [],
-      "remaining": 388
+      "remaining": 387
     },
     "2019-09-20": {
       "removals": [
@@ -2168,7 +2340,7 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
             "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
@@ -2178,13 +2350,13 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581072",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
             "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         }
       ],
-      "remaining": 389
+      "remaining": 388
     }
   }
 }

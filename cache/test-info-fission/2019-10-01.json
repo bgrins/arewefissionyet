@@ -42,6 +42,10 @@
         "test": "dom/base/test/browser_aboutnewtab_process_selection.js"
       },
       {
+        "skip-if": "fission",
+        "test": "dom/base/test/test_bug1091883.html"
+      },
+      {
         "fail-if": "fission",
         "test": "dom/base/test/test_bug907892.html"
       },
@@ -1803,14 +1807,6 @@
       {
         "skip-if": "fission && debug",
         "test": "browser/components/extensions/test/browser/browser_ext_commands_execute_browser_action.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/components/extensions/test/browser/browser_ext_contentscript_nontab_connect.js"
-      },
-      {
-        "skip-if": "fission || os == 'linux' || (os == 'mac' && debug) || (debug && os == 'win' && bits == 64)",
-        "test": "browser/components/extensions/test/browser/browser_ext_devtools_network.js"
       },
       {
         "skip-if": "fission && debug",
