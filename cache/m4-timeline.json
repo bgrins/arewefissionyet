@@ -1,12 +1,17 @@
 {
-  "updateTime": 1571760588753,
+  "updateTime": 1571847161039,
   "removalSummary": {
-    "day": 17,
-    "week": 47,
-    "month": 174,
-    "remaining": 213
+    "day": 0,
+    "week": 49,
+    "month": 181,
+    "remaining": 206
   },
   "data": {
+    "2019-10-23": {
+      "removals": [],
+      "additions": [],
+      "remaining": 206
+    },
     "2019-10-22": {
       "removals": [
         {
@@ -19,11 +24,49 @@
           }
         },
         {
+          "path": "dom/security/test/csp/test_frameancestors.html",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/security/test/csp/test_frameancestors_userpass.html",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/security/test/general/browser_test_FTP_console_warning.js",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/security/test/cors/browser_CORS-console-warnings.js",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583553",
+            "assignee": "sstreich",
+            "component": "Core::Networking"
+          }
+        },
+        {
           "path": "toolkit/mozapps/extensions/test/xpinstall/browser_badargs.js",
           "updateTime": 1571760588753,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589885",
+            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -32,7 +75,8 @@
           "updateTime": 1571760588753,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589885",
+            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -41,8 +85,19 @@
           "updateTime": 1571760588753,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589885",
+            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/prompts/test/test_subresources_prompts.html",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588326",
+            "assignee": "mconley",
+            "component": "Toolkit::General"
           }
         },
         {
@@ -174,10 +229,29 @@
             "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
+        },
+        {
+          "path": "browser/components/extensions/test/browser/browser_ext_commands_execute_browser_action.js",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574926",
+            "assignee": "tomica",
+            "component": "WebExtensions::Untriaged"
+          }
+        },
+        {
+          "path": "browser/components/extensions/test/browser/browser_ext_pageAction_title.js",
+          "updateTime": 1571847161039,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "WebExtensions::Untriaged"
+          }
         }
       ],
       "additions": [],
-      "remaining": 213
+      "remaining": 206
     },
     "2019-10-21": {
       "removals": [
@@ -186,7 +260,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586704",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -195,7 +270,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586705",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -204,7 +280,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586707",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -213,7 +290,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586708",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -231,7 +309,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586717",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -240,7 +319,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586718",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -249,7 +329,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586710",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -258,7 +339,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586711",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -267,7 +349,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586712",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -276,7 +359,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586714",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -285,7 +369,8 @@
           "updateTime": 1571695730238,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586715",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         }
@@ -614,7 +699,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586722",
+            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
