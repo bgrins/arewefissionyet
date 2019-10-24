@@ -1598,11 +1598,6 @@
         "test": "toolkit/components/passwordmgr/test/browser/browser_hidden_document_autofill.js"
       },
       {
-        "fail-if": "fission",
-        "skip-if": "fission || verify",
-        "test": "toolkit/components/passwordmgr/test/browser/browser_http_autofill.js"
-      },
-      {
         "skip-if": "(fission && debug) || verify",
         "test": "toolkit/components/passwordmgr/test/browser/browser_insecurePasswordConsoleWarning.js"
       },

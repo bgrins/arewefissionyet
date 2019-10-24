@@ -2,9 +2,9 @@
   "summary": {
     "components": 56,
     "failed tests": 79,
-    "manifests": 1211,
-    "skipped tests": 278,
-    "tests": 328
+    "manifests": 1208,
+    "skipped tests": 261,
+    "tests": 312
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -163,10 +163,6 @@
     ],
     "Core::DOM: Security": [
       {
-        "skip-if": "fission",
-        "test": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js"
-      },
-      {
         "skip-if": "fission || debug",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation.js"
       },
@@ -233,10 +229,6 @@
     ],
     "Core::DOM: Service Workers": [
       {
-        "skip-if": "\nserviceworker_e10s ||\nfission && debug",
-        "test": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js"
-      },
-      {
         "skip-if": "fission",
         "test": "dom/serviceworkers/test/browser_force_refresh.js"
       },
@@ -245,52 +237,8 @@
         "test": "dom/serviceworkers/test/browser_storage_recovery.js"
       },
       {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_cookie_fetch.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_csp_upgrade-insecure_intercept.html"
-      },
-      {
-        "skip-if": "fission && !serviceworker_e10s",
-        "test": "dom/serviceworkers/test/test_eventsource_intercept.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_hsts_upgrade_intercept.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_https_fetch.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_https_fetch_cloned_response.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_https_origin_after_redirect.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_https_origin_after_redirect_cached.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_https_synth_fetch_from_cached_sw.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/test_importscript_mixedcontent.html"
-      },
-      {
         "skip-if": "fission || (toolkit == 'android' && !is_fennec)",
         "test": "dom/serviceworkers/test/test_openWindow.html"
-      },
-      {
-        "skip-if": "fission && !serviceworker_e10s",
-        "test": "dom/serviceworkers/test/test_sanitize_domain.html"
       },
       {
         "skip-if": "\nfission",
@@ -557,10 +505,6 @@
       },
       {
         "skip-if": "fission",
-        "test": "toolkit/components/antitracking/test/browser/browser_socialtracking.js"
-      },
-      {
-        "skip-if": "fission",
         "test": "toolkit/components/antitracking/test/browser/browser_storageAccessDoorHanger.js"
       },
       {
@@ -586,10 +530,6 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/antitracking/test/browser/browser_storageAccessWithHeuristics.js"
-      },
-      {
-        "skip-if": "fission || serviceworker_e10s",
-        "test": "toolkit/components/antitracking/test/browser/browser_subResources.js"
       },
       {
         "skip-if": "fission || serviceworker_e10s",
@@ -636,24 +576,23 @@
     ],
     "Core::Security: PSM": [
       {
-        "skip-if": "(toolkit == 'android') || (fission && debug)",
+        "skip-if": "fission && debug",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug472986.html"
       },
       {
-        "skip-if": "(toolkit == 'android') || (fission)",
+        "skip-if": "fission",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug521461.html"
       },
       {
-        "skip-if": "(toolkit == 'android') || (fission)",
+        "skip-if": "fission",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecureIframeRedirect.html"
       },
       {
         "fail-if": "fission",
-        "skip-if": "toolkit == 'android'",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframeRedirect.html"
       },
       {
-        "skip-if": "(toolkit == 'android') || (fission && debug)",
+        "skip-if": "fission && debug",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePictureDup.html"
       }
     ],
@@ -680,12 +619,6 @@
         "fail-if": "fission && !debug",
         "skip-if": "fission && debug",
         "test": "toolkit/components/windowcreator/test/browser_bug1204626.js"
-      }
-    ],
-    "Core::XPConnect": [
-      {
-        "skip-if": "fission && webrender && debug",
-        "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
       }
     ],
     "DevTools::Console": [
@@ -996,16 +929,8 @@
         "test": "browser/base/content/test/general/browser_bug431826.js"
       },
       {
-        "skip-if": "fission",
-        "test": "browser/base/content/test/general/browser_bug441778.js"
-      },
-      {
         "skip-if": "fission || (os == \"linux\" && !e10s)",
         "test": "browser/base/content/test/general/browser_newwindow_focus.js"
-      },
-      {
-        "skip-if": "fission || os == 'win'",
-        "test": "browser/base/content/test/general/browser_printpreview.js"
       },
       {
         "skip-if": "fission",
@@ -1283,11 +1208,6 @@
     "Toolkit::Password Manager": [
       {
         "fail-if": "fission",
-        "skip-if": "fission || verify",
-        "test": "toolkit/components/passwordmgr/test/browser/browser_http_autofill.js"
-      },
-      {
-        "fail-if": "fission",
         "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug))",
         "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html"
       },
@@ -1379,6 +1299,12 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/telemetry/tests/browser/browser_HybridContentTelemetry.js"
+      }
+    ],
+    "WebExtensions::General": [
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || ((os == 'android') || fission))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html"
       }
     ],
     "WebExtensions::Untriaged": [

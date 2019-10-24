@@ -1283,11 +1283,6 @@
     "Toolkit::Password Manager": [
       {
         "fail-if": "fission",
-        "skip-if": "fission || verify",
-        "test": "toolkit/components/passwordmgr/test/browser/browser_http_autofill.js"
-      },
-      {
-        "fail-if": "fission",
         "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug))",
         "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html"
       },

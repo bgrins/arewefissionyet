@@ -1,16 +1,214 @@
 {
-  "updateTime": 1571847161039,
+  "updateTime": 1571933680233,
   "removalSummary": {
     "day": 0,
-    "week": 49,
-    "month": 181,
-    "remaining": 206
+    "week": 62,
+    "month": 193,
+    "remaining": 190
   },
   "data": {
+    "2019-10-24": {
+      "removals": [
+        {
+          "path": "dom/tests/mochitest/geolocation/test_crossorigin_iframe.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Geolocation"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_autofill_http.js",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
+            "assignee": "jkt",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "remaining": 190
+    },
     "2019-10-23": {
-      "removals": [],
-      "additions": [],
-      "remaining": 206
+      "removals": [
+        {
+          "path": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_cookie_fetch.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_csp_upgrade-insecure_intercept.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_eventsource_intercept.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_hsts_upgrade_intercept.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_https_fetch.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_https_fetch_cloned_response.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_https_origin_after_redirect.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_https_origin_after_redirect_cached.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_https_synth_fetch_from_cached_sw.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_importscript_mixedcontent.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_sanitize_domain.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "js/xpconnect/tests/mochitest/test_bug965082.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582520",
+            "assignee": "kmaglione+bmo",
+            "component": "Core::XPConnect"
+          }
+        },
+        {
+          "path": "browser/base/content/test/general/browser_bug441778.js",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Firefox::General"
+          }
+        },
+        {
+          "path": "browser/base/content/test/general/browser_printpreview.js",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
+            "assignee": "agakhokidze",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html",
+          "updateTime": 1571933680233,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
+          }
+        }
+      ],
+      "remaining": 190
     },
     "2019-10-22": {
       "removals": [
@@ -251,7 +449,7 @@
         }
       ],
       "additions": [],
-      "remaining": 206
+      "remaining": 205
     },
     "2019-10-21": {
       "removals": [
@@ -376,12 +574,12 @@
         }
       ],
       "additions": [],
-      "remaining": 230
+      "remaining": 229
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 242
+      "remaining": 241
     },
     "2019-10-19": {
       "removals": [
@@ -437,7 +635,7 @@
         }
       ],
       "additions": [],
-      "remaining": 242
+      "remaining": 241
     },
     "2019-10-18": {
       "removals": [
@@ -503,7 +701,7 @@
         }
       ],
       "additions": [],
-      "remaining": 247
+      "remaining": 246
     },
     "2019-10-17": {
       "removals": [
@@ -529,7 +727,7 @@
         }
       ],
       "additions": [],
-      "remaining": 253
+      "remaining": 252
     },
     "2019-10-16": {
       "removals": [
@@ -606,7 +804,7 @@
           }
         }
       ],
-      "remaining": 255
+      "remaining": 254
     },
     "2019-10-15": {
       "removals": [
@@ -690,7 +888,7 @@
         }
       ],
       "additions": [],
-      "remaining": 260
+      "remaining": 259
     },
     "2019-10-14": {
       "removals": [
@@ -727,7 +925,7 @@
           }
         }
       ],
-      "remaining": 268
+      "remaining": 267
     },
     "2019-10-13": {
       "removals": [
@@ -743,7 +941,7 @@
         }
       ],
       "additions": [],
-      "remaining": 269
+      "remaining": 268
     },
     "2019-10-12": {
       "removals": [
@@ -789,7 +987,7 @@
         }
       ],
       "additions": [],
-      "remaining": 270
+      "remaining": 269
     },
     "2019-10-11": {
       "removals": [
@@ -925,7 +1123,7 @@
         }
       ],
       "additions": [],
-      "remaining": 274
+      "remaining": 273
     },
     "2019-10-10": {
       "removals": [
@@ -961,7 +1159,7 @@
         }
       ],
       "additions": [],
-      "remaining": 287
+      "remaining": 286
     },
     "2019-10-09": {
       "removals": [
@@ -997,12 +1195,12 @@
         }
       ],
       "additions": [],
-      "remaining": 290
+      "remaining": 289
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 293
+      "remaining": 292
     },
     "2019-10-07": {
       "removals": [
@@ -1018,12 +1216,12 @@
         }
       ],
       "additions": [],
-      "remaining": 293
+      "remaining": 292
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 294
+      "remaining": 293
     },
     "2019-10-05": {
       "removals": [
@@ -1049,7 +1247,7 @@
         }
       ],
       "additions": [],
-      "remaining": 294
+      "remaining": 293
     },
     "2019-10-04": {
       "removals": [
@@ -1085,7 +1283,7 @@
         }
       ],
       "additions": [],
-      "remaining": 296
+      "remaining": 295
     },
     "2019-10-03": {
       "removals": [],
@@ -1101,7 +1299,7 @@
           }
         }
       ],
-      "remaining": 299
+      "remaining": 298
     },
     "2019-10-02": {
       "removals": [
@@ -1155,7 +1353,7 @@
           }
         }
       ],
-      "remaining": 298
+      "remaining": 297
     },
     "2019-10-01": {
       "removals": [
@@ -1190,7 +1388,7 @@
           }
         }
       ],
-      "remaining": 297
+      "remaining": 296
     },
     "2019-09-30": {
       "removals": [
@@ -1205,12 +1403,12 @@
         }
       ],
       "additions": [],
-      "remaining": 298
+      "remaining": 297
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 299
+      "remaining": 298
     },
     "2019-09-28": {
       "removals": [
@@ -1225,7 +1423,7 @@
         }
       ],
       "additions": [],
-      "remaining": 299
+      "remaining": 298
     },
     "2019-09-27": {
       "removals": [
@@ -2164,7 +2362,7 @@
           }
         }
       ],
-      "remaining": 300
+      "remaining": 299
     },
     "2019-09-26": {
       "removals": [
@@ -2210,7 +2408,7 @@
           }
         }
       ],
-      "remaining": 385
+      "remaining": 384
     },
     "2019-09-25": {
       "removals": [],
@@ -2220,13 +2418,13 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582832",
-            "assignee": "afarre",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591057",
+            "assignee": "nobody",
             "component": "Core::DOM: Core & HTML"
           }
         }
       ],
-      "remaining": 385
+      "remaining": 384
     },
     "2019-09-24": {
       "removals": [
@@ -2261,17 +2459,17 @@
         }
       ],
       "additions": [],
-      "remaining": 384
+      "remaining": 383
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 387
+      "remaining": 386
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 387
+      "remaining": 386
     },
     "2019-09-21": {
       "removals": [
@@ -2287,7 +2485,7 @@
         }
       ],
       "additions": [],
-      "remaining": 387
+      "remaining": 386
     },
     "2019-09-20": {
       "removals": [
@@ -2442,7 +2640,7 @@
           }
         }
       ],
-      "remaining": 388
+      "remaining": 387
     }
   }
 }
