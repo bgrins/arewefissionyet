@@ -54,14 +54,22 @@ async function statusHandler(request) {
   let message = `There are *${removalSummary.remaining}* tests to go. There have been ${removalSummary.day} net tests fixed in the last day, ${removalSummary.week} in the last week, and ${removalSummary.month} in the last month.`;
 
   for (let date in data) {
-    let removals = data[date].removals.map(t => stringifyTestChange(t));
-    let additions = data[date].additions.map(t =>
-      stringifyTestChange(t, false)
-    );
+    // let removals = data[date].removals.map(t => stringifyTestChange(t));
+    // let additions = data[date].additions.map(t =>
+    //   stringifyTestChange(t, false)
+    // );
+    let removals = data[date].removals;
+    let additions = data[date].additions;
     if (removals.length || additions.length) {
-      message += `The most recent data I have is from ${date}, when the following things changed:\n${removals.join(
-        "\n"
-      )}\n${additions.join("\n")}`;
+      message += ` The most recent data I have is from ${date}`;
+      // message += `, when ${removals.length} tests were fixed`;
+      // if (additions.length) {
+      //   message += ` and ${additions.length} new failing tests were added`;
+      // }
+      message += ".";
+      // message += `The most recent data I have is from ${date}, when the following things changed:\n${removals.join(
+      //   "\n"
+      // )}\n${additions.join("\n")}`;
     }
     break;
   }
@@ -80,8 +88,10 @@ async function commitHandler(request) {
 
     if (request.method === "POST") {
       let body = await request.json();
-      let doWeCare = body.commits.filter(c =>
-        c.modified.includes("cache/m4-timeline.json") && !c.message.startsWith("Merge branch")
+      let doWeCare = body.commits.filter(
+        c =>
+          c.modified.includes("cache/m4-timeline.json") &&
+          !c.message.startsWith("Merge branch")
       ).length;
 
       if (!doWeCare) {
