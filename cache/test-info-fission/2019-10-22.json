@@ -1,10 +1,10 @@
 {
   "summary": {
-    "components": 57,
-    "failed tests": 81,
-    "manifests": 1210,
-    "skipped tests": 284,
-    "tests": 335
+    "components": 56,
+    "failed tests": 79,
+    "manifests": 1211,
+    "skipped tests": 278,
+    "tests": 328
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -192,23 +192,11 @@
       },
       {
         "skip-if": "fission",
-        "test": "dom/security/test/csp/test_frameancestors.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/security/test/csp/test_frameancestors_userpass.html"
-      },
-      {
-        "skip-if": "fission",
         "test": "dom/security/test/csp/test_navigate_to.html"
       },
       {
         "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
         "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
-      },
-      {
-        "fail-if": "fission",
-        "test": "dom/security/test/general/browser_test_FTP_console_warning.js"
       },
       {
         "skip-if": "fission",
@@ -409,12 +397,6 @@
       {
         "skip-if": "fission",
         "test": "dom/tests/mochitest/geolocation/test_crossorigin_iframe.html"
-      }
-    ],
-    "Core::Networking": [
-      {
-        "skip-if": "fission",
-        "test": "dom/security/test/cors/browser_CORS-console-warnings.js"
       }
     ],
     "Core::Networking: Cookies": [
@@ -1283,11 +1265,6 @@
         "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
       },
       {
-        "fail-if": "fission",
-        "skip-if": "toolkit == 'android' || verify",
-        "test": "toolkit/components/prompts/test/test_subresources_prompts.html"
-      },
-      {
         "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
         "test": "toolkit/content/tests/browser/browser_media_wakelock.js"
       }
@@ -1304,11 +1281,6 @@
       }
     ],
     "Toolkit::Password Manager": [
-      {
-        "fail-if": "fission",
-        "skip-if": "fission || verify",
-        "test": "toolkit/components/passwordmgr/test/browser/browser_http_autofill.js"
-      },
       {
         "fail-if": "fission",
         "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug))",
@@ -1412,14 +1384,6 @@
       {
         "skip-if": "fission && debug",
         "test": "browser/components/extensions/test/browser/browser_ext_browserAction_popup_resize.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/components/extensions/test/browser/browser_ext_commands_execute_browser_action.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/components/extensions/test/browser/browser_ext_pageAction_title.js"
       }
     ]
   }
