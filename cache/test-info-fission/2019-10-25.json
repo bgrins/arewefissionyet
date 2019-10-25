@@ -3,8 +3,8 @@
     "components": 55,
     "failed tests": 78,
     "manifests": 1208,
-    "skipped tests": 255,
-    "tests": 306
+    "skipped tests": 260,
+    "tests": 311
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -155,6 +155,10 @@
     ],
     "Core::DOM: Security": [
       {
+        "skip-if": "fission",
+        "test": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js"
+      },
+      {
         "skip-if": "fission || debug",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation.js"
       },
@@ -191,10 +195,6 @@
         "test": "dom/security/test/general/browser_test_referrer_loadInOtherProcess.js"
       },
       {
-        "skip-if": "fission || verify",
-        "test": "dom/security/test/general/test_cache_split.html"
-      },
-      {
         "skip-if": "fission",
         "test": "dom/security/test/general/test_same_site_cookies_about.html"
       },
@@ -220,6 +220,10 @@
       }
     ],
     "Core::DOM: Service Workers": [
+      {
+        "skip-if": "\nserviceworker_e10s ||\nfission && debug",
+        "test": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js"
+      },
       {
         "skip-if": "fission",
         "test": "dom/serviceworkers/test/browser_force_refresh.js"
@@ -491,6 +495,10 @@
       },
       {
         "skip-if": "fission",
+        "test": "toolkit/components/antitracking/test/browser/browser_socialtracking.js"
+      },
+      {
+        "skip-if": "fission",
         "test": "toolkit/components/antitracking/test/browser/browser_storageAccessDoorHanger.js"
       },
       {
@@ -516,6 +524,10 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/antitracking/test/browser/browser_storageAccessWithHeuristics.js"
+      },
+      {
+        "skip-if": "fission || serviceworker_e10s",
+        "test": "toolkit/components/antitracking/test/browser/browser_subResources.js"
       },
       {
         "skip-if": "fission || serviceworker_e10s",
@@ -913,6 +925,10 @@
       {
         "skip-if": "fission",
         "test": "browser/base/content/test/general/browser_bug431826.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/general/browser_bug441778.js"
       },
       {
         "skip-if": "fission || (os == \"linux\" && !e10s)",

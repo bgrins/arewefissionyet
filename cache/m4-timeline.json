@@ -1,14 +1,81 @@
 {
-  "updateTime": 1571933680233,
+  "updateTime": 1572019814399,
   "removalSummary": {
-    "day": 0,
-    "week": 62,
-    "month": 193,
-    "remaining": 190
+    "day": -2,
+    "week": 59,
+    "month": 197,
+    "remaining": 187
   },
   "data": {
+    "2019-10-25": {
+      "removals": [
+        {
+          "path": "dom/security/test/general/test_cache_split.html",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582247",
+            "assignee": "sstreich",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "browser/base/content/test/general/browser_bug441778.js",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "remaining": 187
+    },
     "2019-10-24": {
       "removals": [
+        {
+          "path": "dom/base/test/test_bug1091883.html",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589996",
+            "assignee": "tnguyen",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/general/test_vibrator.html",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591057",
+            "assignee": "afarre",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
         {
           "path": "dom/tests/mochitest/geolocation/test_crossorigin_iframe.html",
           "updateTime": 1571933680233,
@@ -16,6 +83,36 @@
             "milestone": "M4",
             "assignee": null,
             "component": "Core::Geolocation"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofocus_js.html",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582120",
+            "assignee": "MattN+bmo",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "browser/components/extensions/test/browser/browser_ext_browserAction_popup.js",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574926",
+            "assignee": "tomica",
+            "component": "WebExtensions::Untriaged"
+          }
+        },
+        {
+          "path": "browser/components/extensions/test/browser/browser_ext_browserAction_popup_resize.js",
+          "updateTime": 1572019814399,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574926",
+            "assignee": "tomica",
+            "component": "WebExtensions::Untriaged"
           }
         }
       ],
@@ -31,7 +128,7 @@
           }
         }
       ],
-      "remaining": 190
+      "remaining": 185
     },
     "2019-10-23": {
       "removals": [
@@ -2419,7 +2516,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591057",
-            "assignee": "nobody",
+            "assignee": "afarre",
             "component": "Core::DOM: Core & HTML"
           }
         }
