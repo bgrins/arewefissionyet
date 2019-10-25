@@ -1,14 +1,50 @@
 {
-  "updateTime": 1572019814399,
+  "updateTime": 1572039241496,
   "removalSummary": {
-    "day": -2,
-    "week": 59,
-    "month": 197,
-    "remaining": 187
+    "day": 3,
+    "week": 64,
+    "month": 202,
+    "remaining": 182
   },
   "data": {
     "2019-10-25": {
       "removals": [
+        {
+          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation.js",
+          "updateTime": 1572039241496,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js",
+          "updateTime": 1572039241496,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_blobURI.js",
+          "updateTime": 1572039241496,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_windowOpenerRestriction.js",
+          "updateTime": 1572039241496,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
         {
           "path": "dom/security/test/general/test_cache_split.html",
           "updateTime": 1572019814399,
@@ -17,6 +53,16 @@
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582247",
             "assignee": "sstreich",
             "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "toolkit/components/satchel/test/test_form_submission.html",
+          "updateTime": 1572039241496,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589938",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Form Manager"
           }
         }
       ],
@@ -52,7 +98,7 @@
           }
         }
       ],
-      "remaining": 187
+      "remaining": 182
     },
     "2019-10-24": {
       "removals": [

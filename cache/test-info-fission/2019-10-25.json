@@ -1,10 +1,10 @@
 {
   "summary": {
-    "components": 55,
-    "failed tests": 78,
+    "components": 54,
+    "failed tests": 75,
     "manifests": 1208,
-    "skipped tests": 260,
-    "tests": 311
+    "skipped tests": 257,
+    "tests": 306
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -159,28 +159,12 @@
         "test": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js"
       },
       {
-        "skip-if": "fission || debug",
-        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation.js"
-      },
-      {
-        "fail-if": "fission",
-        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_blobURI.js"
-      },
-      {
         "skip-if": "fission",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_js_uri.js"
       },
       {
         "skip-if": "fission",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js"
-      },
-      {
-        "fail-if": "fission",
-        "test": "browser/components/originattributes/test/browser/browser_windowOpenerRestriction.js"
       },
       {
         "skip-if": "fission",
@@ -1177,13 +1161,6 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/cleardata/tests/browser/browser_serviceworkers.js"
-      }
-    ],
-    "Toolkit::Form Manager": [
-      {
-        "fail-if": "fission",
-        "skip-if": "toolkit == 'android'",
-        "test": "toolkit/components/satchel/test/test_form_submission.html"
       }
     ],
     "Toolkit::General": [
