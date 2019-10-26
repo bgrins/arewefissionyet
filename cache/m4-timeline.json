@@ -1,12 +1,28 @@
 {
-  "updateTime": 1572039241496,
+  "updateTime": 1572106226809,
   "removalSummary": {
-    "day": 3,
-    "week": 64,
-    "month": 202,
-    "remaining": 182
+    "day": 1,
+    "week": 60,
+    "month": 203,
+    "remaining": 181
   },
   "data": {
+    "2019-10-26": {
+      "removals": [
+        {
+          "path": "docshell/test/browser/browser_browsingContext-03.js",
+          "updateTime": 1572106226809,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578393",
+            "assignee": "afarre",
+            "component": "Core::Document Navigation"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 181
+    },
     "2019-10-25": {
       "removals": [
         {
