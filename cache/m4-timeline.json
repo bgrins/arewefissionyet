@@ -1,12 +1,17 @@
 {
-  "updateTime": 1572192639768,
+  "updateTime": 1572279077179,
   "removalSummary": {
     "day": 0,
-    "week": 60,
-    "month": 118,
+    "week": 48,
+    "month": 117,
     "remaining": 181
   },
   "data": {
+    "2019-10-28": {
+      "removals": [],
+      "additions": [],
+      "remaining": 181
+    },
     "2019-10-27": {
       "removals": [],
       "additions": [],
@@ -1512,7 +1517,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         }
@@ -2218,7 +2224,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         },
@@ -2476,7 +2483,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         },
@@ -2485,7 +2493,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         },
@@ -2494,7 +2503,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         },
@@ -2503,7 +2513,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         },
@@ -2512,7 +2523,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
+            "assignee": "dlee",
             "component": "Firefox::Protections UI"
           }
         },
