@@ -31732,51 +31732,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -33927,51 +33883,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -36124,51 +36036,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -38321,51 +38189,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -40518,51 +40342,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -42701,51 +42481,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -44879,51 +44615,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -47062,51 +46754,7 @@
       "Firefox::Tracking Protection": [
         {
           "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
-          "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || (fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "fission && debug",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -48983,60 +48631,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "(fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -50810,60 +50406,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "(fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -52637,60 +52181,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "(fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -54457,60 +53949,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "(fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -56273,60 +55713,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "(fission && debug)",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Remote Protocol::Agent": [
@@ -58094,64 +57482,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -59860,64 +59192,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -61617,64 +60893,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -63366,64 +62586,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -65115,64 +64279,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -66860,64 +65968,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -68605,64 +67657,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -70352,64 +69348,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -72095,64 +71035,8 @@
       ],
       "Firefox::Tracking Protection": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Toolkit::Add-ons Manager": [
@@ -73679,64 +72563,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -75345,64 +74173,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -77011,64 +75783,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -78668,64 +77384,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -80321,64 +78981,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -81925,64 +80529,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -83521,64 +82069,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -85103,64 +83595,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -86669,64 +85105,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -88212,64 +86592,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -89704,64 +88028,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -91174,64 +89442,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -92489,64 +90701,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -93796,64 +91952,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -95094,64 +93194,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -96381,64 +94425,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -97667,64 +95655,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [
@@ -97985,11 +95917,11 @@
   },
   "2019-10-28": {
     "summary": {
-      "components": 54,
-      "failed tests": 74,
-      "manifests": 1210,
+      "components": 55,
+      "failed tests": 73,
+      "manifests": 1209,
       "skipped tests": 256,
-      "tests": 305
+      "tests": 304
     },
     "tests": {
       "Core::Audio/Video: Playback": [
@@ -98025,10 +95957,6 @@
           "fail-if": "fission",
           "skip-if": "!e10s",
           "test": "dom/base/test/browser_aboutnewtab_process_selection.js"
-        },
-        {
-          "fail-if": "fission",
-          "test": "dom/base/test/test_bug907892.html"
         },
         {
           "skip-if": "fission",
@@ -98158,10 +96086,6 @@
         {
           "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
           "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
-        },
-        {
-          "skip-if": "fission",
-          "test": "dom/security/test/general/browser_test_referrer_loadInOtherProcess.js"
         },
         {
           "skip-if": "fission",
@@ -98300,6 +96224,12 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/remotebrowserutils/tests/browser/browser_httpResponseProcessSelection.js"
+        }
+      ],
+      "Core::Networking": [
+        {
+          "skip-if": "(fission && os == \"linux\")",
+          "test": "netwerk/test/mochitests/test_different_domain_in_hierarchy.html"
         }
       ],
       "Core::Networking: Cookies": [
@@ -98953,64 +96883,8 @@
       ],
       "Firefox::Protections UI": [
         {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-        },
-        {
-          "skip-if": "fission || debug || asan",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-        },
-        {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-        },
-        {
-          "skip-if": "serviceworker_e10s || fission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-        },
-        {
-          "skip-if": "\nfission && debug ||\nfission",
-          "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
         }
       ],
       "Firefox::Session Restore": [

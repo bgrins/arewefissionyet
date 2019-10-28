@@ -1,21 +1,51 @@
 {
-  "updateTime": 1572279077179,
+  "updateTime": 1572288059535,
   "removalSummary": {
-    "day": 0,
-    "week": 48,
-    "month": 117,
-    "remaining": 181
+    "day": 1,
+    "week": 49,
+    "month": 119,
+    "remaining": 166
   },
   "data": {
     "2019-10-28": {
-      "removals": [],
-      "additions": [],
-      "remaining": 181
+      "removals": [
+        {
+          "path": "dom/base/test/test_bug907892.html",
+          "updateTime": 1572288059535,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586772",
+            "assignee": "echen",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "dom/security/test/general/browser_test_referrer_loadInOtherProcess.js",
+          "updateTime": 1572288059535,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "netwerk/test/mochitests/test_different_domain_in_hierarchy.html",
+          "updateTime": 1572288059535,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Networking"
+          }
+        }
+      ],
+      "remaining": 166
     },
     "2019-10-27": {
       "removals": [],
       "additions": [],
-      "remaining": 181
+      "remaining": 167
     },
     "2019-10-26": {
       "removals": [
@@ -31,7 +61,7 @@
         }
       ],
       "additions": [],
-      "remaining": 181
+      "remaining": 167
     },
     "2019-10-25": {
       "removals": [
@@ -124,7 +154,7 @@
           }
         }
       ],
-      "remaining": 182
+      "remaining": 168
     },
     "2019-10-24": {
       "removals": [
@@ -200,7 +230,7 @@
           }
         }
       ],
-      "remaining": 185
+      "remaining": 171
     },
     "2019-10-23": {
       "removals": [
@@ -377,7 +407,7 @@
           }
         }
       ],
-      "remaining": 190
+      "remaining": 176
     },
     "2019-10-22": {
       "removals": [
@@ -618,7 +648,7 @@
         }
       ],
       "additions": [],
-      "remaining": 205
+      "remaining": 191
     },
     "2019-10-21": {
       "removals": [
@@ -743,12 +773,12 @@
         }
       ],
       "additions": [],
-      "remaining": 229
+      "remaining": 215
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 241
+      "remaining": 227
     },
     "2019-10-19": {
       "removals": [
@@ -804,7 +834,7 @@
         }
       ],
       "additions": [],
-      "remaining": 241
+      "remaining": 227
     },
     "2019-10-18": {
       "removals": [
@@ -870,7 +900,7 @@
         }
       ],
       "additions": [],
-      "remaining": 246
+      "remaining": 232
     },
     "2019-10-17": {
       "removals": [
@@ -896,7 +926,7 @@
         }
       ],
       "additions": [],
-      "remaining": 252
+      "remaining": 238
     },
     "2019-10-16": {
       "removals": [
@@ -973,7 +1003,7 @@
           }
         }
       ],
-      "remaining": 254
+      "remaining": 240
     },
     "2019-10-15": {
       "removals": [
@@ -1057,7 +1087,7 @@
         }
       ],
       "additions": [],
-      "remaining": 259
+      "remaining": 245
     },
     "2019-10-14": {
       "removals": [
@@ -1094,7 +1124,7 @@
           }
         }
       ],
-      "remaining": 267
+      "remaining": 253
     },
     "2019-10-13": {
       "removals": [
@@ -1110,7 +1140,7 @@
         }
       ],
       "additions": [],
-      "remaining": 268
+      "remaining": 254
     },
     "2019-10-12": {
       "removals": [
@@ -1156,7 +1186,7 @@
         }
       ],
       "additions": [],
-      "remaining": 269
+      "remaining": 255
     },
     "2019-10-11": {
       "removals": [
@@ -1292,7 +1322,7 @@
         }
       ],
       "additions": [],
-      "remaining": 273
+      "remaining": 259
     },
     "2019-10-10": {
       "removals": [
@@ -1328,7 +1358,7 @@
         }
       ],
       "additions": [],
-      "remaining": 286
+      "remaining": 272
     },
     "2019-10-09": {
       "removals": [
@@ -1364,12 +1394,12 @@
         }
       ],
       "additions": [],
-      "remaining": 289
+      "remaining": 275
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 292
+      "remaining": 278
     },
     "2019-10-07": {
       "removals": [
@@ -1385,12 +1415,12 @@
         }
       ],
       "additions": [],
-      "remaining": 292
+      "remaining": 278
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 293
+      "remaining": 279
     },
     "2019-10-05": {
       "removals": [
@@ -1416,7 +1446,7 @@
         }
       ],
       "additions": [],
-      "remaining": 293
+      "remaining": 279
     },
     "2019-10-04": {
       "removals": [
@@ -1452,7 +1482,7 @@
         }
       ],
       "additions": [],
-      "remaining": 295
+      "remaining": 281
     },
     "2019-10-03": {
       "removals": [],
@@ -1468,7 +1498,7 @@
           }
         }
       ],
-      "remaining": 298
+      "remaining": 284
     },
     "2019-10-02": {
       "removals": [
@@ -1511,19 +1541,9 @@
             "assignee": null,
             "component": "Core::Security: PSM"
           }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
         }
       ],
-      "remaining": 297
+      "remaining": 283
     },
     "2019-10-01": {
       "removals": [
@@ -1558,7 +1578,7 @@
           }
         }
       ],
-      "remaining": 296
+      "remaining": 283
     },
     "2019-09-30": {
       "removals": [
@@ -1573,12 +1593,12 @@
         }
       ],
       "additions": [],
-      "remaining": 297
+      "remaining": 284
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 298
+      "remaining": 285
     },
     "2019-09-28": {
       "removals": [
@@ -1593,7 +1613,7 @@
         }
       ],
       "additions": [],
-      "remaining": 298
+      "remaining": 285
     },
     "2019-09-27": {
       "removals": [
@@ -2202,34 +2222,6 @@
           }
         },
         {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "assignee": null,
-            "component": "Firefox::Tracking Protection"
-          }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "assignee": null,
-            "component": "Firefox::Tracking Protection"
-          }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
-        },
-        {
           "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_enable.js",
           "updateTime": 1571352878202,
           "metadata": {
@@ -2479,56 +2471,6 @@
           }
         },
         {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_animation.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_animation_2.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_background_tabs.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_fingerprinters.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
-        },
-        {
-          "path": "browser/base/content/test/trackingUI/browser_trackingUI_open_preferences.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590696",
-            "assignee": "dlee",
-            "component": "Firefox::Protections UI"
-          }
-        },
-        {
           "path": "browser/components/safebrowsing/content/test/browser_mixedcontent_aboutblocked.js",
           "updateTime": 1571352878202,
           "metadata": {
@@ -2538,7 +2480,7 @@
           }
         }
       ],
-      "remaining": 299
+      "remaining": 286
     },
     "2019-09-26": {
       "removals": [
@@ -2584,7 +2526,7 @@
           }
         }
       ],
-      "remaining": 384
+      "remaining": 373
     },
     "2019-09-25": {
       "removals": [],
@@ -2600,7 +2542,7 @@
           }
         }
       ],
-      "remaining": 384
+      "remaining": 373
     },
     "2019-09-24": {
       "removals": [
@@ -2635,17 +2577,17 @@
         }
       ],
       "additions": [],
-      "remaining": 383
+      "remaining": 372
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 386
+      "remaining": 375
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 386
+      "remaining": 375
     },
     "2019-09-21": {
       "removals": [
@@ -2661,7 +2603,7 @@
         }
       ],
       "additions": [],
-      "remaining": 386
+      "remaining": 375
     },
     "2019-09-20": {
       "removals": [
@@ -2816,7 +2758,7 @@
           }
         }
       ],
-      "remaining": 387
+      "remaining": 376
     }
   }
 }

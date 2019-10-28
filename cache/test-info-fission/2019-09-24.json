@@ -1636,51 +1636,7 @@
     "Firefox::Tracking Protection": [
       {
         "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_categories.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_cookies_subview.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_cryptominers.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_fetch.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_pbmode_exceptions.js"
-      },
-      {
-        "skip-if": "fission || debug || asan",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_report_breakage.js"
-      },
-      {
-        "skip-if": "fission && debug",
         "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_socialtracking.js"
-      },
-      {
-        "skip-if": "serviceworker_e10s || (fission && debug)",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_state.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_state_reset.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_telemetry.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/trackingUI/browser_trackingUI_trackers_subview.js"
       }
     ],
     "Remote Protocol::Agent": [
