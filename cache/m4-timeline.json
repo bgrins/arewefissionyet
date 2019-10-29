@@ -1,10 +1,10 @@
 {
-  "updateTime": 1572365649539,
+  "updateTime": 1572385438682,
   "removalSummary": {
-    "day": 7,
-    "week": 32,
-    "month": 126,
-    "remaining": 159
+    "day": 20,
+    "week": 45,
+    "month": 139,
+    "remaining": 146
   },
   "data": {
     "2019-10-29": {
@@ -20,6 +20,26 @@
           }
         },
         {
+          "path": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
           "path": "docshell/test/browser/browser_cross_process_csp_inheritance.js",
           "updateTime": 1572365649539,
           "metadata": {
@@ -27,6 +47,111 @@
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591865",
             "assignee": "ckerschb",
             "component": "Core::Document Navigation"
+          }
+        },
+        {
+          "path": "docshell/test/navigation/test_bug13871.html",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590782",
+            "assignee": "afarre",
+            "component": "Core::Security"
+          }
+        },
+        {
+          "path": "browser/base/content/test/webrtc/browser_devices_get_user_media.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
+            "assignee": "enndeakin",
+            "component": "Core::WebRTC"
+          }
+        },
+        {
+          "path": "browser/base/content/test/webrtc/browser_devices_get_user_media_multi_process.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
+            "assignee": "enndeakin",
+            "component": "Core::WebRTC"
+          }
+        },
+        {
+          "path": "browser/base/content/test/webrtc/browser_devices_get_user_media_tear_off_tab.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
+            "assignee": "enndeakin",
+            "component": "Core::WebRTC"
+          }
+        },
+        {
+          "path": "browser/base/content/test/webrtc/browser_devices_get_user_media_unprompted_access_tear_off_tab.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
+            "assignee": "enndeakin",
+            "component": "Core::WebRTC"
+          }
+        },
+        {
+          "path": "browser/base/content/test/general/browser_bug441778.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
+            "assignee": "kmadan",
+            "component": "Firefox::General"
+          }
+        },
+        {
+          "path": "browser/base/content/test/permissions/browser_permissions.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Site Permissions"
+          }
+        },
+        {
+          "path": "browser/base/content/test/permissions/browser_permissions_event_telemetry.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Site Permissions"
+          }
+        },
+        {
+          "path": "browser/base/content/test/permissions/browser_permissions_handling_user_input.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Site Permissions"
+          }
+        },
+        {
+          "path": "browser/base/content/test/permissions/browser_permissions_postPrompt.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Site Permissions"
+          }
+        },
+        {
+          "path": "browser/base/content/test/permissions/browser_temporary_permissions_expiry.js",
+          "updateTime": 1572385438682,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Site Permissions"
           }
         },
         {
@@ -81,7 +206,7 @@
         }
       ],
       "additions": [],
-      "remaining": 159
+      "remaining": 146
     },
     "2019-10-28": {
       "removals": [

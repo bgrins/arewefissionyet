@@ -1,10 +1,10 @@
 {
   "summary": {
-    "components": 53,
+    "components": 52,
     "failed tests": 72,
     "manifests": 1209,
-    "skipped tests": 250,
-    "tests": 298
+    "skipped tests": 235,
+    "tests": 283
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -146,10 +146,6 @@
     "Core::DOM: Security": [
       {
         "skip-if": "fission",
-        "test": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js"
-      },
-      {
-        "skip-if": "fission",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_js_uri.js"
       },
       {
@@ -190,10 +186,6 @@
       }
     ],
     "Core::DOM: Service Workers": [
-      {
-        "skip-if": "\nserviceworker_e10s ||\nfission && debug",
-        "test": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js"
-      },
       {
         "skip-if": "fission",
         "test": "dom/serviceworkers/test/browser_force_refresh.js"
@@ -462,10 +454,6 @@
       },
       {
         "skip-if": "fission",
-        "test": "toolkit/components/antitracking/test/browser/browser_socialtracking.js"
-      },
-      {
-        "skip-if": "fission",
         "test": "toolkit/components/antitracking/test/browser/browser_storageAccessDoorHanger.js"
       },
       {
@@ -494,10 +482,6 @@
       },
       {
         "skip-if": "fission || serviceworker_e10s",
-        "test": "toolkit/components/antitracking/test/browser/browser_subResources.js"
-      },
-      {
-        "skip-if": "fission || serviceworker_e10s",
         "test": "toolkit/components/antitracking/test/browser/browser_subResourcesPartitioned.js"
       },
       {
@@ -509,10 +493,6 @@
       {
         "skip-if": "fission",
         "test": "browser/components/resistfingerprinting/test/browser/browser_navigator.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "docshell/test/navigation/test_bug13871.html"
       },
       {
         "skip-if": "fission",
@@ -559,24 +539,6 @@
       {
         "skip-if": "fission && debug",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePictureDup.html"
-      }
-    ],
-    "Core::WebRTC": [
-      {
-        "skip-if": "fission || (os == \"linux\" && debug)",
-        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media.js"
-      },
-      {
-        "skip-if": "(debug && os == \"win\") || fission",
-        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media_multi_process.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media_tear_off_tab.js"
-      },
-      {
-        "skip-if": "fission || (os == \"win\" && bits == 64)",
-        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media_unprompted_access_tear_off_tab.js"
       }
     ],
     "Core::Window Management": [
@@ -893,10 +855,6 @@
         "test": "browser/base/content/test/general/browser_bug431826.js"
       },
       {
-        "skip-if": "fission",
-        "test": "browser/base/content/test/general/browser_bug441778.js"
-      },
-      {
         "skip-if": "fission || (os == \"linux\" && !e10s)",
         "test": "browser/base/content/test/general/browser_newwindow_focus.js"
       },
@@ -1017,26 +975,6 @@
       }
     ],
     "Firefox::Site Permissions": [
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/permissions/browser_permissions.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/permissions/browser_permissions_event_telemetry.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/permissions/browser_permissions_handling_user_input.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/permissions/browser_permissions_postPrompt.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/permissions/browser_temporary_permissions_expiry.js"
-      },
       {
         "fail-if": "fission",
         "test": "browser/base/content/test/popups/browser_popup_frames.js"
