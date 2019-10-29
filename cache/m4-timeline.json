@@ -1,12 +1,88 @@
 {
-  "updateTime": 1572288059535,
+  "updateTime": 1572365649539,
   "removalSummary": {
-    "day": 1,
-    "week": 49,
-    "month": 119,
-    "remaining": 166
+    "day": 7,
+    "week": 32,
+    "month": 126,
+    "remaining": 159
   },
   "data": {
+    "2019-10-29": {
+      "removals": [
+        {
+          "path": "dom/events/test/test_bug812744.html",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586751",
+            "assignee": "nobody",
+            "component": "Core::DOM: Events"
+          }
+        },
+        {
+          "path": "docshell/test/browser/browser_cross_process_csp_inheritance.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591865",
+            "assignee": "ckerschb",
+            "component": "Core::Document Navigation"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_access.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_addon_listener.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/browser/browser_webapi_install.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/mozapps/extensions/test/xpinstall/browser_unsigned_trigger_xorigin.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
+            "assignee": "tomica",
+            "component": "Toolkit::Add-ons Manager"
+          }
+        },
+        {
+          "path": "toolkit/content/tests/browser/browser_media_wakelock.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588002",
+            "assignee": "mconley",
+            "component": "Toolkit::General"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 159
+    },
     "2019-10-28": {
       "removals": [
         {
@@ -27,6 +103,16 @@
             "assignee": null,
             "component": "Core::DOM: Security"
           }
+        },
+        {
+          "path": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591934",
+            "assignee": "nhnt11",
+            "component": "Firefox::Protections UI"
+          }
         }
       ],
       "additions": [
@@ -37,6 +123,16 @@
             "milestone": "M4",
             "assignee": null,
             "component": "Core::Networking"
+          }
+        },
+        {
+          "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_resources.html",
+          "updateTime": 1572365649539,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587633",
+            "assignee": "tomica",
+            "component": "WebExtensions::General"
           }
         }
       ],
@@ -401,8 +497,8 @@
           "updateTime": 1571933680233,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
-            "assignee": "tomica",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
+            "assignee": "nobody",
             "component": "WebExtensions::General"
           }
         }
@@ -817,8 +913,8 @@
           "updateTime": 1571501358188,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
-            "assignee": "tomica",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
+            "assignee": "nobody",
             "component": "WebExtensions::General"
           }
         },

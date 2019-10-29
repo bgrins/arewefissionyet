@@ -1,10 +1,10 @@
 {
   "summary": {
-    "components": 55,
-    "failed tests": 73,
+    "components": 53,
+    "failed tests": 72,
     "manifests": 1209,
-    "skipped tests": 257,
-    "tests": 305
+    "skipped tests": 250,
+    "tests": 298
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -88,12 +88,6 @@
       {
         "skip-if": "fission",
         "test": "dom/tests/mochitest/whatwg/test_postMessage_override.html"
-      }
-    ],
-    "Core::DOM: Events": [
-      {
-        "skip-if": "(toolkit == 'android') || (fission && debug)",
-        "test": "dom/events/test/test_bug812744.html"
       }
     ],
     "Core::DOM: IndexedDB": [
@@ -270,11 +264,6 @@
       {
         "skip-if": "fission",
         "test": "docshell/test/browser/browser_bug422543.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "!e10s",
-        "test": "docshell/test/browser/browser_cross_process_csp_inheritance.js"
       },
       {
         "skip-if": "fission || (os == 'win' && !debug)",
@@ -1065,24 +1054,6 @@
         "test": "toolkit/content/tests/browser/browser_isSynthetic.js"
       }
     ],
-    "Toolkit::Add-ons Manager": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/mozapps/extensions/test/browser/browser_webapi_access.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/mozapps/extensions/test/browser/browser_webapi_addon_listener.js"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "toolkit/mozapps/extensions/test/browser/browser_webapi_install.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_unsigned_trigger_xorigin.js"
-      }
-    ],
     "Toolkit::Crash Reporting": [
       {
         "skip-if": "fission || !e10s || !crashreporter",
@@ -1099,10 +1070,6 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
-      },
-      {
-        "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
-        "test": "toolkit/content/tests/browser/browser_media_wakelock.js"
       }
     ],
     "Toolkit::Notifications and Alerts": [
