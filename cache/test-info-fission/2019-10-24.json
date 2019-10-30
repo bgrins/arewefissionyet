@@ -29,10 +29,6 @@
         "fail-if": "fission",
         "skip-if": "!e10s",
         "test": "dom/ipc/tests/browser_cancel_content_js.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/ipc/tests/browser_domainPolicy.js"
       }
     ],
     "Core::DOM: Core & HTML": [
@@ -40,6 +36,10 @@
         "fail-if": "fission",
         "skip-if": "!e10s",
         "test": "dom/base/test/browser_aboutnewtab_process_selection.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/base/test/browser_bug593387.js"
       },
       {
         "fail-if": "fission",

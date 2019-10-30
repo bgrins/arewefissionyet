@@ -1,12 +1,37 @@
 {
-  "updateTime": 1572385438682,
+  "updateTime": 1572456083723,
   "removalSummary": {
-    "day": 20,
-    "week": 45,
-    "month": 139,
+    "day": 0,
+    "week": 30,
+    "month": 138,
     "remaining": 146
   },
   "data": {
+    "2019-10-30": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/favicons/browser_favicon_change_not_in_document.js",
+          "updateTime": 1572456083723,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js",
+          "updateTime": 1572456083723,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "remaining": 146
+    },
     "2019-10-29": {
       "removals": [
         {
