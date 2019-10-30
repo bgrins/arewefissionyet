@@ -82240,6 +82240,10 @@
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
         },
         {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
+        },
+        {
           "fail-if": "fission",
           "skip-if": "toolkit == 'android' || verify",
           "test": "toolkit/components/prompts/test/test_subresources_prompts.html"
@@ -82868,7 +82872,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -83752,6 +83773,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "fail-if": "fission",
@@ -84378,7 +84403,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -85262,6 +85304,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "fail-if": "fission",
@@ -85865,7 +85911,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -86749,6 +86812,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "fail-if": "fission",
@@ -87301,7 +87368,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -88187,6 +88271,10 @@
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
         },
         {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
+        },
+        {
           "fail-if": "fission",
           "skip-if": "toolkit == 'android' || verify",
           "test": "toolkit/components/prompts/test/test_subresources_prompts.html"
@@ -88721,7 +88809,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -89589,6 +89694,10 @@
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
         },
         {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
+        },
+        {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
           "test": "toolkit/content/tests/browser/browser_media_wakelock.js"
         }
@@ -90003,7 +90112,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -90723,6 +90849,10 @@
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
         },
         {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
+        },
+        {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
           "test": "browser/components/sessionstore/test/browser_formdata.js"
         },
@@ -90846,6 +90976,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
@@ -91260,7 +91394,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -91974,6 +92125,10 @@
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
         },
         {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
+        },
+        {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
           "test": "browser/components/sessionstore/test/browser_formdata.js"
         },
@@ -92097,6 +92252,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
@@ -92490,7 +92649,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission",
@@ -93216,6 +93392,10 @@
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
         },
         {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
+        },
+        {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
           "test": "browser/components/sessionstore/test/browser_formdata.js"
         },
@@ -93332,6 +93512,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
@@ -93725,7 +93909,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission || verify",
@@ -94447,6 +94648,10 @@
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
         },
         {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
+        },
+        {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
           "test": "browser/components/sessionstore/test/browser_formdata.js"
         },
@@ -94563,6 +94768,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
@@ -94956,7 +95165,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission || verify",
@@ -95677,6 +95903,10 @@
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
         },
         {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
+        },
+        {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
           "test": "browser/components/sessionstore/test/browser_formdata.js"
         },
@@ -95793,6 +96023,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
@@ -96178,7 +96412,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission || verify",
@@ -96900,6 +97151,10 @@
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
         },
         {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
+        },
+        {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
           "test": "browser/components/sessionstore/test/browser_formdata.js"
         },
@@ -97016,6 +97271,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         },
         {
           "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
@@ -97391,7 +97650,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission || verify",
@@ -98051,6 +98327,10 @@
       ],
       "Firefox::Private Browsing": [
         {
+          "skip-if": "fission || verify",
+          "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js"
+        },
+        {
           "skip-if": "fission",
           "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js"
         }
@@ -98072,6 +98352,10 @@
         {
           "skip-if": "(os == 'linux' && !e10s) || (fission)",
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
+        },
+        {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
         },
         {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
@@ -98152,6 +98436,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         }
       ],
       "Toolkit::Notifications and Alerts": [
@@ -98276,11 +98564,11 @@
   },
   "2019-10-30": {
     "summary": {
-      "components": 52,
-      "failed tests": 71,
-      "manifests": 1208,
-      "skipped tests": 235,
-      "tests": 282
+      "components": 51,
+      "failed tests": 70,
+      "manifests": 1212,
+      "skipped tests": 231,
+      "tests": 278
     },
     "tests": {
       "Core::Audio/Video: Playback": [
@@ -98398,13 +98686,6 @@
           "test": "dom/xhr/tests/browser_xhr_onchange_leak.js"
         }
       ],
-      "Core::DOM: Push Notifications": [
-        {
-          "fail-if": "fission",
-          "skip-if": "(os == \"android\") || (serviceworker_e10s || !e10s || os == \"win\" || os ==\"linux\" && bits == 64 || os ==\"mac\")",
-          "test": "dom/push/test/test_serviceworker_lifetime.html"
-        }
-      ],
       "Core::DOM: Quota Manager": [
         {
           "skip-if": "((buildapp != \"browser\")) || (fission)",
@@ -98422,19 +98703,7 @@
       "Core::DOM: Security": [
         {
           "skip-if": "fission",
-          "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_js_uri.js"
-        },
-        {
-          "skip-if": "fission",
           "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "dom/security/test/csp/test_navigate_to.html"
         },
         {
           "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
@@ -98527,7 +98796,24 @@
           "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
-      "Core::Disability Access APIs": [],
+      "Core::Disability Access APIs": [
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_attributes.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_caching_value.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_events_caretmove.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
+        }
+      ],
       "Core::Document Navigation": [
         {
           "skip-if": "fission || verify",
@@ -99179,6 +99465,10 @@
       ],
       "Firefox::Private Browsing": [
         {
+          "skip-if": "fission || verify",
+          "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js"
+        },
+        {
           "skip-if": "fission",
           "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js"
         }
@@ -99200,6 +99490,10 @@
         {
           "skip-if": "(os == 'linux' && !e10s) || (fission)",
           "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
+        },
+        {
+          "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
+          "test": "browser/components/sessionstore/test/browser_broadcast.js"
         },
         {
           "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
@@ -99280,6 +99574,10 @@
         {
           "skip-if": "fission",
           "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
         }
       ],
       "Toolkit::Notifications and Alerts": [

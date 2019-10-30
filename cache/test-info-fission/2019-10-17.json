@@ -1316,6 +1316,10 @@
         "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
       },
       {
+        "skip-if": "fission",
+        "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
+      },
+      {
         "fail-if": "fission",
         "skip-if": "toolkit == 'android' || verify",
         "test": "toolkit/components/prompts/test/test_subresources_prompts.html"

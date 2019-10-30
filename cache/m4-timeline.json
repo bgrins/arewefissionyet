@@ -1,36 +1,55 @@
 {
-  "updateTime": 1572468382005,
+  "updateTime": 1572474029290,
   "removalSummary": {
-    "day": 0,
-    "week": 30,
-    "month": 138,
-    "remaining": 146
+    "day": 4,
+    "week": 33,
+    "month": 135,
+    "remaining": 149
   },
   "data": {
     "2019-10-30": {
       "removals": [
         {
-          "path": "browser/base/content/test/favicons/browser_favicon_change_not_in_document.js",
-          "updateTime": 1572456083723,
+          "path": "dom/push/test/test_serviceworker_lifetime.html",
+          "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
-            "component": "Firefox::General"
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578333",
+            "assignee": "nobody",
+            "component": "Core::DOM: Push Notifications"
           }
-        }
-      ],
-      "additions": [
+        },
         {
-          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js",
-          "updateTime": 1572456083723,
+          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_js_uri.js",
+          "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4",
             "assignee": null,
             "component": "Core::DOM: Security"
           }
+        },
+        {
+          "path": "dom/security/test/csp/test_navigate_to.html",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "browser/base/content/test/favicons/browser_favicon_change_not_in_document.js",
+          "updateTime": 1572456083723,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586393",
+            "assignee": "continuation",
+            "component": "Firefox::General"
+          }
         }
       ],
-      "remaining": 146
+      "additions": [],
+      "remaining": 149
     },
     "2019-10-29": {
       "removals": [
@@ -139,7 +158,8 @@
           "updateTime": 1572385438682,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
+            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -148,7 +168,8 @@
           "updateTime": 1572385438682,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
+            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -157,7 +178,8 @@
           "updateTime": 1572385438682,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
+            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -166,7 +188,8 @@
           "updateTime": 1572385438682,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
+            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -175,7 +198,8 @@
           "updateTime": 1572385438682,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
+            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -230,8 +254,18 @@
           }
         }
       ],
-      "additions": [],
-      "remaining": 146
+      "additions": [
+        {
+          "path": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Private Browsing"
+          }
+        }
+      ],
+      "remaining": 153
     },
     "2019-10-28": {
       "removals": [
@@ -286,12 +320,12 @@
           }
         }
       ],
-      "remaining": 166
+      "remaining": 172
     },
     "2019-10-27": {
       "removals": [],
       "additions": [],
-      "remaining": 167
+      "remaining": 173
     },
     "2019-10-26": {
       "removals": [
@@ -307,7 +341,7 @@
         }
       ],
       "additions": [],
-      "remaining": 167
+      "remaining": 173
     },
     "2019-10-25": {
       "removals": [
@@ -400,7 +434,7 @@
           }
         }
       ],
-      "remaining": 168
+      "remaining": 174
     },
     "2019-10-24": {
       "removals": [
@@ -476,7 +510,7 @@
           }
         }
       ],
-      "remaining": 171
+      "remaining": 177
     },
     "2019-10-23": {
       "removals": [
@@ -643,6 +677,15 @@
       ],
       "additions": [
         {
+          "path": "browser/components/sessionstore/test/browser_broadcast.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Session Restore"
+          }
+        },
+        {
           "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html",
           "updateTime": 1571933680233,
           "metadata": {
@@ -653,7 +696,7 @@
           }
         }
       ],
-      "remaining": 176
+      "remaining": 182
     },
     "2019-10-22": {
       "removals": [
@@ -894,7 +937,7 @@
         }
       ],
       "additions": [],
-      "remaining": 191
+      "remaining": 196
     },
     "2019-10-21": {
       "removals": [
@@ -1019,12 +1062,12 @@
         }
       ],
       "additions": [],
-      "remaining": 215
+      "remaining": 220
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 227
+      "remaining": 232
     },
     "2019-10-19": {
       "removals": [
@@ -1080,7 +1123,7 @@
         }
       ],
       "additions": [],
-      "remaining": 227
+      "remaining": 232
     },
     "2019-10-18": {
       "removals": [
@@ -1145,8 +1188,45 @@
           }
         }
       ],
-      "additions": [],
-      "remaining": 232
+      "additions": [
+        {
+          "path": "accessible/tests/browser/e10s/browser_caching_attributes.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Disability Access APIs"
+          }
+        },
+        {
+          "path": "accessible/tests/browser/e10s/browser_caching_value.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Disability Access APIs"
+          }
+        },
+        {
+          "path": "accessible/tests/browser/e10s/browser_events_caretmove.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Disability Access APIs"
+          }
+        },
+        {
+          "path": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Disability Access APIs"
+          }
+        }
+      ],
+      "remaining": 237
     },
     "2019-10-17": {
       "removals": [
@@ -1171,8 +1251,18 @@
           }
         }
       ],
-      "additions": [],
-      "remaining": 238
+      "additions": [
+        {
+          "path": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js",
+          "updateTime": 1572474029290,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Toolkit::General"
+          }
+        }
+      ],
+      "remaining": 239
     },
     "2019-10-16": {
       "removals": [
@@ -2721,7 +2811,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591873",
+            "assignee": "dlee",
             "component": "Toolkit::Safe Browsing"
           }
         }
