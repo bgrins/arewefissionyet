@@ -1,5 +1,5 @@
 {
-  "updateTime": 1572456083723,
+  "updateTime": 1572468382005,
   "removalSummary": {
     "day": 0,
     "week": 30,
@@ -79,8 +79,8 @@
           "updateTime": 1572385438682,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590782",
-            "assignee": "afarre",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592201",
+            "assignee": "ckerschb",
             "component": "Core::Security"
           }
         },
