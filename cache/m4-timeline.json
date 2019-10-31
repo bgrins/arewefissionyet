@@ -1,12 +1,105 @@
 {
-  "updateTime": 1572474029290,
+  "updateTime": 1572538421229,
   "removalSummary": {
-    "day": 4,
-    "week": 33,
-    "month": 135,
-    "remaining": 149
+    "day": 9,
+    "week": 37,
+    "month": 143,
+    "remaining": 140
   },
   "data": {
+    "2019-10-31": {
+      "removals": [
+        {
+          "path": "dom/tests/mochitest/bugs/test_bug260264.html",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587386",
+            "assignee": "echen",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "dom/security/test/general/test_same_site_cookies_about.html",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/security/test/general/test_same_site_cookies_iframe.html",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "docshell/test/mochitest/test_bug529119-1.html",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
+            "assignee": "kmaglione+bmo",
+            "component": "Core::Document Navigation"
+          }
+        },
+        {
+          "path": "docshell/test/mochitest/test_bug529119-2.html",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
+            "assignee": "kmaglione+bmo",
+            "component": "Core::Document Navigation"
+          }
+        },
+        {
+          "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
+            "assignee": "valentin.gosu",
+            "component": "Core::Networking: Cookies"
+          }
+        },
+        {
+          "path": "browser/components/newtab/test/browser/browser_asrouter_cfr.js",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585777",
+            "assignee": "agakhokidze",
+            "component": "Firefox::New Tab Page"
+          }
+        },
+        {
+          "path": "toolkit/components/cleardata/tests/browser/browser_serviceworkers.js",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Toolkit::Data Sanitization"
+          }
+        },
+        {
+          "path": "toolkit/components/telemetry/tests/browser/browser_HybridContentTelemetry.js",
+          "updateTime": 1572538421229,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1520491",
+            "assignee": "chutten",
+            "component": "Toolkit::Telemetry"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 140
+    },
     "2019-10-30": {
       "removals": [
         {
