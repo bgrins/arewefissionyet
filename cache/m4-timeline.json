@@ -1,14 +1,34 @@
 {
-  "updateTime": 1572538421229,
+  "updateTime": 1572549549000,
   "removalSummary": {
-    "day": 9,
-    "week": 37,
-    "month": 143,
-    "remaining": 140
+    "day": 14,
+    "week": 42,
+    "month": 148,
+    "remaining": 135
   },
   "data": {
     "2019-10-31": {
       "removals": [
+        {
+          "path": "dom/base/test/browser_bug593387.js",
+          "updateTime": 1572549549000,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584998",
+            "assignee": "ckerschb",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "dom/base/test/test_x-frame-options.html",
+          "updateTime": 1572549549000,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584998",
+            "assignee": "ckerschb",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
         {
           "path": "dom/tests/mochitest/bugs/test_bug260264.html",
           "updateTime": 1572538421229,
@@ -17,6 +37,16 @@
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587386",
             "assignee": "echen",
             "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "dom/indexedDB/test/test_third_party.html",
+          "updateTime": 1572549549000,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: IndexedDB"
           }
         },
         {
@@ -35,6 +65,26 @@
             "milestone": "M4",
             "assignee": null,
             "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/workers/test/test_multi_sharedWorker.html",
+          "updateTime": 1572549549000,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590320",
+            "assignee": "echuang",
+            "component": "Core::DOM: Workers"
+          }
+        },
+        {
+          "path": "dom/workers/test/test_sharedWorker_thirdparty.html",
+          "updateTime": 1572549549000,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: Workers"
           }
         },
         {
@@ -98,7 +148,7 @@
         }
       ],
       "additions": [],
-      "remaining": 140
+      "remaining": 135
     },
     "2019-10-30": {
       "removals": [

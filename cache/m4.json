@@ -99702,11 +99702,11 @@
   },
   "2019-10-31": {
     "summary": {
-      "components": 48,
-      "failed tests": 75,
+      "components": 47,
+      "failed tests": 71,
       "manifests": 1212,
-      "skipped tests": 214,
-      "tests": 266
+      "skipped tests": 212,
+      "tests": 261
     },
     "tests": {
       "Core::Audio/Video: Playback": [
@@ -99740,10 +99740,6 @@
           "test": "dom/base/test/browser_aboutnewtab_process_selection.js"
         },
         {
-          "skip-if": "fission",
-          "test": "dom/base/test/browser_bug593387.js"
-        },
-        {
           "fail-if": "fission",
           "test": "dom/base/test/test_bug976673.html"
         },
@@ -99751,11 +99747,6 @@
           "fail-if": "fission",
           "skip-if": "fission && debug",
           "test": "dom/base/test/test_window_cross_origin_props.html"
-        },
-        {
-          "fail-if": "fission",
-          "skip-if": "toolkit == 'android' && debug && !is_fennec",
-          "test": "dom/base/test/test_x-frame-options.html"
         },
         {
           "skip-if": "fission",
@@ -99808,10 +99799,6 @@
         {
           "skip-if": "((buildapp != \"browser\")) || (fission || os == 'linux' && debug)",
           "test": "dom/indexedDB/test/browser_perwindow_privateBrowsing.js"
-        },
-        {
-          "fail-if": "fission",
-          "test": "dom/indexedDB/test/test_third_party.html"
         }
       ],
       "Core::DOM: Networking": [
@@ -99910,16 +99897,6 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html"
-        }
-      ],
-      "Core::DOM: Workers": [
-        {
-          "skip-if": "fission && debug",
-          "test": "dom/workers/test/test_multi_sharedWorker.html"
-        },
-        {
-          "fail-if": "fission",
-          "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
         }
       ],
       "Core::Disability Access APIs": [
@@ -100571,7 +100548,7 @@
           "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js"
         },
         {
-          "fail-if": "fission",
+          "skip-if": "fission",
           "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js"
         }
       ],
