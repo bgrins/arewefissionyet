@@ -1,10 +1,10 @@
 {
   "summary": {
-    "components": 47,
+    "components": 46,
     "failed tests": 71,
-    "manifests": 1212,
-    "skipped tests": 212,
-    "tests": 261
+    "manifests": 1211,
+    "skipped tests": 210,
+    "tests": 259
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -1046,12 +1046,6 @@
       {
         "skip-if": "fission && debug",
         "test": "toolkit/components/url-classifier/tests/mochitest/test_classify_by_default.html"
-      }
-    ],
-    "Toolkit::Telemetry": [
-      {
-        "skip-if": "fission",
-        "test": "browser/modules/test/browser/browser_UsageTelemetry_domains.js"
       }
     ],
     "WebExtensions::General": [

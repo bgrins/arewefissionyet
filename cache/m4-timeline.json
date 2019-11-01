@@ -1,16 +1,26 @@
 {
-  "updateTime": 1572624871404,
+  "updateTime": 1572635446186,
   "removalSummary": {
-    "day": 0,
-    "week": 39,
-    "month": 148,
-    "remaining": 135
+    "day": 1,
+    "week": 40,
+    "month": 149,
+    "remaining": 134
   },
   "data": {
     "2019-11-01": {
-      "removals": [],
+      "removals": [
+        {
+          "path": "browser/modules/test/browser/browser_UsageTelemetry_domains.js",
+          "updateTime": 1572635446186,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Toolkit::Telemetry"
+          }
+        }
+      ],
       "additions": [],
-      "remaining": 135
+      "remaining": 134
     },
     "2019-10-31": {
       "removals": [
