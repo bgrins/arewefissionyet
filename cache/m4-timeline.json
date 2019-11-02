@@ -1,12 +1,28 @@
 {
-  "updateTime": 1572635446186,
+  "updateTime": 1572711291608,
   "removalSummary": {
     "day": 1,
     "week": 40,
-    "month": 149,
-    "remaining": 134
+    "month": 151,
+    "remaining": 133
   },
   "data": {
+    "2019-11-02": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/general/browser_web_channel.js",
+          "updateTime": 1572711291608,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591212",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 133
+    },
     "2019-11-01": {
       "removals": [
         {
