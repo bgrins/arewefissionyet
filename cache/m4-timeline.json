@@ -1,12 +1,17 @@
 {
-  "updateTime": 1572711291608,
+  "updateTime": 1572797734961,
   "removalSummary": {
-    "day": 1,
+    "day": 0,
     "week": 40,
-    "month": 151,
+    "month": 148,
     "remaining": 133
   },
   "data": {
+    "2019-11-03": {
+      "removals": [],
+      "additions": [],
+      "remaining": 133
+    },
     "2019-11-02": {
       "removals": [
         {
@@ -143,8 +148,8 @@
           "updateTime": 1572538421229,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
-            "assignee": "valentin.gosu",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
+            "assignee": "nobody",
             "component": "Core::Networking: Cookies"
           }
         },
@@ -479,7 +484,8 @@
           "updateTime": 1572288059535,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586411",
+            "assignee": "nobody",
             "component": "Core::Networking"
           }
         },
@@ -1507,8 +1513,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
-            "assignee": "valentin.gosu",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
+            "assignee": "nobody",
             "component": "Core::Networking: Cookies"
           }
         }
