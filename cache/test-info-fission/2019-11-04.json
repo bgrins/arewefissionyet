@@ -27,7 +27,7 @@
     "Core::DOM: Content Processes": [
       {
         "fail-if": "fission",
-        "skip-if": "!e10s",
+        "skip-if": "!e10s || (os == \"win\" && os_version == \"10.0\" && bits == 64 && debug)",
         "test": "dom/ipc/tests/browser_cancel_content_js.js"
       }
     ],
