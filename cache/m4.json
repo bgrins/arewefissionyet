@@ -30230,6 +30230,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "fission || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -31508,6 +31512,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -32408,6 +32416,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission || toolkit == 'android'",
@@ -33659,6 +33671,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -34559,6 +34575,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission || toolkit == 'android'",
@@ -35809,6 +35829,10 @@
         {
           "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -36714,6 +36738,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "fission || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -37962,6 +37990,10 @@
         {
           "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -38867,6 +38899,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "fission || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -40118,6 +40154,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -41010,6 +41050,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission || toolkit == 'android'",
@@ -42257,6 +42301,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -43141,6 +43189,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission || toolkit == 'android'",
@@ -44391,6 +44443,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -45275,6 +45331,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug265203.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission || toolkit == 'android'",
@@ -46530,6 +46590,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -47344,6 +47408,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -48444,6 +48512,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -49126,6 +49198,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -50216,6 +50292,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -50903,6 +50983,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -51994,6 +52078,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -52676,6 +52764,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -53762,6 +53854,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -54444,6 +54540,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -55523,6 +55623,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -56210,6 +56314,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -57296,6 +57404,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -57920,6 +58032,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -59006,6 +59122,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -59631,6 +59751,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -60716,6 +60840,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -61330,6 +61458,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -62406,6 +62538,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -63025,6 +63161,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -64102,6 +64242,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -64716,6 +64860,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -65788,6 +65936,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -66407,6 +66559,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -67480,6 +67636,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -68094,6 +68254,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -69176,6 +69340,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -69785,6 +69953,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -70863,6 +71035,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -71464,6 +71640,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -72494,6 +72674,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -73088,6 +73272,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -74101,6 +74289,10 @@
         {
           "skip-if": "fission && debug",
           "test": "browser/base/content/test/general/browser_bug462673.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission",
@@ -74700,6 +74892,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug) || toolkit == 'android'",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -75714,6 +75910,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -76303,6 +76503,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -77315,6 +77519,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -77904,6 +78112,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug) || toolkit == 'android'",
@@ -78912,6 +79124,10 @@
         },
         {
           "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
+          "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug633691.js"
         },
         {
@@ -79470,6 +79686,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug)",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -80465,6 +80685,10 @@
         {
           "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug441778.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
@@ -81010,6 +81234,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug)",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -82007,6 +82235,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -82550,6 +82782,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug)",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -83552,6 +83788,10 @@
         {
           "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug441778.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
@@ -84081,6 +84321,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug)",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -85083,6 +85327,10 @@
         {
           "skip-if": "fission",
           "test": "browser/base/content/test/general/browser_bug441778.js"
+        },
+        {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
         },
         {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
@@ -85589,6 +85837,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "(fission && debug)",
           "test": "dom/tests/mochitest/bugs/test_bug369306.html"
         },
@@ -86593,6 +86845,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -87095,6 +87351,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "(fission && debug)",
@@ -88050,6 +88310,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -88552,6 +88816,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
@@ -89485,6 +89753,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -89907,6 +90179,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
@@ -91195,6 +91471,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_navigator_buildID.html"
         },
@@ -92462,6 +92742,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_navigator_buildID.html"
         },
@@ -93312,6 +93596,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -93720,6 +94008,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
@@ -94568,6 +94860,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -94976,6 +95272,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
@@ -95823,6 +96123,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -96227,6 +96531,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
@@ -97076,6 +97384,10 @@
           "test": "browser/base/content/test/general/browser_bug441778.js"
         },
         {
+          "skip-if": "fission",
+          "test": "browser/base/content/test/general/browser_bug575561.js"
+        },
+        {
           "skip-if": "fission || (os == \"linux\" && !e10s)",
           "test": "browser/base/content/test/general/browser_newwindow_focus.js"
         },
@@ -97479,6 +97791,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
@@ -98642,6 +98958,10 @@
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
         },
         {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
+        },
+        {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_navigator_buildID.html"
         },
@@ -99765,6 +100085,10 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
+        },
+        {
+          "skip-if": "fission || (toolkit == 'android' && !is_fennec && debug)",
+          "test": "dom/tests/mochitest/bugs/test_bug346659.html"
         },
         {
           "skip-if": "fission",
