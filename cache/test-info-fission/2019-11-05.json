@@ -1,10 +1,10 @@
 {
   "summary": {
     "components": 46,
-    "failed tests": 71,
+    "failed tests": 65,
     "manifests": 1213,
-    "skipped tests": 210,
-    "tests": 259
+    "skipped tests": 208,
+    "tests": 251
   },
   "tests": {
     "Core::Audio/Video: Playback": [
@@ -133,10 +133,6 @@
         "test": "dom/security/test/general/test_same_site_cookies_laxByDefault.html"
       },
       {
-        "skip-if": "fission && debug",
-        "test": "dom/security/test/general/test_same_site_cookies_toplevel_nav.html"
-      },
-      {
         "skip-if": "fission || webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
         "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
       },
@@ -164,30 +160,6 @@
       }
     ],
     "Core::DOM: Web Storage": [
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/localstorage/test_keySync.html"
-      },
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsDiff.html"
-      },
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsDomainDiffs.html"
-      },
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsEquals.html"
-      },
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsPortDiffs.html"
-      },
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsSchemaDiffs.html"
-      },
       {
         "fail-if": "fission",
         "test": "dom/tests/mochitest/sessionstorage/test_sessionStorageReplace.html"
@@ -1015,10 +987,6 @@
       }
     ],
     "Toolkit::Safe Browsing": [
-      {
-        "skip-if": "fission",
-        "test": "browser/components/safebrowsing/content/test/browser_mixedcontent_aboutblocked.js"
-      },
       {
         "skip-if": "fission",
         "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_always_activate.js"

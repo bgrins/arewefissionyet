@@ -1,16 +1,96 @@
 {
-  "updateTime": 1572970587060,
+  "updateTime": 1572976577347,
   "removalSummary": {
-    "day": 0,
-    "week": 21,
-    "month": 148,
-    "remaining": 133
+    "day": 8,
+    "week": 29,
+    "month": 156,
+    "remaining": 125
   },
   "data": {
     "2019-11-05": {
-      "removals": [],
+      "removals": [
+        {
+          "path": "dom/security/test/general/test_same_site_cookies_toplevel_nav.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_keySync.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
+            "assignee": "ytausky",
+            "component": "Core::DOM: Web Storage"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_localStorageOriginsDiff.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
+            "assignee": "ytausky",
+            "component": "Core::DOM: Web Storage"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_localStorageOriginsDomainDiffs.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
+            "assignee": "ytausky",
+            "component": "Core::DOM: Web Storage"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_localStorageOriginsEquals.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
+            "assignee": "ytausky",
+            "component": "Core::DOM: Web Storage"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_localStorageOriginsPortDiffs.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
+            "assignee": "ytausky",
+            "component": "Core::DOM: Web Storage"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_localStorageOriginsSchemaDiffs.html",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
+            "assignee": "ytausky",
+            "component": "Core::DOM: Web Storage"
+          }
+        },
+        {
+          "path": "browser/components/safebrowsing/content/test/browser_mixedcontent_aboutblocked.js",
+          "updateTime": 1572976577347,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591873",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        }
+      ],
       "additions": [],
-      "remaining": 133
+      "remaining": 125
     },
     "2019-11-04": {
       "removals": [],
