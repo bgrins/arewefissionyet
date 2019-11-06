@@ -372,10 +372,6 @@
         "test": "dom/security/test/csp/test_frameancestors_userpass.html"
       },
       {
-        "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
-        "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
-      },
-      {
         "skip-if": "fission || (os != 'linux' && !debug)",
         "test": "dom/security/test/csp/test_upgrade_insecure.html"
       },
@@ -1852,10 +1848,6 @@
       }
     ],
     "Toolkit::General": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
-      },
       {
         "fail-if": "fission",
         "skip-if": "toolkit == 'android' || verify",

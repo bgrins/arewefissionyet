@@ -271,10 +271,6 @@
         "test": "dom/security/test/csp/test_navigate_to.html"
       },
       {
-        "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
-        "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
-      },
-      {
         "fail-if": "fission",
         "test": "dom/security/test/general/browser_test_FTP_console_warning.js"
       },
@@ -1352,10 +1348,6 @@
       }
     ],
     "Toolkit::General": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
-      },
       {
         "fail-if": "fission",
         "skip-if": "toolkit == 'android' || verify",

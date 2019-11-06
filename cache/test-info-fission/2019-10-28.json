@@ -171,10 +171,6 @@
         "test": "dom/security/test/csp/test_navigate_to.html"
       },
       {
-        "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
-        "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
-      },
-      {
         "skip-if": "fission",
         "test": "dom/security/test/general/test_same_site_cookies_about.html"
       },
@@ -1125,10 +1121,6 @@
       }
     ],
     "Toolkit::General": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
-      },
       {
         "skip-if": "fission",
         "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"

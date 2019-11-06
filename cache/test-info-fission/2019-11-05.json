@@ -1,18 +1,13 @@
 {
   "summary": {
     "components": 46,
-    "failed tests": 65,
-    "manifests": 1213,
+    "failed tests": 64,
+    "manifests": 1211,
     "skipped tests": 208,
     "tests": 251
   },
   "tests": {
     "Core::Audio/Video: Playback": [
-      {
-        "fail-if": "fission",
-        "skip-if": "(os == \"win\" && processor == \"aarch64\")",
-        "test": "dom/media/test/test_autoplay_policy_activation.html"
-      },
       {
         "fail-if": "fission",
         "skip-if": "(os == \"win\" && processor == \"aarch64\")",
@@ -123,10 +118,6 @@
       {
         "skip-if": "fission",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js"
-      },
-      {
-        "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
-        "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
       },
       {
         "skip-if": "fission && debug",
@@ -326,7 +317,7 @@
         "test": "toolkit/components/antitracking/test/browser/browser_localStorageEvents.js"
       },
       {
-        "skip-if": "fission || os == \"mac\" && !debug || os == \"win\" && bits == 32 && !debug || os == \"win\" && webrender && debug",
+        "skip-if": "fission || os == \"mac\" || os == \"win\"",
         "test": "toolkit/components/antitracking/test/browser/browser_partitionedCookies.js"
       },
       {
@@ -914,10 +905,6 @@
       }
     ],
     "Toolkit::General": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/mozprotocol/tests/browser_mozprotocol.js"
-      },
       {
         "skip-if": "fission",
         "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
