@@ -1,19 +1,12 @@
 {
   "summary": {
-    "components": 46,
-    "failed tests": 63,
+    "components": 45,
+    "failed tests": 61,
     "manifests": 1211,
-    "skipped tests": 205,
-    "tests": 248
+    "skipped tests": 202,
+    "tests": 245
   },
   "tests": {
-    "Core::Audio/Video: Playback": [
-      {
-        "fail-if": "fission",
-        "skip-if": "(os == \"win\" && processor == \"aarch64\")",
-        "test": "toolkit/content/tests/browser/browser_autoplay_policy_iframe_hierarchy.js"
-      }
-    ],
     "Core::DOM: Content Processes": [
       {
         "fail-if": "fission",
@@ -340,7 +333,7 @@
         "test": "toolkit/components/antitracking/test/browser/browser_partitionedServiceWorkers.js"
       },
       {
-        "skip-if": "fission",
+        "skip-if": "fission || (os == 'win') || (os == 'mac')",
         "test": "toolkit/components/antitracking/test/browser/browser_partitionedSharedWorkers.js"
       },
       {
@@ -715,14 +708,6 @@
     "Firefox::Address Bar": [
       {
         "skip-if": "fission",
-        "test": "browser/components/urlbar/tests/browser/browser_keepStateAcrossTabSwitches.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/components/urlbar/tests/browser/browser_moz_action_link.js"
-      },
-      {
-        "skip-if": "fission",
         "test": "browser/components/urlbar/tests/browser/browser_stop_pending.js"
       }
     ],
@@ -798,10 +783,6 @@
       {
         "skip-if": "fission || verify",
         "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js"
       }
     ],
     "Firefox::Protections UI": [],
@@ -878,8 +859,7 @@
     ],
     "Firefox::Tabbed Browser": [
       {
-        "fail-if": "fission",
-        "skip-if": "!e10s",
+        "skip-if": "!e10s\n|| fission",
         "test": "browser/base/content/test/tabs/browser_new_web_tab_in_file_process_pref.js"
       }
     ],

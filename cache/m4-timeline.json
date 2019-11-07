@@ -1,12 +1,57 @@
 {
-  "updateTime": 1573056990142,
+  "updateTime": 1573143413666,
   "removalSummary": {
-    "day": 1,
-    "week": 27,
-    "month": 157,
-    "remaining": 121
+    "day": 4,
+    "week": 18,
+    "month": 162,
+    "remaining": 116
   },
   "data": {
+    "2019-11-07": {
+      "removals": [
+        {
+          "path": "toolkit/content/tests/browser/browser_autoplay_policy_iframe_hierarchy.js",
+          "updateTime": 1573143413666,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592166",
+            "assignee": "alwu",
+            "component": "Core::Audio/Video: Playback"
+          }
+        },
+        {
+          "path": "browser/components/urlbar/tests/browser/browser_keepStateAcrossTabSwitches.js",
+          "updateTime": 1573143413666,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594276",
+            "assignee": "adw",
+            "component": "Firefox::Address Bar"
+          }
+        },
+        {
+          "path": "browser/components/urlbar/tests/browser/browser_moz_action_link.js",
+          "updateTime": 1573143413666,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594356",
+            "assignee": "mak",
+            "component": "Firefox::Address Bar"
+          }
+        },
+        {
+          "path": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js",
+          "updateTime": 1573143413666,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Private Browsing"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 116
+    },
     "2019-11-06": {
       "removals": [
         {
@@ -18,10 +63,20 @@
             "assignee": "alwu",
             "component": "Core::Audio/Video: Playback"
           }
+        },
+        {
+          "path": "browser/components/urlbar/tests/browser/browser_keywordSearch.js",
+          "updateTime": 1573143413666,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1593621",
+            "assignee": "mak",
+            "component": "Firefox::Address Bar"
+          }
         }
       ],
       "additions": [],
-      "remaining": 121
+      "remaining": 120
     },
     "2019-11-05": {
       "removals": [
