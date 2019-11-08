@@ -1,12 +1,28 @@
 {
-  "updateTime": 1573143413666,
+  "updateTime": 1573229864575,
   "removalSummary": {
-    "day": 4,
-    "week": 18,
-    "month": 162,
-    "remaining": 116
+    "day": 1,
+    "week": 17,
+    "month": 160,
+    "remaining": 115
   },
   "data": {
+    "2019-11-08": {
+      "removals": [
+        {
+          "path": "dom/xhr/tests/browser_xhr_onchange_leak.js",
+          "updateTime": 1573229864575,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588618",
+            "assignee": "continuation",
+            "component": "Core::DOM: Networking"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 115
+    },
     "2019-11-07": {
       "removals": [
         {
@@ -44,7 +60,8 @@
           "updateTime": 1573143413666,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592829",
+            "assignee": "agakhokidze",
             "component": "Firefox::Private Browsing"
           }
         }
