@@ -1,14 +1,64 @@
 {
-  "updateTime": 1573229864575,
+  "updateTime": 1573248146654,
   "removalSummary": {
-    "day": 1,
-    "week": 17,
-    "month": 160,
-    "remaining": 115
+    "day": 11,
+    "week": 27,
+    "month": 170,
+    "remaining": 105
   },
   "data": {
     "2019-11-08": {
       "removals": [
+        {
+          "path": "dom/indexedDB/test/browser_forgetThisSite.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: IndexedDB"
+          }
+        },
+        {
+          "path": "dom/indexedDB/test/browser_permissionsPromptAllow.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: IndexedDB"
+          }
+        },
+        {
+          "path": "dom/indexedDB/test/browser_permissionsPromptDeny.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: IndexedDB"
+          }
+        },
+        {
+          "path": "dom/indexedDB/test/browser_permissionsPromptWorker.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: IndexedDB"
+          }
+        },
+        {
+          "path": "dom/indexedDB/test/browser_perwindow_privateBrowsing.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
+            "assignee": "ttung",
+            "component": "Core::DOM: IndexedDB"
+          }
+        },
         {
           "path": "dom/xhr/tests/browser_xhr_onchange_leak.js",
           "updateTime": 1573229864575,
@@ -18,10 +68,60 @@
             "assignee": "continuation",
             "component": "Core::DOM: Networking"
           }
+        },
+        {
+          "path": "dom/quota/test/browser_permissionsPromptAllow.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586190",
+            "assignee": "ttung",
+            "component": "Core::DOM: Quota Manager"
+          }
+        },
+        {
+          "path": "dom/quota/test/browser_permissionsPromptDeny.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586190",
+            "assignee": "ttung",
+            "component": "Core::DOM: Quota Manager"
+          }
+        },
+        {
+          "path": "dom/quota/test/browser_permissionsPromptUnknown.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586190",
+            "assignee": "ttung",
+            "component": "Core::DOM: Quota Manager"
+          }
+        },
+        {
+          "path": "browser/components/places/tests/browser/browser_bookmark_titles.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594418",
+            "assignee": "mak",
+            "component": "Firefox::Bookmarks & History"
+          }
+        },
+        {
+          "path": "browser/components/places/tests/browser/browser_click_bookmarks_on_toolbar.js",
+          "updateTime": 1573248146654,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594418",
+            "assignee": "mak",
+            "component": "Firefox::Bookmarks & History"
+          }
         }
       ],
       "additions": [],
-      "remaining": 115
+      "remaining": 105
     },
     "2019-11-07": {
       "removals": [

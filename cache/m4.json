@@ -107987,11 +107987,11 @@
   },
   "2019-11-08": {
     "summary": {
-      "components": 43,
+      "components": 40,
       "failed tests": 61,
       "manifests": 1211,
-      "skipped tests": 200,
-      "tests": 243
+      "skipped tests": 190,
+      "tests": 233
     },
     "tests": {
       "Core::DOM: Content Processes": [
@@ -108045,42 +108045,6 @@
         {
           "skip-if": "fission",
           "test": "dom/tests/mochitest/whatwg/test_postMessage_override.html"
-        }
-      ],
-      "Core::DOM: IndexedDB": [
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission || verify)",
-          "test": "dom/indexedDB/test/browser_forgetThisSite.js"
-        },
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission)",
-          "test": "dom/indexedDB/test/browser_permissionsPromptAllow.js"
-        },
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission)",
-          "test": "dom/indexedDB/test/browser_permissionsPromptDeny.js"
-        },
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission || verify)",
-          "test": "dom/indexedDB/test/browser_permissionsPromptWorker.js"
-        },
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission || os == 'linux' && debug)",
-          "test": "dom/indexedDB/test/browser_perwindow_privateBrowsing.js"
-        }
-      ],
-      "Core::DOM: Quota Manager": [
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission)",
-          "test": "dom/quota/test/browser_permissionsPromptAllow.js"
-        },
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission)",
-          "test": "dom/quota/test/browser_permissionsPromptDeny.js"
-        },
-        {
-          "skip-if": "((buildapp != \"browser\")) || (fission)",
-          "test": "dom/quota/test/browser_permissionsPromptUnknown.js"
         }
       ],
       "Core::DOM: Security": [
@@ -108686,16 +108650,6 @@
         {
           "skip-if": "fission",
           "test": "browser/components/urlbar/tests/browser/browser_stop_pending.js"
-        }
-      ],
-      "Firefox::Bookmarks & History": [
-        {
-          "skip-if": "fission",
-          "test": "browser/components/places/tests/browser/browser_bookmark_titles.js"
-        },
-        {
-          "skip-if": "fission",
-          "test": "browser/components/places/tests/browser/browser_click_bookmarks_on_toolbar.js"
         }
       ],
       "Firefox::General": [
