@@ -1,12 +1,72 @@
 {
-  "updateTime": 1573248146654,
+  "updateTime": 1573316296223,
   "removalSummary": {
-    "day": 11,
-    "week": 27,
-    "month": 170,
-    "remaining": 105
+    "day": 6,
+    "week": 32,
+    "month": 173,
+    "remaining": 99
   },
   "data": {
+    "2019-11-09": {
+      "removals": [
+        {
+          "path": "browser/extensions/pdfjs/test/browser_pdfjs_main.js",
+          "updateTime": 1573316296223,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592027",
+            "component": "Firefox::PDF Viewer"
+          }
+        },
+        {
+          "path": "browser/extensions/pdfjs/test/browser_pdfjs_navigation.js",
+          "updateTime": 1573316296223,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592027",
+            "component": "Firefox::PDF Viewer"
+          }
+        },
+        {
+          "path": "browser/extensions/pdfjs/test/browser_pdfjs_views.js",
+          "updateTime": 1573316296223,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592027",
+            "component": "Firefox::PDF Viewer"
+          }
+        },
+        {
+          "path": "browser/extensions/pdfjs/test/browser_pdfjs_zoom.js",
+          "updateTime": 1573316296223,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592027",
+            "component": "Firefox::PDF Viewer"
+          }
+        },
+        {
+          "path": "toolkit/content/tests/browser/browser_isSynthetic.js",
+          "updateTime": 1573316296223,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594856",
+            "component": "Firefox::Tabbed Browser"
+          }
+        },
+        {
+          "path": "toolkit/content/tests/browser/browser_content_url_annotation.js",
+          "updateTime": 1573316296223,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592614",
+            "component": "Toolkit::Crash Reporting"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 99
+    },
     "2019-11-08": {
       "removals": [
         {
@@ -15,7 +75,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: IndexedDB"
           }
         },
@@ -25,7 +84,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: IndexedDB"
           }
         },
@@ -35,7 +93,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: IndexedDB"
           }
         },
@@ -45,7 +102,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: IndexedDB"
           }
         },
@@ -55,7 +111,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: IndexedDB"
           }
         },
@@ -65,7 +120,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588618",
-            "assignee": "continuation",
             "component": "Core::DOM: Networking"
           }
         },
@@ -75,7 +129,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586190",
-            "assignee": "ttung",
             "component": "Core::DOM: Quota Manager"
           }
         },
@@ -85,7 +138,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586190",
-            "assignee": "ttung",
             "component": "Core::DOM: Quota Manager"
           }
         },
@@ -95,7 +147,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586190",
-            "assignee": "ttung",
             "component": "Core::DOM: Quota Manager"
           }
         },
@@ -105,7 +156,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594418",
-            "assignee": "mak",
             "component": "Firefox::Bookmarks & History"
           }
         },
@@ -115,7 +165,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594418",
-            "assignee": "mak",
             "component": "Firefox::Bookmarks & History"
           }
         }
@@ -131,7 +180,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592166",
-            "assignee": "alwu",
             "component": "Core::Audio/Video: Playback"
           }
         },
@@ -141,7 +189,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594276",
-            "assignee": "adw",
             "component": "Firefox::Address Bar"
           }
         },
@@ -151,7 +198,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594356",
-            "assignee": "mak",
             "component": "Firefox::Address Bar"
           }
         },
@@ -161,7 +207,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592829",
-            "assignee": "agakhokidze",
             "component": "Firefox::Private Browsing"
           }
         }
@@ -177,7 +222,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592167",
-            "assignee": "alwu",
             "component": "Core::Audio/Video: Playback"
           }
         },
@@ -187,7 +231,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1593621",
-            "assignee": "mak",
             "component": "Firefox::Address Bar"
           }
         }
@@ -203,7 +246,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590864",
-            "assignee": "alwu",
             "component": "Core::Audio/Video: Playback"
           }
         },
@@ -222,7 +264,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
-            "assignee": "ytausky",
             "component": "Core::DOM: Web Storage"
           }
         },
@@ -232,7 +273,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
-            "assignee": "ytausky",
             "component": "Core::DOM: Web Storage"
           }
         },
@@ -242,7 +282,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
-            "assignee": "ytausky",
             "component": "Core::DOM: Web Storage"
           }
         },
@@ -252,7 +291,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
-            "assignee": "ytausky",
             "component": "Core::DOM: Web Storage"
           }
         },
@@ -262,7 +300,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
-            "assignee": "ytausky",
             "component": "Core::DOM: Web Storage"
           }
         },
@@ -272,7 +309,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591990",
-            "assignee": "ytausky",
             "component": "Core::DOM: Web Storage"
           }
         },
@@ -282,7 +318,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591873",
-            "assignee": "dlee",
             "component": "Toolkit::Safe Browsing"
           }
         }
@@ -308,7 +343,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591212",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::General"
           }
         }
@@ -324,7 +358,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590111",
-            "assignee": "tihuang",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -349,7 +382,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584998",
-            "assignee": "ckerschb",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -359,7 +391,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584998",
-            "assignee": "ckerschb",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -369,7 +400,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587386",
-            "assignee": "echen",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -379,7 +409,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: IndexedDB"
           }
         },
@@ -407,7 +436,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1590320",
-            "assignee": "echuang",
             "component": "Core::DOM: Workers"
           }
         },
@@ -417,7 +445,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586189",
-            "assignee": "ttung",
             "component": "Core::DOM: Workers"
           }
         },
@@ -427,7 +454,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-            "assignee": "kmaglione+bmo",
             "component": "Core::Document Navigation"
           }
         },
@@ -437,7 +463,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-            "assignee": "kmaglione+bmo",
             "component": "Core::Document Navigation"
           }
         },
@@ -447,7 +472,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
-            "assignee": "nobody",
             "component": "Core::Networking: Cookies"
           }
         },
@@ -457,7 +481,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585777",
-            "assignee": "agakhokidze",
             "component": "Firefox::New Tab Page"
           }
         },
@@ -476,7 +499,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1520491",
-            "assignee": "chutten",
             "component": "Toolkit::Telemetry"
           }
         }
@@ -492,7 +514,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578333",
-            "assignee": "nobody",
             "component": "Core::DOM: Push Notifications"
           }
         },
@@ -520,7 +541,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586393",
-            "assignee": "continuation",
             "component": "Firefox::General"
           }
         }
@@ -536,7 +556,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586751",
-            "assignee": "nobody",
             "component": "Core::DOM: Events"
           }
         },
@@ -546,7 +565,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Core::DOM: Security"
           }
         },
@@ -556,7 +574,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -566,7 +583,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591865",
-            "assignee": "ckerschb",
             "component": "Core::Document Navigation"
           }
         },
@@ -576,7 +592,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592201",
-            "assignee": "ckerschb",
             "component": "Core::Security"
           }
         },
@@ -586,7 +601,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
-            "assignee": "enndeakin",
             "component": "Core::WebRTC"
           }
         },
@@ -596,7 +610,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
-            "assignee": "enndeakin",
             "component": "Core::WebRTC"
           }
         },
@@ -606,7 +619,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
-            "assignee": "enndeakin",
             "component": "Core::WebRTC"
           }
         },
@@ -616,7 +628,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589664",
-            "assignee": "enndeakin",
             "component": "Core::WebRTC"
           }
         },
@@ -626,7 +637,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -636,7 +646,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -646,7 +655,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
-            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -656,7 +664,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
-            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -666,7 +673,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
-            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -676,7 +682,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
-            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -686,7 +691,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592091",
-            "assignee": "nhnt11",
             "component": "Firefox::Site Permissions"
           }
         },
@@ -696,7 +700,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -706,7 +709,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -716,7 +718,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -726,7 +727,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591736",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -736,7 +736,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588002",
-            "assignee": "mconley",
             "component": "Toolkit::General"
           }
         }
@@ -762,7 +761,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586772",
-            "assignee": "echen",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -781,7 +779,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591934",
-            "assignee": "nhnt11",
             "component": "Firefox::Protections UI"
           }
         }
@@ -793,7 +790,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586411",
-            "assignee": "nobody",
             "component": "Core::Networking"
           }
         },
@@ -803,7 +799,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587633",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -823,7 +818,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578393",
-            "assignee": "afarre",
             "component": "Core::Document Navigation"
           }
         }
@@ -875,7 +869,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582247",
-            "assignee": "sstreich",
             "component": "Core::DOM: Security"
           }
         },
@@ -885,7 +878,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589938",
-            "assignee": "enndeakin",
             "component": "Toolkit::Form Manager"
           }
         }
@@ -897,7 +889,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Core::DOM: Security"
           }
         },
@@ -907,7 +898,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -917,7 +907,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -927,7 +916,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         }
@@ -942,7 +930,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589996",
-            "assignee": "tnguyen",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -952,7 +939,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591057",
-            "assignee": "afarre",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -971,7 +957,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582120",
-            "assignee": "MattN+bmo",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -981,7 +966,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574926",
-            "assignee": "tomica",
             "component": "WebExtensions::Untriaged"
           }
         },
@@ -991,7 +975,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574926",
-            "assignee": "tomica",
             "component": "WebExtensions::Untriaged"
           }
         }
@@ -1003,7 +986,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
-            "assignee": "jkt",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -1018,7 +1000,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Core::DOM: Security"
           }
         },
@@ -1028,7 +1009,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1038,7 +1018,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1048,7 +1027,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1058,7 +1036,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1068,7 +1045,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1078,7 +1054,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1088,7 +1063,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1098,7 +1072,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1108,7 +1081,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1118,7 +1090,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1128,7 +1099,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1138,7 +1108,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -1148,7 +1117,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582520",
-            "assignee": "kmaglione+bmo",
             "component": "Core::XPConnect"
           }
         },
@@ -1158,7 +1126,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -1168,7 +1135,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578465",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -1178,7 +1144,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Firefox::General"
           }
         }
@@ -1199,7 +1164,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
-            "assignee": "nobody",
             "component": "WebExtensions::General"
           }
         }
@@ -1250,7 +1214,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583553",
-            "assignee": "sstreich",
             "component": "Core::Networking"
           }
         },
@@ -1260,7 +1223,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589885",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -1270,7 +1232,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589885",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -1280,7 +1241,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589885",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -1290,7 +1250,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588326",
-            "assignee": "mconley",
             "component": "Toolkit::General"
           }
         },
@@ -1300,7 +1259,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1310,7 +1268,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1320,7 +1277,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1330,7 +1286,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1340,7 +1295,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1350,7 +1304,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1360,7 +1313,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1370,7 +1322,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1380,7 +1331,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1390,7 +1340,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1400,7 +1349,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1410,7 +1358,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1420,7 +1367,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1430,7 +1376,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574926",
-            "assignee": "tomica",
             "component": "WebExtensions::Untriaged"
           }
         },
@@ -1455,7 +1400,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586704",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1465,7 +1409,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586705",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1475,7 +1418,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586707",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1485,7 +1427,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586708",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1504,7 +1445,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586717",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1514,7 +1454,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586718",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1524,7 +1463,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586710",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1534,7 +1472,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586711",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1544,7 +1481,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586712",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1554,7 +1490,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586714",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1564,7 +1499,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586715",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         }
@@ -1585,7 +1519,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582113",
-            "assignee": "MattN+bmo",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1595,7 +1528,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         },
@@ -1605,7 +1537,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         },
@@ -1615,7 +1546,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
-            "assignee": "nobody",
             "component": "WebExtensions::General"
           }
         },
@@ -1625,7 +1555,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589481",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -1641,7 +1570,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580750",
-            "assignee": "valentin.gosu",
             "component": "Core::Networking: Cookies"
           }
         },
@@ -1651,7 +1579,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585776",
-            "assignee": "kmaglione+bmo",
             "component": "Firefox::Enterprise Policies"
           }
         },
@@ -1661,7 +1588,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589508",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -1671,7 +1597,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589508",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -1681,7 +1606,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589508",
-            "assignee": "tomica",
             "component": "Toolkit::Add-ons Manager"
           }
         },
@@ -1691,7 +1615,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589266",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -1744,7 +1667,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585932",
-            "assignee": "amarchesini",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -1754,7 +1676,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589110",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -1780,7 +1701,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1530413",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -1790,7 +1710,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586148",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::File Handling"
           }
         },
@@ -1800,7 +1719,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589031",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::General"
           }
         },
@@ -1810,7 +1728,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588835",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::General"
           }
         },
@@ -1820,7 +1737,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588846",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::General"
           }
         },
@@ -1830,7 +1746,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588390",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -1842,7 +1757,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
-            "assignee": "nobody",
             "component": "Core::Networking: Cookies"
           }
         }
@@ -1875,7 +1789,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1527828",
-            "assignee": "MattN+bmo",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1885,7 +1798,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582112",
-            "assignee": "MattN+bmo",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -1895,7 +1807,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         },
@@ -1905,7 +1816,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         },
@@ -1915,7 +1825,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         },
@@ -1925,7 +1834,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588338",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -1941,7 +1849,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586722",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -1951,7 +1858,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588095",
-            "assignee": "MattN+bmo",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -1963,7 +1869,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588091",
-            "assignee": "nobody",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -1978,7 +1883,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587971",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -1994,7 +1898,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587559",
-            "assignee": "kmaglione+bmo",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -2004,7 +1907,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586911",
-            "assignee": "kmaglione+bmo",
             "component": "Core::DOM: File"
           }
         },
@@ -2014,7 +1916,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586926",
-            "assignee": "kmaglione+bmo",
             "component": "Core::Document Navigation"
           }
         },
@@ -2024,7 +1925,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583400",
-            "assignee": "kmaglione+bmo",
             "component": "Core::XPConnect"
           }
         }
@@ -2040,7 +1940,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2050,7 +1949,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2060,7 +1958,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2070,7 +1967,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2080,7 +1976,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2090,7 +1985,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2100,7 +1994,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2110,7 +2003,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2120,7 +2012,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::Address Bar"
           }
         },
@@ -2130,7 +2021,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -2140,7 +2030,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1583240",
-            "assignee": "kmadan",
             "component": "Firefox::General"
           }
         },
@@ -2150,7 +2039,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587784",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::General"
           }
         },
@@ -2160,7 +2048,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587914",
-            "assignee": "tomica",
             "component": "WebExtensions::Untriaged"
           }
         }
@@ -2176,7 +2063,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586713",
-            "assignee": "tihuang",
             "component": "Core::DOM: Security"
           }
         },
@@ -2186,7 +2072,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587221",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         },
@@ -2196,7 +2081,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587633",
-            "assignee": "tomica",
             "component": "WebExtensions::General"
           }
         }
@@ -2212,7 +2096,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586779",
-            "assignee": "jdai",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -2222,7 +2105,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-            "assignee": "perry",
             "component": "Core::DOM: Push Notifications"
           }
         },
@@ -2232,7 +2114,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585727",
-            "assignee": "emalysz",
             "component": "Firefox::General"
           }
         }
@@ -2253,7 +2134,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576480",
-            "assignee": "valentin.gosu",
             "component": "Core::DOM: Core & HTML"
           }
         }
@@ -2274,7 +2154,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-            "assignee": "kmaglione+bmo",
             "component": "Core::Document Navigation"
           }
         },
@@ -2284,7 +2163,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586119",
-            "assignee": "kmaglione+bmo",
             "component": "Core::Document Navigation"
           }
         }
@@ -2300,7 +2178,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586272",
-            "assignee": "jdemooij",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -2310,7 +2187,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585830",
-            "assignee": "continuation",
             "component": "Core::Window Management"
           }
         },
@@ -2320,7 +2196,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586136",
-            "assignee": "gijskruitbosch+bugs",
             "component": "Firefox::Toolbars and Customization"
           }
         }
@@ -2337,7 +2212,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-            "assignee": "nobody",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -2352,7 +2226,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585498",
-            "assignee": "continuation",
             "component": "Firefox::General"
           }
         },
@@ -2362,7 +2235,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1585562",
-            "assignee": "standard8",
             "component": "Toolkit::Places"
           }
         }
@@ -2417,7 +2289,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-            "assignee": "perry",
             "component": "Core::DOM: Push Notifications"
           }
         }
@@ -2602,7 +2473,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -2639,7 +2509,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Push Notifications"
           }
         },
@@ -2649,7 +2518,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Security"
           }
         },
@@ -2659,7 +2527,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -2678,7 +2545,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -2688,7 +2554,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -2698,7 +2563,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -2708,7 +2572,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -2988,7 +2851,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Firefox::General"
           }
         },
@@ -3025,7 +2887,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Firefox::Site Identity and Permission Panels"
           }
         },
@@ -3134,7 +2995,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3144,7 +3004,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3154,7 +3013,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3164,7 +3022,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3174,7 +3031,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3184,7 +3040,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3194,7 +3049,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
-            "assignee": "agakhokidze",
             "component": "Toolkit::Data Sanitization"
           }
         },
@@ -3231,7 +3085,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -3241,7 +3094,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -3251,7 +3103,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -3261,7 +3112,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-            "assignee": "nobody",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -3271,7 +3121,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -3281,7 +3130,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
-            "assignee": "enndeakin",
             "component": "Toolkit::Password Manager"
           }
         },
@@ -3320,7 +3168,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591873",
-            "assignee": "dlee",
             "component": "Toolkit::Safe Browsing"
           }
         }
@@ -3335,7 +3182,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582520",
-            "assignee": "kmaglione+bmo",
             "component": "Core::XPConnect"
           }
         },
@@ -3356,7 +3202,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586911",
-            "assignee": "kmaglione+bmo",
             "component": "Core::DOM: File"
           }
         },
@@ -3366,8 +3211,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-            "assignee": "kmaglione+bmo",
-            "component": "Core::DOM: Web Storage"
+            "component": "Core::Storage: localStorage & sessionStorage"
           }
         }
       ],
@@ -3382,7 +3226,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1591057",
-            "assignee": "afarre",
             "component": "Core::DOM: Core & HTML"
           }
         }
@@ -3397,7 +3240,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582744",
-            "assignee": "echen",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3416,7 +3258,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1574137",
-            "assignee": "jwatt",
             "component": "Core::SVG"
           }
         }
@@ -3442,7 +3283,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570942",
-            "assignee": "nobody",
             "component": "Core::DOM: Service Workers"
           }
         }
@@ -3476,7 +3316,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-            "assignee": "afarre",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3486,7 +3325,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-            "assignee": "pbone",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3496,7 +3334,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-            "assignee": "pbone",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3506,7 +3343,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
-            "assignee": "pbone",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3516,7 +3352,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576407",
-            "assignee": "kmaglione+bmo",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3526,7 +3361,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1578636",
-            "assignee": "nobody",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3536,7 +3370,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1579291",
-            "assignee": "nobody",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3546,7 +3379,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1572575",
-            "assignee": "ahal",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -3556,8 +3388,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-            "assignee": "kmaglione+bmo",
-            "component": "Core::DOM: Web Storage"
+            "component": "Core::Storage: localStorage & sessionStorage"
           }
         },
         {
@@ -3566,7 +3397,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582156",
-            "assignee": "kmadan",
             "component": "Core::Document Navigation"
           }
         }
@@ -3578,7 +3408,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-            "assignee": "afarre",
             "component": "Core::DOM: Security"
           }
         },
@@ -3588,7 +3417,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         },
@@ -3598,7 +3426,6 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
-            "assignee": "echuang",
             "component": "Core::DOM: Service Workers"
           }
         }

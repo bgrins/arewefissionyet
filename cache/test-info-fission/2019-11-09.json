@@ -1,10 +1,10 @@
 {
   "summary": {
-    "components": 40,
-    "failed tests": 61,
+    "components": 38,
+    "failed tests": 62,
     "manifests": 1211,
-    "skipped tests": 190,
-    "tests": 233
+    "skipped tests": 184,
+    "tests": 227
   },
   "tests": {
     "Core::DOM: Content Processes": [
@@ -683,7 +683,8 @@
         "test": "browser/base/content/test/general/browser_bug431826.js"
       },
       {
-        "skip-if": "fission || (os == \"linux\" && !e10s)",
+        "fail-if": "fission",
+        "skip-if": "os == \"linux\" && !e10s",
         "test": "browser/base/content/test/general/browser_newwindow_focus.js"
       },
       {
@@ -703,24 +704,6 @@
       {
         "skip-if": "fission && debug",
         "test": "browser/base/content/test/keyboard/browser_toolbarKeyNav.js"
-      }
-    ],
-    "Firefox::PDF Viewer": [
-      {
-        "skip-if": "fission",
-        "test": "browser/extensions/pdfjs/test/browser_pdfjs_main.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/extensions/pdfjs/test/browser_pdfjs_navigation.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "browser/extensions/pdfjs/test/browser_pdfjs_views.js"
-      },
-      {
-        "skip-if": "fission || (verify && debug && (os == 'win'))",
-        "test": "browser/extensions/pdfjs/test/browser_pdfjs_zoom.js"
       }
     ],
     "Firefox::Private Browsing": [
@@ -805,16 +788,6 @@
       {
         "skip-if": "!e10s\n|| fission",
         "test": "browser/base/content/test/tabs/browser_new_web_tab_in_file_process_pref.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/content/tests/browser/browser_isSynthetic.js"
-      }
-    ],
-    "Toolkit::Crash Reporting": [
-      {
-        "skip-if": "fission || !e10s || !crashreporter",
-        "test": "toolkit/content/tests/browser/browser_content_url_annotation.js"
       }
     ],
     "Toolkit::General": [
