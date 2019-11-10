@@ -109819,5 +109819,19 @@
       ],
       "WebExtensions::Untriaged": []
     }
+  },
+  "2019-11-10": {
+    "code": "ResourceNotFound",
+    "message": "Indexed task not found\n\n---\n\n* method:     findArtifactFromTask\n* errorCode:  ResourceNotFound\n* statusCode: 404\n* time:       2019-11-10T16:19:17.347Z",
+    "requestInfo": {
+      "method": "findArtifactFromTask",
+      "params": {
+        "0": "public/test-info-fission.json",
+        "indexPath": "gecko.v2.mozilla-central.pushdate.2019.11.10.latest.source.test-info-fission",
+        "name": "public/test-info-fission.json"
+      },
+      "payload": {},
+      "time": "2019-11-10T16:19:17.347Z"
+    }
   }
 }
