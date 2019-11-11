@@ -159,6 +159,10 @@ async function fetchTestInfos(testMetadata) {
     let response = await fetch(url);
     let obj = await response.json();
 
+    if (response.status != 200) {
+      throw new Error(`Error fetching: ${url} - ${response.status}`);
+    }
+
     let todaySet = (testsPerDay[dateString] = new Set());
     for (let component in obj.tests) {
       if (shouldIgnoreComponent(component)) {
