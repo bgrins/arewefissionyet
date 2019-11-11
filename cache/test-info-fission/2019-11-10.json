@@ -1,6 +1,6 @@
 {
   "code": "ResourceNotFound",
-  "message": "Indexed task not found\n\n---\n\n* method:     findArtifactFromTask\n* errorCode:  ResourceNotFound\n* statusCode: 404\n* time:       2019-11-11T16:20:09.358Z",
+  "message": "Indexed task not found\n\n---\n\n* method:     findArtifactFromTask\n* errorCode:  ResourceNotFound\n* statusCode: 404\n* time:       2019-11-10T16:19:17.347Z",
   "requestInfo": {
     "method": "findArtifactFromTask",
     "params": {
@@ -9,6 +9,6 @@
       "name": "public/test-info-fission.json"
     },
     "payload": {},
-    "time": "2019-11-11T16:20:09.358Z"
+    "time": "2019-11-10T16:19:17.347Z"
   }
 }
