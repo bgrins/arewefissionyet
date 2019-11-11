@@ -146,21 +146,33 @@ async function fetchTestInfos(testMetadata) {
   console.log("Next, importing daily data from taskcluster artifacts");
 
   let testsPerDay = {};
-  // const url = "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.latest.source.test-info-fission/artifacts/public/test-info-fission.json";
+
+
   for (let date of getDatesBetween(new Date(2019, 08, 19), new Date())) {
     // YYYY-MM-DD
     var dateString = dashedStringFromDate(date);
-    console.log("Fetching", dateString);
 
-    // YYYY.MM.DD
-    let tcDate = dateString.replace(new RegExp("-", "g"), ".");
-    let url = `https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.pushdate.${tcDate}.latest.source.test-info-fission/artifacts/public/test-info-fission.json`;
+    let obj;
+    if (date < new Date(2019, 10, 09)) {
+      // Taskcluster migrated to a new instance on 2019-11-10. So anything from before that is now readonly
+      // and we can only get fresh data after that from the new URL. For reference, the old URL was:
+      // let url = `https://index.taskcluster.net/v1/task/gecko.v2.mozilla-central.pushdate.${tcDate}.latest.source.test-info-fission/artifacts/public/test-info-fission.json`;
+      // For example: https://index.taskcluster.net/api/index/v1/task/gecko.v2.mozilla-central.pushdate.2019.11.11.latest.source.test-info-fission/artifacts/public/test-info-fission.json
+      console.log(`Fetching cached artifact from old tc server: ${dateString}`);
+      obj = JSON.parse(fs.readFileSync(`cache/imported-from-old-taskcluster-server/${dateString}.json`, "utf8"));
+    } else {
+      // YYYY.MM.DD
+      let tcDate = dateString.replace(new RegExp("-", "g"), ".");
 
-    let response = await fetch(url);
-    let obj = await response.json();
+      let url = `https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/gecko.v2.mozilla-central.pushdate.${tcDate}.latest.source.test-info-fission/artifacts/public/test-info-fission.json`;
+      console.log(`Fetching ${dateString}: ${url}`);
 
-    if (response.status != 200) {
-      throw new Error(`Error fetching: ${url} - ${response.status}`);
+      let response = await fetch(url);
+      obj = await response.json();
+
+      if (response.status != 200) {
+        throw new Error(`Error fetching: ${url} - ${response.status}`);
+      }
     }
 
     let todaySet = (testsPerDay[dateString] = new Set());
@@ -193,7 +205,7 @@ async function fetchTestInfos(testMetadata) {
         let metadata = testMetadata.get(obj.test);
         if (!metadata) {
           console.error(
-            "Error: found a test with no metadata from the sheet:",
+            "> Error: found a test with no metadata from the sheet:",
             obj.test
           );
         }
@@ -213,7 +225,7 @@ async function fetchTestInfos(testMetadata) {
 
       if (lengthBeforeFilter != lengthAfterFilter) {
         console.log(
-          `Component was filtered (non-M4 or duplicate entries): ${component} ${lengthBeforeFilter} -> ${lengthAfterFilter}`
+          `> Component was filtered (non-M4 or duplicate entries): ${component} ${lengthBeforeFilter} -> ${lengthAfterFilter}`
         );
       }
     }
@@ -257,7 +269,7 @@ function saveTimelineData(testsPerDay, testMetadata) {
       let daysFromNow = (now - dateFromDashedString(date)) / 24 / 60 / 60 / 1000;
       let netRemovals = changesPerDay[date].removals.size - changesPerDay[date].additions.size;
       if (daysFromNow == 0) {
-        console.log("Running today", netRemovals);
+        console.log(`Running today (removals=${netRemovals}`);
         removalSummary.day += netRemovals;
       }
       if (daysFromNow < 7) {
