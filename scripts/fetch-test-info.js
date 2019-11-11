@@ -269,7 +269,7 @@ function saveTimelineData(testsPerDay, testMetadata) {
       let daysFromNow = (now - dateFromDashedString(date)) / 24 / 60 / 60 / 1000;
       let netRemovals = changesPerDay[date].removals.size - changesPerDay[date].additions.size;
       if (daysFromNow == 0) {
-        console.log(`Running today (removals=${netRemovals}`);
+        console.log(`Running today (removals=${netRemovals})`);
         removalSummary.day += netRemovals;
       }
       if (daysFromNow < 7) {
