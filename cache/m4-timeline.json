@@ -1,12 +1,38 @@
 {
-  "updateTime": 1573499448698,
+  "updateTime": 1573578535353,
   "removalSummary": {
-    "day": 0,
-    "week": 32,
-    "month": 156,
-    "remaining": 99
+    "day": 2,
+    "week": 25,
+    "month": 157,
+    "remaining": 97
   },
   "data": {
+    "2019-11-12": {
+      "removals": [
+        {
+          "path": "dom/tests/mochitest/whatwg/test_postMessage_origin.xhtml",
+          "updateTime": 1573578535353,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1576814",
+            "assignee": "pbone",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/whatwg/test_postMessage_override.html",
+          "updateTime": 1573578535353,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1559841",
+            "assignee": "jwatt",
+            "component": "Core::DOM: Core & HTML"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 97
+    },
     "2019-11-11": {
       "removals": [],
       "additions": [],
