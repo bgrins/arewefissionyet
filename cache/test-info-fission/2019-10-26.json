@@ -42,6 +42,10 @@
         "test": "dom/base/test/browser_bug593387.js"
       },
       {
+        "skip-if": "fission",
+        "test": "dom/base/test/browser_messagemanager_unload.js"
+      },
+      {
         "fail-if": "fission",
         "test": "dom/base/test/test_bug907892.html"
       },
@@ -62,6 +66,14 @@
       {
         "skip-if": "fission",
         "test": "dom/permission/tests/test_cross_origin_iframe.html"
+      },
+      {
+        "skip-if": "fission || !e10s || (os == \"win\" && (processor == \"x86\" || processor == \"aarch64\")) || (verify && debug && (os == 'linux')) || (os == 'linux') || (os == 'mac' && debug)",
+        "test": "dom/tests/browser/browser_largeAllocation_non_win32.js"
+      },
+      {
+        "skip-if": "fission || !e10s || os != \"win\" || processor != \"x86\"",
+        "test": "dom/tests/browser/browser_largeAllocation_win32.js"
       },
       {
         "fail-if": "fission",
@@ -173,6 +185,10 @@
       {
         "skip-if": "fission",
         "test": "dom/security/test/csp/test_navigate_to.html"
+      },
+      {
+        "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
+        "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
       },
       {
         "skip-if": "fission",
@@ -291,10 +307,6 @@
       {
         "skip-if": "fission || verify",
         "test": "docshell/test/browser/browser_bug420605.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "docshell/test/browser/browser_bug422543.js"
       },
       {
         "fail-if": "fission",
