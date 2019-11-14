@@ -1,12 +1,17 @@
 {
-  "updateTime": 1573665132179,
+  "updateTime": 1573751562071,
   "removalSummary": {
-    "day": 18,
-    "week": 41,
-    "month": 173,
-    "remaining": 83
+    "day": 0,
+    "week": 38,
+    "month": 165,
+    "remaining": 81
   },
   "data": {
+    "2019-11-14": {
+      "removals": [],
+      "additions": [],
+      "remaining": 81
+    },
     "2019-11-13": {
       "removals": [
         {
@@ -191,7 +196,7 @@
         }
       ],
       "additions": [],
-      "remaining": 83
+      "remaining": 81
     },
     "2019-11-12": {
       "removals": [
@@ -227,17 +232,17 @@
         }
       ],
       "additions": [],
-      "remaining": 101
+      "remaining": 99
     },
     "2019-11-11": {
       "removals": [],
       "additions": [],
-      "remaining": 104
+      "remaining": 102
     },
     "2019-11-10": {
       "removals": [],
       "additions": [],
-      "remaining": 104
+      "remaining": 102
     },
     "2019-11-09": {
       "removals": [
@@ -303,7 +308,7 @@
         }
       ],
       "additions": [],
-      "remaining": 104
+      "remaining": 102
     },
     "2019-11-08": {
       "removals": [
@@ -419,7 +424,7 @@
         }
       ],
       "additions": [],
-      "remaining": 110
+      "remaining": 108
     },
     "2019-11-07": {
       "removals": [
@@ -475,7 +480,7 @@
           }
         }
       ],
-      "remaining": 121
+      "remaining": 119
     },
     "2019-11-06": {
       "removals": [
@@ -501,7 +506,7 @@
         }
       ],
       "additions": [],
-      "remaining": 124
+      "remaining": 122
     },
     "2019-11-05": {
       "removals": [
@@ -606,17 +611,17 @@
           }
         }
       ],
-      "remaining": 126
+      "remaining": 124
     },
     "2019-11-04": {
       "removals": [],
       "additions": [],
-      "remaining": 134
+      "remaining": 132
     },
     "2019-11-03": {
       "removals": [],
       "additions": [],
-      "remaining": 134
+      "remaining": 132
     },
     "2019-11-02": {
       "removals": [
@@ -632,7 +637,7 @@
         }
       ],
       "additions": [],
-      "remaining": 134
+      "remaining": 132
     },
     "2019-11-01": {
       "removals": [
@@ -657,7 +662,7 @@
         }
       ],
       "additions": [],
-      "remaining": 135
+      "remaining": 133
     },
     "2019-10-31": {
       "removals": [
@@ -800,7 +805,7 @@
         }
       ],
       "additions": [],
-      "remaining": 137
+      "remaining": 135
     },
     "2019-10-30": {
       "removals": [
@@ -844,7 +849,7 @@
         }
       ],
       "additions": [],
-      "remaining": 151
+      "remaining": 149
     },
     "2019-10-29": {
       "removals": [
@@ -1070,7 +1075,7 @@
           }
         }
       ],
-      "remaining": 155
+      "remaining": 153
     },
     "2019-10-28": {
       "removals": [
@@ -1126,12 +1131,12 @@
           }
         }
       ],
-      "remaining": 175
+      "remaining": 173
     },
     "2019-10-27": {
       "removals": [],
       "additions": [],
-      "remaining": 176
+      "remaining": 174
     },
     "2019-10-26": {
       "removals": [
@@ -1147,7 +1152,7 @@
         }
       ],
       "additions": [],
-      "remaining": 176
+      "remaining": 174
     },
     "2019-10-25": {
       "removals": [
@@ -1250,7 +1255,7 @@
           }
         }
       ],
-      "remaining": 177
+      "remaining": 175
     },
     "2019-10-24": {
       "removals": [
@@ -1326,7 +1331,7 @@
           }
         }
       ],
-      "remaining": 179
+      "remaining": 177
     },
     "2019-10-23": {
       "removals": [
@@ -1522,7 +1527,7 @@
           }
         }
       ],
-      "remaining": 184
+      "remaining": 182
     },
     "2019-10-22": {
       "removals": [
@@ -1763,7 +1768,7 @@
         }
       ],
       "additions": [],
-      "remaining": 199
+      "remaining": 197
     },
     "2019-10-21": {
       "removals": [
@@ -1888,12 +1893,12 @@
         }
       ],
       "additions": [],
-      "remaining": 223
+      "remaining": 221
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 235
+      "remaining": 233
     },
     "2019-10-19": {
       "removals": [
@@ -1949,7 +1954,7 @@
         }
       ],
       "additions": [],
-      "remaining": 235
+      "remaining": 233
     },
     "2019-10-18": {
       "removals": [
@@ -2052,7 +2057,7 @@
           }
         }
       ],
-      "remaining": 240
+      "remaining": 238
     },
     "2019-10-17": {
       "removals": [
@@ -2088,7 +2093,7 @@
           }
         }
       ],
-      "remaining": 242
+      "remaining": 240
     },
     "2019-10-16": {
       "removals": [
@@ -2165,7 +2170,7 @@
           }
         }
       ],
-      "remaining": 243
+      "remaining": 241
     },
     "2019-10-15": {
       "removals": [
@@ -2249,7 +2254,7 @@
         }
       ],
       "additions": [],
-      "remaining": 248
+      "remaining": 246
     },
     "2019-10-14": {
       "removals": [
@@ -2286,7 +2291,7 @@
           }
         }
       ],
-      "remaining": 256
+      "remaining": 254
     },
     "2019-10-13": {
       "removals": [
@@ -2302,7 +2307,7 @@
         }
       ],
       "additions": [],
-      "remaining": 257
+      "remaining": 255
     },
     "2019-10-12": {
       "removals": [
@@ -2348,7 +2353,7 @@
         }
       ],
       "additions": [],
-      "remaining": 258
+      "remaining": 256
     },
     "2019-10-11": {
       "removals": [
@@ -2484,7 +2489,7 @@
         }
       ],
       "additions": [],
-      "remaining": 262
+      "remaining": 260
     },
     "2019-10-10": {
       "removals": [
@@ -2520,7 +2525,7 @@
         }
       ],
       "additions": [],
-      "remaining": 275
+      "remaining": 273
     },
     "2019-10-09": {
       "removals": [
@@ -2556,12 +2561,12 @@
         }
       ],
       "additions": [],
-      "remaining": 278
+      "remaining": 276
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 281
+      "remaining": 279
     },
     "2019-10-07": {
       "removals": [
@@ -2577,12 +2582,12 @@
         }
       ],
       "additions": [],
-      "remaining": 281
+      "remaining": 279
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 282
+      "remaining": 280
     },
     "2019-10-05": {
       "removals": [
@@ -2608,7 +2613,7 @@
         }
       ],
       "additions": [],
-      "remaining": 282
+      "remaining": 280
     },
     "2019-10-04": {
       "removals": [
@@ -2644,7 +2649,7 @@
         }
       ],
       "additions": [],
-      "remaining": 284
+      "remaining": 282
     },
     "2019-10-03": {
       "removals": [],
@@ -2660,7 +2665,7 @@
           }
         }
       ],
-      "remaining": 287
+      "remaining": 285
     },
     "2019-10-02": {
       "removals": [
@@ -2705,7 +2710,7 @@
           }
         }
       ],
-      "remaining": 286
+      "remaining": 284
     },
     "2019-10-01": {
       "removals": [
@@ -2740,7 +2745,7 @@
           }
         }
       ],
-      "remaining": 286
+      "remaining": 284
     },
     "2019-09-30": {
       "removals": [
@@ -2755,12 +2760,12 @@
         }
       ],
       "additions": [],
-      "remaining": 287
+      "remaining": 285
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 288
+      "remaining": 286
     },
     "2019-09-28": {
       "removals": [
@@ -2775,7 +2780,7 @@
         }
       ],
       "additions": [],
-      "remaining": 288
+      "remaining": 286
     },
     "2019-09-27": {
       "removals": [
@@ -3643,7 +3648,7 @@
           }
         }
       ],
-      "remaining": 289
+      "remaining": 287
     },
     "2019-09-26": {
       "removals": [
@@ -3689,7 +3694,7 @@
           }
         }
       ],
-      "remaining": 376
+      "remaining": 374
     },
     "2019-09-25": {
       "removals": [],
@@ -3705,7 +3710,7 @@
           }
         }
       ],
-      "remaining": 376
+      "remaining": 374
     },
     "2019-09-24": {
       "removals": [
@@ -3740,17 +3745,17 @@
         }
       ],
       "additions": [],
-      "remaining": 375
+      "remaining": 373
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 378
+      "remaining": 376
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 378
+      "remaining": 376
     },
     "2019-09-21": {
       "removals": [
@@ -3766,7 +3771,7 @@
         }
       ],
       "additions": [],
-      "remaining": 378
+      "remaining": 376
     },
     "2019-09-20": {
       "removals": [
@@ -3921,7 +3926,7 @@
           }
         }
       ],
-      "remaining": 379
+      "remaining": 377
     }
   }
 }
