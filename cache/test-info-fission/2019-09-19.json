@@ -42,10 +42,6 @@
         "test": "dom/base/test/browser_bug593387.js"
       },
       {
-        "skip-if": "fission",
-        "test": "dom/base/test/browser_messagemanager_unload.js"
-      },
-      {
         "skip-if": "fission || verify",
         "test": "dom/base/test/browser_use_counters.js"
       },
@@ -693,13 +689,7 @@
         "test": "netwerk/cookie/test/browser/browser_serviceWorker.js"
       }
     ],
-    "Core::Permission Manager": [
-      {
-        "fail-if": "fission",
-        "skip-if": "debug || !e10s",
-        "test": "extensions/permissions/test/browser_permmgr_sync.js"
-      }
-    ],
+    "Core::Permission Manager": [],
     "Core::Plug-ins": [
       {
         "skip-if": "fission || toolkit == \"gtk\"",

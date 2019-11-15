@@ -43,10 +43,6 @@
       },
       {
         "skip-if": "fission",
-        "test": "dom/base/test/browser_messagemanager_unload.js"
-      },
-      {
-        "skip-if": "fission",
         "test": "dom/base/test/test_bug976673.html"
       },
       {
@@ -323,13 +319,7 @@
         "test": "netwerk/cookie/test/browser/browser_sharedWorker.js"
       }
     ],
-    "Core::Permission Manager": [
-      {
-        "fail-if": "fission",
-        "skip-if": "debug || !e10s",
-        "test": "extensions/permissions/test/browser_permmgr_sync.js"
-      }
-    ],
+    "Core::Permission Manager": [],
     "Core::Plug-ins": [
       {
         "skip-if": "fission || toolkit == \"gtk\"",
