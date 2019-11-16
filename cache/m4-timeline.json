@@ -1,12 +1,17 @@
 {
-  "updateTime": 1573837996996,
+  "updateTime": 1573924453310,
   "removalSummary": {
-    "day": 1,
-    "week": 28,
-    "month": 161,
+    "day": 0,
+    "week": 22,
+    "month": 160,
     "remaining": 78
   },
   "data": {
+    "2019-11-16": {
+      "removals": [],
+      "additions": [],
+      "remaining": 78
+    },
     "2019-11-15": {
       "removals": [
         {
@@ -3707,7 +3712,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-            "assignee": "kmaglione+bmo",
+            "assignee": "ytausky",
             "component": "Core::Storage: localStorage & sessionStorage"
           }
         }
@@ -3897,7 +3902,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
-            "assignee": "kmaglione+bmo",
+            "assignee": "ytausky",
             "component": "Core::Storage: localStorage & sessionStorage"
           }
         },
