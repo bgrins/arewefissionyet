@@ -1,16 +1,72 @@
 {
-  "updateTime": 1574010864965,
+  "updateTime": 1574097285435,
   "removalSummary": {
     "day": 0,
-    "week": 22,
+    "week": 27,
     "month": 158,
-    "remaining": 78
+    "remaining": 73
   },
   "data": {
-    "2019-11-17": {
+    "2019-11-18": {
       "removals": [],
       "additions": [],
-      "remaining": 78
+      "remaining": 73
+    },
+    "2019-11-17": {
+      "removals": [
+        {
+          "path": "toolkit/components/reader/test/browser_bug1124271_readerModePinnedTab.js",
+          "updateTime": 1574097285435,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        },
+        {
+          "path": "toolkit/components/reader/test/browser_bug1453818_samesite_cookie.js",
+          "updateTime": 1574097285435,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        },
+        {
+          "path": "toolkit/components/reader/test/browser_readerMode_hidden_nodes.js",
+          "updateTime": 1574097285435,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        },
+        {
+          "path": "toolkit/components/reader/test/browser_readerMode_readingTime.js",
+          "updateTime": 1574097285435,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        },
+        {
+          "path": "toolkit/components/reader/test/browser_readerMode_with_anchor.js",
+          "updateTime": 1574097285435,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 73
     },
     "2019-11-16": {
       "removals": [],
