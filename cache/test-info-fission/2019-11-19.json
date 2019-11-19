@@ -1,9 +1,9 @@
 {
   "summary": {
     "components": 39,
-    "failed tests": 62,
+    "failed tests": 67,
     "manifests": 1215,
-    "skipped tests": 161,
+    "skipped tests": 159,
     "tests": 204
   },
   "tests": {
@@ -73,7 +73,8 @@
         "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
       },
       {
-        "skip-if": "fission || webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
+        "fail-if": "fission",
+        "skip-if": "webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
         "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
       },
       {
@@ -608,7 +609,7 @@
     ],
     "Firefox::Address Bar": [
       {
-        "skip-if": "fission",
+        "fail-if": "fission",
         "test": "browser/components/urlbar/tests/browser/browser_stop_pending.js"
       }
     ],
@@ -627,7 +628,7 @@
         "test": "browser/base/content/test/general/browser_unknownContentType_title.js"
       },
       {
-        "skip-if": "fission",
+        "fail-if": "fission",
         "test": "browser/base/content/test/siteProtections/browser_protections_UI.js"
       }
     ],
@@ -670,7 +671,8 @@
         "test": "browser/components/sessionstore/test/browser_formdata.js"
       },
       {
-        "skip-if": "(os == 'linux' && !e10s) || (fission)",
+        "fail-if": "fission",
+        "skip-if": "os == 'linux' && !e10s",
         "test": "browser/components/sessionstore/test/browser_sessionHistory.js"
       },
       {

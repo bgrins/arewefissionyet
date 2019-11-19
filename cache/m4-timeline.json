@@ -1,16 +1,32 @@
 {
-  "updateTime": 1574097285435,
+  "updateTime": 1574183736428,
   "removalSummary": {
     "day": 0,
-    "week": 27,
-    "month": 158,
-    "remaining": 73
+    "week": 25,
+    "month": 159,
+    "remaining": 72
   },
   "data": {
-    "2019-11-18": {
+    "2019-11-19": {
       "removals": [],
       "additions": [],
-      "remaining": 73
+      "remaining": 72
+    },
+    "2019-11-18": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/about/browser_aboutCertError.js",
+          "updateTime": 1574183736428,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596315",
+            "assignee": "enndeakin",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 72
     },
     "2019-11-17": {
       "removals": [
