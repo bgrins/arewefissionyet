@@ -1,7 +1,7 @@
 {
   "summary": {
     "components": 38,
-    "failed tests": 66,
+    "failed tests": 65,
     "manifests": 1215,
     "skipped tests": 157,
     "tests": 202

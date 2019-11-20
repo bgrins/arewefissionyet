@@ -1,16 +1,42 @@
 {
-  "updateTime": 1574183736428,
+  "updateTime": 1574270167240,
   "removalSummary": {
     "day": 0,
-    "week": 25,
-    "month": 159,
-    "remaining": 72
+    "week": 9,
+    "month": 149,
+    "remaining": 70
   },
   "data": {
-    "2019-11-19": {
+    "2019-11-20": {
       "removals": [],
       "additions": [],
-      "remaining": 72
+      "remaining": 70
+    },
+    "2019-11-19": {
+      "removals": [
+        {
+          "path": "dom/ipc/tests/browser_cancel_content_js.js",
+          "updateTime": 1574270167240,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592093",
+            "assignee": "agakhokidze",
+            "component": "Core::DOM: Content Processes"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html",
+          "updateTime": 1574270167240,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582948",
+            "assignee": "ytausky",
+            "component": "Core::Storage: localStorage & sessionStorage"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 70
     },
     "2019-11-18": {
       "removals": [
