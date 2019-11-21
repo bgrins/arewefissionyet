@@ -1,12 +1,37 @@
 {
-  "updateTime": 1574270167240,
+  "updateTime": 1574375169112,
   "removalSummary": {
-    "day": 0,
-    "week": 9,
-    "month": 149,
-    "remaining": 70
+    "day": 2,
+    "week": 11,
+    "month": 127,
+    "remaining": 68
   },
   "data": {
+    "2019-11-21": {
+      "removals": [
+        {
+          "path": "dom/base/test/browser_aboutnewtab_process_selection.js",
+          "updateTime": 1574375169112,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596462",
+            "assignee": "kmadan",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "browser/components/resistfingerprinting/test/browser/browser_navigator.js",
+          "updateTime": 1574375169112,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Security"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 68
+    },
     "2019-11-20": {
       "removals": [],
       "additions": [],

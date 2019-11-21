@@ -214,7 +214,7 @@ async function fetchTestInfos(testMetadata) {
           metadata.component = component;
         }
 
-        let inM4 = metadata && metadata.milestone == "M4";
+        let inM4 = metadata && (metadata.milestone == "M4" || metadata.milestone == "M4.1");
         if (inM4) {
           todaySet.add(obj.test);
         }
