@@ -1,12 +1,28 @@
 {
-  "updateTime": 1574375169112,
+  "updateTime": 1574442715389,
   "removalSummary": {
-    "day": 2,
+    "day": 1,
     "week": 11,
-    "month": 127,
-    "remaining": 68
+    "month": 113,
+    "remaining": 67
   },
   "data": {
+    "2019-11-22": {
+      "removals": [
+        {
+          "path": "toolkit/components/reader/test/browser_readerMode.js",
+          "updateTime": 1574442715389,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 67
+    },
     "2019-11-21": {
       "removals": [
         {
