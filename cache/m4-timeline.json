@@ -1,12 +1,17 @@
 {
-  "updateTime": 1574443336477,
+  "updateTime": 1574529777062,
   "removalSummary": {
-    "day": 1,
+    "day": 0,
     "week": 11,
-    "month": 113,
-    "remaining": 67
+    "month": 108,
+    "remaining": 65
   },
   "data": {
+    "2019-11-23": {
+      "removals": [],
+      "additions": [],
+      "remaining": 65
+    },
     "2019-11-22": {
       "removals": [
         {
@@ -21,7 +26,7 @@
         }
       ],
       "additions": [],
-      "remaining": 67
+      "remaining": 65
     },
     "2019-11-21": {
       "removals": [
@@ -40,18 +45,19 @@
           "updateTime": 1574375169112,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1597209",
+            "assignee": "tihuang",
             "component": "Core::Security"
           }
         }
       ],
       "additions": [],
-      "remaining": 68
+      "remaining": 66
     },
     "2019-11-20": {
       "removals": [],
       "additions": [],
-      "remaining": 70
+      "remaining": 68
     },
     "2019-11-19": {
       "removals": [
@@ -77,7 +83,7 @@
         }
       ],
       "additions": [],
-      "remaining": 70
+      "remaining": 68
     },
     "2019-11-18": {
       "removals": [
@@ -93,7 +99,7 @@
         }
       ],
       "additions": [],
-      "remaining": 72
+      "remaining": 70
     },
     "2019-11-17": {
       "removals": [
@@ -149,12 +155,12 @@
         }
       ],
       "additions": [],
-      "remaining": 73
+      "remaining": 71
     },
     "2019-11-16": {
       "removals": [],
       "additions": [],
-      "remaining": 78
+      "remaining": 76
     },
     "2019-11-15": {
       "removals": [
@@ -170,12 +176,12 @@
         }
       ],
       "additions": [],
-      "remaining": 78
+      "remaining": 76
     },
     "2019-11-14": {
       "removals": [],
       "additions": [],
-      "remaining": 79
+      "remaining": 77
     },
     "2019-11-13": {
       "removals": [
@@ -361,7 +367,7 @@
         }
       ],
       "additions": [],
-      "remaining": 79
+      "remaining": 77
     },
     "2019-11-12": {
       "removals": [
@@ -397,17 +403,17 @@
         }
       ],
       "additions": [],
-      "remaining": 97
+      "remaining": 95
     },
     "2019-11-11": {
       "removals": [],
       "additions": [],
-      "remaining": 100
+      "remaining": 98
     },
     "2019-11-10": {
       "removals": [],
       "additions": [],
-      "remaining": 100
+      "remaining": 98
     },
     "2019-11-09": {
       "removals": [
@@ -473,7 +479,7 @@
         }
       ],
       "additions": [],
-      "remaining": 100
+      "remaining": 98
     },
     "2019-11-08": {
       "removals": [
@@ -589,7 +595,7 @@
         }
       ],
       "additions": [],
-      "remaining": 106
+      "remaining": 104
     },
     "2019-11-07": {
       "removals": [
@@ -646,7 +652,7 @@
           }
         }
       ],
-      "remaining": 117
+      "remaining": 115
     },
     "2019-11-06": {
       "removals": [
@@ -672,7 +678,7 @@
         }
       ],
       "additions": [],
-      "remaining": 120
+      "remaining": 118
     },
     "2019-11-05": {
       "removals": [
@@ -772,22 +778,23 @@
           "updateTime": 1573665132179,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586686",
+            "assignee": "nobody",
             "component": "Core::DOM: Security"
           }
         }
       ],
-      "remaining": 122
+      "remaining": 120
     },
     "2019-11-04": {
       "removals": [],
       "additions": [],
-      "remaining": 130
+      "remaining": 128
     },
     "2019-11-03": {
       "removals": [],
       "additions": [],
-      "remaining": 130
+      "remaining": 128
     },
     "2019-11-02": {
       "removals": [
@@ -803,7 +810,7 @@
         }
       ],
       "additions": [],
-      "remaining": 130
+      "remaining": 128
     },
     "2019-11-01": {
       "removals": [
@@ -828,7 +835,7 @@
         }
       ],
       "additions": [],
-      "remaining": 131
+      "remaining": 129
     },
     "2019-10-31": {
       "removals": [
@@ -971,7 +978,7 @@
         }
       ],
       "additions": [],
-      "remaining": 133
+      "remaining": 131
     },
     "2019-10-30": {
       "removals": [
@@ -1015,7 +1022,7 @@
         }
       ],
       "additions": [],
-      "remaining": 147
+      "remaining": 145
     },
     "2019-10-29": {
       "removals": [
@@ -1241,7 +1248,7 @@
           }
         }
       ],
-      "remaining": 151
+      "remaining": 149
     },
     "2019-10-28": {
       "removals": [
@@ -1297,12 +1304,12 @@
           }
         }
       ],
-      "remaining": 171
+      "remaining": 169
     },
     "2019-10-27": {
       "removals": [],
       "additions": [],
-      "remaining": 172
+      "remaining": 170
     },
     "2019-10-26": {
       "removals": [
@@ -1318,7 +1325,7 @@
         }
       ],
       "additions": [],
-      "remaining": 172
+      "remaining": 170
     },
     "2019-10-25": {
       "removals": [
@@ -1421,7 +1428,7 @@
           }
         }
       ],
-      "remaining": 173
+      "remaining": 171
     },
     "2019-10-24": {
       "removals": [
@@ -1497,7 +1504,7 @@
           }
         }
       ],
-      "remaining": 175
+      "remaining": 173
     },
     "2019-10-23": {
       "removals": [
@@ -1693,7 +1700,7 @@
           }
         }
       ],
-      "remaining": 180
+      "remaining": 178
     },
     "2019-10-22": {
       "removals": [
@@ -1934,7 +1941,7 @@
         }
       ],
       "additions": [],
-      "remaining": 195
+      "remaining": 193
     },
     "2019-10-21": {
       "removals": [
@@ -2059,12 +2066,12 @@
         }
       ],
       "additions": [],
-      "remaining": 219
+      "remaining": 217
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 231
+      "remaining": 229
     },
     "2019-10-19": {
       "removals": [
@@ -2120,7 +2127,7 @@
         }
       ],
       "additions": [],
-      "remaining": 231
+      "remaining": 229
     },
     "2019-10-18": {
       "removals": [
@@ -2223,7 +2230,7 @@
           }
         }
       ],
-      "remaining": 236
+      "remaining": 234
     },
     "2019-10-17": {
       "removals": [
@@ -2260,7 +2267,7 @@
           }
         }
       ],
-      "remaining": 238
+      "remaining": 236
     },
     "2019-10-16": {
       "removals": [
@@ -2337,7 +2344,7 @@
           }
         }
       ],
-      "remaining": 239
+      "remaining": 237
     },
     "2019-10-15": {
       "removals": [
@@ -2421,7 +2428,7 @@
         }
       ],
       "additions": [],
-      "remaining": 244
+      "remaining": 242
     },
     "2019-10-14": {
       "removals": [
@@ -2458,7 +2465,7 @@
           }
         }
       ],
-      "remaining": 252
+      "remaining": 250
     },
     "2019-10-13": {
       "removals": [
@@ -2474,7 +2481,7 @@
         }
       ],
       "additions": [],
-      "remaining": 253
+      "remaining": 251
     },
     "2019-10-12": {
       "removals": [
@@ -2520,7 +2527,7 @@
         }
       ],
       "additions": [],
-      "remaining": 254
+      "remaining": 252
     },
     "2019-10-11": {
       "removals": [
@@ -2656,7 +2663,7 @@
         }
       ],
       "additions": [],
-      "remaining": 258
+      "remaining": 256
     },
     "2019-10-10": {
       "removals": [
@@ -2692,7 +2699,7 @@
         }
       ],
       "additions": [],
-      "remaining": 271
+      "remaining": 269
     },
     "2019-10-09": {
       "removals": [
@@ -2728,12 +2735,12 @@
         }
       ],
       "additions": [],
-      "remaining": 274
+      "remaining": 272
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 277
+      "remaining": 275
     },
     "2019-10-07": {
       "removals": [
@@ -2749,12 +2756,12 @@
         }
       ],
       "additions": [],
-      "remaining": 277
+      "remaining": 275
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 278
+      "remaining": 276
     },
     "2019-10-05": {
       "removals": [
@@ -2780,7 +2787,7 @@
         }
       ],
       "additions": [],
-      "remaining": 278
+      "remaining": 276
     },
     "2019-10-04": {
       "removals": [
@@ -2816,7 +2823,7 @@
         }
       ],
       "additions": [],
-      "remaining": 280
+      "remaining": 278
     },
     "2019-10-03": {
       "removals": [],
@@ -2832,7 +2839,7 @@
           }
         }
       ],
-      "remaining": 283
+      "remaining": 281
     },
     "2019-10-02": {
       "removals": [
@@ -2872,12 +2879,13 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
+            "assignee": "kmaglione+bmo",
             "component": "Core::Security: PSM"
           }
         }
       ],
-      "remaining": 282
+      "remaining": 280
     },
     "2019-10-01": {
       "removals": [
@@ -2912,7 +2920,7 @@
           }
         }
       ],
-      "remaining": 282
+      "remaining": 280
     },
     "2019-09-30": {
       "removals": [
@@ -2927,12 +2935,12 @@
         }
       ],
       "additions": [],
-      "remaining": 283
+      "remaining": 281
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 284
+      "remaining": 282
     },
     "2019-09-28": {
       "removals": [
@@ -2947,7 +2955,7 @@
         }
       ],
       "additions": [],
-      "remaining": 284
+      "remaining": 282
     },
     "2019-09-27": {
       "removals": [
@@ -3432,7 +3440,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
+            "assignee": "kmaglione+bmo",
             "component": "Core::Security: PSM"
           }
         },
@@ -3787,15 +3796,6 @@
       ],
       "additions": [
         {
-          "path": "dom/permission/tests/test_cross_origin_iframe.html",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4",
-            "assignee": null,
-            "component": "Core::DOM: Core & HTML"
-          }
-        },
-        {
           "path": "dom/tests/mochitest/ajax/offline/browser_disableAppcache.js",
           "updateTime": 1571352878202,
           "metadata": {
@@ -3815,7 +3815,7 @@
           }
         }
       ],
-      "remaining": 285
+      "remaining": 283
     },
     "2019-09-26": {
       "removals": [
@@ -3861,7 +3861,7 @@
           }
         }
       ],
-      "remaining": 372
+      "remaining": 371
     },
     "2019-09-25": {
       "removals": [],
@@ -3877,7 +3877,7 @@
           }
         }
       ],
-      "remaining": 372
+      "remaining": 371
     },
     "2019-09-24": {
       "removals": [
@@ -3912,17 +3912,17 @@
         }
       ],
       "additions": [],
-      "remaining": 371
+      "remaining": 370
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 374
+      "remaining": 373
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 374
+      "remaining": 373
     },
     "2019-09-21": {
       "removals": [
@@ -3938,7 +3938,7 @@
         }
       ],
       "additions": [],
-      "remaining": 374
+      "remaining": 373
     },
     "2019-09-20": {
       "removals": [
@@ -4093,7 +4093,7 @@
           }
         }
       ],
-      "remaining": 375
+      "remaining": 374
     }
   }
 }

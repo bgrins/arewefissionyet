@@ -64,10 +64,6 @@
         "test": "dom/base/test/test_x-frame-options.html"
       },
       {
-        "skip-if": "fission",
-        "test": "dom/permission/tests/test_cross_origin_iframe.html"
-      },
-      {
         "fail-if": "fission",
         "skip-if": "!e10s || verify",
         "test": "dom/tests/browser/browser_localStorage_e10s.js"
@@ -261,10 +257,6 @@
       {
         "skip-if": "fission",
         "test": "dom/security/test/csp/test_navigate_to.html"
-      },
-      {
-        "skip-if": "\n(toolkit == 'android') || (os == 'win' && bits == 32) ||\nfission",
-        "test": "dom/security/test/csp/test_reloadInFreshProcess.html"
       },
       {
         "fail-if": "fission",
