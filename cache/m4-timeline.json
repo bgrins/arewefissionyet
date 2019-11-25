@@ -1,12 +1,28 @@
 {
-  "updateTime": 1574616203994,
+  "updateTime": 1574702633840,
   "removalSummary": {
-    "day": 0,
-    "week": 6,
-    "month": 106,
-    "remaining": 65
+    "day": -1,
+    "week": 4,
+    "month": 104,
+    "remaining": 66
   },
   "data": {
+    "2019-11-25": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "browser/components/originattributes/test/browser/browser_sharedworker.js",
+          "updateTime": 1574702633840,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586715",
+            "assignee": "tihuang",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "remaining": 66
+    },
     "2019-11-24": {
       "removals": [],
       "additions": [],
@@ -948,7 +964,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
-            "assignee": "nobody",
+            "assignee": "apavel",
             "component": "Core::Networking: Cookies"
           }
         },
@@ -2344,7 +2360,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
-            "assignee": "nobody",
+            "assignee": "apavel",
             "component": "Core::Networking: Cookies"
           }
         }
