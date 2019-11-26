@@ -2,7 +2,7 @@
   "summary": {
     "components": 36,
     "failed tests": 64,
-    "manifests": 1221,
+    "manifests": 1220,
     "skipped tests": 154,
     "tests": 199
   },
@@ -30,10 +30,6 @@
       },
       {
         "skip-if": "fission",
-        "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
-      },
-      {
-        "skip-if": "fission",
         "test": "dom/tests/mochitest/bugs/test_navigator_buildID.html"
       }
     ],
@@ -47,6 +43,10 @@
       {
         "skip-if": "fission",
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_sharedworker.js"
       },
       {
         "fail-if": "fission",
@@ -617,7 +617,7 @@
         "test": "browser/components/sessionstore/test/browser_586068-reload.js"
       },
       {
-        "skip-if": "(os == 'linux' && !e10s) || (fission && debug && os == 'win')",
+        "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || (os == 'win' && !debug) || (os == 'linux'))",
         "test": "browser/components/sessionstore/test/browser_615394-SSWindowState_events_undoCloseWindow.js"
       },
       {
