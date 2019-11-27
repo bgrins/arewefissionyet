@@ -44,6 +44,14 @@
     ],
     "Core::DOM: Navigation": [
       {
+        "fail-if": "fission",
+        "test": "docshell/test/browser/browser_bug422543.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "docshell/test/browser/browser_bug670318.js"
+      },
+      {
         "skip-if": "fission",
         "test": "toolkit/components/remotebrowserutils/tests/browser/browser_httpResponseProcessSelection.js"
       }
@@ -622,46 +630,7 @@
       }
     ],
     "Firefox::Protections UI": [],
-    "Firefox::Session Restore": [
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission && debug)",
-        "test": "browser/components/sessionstore/test/browser_586068-reload.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission && debug && os == 'win')",
-        "test": "browser/components/sessionstore/test/browser_615394-SSWindowState_events_undoCloseWindow.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission || debug)",
-        "test": "browser/components/sessionstore/test/browser_async_remove_tab.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission)",
-        "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
-        "test": "browser/components/sessionstore/test/browser_broadcast.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
-        "test": "browser/components/sessionstore/test/browser_formdata.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "os == 'linux' && !e10s",
-        "test": "browser/components/sessionstore/test/browser_sessionHistory.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "os == 'linux' && !e10s",
-        "test": "browser/components/sessionstore/test/browser_sessionStorage.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || os == \"linux\" && !debug)",
-        "test": "browser/components/sessionstore/test/browser_windowStateContainer.js"
-      }
-    ],
+    "Firefox::Session Restore": [],
     "Firefox::Site Identity": [
       {
         "fail-if": "fission",
@@ -688,12 +657,7 @@
         "test": "browser/base/content/test/tabs/browser_new_web_tab_in_file_process_pref.js"
       }
     ],
-    "Toolkit::General": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js"
-      }
-    ],
+    "Toolkit::General": [],
     "Toolkit::Notifications and Alerts": [
       {
         "skip-if": "fission || (os == \"linux\" && (debug || asan)) || verify",

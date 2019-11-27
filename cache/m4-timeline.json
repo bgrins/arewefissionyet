@@ -1,12 +1,49 @@
 {
-  "updateTime": 1574789055658,
+  "updateTime": 1574875469795,
   "removalSummary": {
     "day": 1,
-    "week": 3,
+    "week": 4,
     "month": 106,
-    "remaining": 64
+    "remaining": 55
   },
   "data": {
+    "2019-11-27": {
+      "removals": [
+        {
+          "path": "dom/tests/mochitest/bugs/test_navigator_buildID.html",
+          "updateTime": 1574875469795,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587013",
+            "assignee": "nobody",
+            "component": "Core::DOM: Core & HTML"
+          }
+        },
+        {
+          "path": "browser/components/originattributes/test/browser/browser_sharedworker.js",
+          "updateTime": 1574875469795,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586715",
+            "assignee": "tihuang",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
+          "updateTime": 1574875469795,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
+            "assignee": "apavel",
+            "component": "Core::Networking: Cookies"
+          }
+        }
+      ],
+      "remaining": 55
+    },
     "2019-11-26": {
       "removals": [
         {
@@ -21,7 +58,7 @@
         }
       ],
       "additions": [],
-      "remaining": 64
+      "remaining": 56
     },
     "2019-11-25": {
       "removals": [],
@@ -37,17 +74,17 @@
           }
         }
       ],
-      "remaining": 65
+      "remaining": 57
     },
     "2019-11-24": {
       "removals": [],
       "additions": [],
-      "remaining": 64
+      "remaining": 56
     },
     "2019-11-23": {
       "removals": [],
       "additions": [],
-      "remaining": 64
+      "remaining": 56
     },
     "2019-11-22": {
       "removals": [
@@ -63,7 +100,7 @@
         }
       ],
       "additions": [],
-      "remaining": 64
+      "remaining": 56
     },
     "2019-11-21": {
       "removals": [
@@ -89,12 +126,12 @@
         }
       ],
       "additions": [],
-      "remaining": 65
+      "remaining": 57
     },
     "2019-11-20": {
       "removals": [],
       "additions": [],
-      "remaining": 67
+      "remaining": 59
     },
     "2019-11-19": {
       "removals": [
@@ -120,7 +157,7 @@
         }
       ],
       "additions": [],
-      "remaining": 67
+      "remaining": 59
     },
     "2019-11-18": {
       "removals": [
@@ -136,7 +173,7 @@
         }
       ],
       "additions": [],
-      "remaining": 69
+      "remaining": 61
     },
     "2019-11-17": {
       "removals": [
@@ -192,12 +229,12 @@
         }
       ],
       "additions": [],
-      "remaining": 70
+      "remaining": 62
     },
     "2019-11-16": {
       "removals": [],
       "additions": [],
-      "remaining": 75
+      "remaining": 67
     },
     "2019-11-15": {
       "removals": [
@@ -213,12 +250,12 @@
         }
       ],
       "additions": [],
-      "remaining": 75
+      "remaining": 67
     },
     "2019-11-14": {
       "removals": [],
       "additions": [],
-      "remaining": 76
+      "remaining": 68
     },
     "2019-11-13": {
       "removals": [
@@ -404,7 +441,7 @@
         }
       ],
       "additions": [],
-      "remaining": 76
+      "remaining": 68
     },
     "2019-11-12": {
       "removals": [
@@ -440,17 +477,17 @@
         }
       ],
       "additions": [],
-      "remaining": 94
+      "remaining": 86
     },
     "2019-11-11": {
       "removals": [],
       "additions": [],
-      "remaining": 97
+      "remaining": 89
     },
     "2019-11-10": {
       "removals": [],
       "additions": [],
-      "remaining": 97
+      "remaining": 89
     },
     "2019-11-09": {
       "removals": [
@@ -516,7 +553,7 @@
         }
       ],
       "additions": [],
-      "remaining": 97
+      "remaining": 89
     },
     "2019-11-08": {
       "removals": [
@@ -632,7 +669,7 @@
         }
       ],
       "additions": [],
-      "remaining": 103
+      "remaining": 95
     },
     "2019-11-07": {
       "removals": [
@@ -689,7 +726,7 @@
           }
         }
       ],
-      "remaining": 114
+      "remaining": 106
     },
     "2019-11-06": {
       "removals": [
@@ -715,7 +752,7 @@
         }
       ],
       "additions": [],
-      "remaining": 117
+      "remaining": 109
     },
     "2019-11-05": {
       "removals": [
@@ -810,17 +847,17 @@
         }
       ],
       "additions": [],
-      "remaining": 119
+      "remaining": 111
     },
     "2019-11-04": {
       "removals": [],
       "additions": [],
-      "remaining": 128
+      "remaining": 120
     },
     "2019-11-03": {
       "removals": [],
       "additions": [],
-      "remaining": 128
+      "remaining": 120
     },
     "2019-11-02": {
       "removals": [
@@ -836,7 +873,7 @@
         }
       ],
       "additions": [],
-      "remaining": 128
+      "remaining": 120
     },
     "2019-11-01": {
       "removals": [
@@ -861,7 +898,7 @@
         }
       ],
       "additions": [],
-      "remaining": 129
+      "remaining": 121
     },
     "2019-10-31": {
       "removals": [
@@ -1004,7 +1041,7 @@
         }
       ],
       "additions": [],
-      "remaining": 131
+      "remaining": 123
     },
     "2019-10-30": {
       "removals": [
@@ -1048,7 +1085,7 @@
         }
       ],
       "additions": [],
-      "remaining": 145
+      "remaining": 137
     },
     "2019-10-29": {
       "removals": [
@@ -1269,12 +1306,13 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592544",
+            "assignee": "nobody",
             "component": "Firefox::Private Browsing"
           }
         }
       ],
-      "remaining": 149
+      "remaining": 141
     },
     "2019-10-28": {
       "removals": [
@@ -1330,12 +1368,12 @@
           }
         }
       ],
-      "remaining": 169
+      "remaining": 161
     },
     "2019-10-27": {
       "removals": [],
       "additions": [],
-      "remaining": 170
+      "remaining": 162
     },
     "2019-10-26": {
       "removals": [
@@ -1351,7 +1389,7 @@
         }
       ],
       "additions": [],
-      "remaining": 170
+      "remaining": 162
     },
     "2019-10-25": {
       "removals": [
@@ -1454,7 +1492,7 @@
           }
         }
       ],
-      "remaining": 171
+      "remaining": 163
     },
     "2019-10-24": {
       "removals": [
@@ -1530,7 +1568,7 @@
           }
         }
       ],
-      "remaining": 173
+      "remaining": 165
     },
     "2019-10-23": {
       "removals": [
@@ -1707,15 +1745,6 @@
       ],
       "additions": [
         {
-          "path": "browser/components/sessionstore/test/browser_broadcast.js",
-          "updateTime": 1572474029290,
-          "metadata": {
-            "milestone": "M4.1",
-            "assignee": null,
-            "component": "Firefox::Session Restore"
-          }
-        },
-        {
           "path": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html",
           "updateTime": 1571933680233,
           "metadata": {
@@ -1726,7 +1755,7 @@
           }
         }
       ],
-      "remaining": 178
+      "remaining": 170
     },
     "2019-10-22": {
       "removals": [
@@ -1967,7 +1996,7 @@
         }
       ],
       "additions": [],
-      "remaining": 193
+      "remaining": 186
     },
     "2019-10-21": {
       "removals": [
@@ -2092,12 +2121,12 @@
         }
       ],
       "additions": [],
-      "remaining": 217
+      "remaining": 210
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 229
+      "remaining": 222
     },
     "2019-10-19": {
       "removals": [
@@ -2153,7 +2182,7 @@
         }
       ],
       "additions": [],
-      "remaining": 229
+      "remaining": 222
     },
     "2019-10-18": {
       "removals": [
@@ -2256,7 +2285,7 @@
           }
         }
       ],
-      "remaining": 234
+      "remaining": 227
     },
     "2019-10-17": {
       "removals": [
@@ -2281,19 +2310,8 @@
           }
         }
       ],
-      "additions": [
-        {
-          "path": "toolkit/components/pictureinpicture/tests/browser_thirdPartyIframe.js",
-          "updateTime": 1572474029290,
-          "metadata": {
-            "milestone": "M4.1",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596790",
-            "assignee": "nobody",
-            "component": "Toolkit::General"
-          }
-        }
-      ],
-      "remaining": 236
+      "additions": [],
+      "remaining": 229
     },
     "2019-10-16": {
       "removals": [
@@ -2370,7 +2388,7 @@
           }
         }
       ],
-      "remaining": 237
+      "remaining": 231
     },
     "2019-10-15": {
       "removals": [
@@ -2454,7 +2472,7 @@
         }
       ],
       "additions": [],
-      "remaining": 242
+      "remaining": 236
     },
     "2019-10-14": {
       "removals": [
@@ -2491,7 +2509,7 @@
           }
         }
       ],
-      "remaining": 250
+      "remaining": 244
     },
     "2019-10-13": {
       "removals": [
@@ -2507,7 +2525,7 @@
         }
       ],
       "additions": [],
-      "remaining": 251
+      "remaining": 245
     },
     "2019-10-12": {
       "removals": [
@@ -2553,7 +2571,7 @@
         }
       ],
       "additions": [],
-      "remaining": 252
+      "remaining": 246
     },
     "2019-10-11": {
       "removals": [
@@ -2689,7 +2707,7 @@
         }
       ],
       "additions": [],
-      "remaining": 256
+      "remaining": 250
     },
     "2019-10-10": {
       "removals": [
@@ -2725,7 +2743,7 @@
         }
       ],
       "additions": [],
-      "remaining": 269
+      "remaining": 263
     },
     "2019-10-09": {
       "removals": [
@@ -2761,12 +2779,12 @@
         }
       ],
       "additions": [],
-      "remaining": 272
+      "remaining": 266
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 275
+      "remaining": 269
     },
     "2019-10-07": {
       "removals": [
@@ -2782,12 +2800,12 @@
         }
       ],
       "additions": [],
-      "remaining": 275
+      "remaining": 269
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 276
+      "remaining": 270
     },
     "2019-10-05": {
       "removals": [
@@ -2813,7 +2831,7 @@
         }
       ],
       "additions": [],
-      "remaining": 276
+      "remaining": 270
     },
     "2019-10-04": {
       "removals": [
@@ -2849,7 +2867,7 @@
         }
       ],
       "additions": [],
-      "remaining": 278
+      "remaining": 272
     },
     "2019-10-03": {
       "removals": [],
@@ -2865,7 +2883,7 @@
           }
         }
       ],
-      "remaining": 281
+      "remaining": 275
     },
     "2019-10-02": {
       "removals": [
@@ -2911,7 +2929,7 @@
           }
         }
       ],
-      "remaining": 280
+      "remaining": 274
     },
     "2019-10-01": {
       "removals": [
@@ -2946,7 +2964,7 @@
           }
         }
       ],
-      "remaining": 280
+      "remaining": 274
     },
     "2019-09-30": {
       "removals": [
@@ -2961,12 +2979,12 @@
         }
       ],
       "additions": [],
-      "remaining": 281
+      "remaining": 275
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 282
+      "remaining": 276
     },
     "2019-09-28": {
       "removals": [
@@ -2981,7 +2999,7 @@
         }
       ],
       "additions": [],
-      "remaining": 282
+      "remaining": 276
     },
     "2019-09-27": {
       "removals": [
@@ -3527,24 +3545,6 @@
           }
         },
         {
-          "path": "browser/components/sessionstore/test/browser_625016.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4.1",
-            "assignee": null,
-            "component": "Firefox::Session Restore"
-          }
-        },
-        {
-          "path": "browser/components/sessionstore/test/browser_upgrade_backup.js",
-          "updateTime": 1571352878202,
-          "metadata": {
-            "milestone": "M4.1",
-            "assignee": null,
-            "component": "Firefox::Session Restore"
-          }
-        },
-        {
           "path": "browser/base/content/test/permissions/browser_reservedkey.js",
           "updateTime": 1571352878202,
           "metadata": {
@@ -3841,7 +3841,7 @@
           }
         }
       ],
-      "remaining": 283
+      "remaining": 277
     },
     "2019-09-26": {
       "removals": [
@@ -3887,7 +3887,7 @@
           }
         }
       ],
-      "remaining": 371
+      "remaining": 363
     },
     "2019-09-25": {
       "removals": [],
@@ -3903,7 +3903,7 @@
           }
         }
       ],
-      "remaining": 371
+      "remaining": 363
     },
     "2019-09-24": {
       "removals": [
@@ -3938,17 +3938,17 @@
         }
       ],
       "additions": [],
-      "remaining": 370
+      "remaining": 362
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 373
+      "remaining": 365
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 373
+      "remaining": 365
     },
     "2019-09-21": {
       "removals": [
@@ -3964,7 +3964,7 @@
         }
       ],
       "additions": [],
-      "remaining": 373
+      "remaining": 365
     },
     "2019-09-20": {
       "removals": [
@@ -4093,8 +4093,8 @@
           "updateTime": 1571352878202,
           "metadata": {
             "milestone": "M4.1",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1560110",
-            "assignee": "afarre",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
+            "assignee": "nobody",
             "component": "Core::DOM: Security"
           }
         },
@@ -4119,7 +4119,7 @@
           }
         }
       ],
-      "remaining": 374
+      "remaining": 366
     }
   }
 }
