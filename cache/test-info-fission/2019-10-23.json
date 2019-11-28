@@ -233,10 +233,6 @@
         "test": "dom/serviceworkers/test/browser_storage_recovery.js"
       },
       {
-        "skip-if": "fission || (toolkit == 'android' && !is_fennec)",
-        "test": "dom/serviceworkers/test/test_openWindow.html"
-      },
-      {
         "skip-if": "\nfission",
         "test": "dom/serviceworkers/test/test_third_party_iframes.html"
       }

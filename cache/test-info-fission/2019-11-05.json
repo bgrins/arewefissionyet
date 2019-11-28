@@ -116,6 +116,10 @@
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js"
       },
       {
+        "skip-if": "fission && os == 'linux' && debug && webrender",
+        "test": "docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html"
+      },
+      {
         "skip-if": "fission && debug",
         "test": "dom/security/test/general/test_same_site_cookies_laxByDefault.html"
       },
@@ -136,10 +140,6 @@
       {
         "skip-if": "fission || serviceworker_e10s",
         "test": "dom/serviceworkers/test/browser_storage_recovery.js"
-      },
-      {
-        "skip-if": "fission || (toolkit == 'android' && !is_fennec)",
-        "test": "dom/serviceworkers/test/test_openWindow.html"
       },
       {
         "skip-if": "\nfission",

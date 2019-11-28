@@ -1,12 +1,17 @@
 {
-  "updateTime": 1574875469795,
+  "updateTime": 1574961898719,
   "removalSummary": {
-    "day": 1,
-    "week": 4,
-    "month": 106,
+    "day": 0,
+    "week": 2,
+    "month": 85,
     "remaining": 55
   },
   "data": {
+    "2019-11-28": {
+      "removals": [],
+      "additions": [],
+      "remaining": 55
+    },
     "2019-11-27": {
       "removals": [
         {
@@ -15,7 +20,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1587013",
-            "assignee": "nobody",
+            "assignee": "hsivonen",
             "component": "Core::DOM: Core & HTML"
           }
         },
@@ -35,7 +40,7 @@
           "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
           "updateTime": 1574875469795,
           "metadata": {
-            "milestone": "M4",
+            "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
             "assignee": "apavel",
             "component": "Core::Networking: Cookies"
@@ -846,18 +851,29 @@
           }
         }
       ],
-      "additions": [],
+      "additions": [
+        {
+          "path": "docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html",
+          "updateTime": 1574961898719,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586686",
+            "assignee": "nobody",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
       "remaining": 111
     },
     "2019-11-04": {
       "removals": [],
       "additions": [],
-      "remaining": 120
+      "remaining": 119
     },
     "2019-11-03": {
       "removals": [],
       "additions": [],
-      "remaining": 120
+      "remaining": 119
     },
     "2019-11-02": {
       "removals": [
@@ -873,7 +889,7 @@
         }
       ],
       "additions": [],
-      "remaining": 120
+      "remaining": 119
     },
     "2019-11-01": {
       "removals": [
@@ -898,7 +914,7 @@
         }
       ],
       "additions": [],
-      "remaining": 121
+      "remaining": 120
     },
     "2019-10-31": {
       "removals": [
@@ -1004,7 +1020,7 @@
           "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
           "updateTime": 1572538421229,
           "metadata": {
-            "milestone": "M4",
+            "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
             "assignee": "apavel",
             "component": "Core::Networking: Cookies"
@@ -1041,7 +1057,7 @@
         }
       ],
       "additions": [],
-      "remaining": 123
+      "remaining": 122
     },
     "2019-10-30": {
       "removals": [
@@ -1085,7 +1101,7 @@
         }
       ],
       "additions": [],
-      "remaining": 137
+      "remaining": 136
     },
     "2019-10-29": {
       "removals": [
@@ -1312,7 +1328,7 @@
           }
         }
       ],
-      "remaining": 141
+      "remaining": 140
     },
     "2019-10-28": {
       "removals": [
@@ -1368,12 +1384,12 @@
           }
         }
       ],
-      "remaining": 161
+      "remaining": 160
     },
     "2019-10-27": {
       "removals": [],
       "additions": [],
-      "remaining": 162
+      "remaining": 161
     },
     "2019-10-26": {
       "removals": [
@@ -1389,7 +1405,7 @@
         }
       ],
       "additions": [],
-      "remaining": 162
+      "remaining": 161
     },
     "2019-10-25": {
       "removals": [
@@ -1492,7 +1508,7 @@
           }
         }
       ],
-      "remaining": 163
+      "remaining": 162
     },
     "2019-10-24": {
       "removals": [
@@ -1568,7 +1584,7 @@
           }
         }
       ],
-      "remaining": 165
+      "remaining": 164
     },
     "2019-10-23": {
       "removals": [
@@ -1750,12 +1766,12 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
-            "assignee": "nobody",
+            "assignee": "afarre",
             "component": "WebExtensions::General"
           }
         }
       ],
-      "remaining": 170
+      "remaining": 169
     },
     "2019-10-22": {
       "removals": [
@@ -1996,7 +2012,7 @@
         }
       ],
       "additions": [],
-      "remaining": 186
+      "remaining": 185
     },
     "2019-10-21": {
       "removals": [
@@ -2121,12 +2137,12 @@
         }
       ],
       "additions": [],
-      "remaining": 210
+      "remaining": 209
     },
     "2019-10-20": {
       "removals": [],
       "additions": [],
-      "remaining": 222
+      "remaining": 221
     },
     "2019-10-19": {
       "removals": [
@@ -2166,7 +2182,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
-            "assignee": "nobody",
+            "assignee": "afarre",
             "component": "WebExtensions::General"
           }
         },
@@ -2182,7 +2198,7 @@
         }
       ],
       "additions": [],
-      "remaining": 222
+      "remaining": 221
     },
     "2019-10-18": {
       "removals": [
@@ -2285,7 +2301,7 @@
           }
         }
       ],
-      "remaining": 227
+      "remaining": 226
     },
     "2019-10-17": {
       "removals": [
@@ -2311,7 +2327,7 @@
         }
       ],
       "additions": [],
-      "remaining": 229
+      "remaining": 228
     },
     "2019-10-16": {
       "removals": [
@@ -2381,14 +2397,14 @@
           "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
           "updateTime": 1571352878202,
           "metadata": {
-            "milestone": "M4",
+            "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
             "assignee": "apavel",
             "component": "Core::Networking: Cookies"
           }
         }
       ],
-      "remaining": 231
+      "remaining": 230
     },
     "2019-10-15": {
       "removals": [
@@ -2472,7 +2488,7 @@
         }
       ],
       "additions": [],
-      "remaining": 236
+      "remaining": 235
     },
     "2019-10-14": {
       "removals": [
@@ -2509,7 +2525,7 @@
           }
         }
       ],
-      "remaining": 244
+      "remaining": 243
     },
     "2019-10-13": {
       "removals": [
@@ -2525,7 +2541,7 @@
         }
       ],
       "additions": [],
-      "remaining": 245
+      "remaining": 244
     },
     "2019-10-12": {
       "removals": [
@@ -2571,7 +2587,7 @@
         }
       ],
       "additions": [],
-      "remaining": 246
+      "remaining": 245
     },
     "2019-10-11": {
       "removals": [
@@ -2707,7 +2723,7 @@
         }
       ],
       "additions": [],
-      "remaining": 250
+      "remaining": 249
     },
     "2019-10-10": {
       "removals": [
@@ -2743,7 +2759,7 @@
         }
       ],
       "additions": [],
-      "remaining": 263
+      "remaining": 262
     },
     "2019-10-09": {
       "removals": [
@@ -2779,12 +2795,12 @@
         }
       ],
       "additions": [],
-      "remaining": 266
+      "remaining": 265
     },
     "2019-10-08": {
       "removals": [],
       "additions": [],
-      "remaining": 269
+      "remaining": 268
     },
     "2019-10-07": {
       "removals": [
@@ -2800,12 +2816,12 @@
         }
       ],
       "additions": [],
-      "remaining": 269
+      "remaining": 268
     },
     "2019-10-06": {
       "removals": [],
       "additions": [],
-      "remaining": 270
+      "remaining": 269
     },
     "2019-10-05": {
       "removals": [
@@ -2831,7 +2847,7 @@
         }
       ],
       "additions": [],
-      "remaining": 270
+      "remaining": 269
     },
     "2019-10-04": {
       "removals": [
@@ -2867,7 +2883,7 @@
         }
       ],
       "additions": [],
-      "remaining": 272
+      "remaining": 271
     },
     "2019-10-03": {
       "removals": [],
@@ -2883,7 +2899,7 @@
           }
         }
       ],
-      "remaining": 275
+      "remaining": 274
     },
     "2019-10-02": {
       "removals": [
@@ -2929,7 +2945,7 @@
           }
         }
       ],
-      "remaining": 274
+      "remaining": 273
     },
     "2019-10-01": {
       "removals": [
@@ -2964,7 +2980,7 @@
           }
         }
       ],
-      "remaining": 274
+      "remaining": 273
     },
     "2019-09-30": {
       "removals": [
@@ -2979,12 +2995,12 @@
         }
       ],
       "additions": [],
-      "remaining": 275
+      "remaining": 274
     },
     "2019-09-29": {
       "removals": [],
       "additions": [],
-      "remaining": 276
+      "remaining": 275
     },
     "2019-09-28": {
       "removals": [
@@ -2999,7 +3015,7 @@
         }
       ],
       "additions": [],
-      "remaining": 276
+      "remaining": 275
     },
     "2019-09-27": {
       "removals": [
@@ -3841,7 +3857,7 @@
           }
         }
       ],
-      "remaining": 277
+      "remaining": 276
     },
     "2019-09-26": {
       "removals": [
@@ -3887,7 +3903,7 @@
           }
         }
       ],
-      "remaining": 363
+      "remaining": 362
     },
     "2019-09-25": {
       "removals": [],
@@ -3903,7 +3919,7 @@
           }
         }
       ],
-      "remaining": 363
+      "remaining": 362
     },
     "2019-09-24": {
       "removals": [
@@ -3938,17 +3954,17 @@
         }
       ],
       "additions": [],
-      "remaining": 362
+      "remaining": 361
     },
     "2019-09-23": {
       "removals": [],
       "additions": [],
-      "remaining": 365
+      "remaining": 364
     },
     "2019-09-22": {
       "removals": [],
       "additions": [],
-      "remaining": 365
+      "remaining": 364
     },
     "2019-09-21": {
       "removals": [
@@ -3964,7 +3980,7 @@
         }
       ],
       "additions": [],
-      "remaining": 365
+      "remaining": 364
     },
     "2019-09-20": {
       "removals": [
@@ -4119,7 +4135,7 @@
           }
         }
       ],
-      "remaining": 366
+      "remaining": 365
     }
   }
 }
