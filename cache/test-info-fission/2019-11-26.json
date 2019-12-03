@@ -1,26 +1,14 @@
 {
   "summary": {
-    "components": 39,
-    "failed tests": 62,
-    "manifests": 1215,
-    "skipped tests": 161,
-    "tests": 204
+    "components": 36,
+    "failed tests": 64,
+    "manifests": 1220,
+    "skipped tests": 154,
+    "tests": 199
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
-    "Core::DOM: Content Processes": [
-      {
-        "fail-if": "fission",
-        "skip-if": "!e10s",
-        "test": "dom/ipc/tests/browser_cancel_content_js.js"
-      }
-    ],
     "Core::DOM: Core & HTML": [
-      {
-        "fail-if": "fission",
-        "skip-if": "!e10s",
-        "test": "dom/base/test/browser_aboutnewtab_process_selection.js"
-      },
       {
         "fail-if": "fission",
         "test": "dom/base/test/test_bug976673.html"
@@ -39,10 +27,6 @@
         "fail-if": "fission",
         "skip-if": "\n!e10s ||\n(fission && debug)",
         "test": "dom/tests/browser/browser_localStorage_snapshotting_e10s.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
       },
       {
         "skip-if": "fission",
@@ -69,11 +53,16 @@
         "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js"
       },
       {
+        "skip-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_sharedworker.js"
+      },
+      {
         "skip-if": "fission && os == 'linux' && debug && webrender",
         "test": "docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html"
       },
       {
-        "skip-if": "fission || webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
+        "fail-if": "fission",
+        "skip-if": "webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
         "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
       },
       {
@@ -300,12 +289,6 @@
         "test": "toolkit/components/antitracking/test/browser/browser_workerPropagation.js"
       }
     ],
-    "Core::Security": [
-      {
-        "skip-if": "fission",
-        "test": "browser/components/resistfingerprinting/test/browser/browser_navigator.js"
-      }
-    ],
     "Core::Security: PSM": [
       {
         "skip-if": "fission && debug",
@@ -332,10 +315,6 @@
       {
         "fail-if": "fission",
         "test": "dom/tests/mochitest/sessionstorage/test_sessionStorageReplace.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "dom/tests/mochitest/storageevent/test_storageSessionStorageEventCheckNoPropagation.html"
       }
     ],
     "Core::Window Management": [
@@ -604,7 +583,7 @@
     ],
     "Firefox::Address Bar": [
       {
-        "skip-if": "fission",
+        "fail-if": "fission",
         "test": "browser/components/urlbar/tests/browser/browser_stop_pending.js"
       }
     ],
@@ -623,7 +602,7 @@
         "test": "browser/base/content/test/general/browser_unknownContentType_title.js"
       },
       {
-        "skip-if": "fission",
+        "fail-if": "fission",
         "test": "browser/base/content/test/siteProtections/browser_protections_UI.js"
       }
     ],
@@ -705,12 +684,6 @@
         "test": "toolkit/components/passwordmgr/test/mochitest/test_prompt_http.html"
       }
     ],
-    "Toolkit::Reader Mode": [
-      {
-        "skip-if": "fission && os == 'win'",
-        "test": "toolkit/components/reader/test/browser_readerMode.js"
-      }
-    ],
     "Toolkit::Safe Browsing": [
       {
         "skip-if": "fission",
@@ -743,11 +716,11 @@
     ],
     "WebExtensions::General": [
       {
-        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || ((os == 'android') || fission))",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || ((os == 'android') || fission)",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_incognito.html"
       },
       {
-        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || ((os == 'android' && debug) || fission))",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || ((os == 'android' && debug) || fission)",
         "test": "toolkit/components/extensions/test/mochitest/test_ext_web_accessible_resources.html"
       }
     ],
