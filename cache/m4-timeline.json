@@ -1,12 +1,38 @@
 {
-  "updateTime": 1575307593183,
+  "updateTime": 1575394007665,
   "removalSummary": {
-    "day": 0,
-    "week": 2,
-    "month": 64,
-    "remaining": 55
+    "day": 2,
+    "week": 3,
+    "month": 66,
+    "remaining": 53
   },
   "data": {
+    "2019-12-03": {
+      "removals": [
+        {
+          "path": "browser/components/urlbar/tests/browser/browser_stop_pending.js",
+          "updateTime": 1575394007665,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1599618",
+            "assignee": "mak",
+            "component": "Firefox::Address Bar"
+          }
+        },
+        {
+          "path": "browser/base/content/test/tabs/browser_new_web_tab_in_file_process_pref.js",
+          "updateTime": 1575394007665,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1598189",
+            "assignee": "pbone",
+            "component": "Firefox::Tabbed Browser"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 53
+    },
     "2019-12-02": {
       "removals": [],
       "additions": [],
