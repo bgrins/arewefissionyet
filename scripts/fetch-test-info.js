@@ -125,7 +125,8 @@ async function getTestMetadata() {
 }
 
 async function fetchTestInfos(testMetadata) {
-  let summaryData = {};
+  let m4And4Point1SummaryData = {};
+  let m4Point1SummaryData = {};
 
   console.log("Processing old data");
   convertPreArtifactData.process();
@@ -139,7 +140,7 @@ async function fetchTestInfos(testMetadata) {
         `cache/imported-from-before-artifacts/${item}`,
         "utf8"
       );
-      summaryData[date] = JSON.parse(text);
+      m4And4Point1SummaryData[date] = JSON.parse(text);
     }
   }
 
@@ -230,11 +231,14 @@ async function fetchTestInfos(testMetadata) {
       }
     }
 
-    summaryData[dateString] = obj;
+    if (date > new Date(2019, 10, 12)) {
+      m4Point1SummaryData[dateString] = obj;
+    }
+    m4And4Point1SummaryData[dateString] = obj;
     let fileName = `cache/test-info-fission/${dateString}.json`;
     fs.writeFileSync(fileName, JSON.stringify(obj, null, 2));
   }
-  fs.writeFileSync("cache/m4.json", JSON.stringify(summaryData, null, 2));
+  fs.writeFileSync("cache/m4.json", JSON.stringify(m4Point1SummaryData, null, 2));
 
   return testsPerDay;
 }
