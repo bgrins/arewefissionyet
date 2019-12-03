@@ -125,7 +125,7 @@ async function getTestMetadata() {
 }
 
 async function fetchTestInfos(testMetadata) {
-  let m4And4Point1SummaryData = {};
+  let m4SummaryData = {};
   let m4Point1SummaryData = {};
 
   console.log("Processing old data");
@@ -140,14 +140,13 @@ async function fetchTestInfos(testMetadata) {
         `cache/imported-from-before-artifacts/${item}`,
         "utf8"
       );
-      m4And4Point1SummaryData[date] = JSON.parse(text);
+      m4SummaryData[date] = JSON.parse(text);
     }
   }
 
   console.log("Next, importing daily data from taskcluster artifacts");
 
   let testsPerDay = {};
-
 
   for (let date of getDatesBetween(new Date(2019, 08, 19), new Date())) {
     // YYYY-MM-DD
@@ -215,12 +214,17 @@ async function fetchTestInfos(testMetadata) {
           metadata.component = component;
         }
 
-        let inM4 = metadata && (metadata.milestone == "M4" || metadata.milestone == "M4.1");
-        if (inM4) {
+        let inM4 = metadata && metadata.milestone == "M4";
+        let inM4Point1 = metadata && metadata.milestone == "M4.1";
+
+        // Track all tests for timeline
+        if (inM4 || inM4Point1) {
           todaySet.add(obj.test);
         }
 
-        return inM4;
+        // m4 was considered done on nov 13th. So we want that graph to hit zero
+        // on that date and have all m4.1 start after that:
+        return (date > new Date(2019, 10, 12)) ? inM4Point1 : inM4;
       });
       let lengthAfterFilter = obj.tests[component].length;
 
@@ -233,12 +237,14 @@ async function fetchTestInfos(testMetadata) {
 
     if (date > new Date(2019, 10, 12)) {
       m4Point1SummaryData[dateString] = obj;
+    } else {
+      m4SummaryData[dateString] = obj;
     }
-    m4And4Point1SummaryData[dateString] = obj;
     let fileName = `cache/test-info-fission/${dateString}.json`;
     fs.writeFileSync(fileName, JSON.stringify(obj, null, 2));
   }
-  fs.writeFileSync("cache/m4.json", JSON.stringify(m4Point1SummaryData, null, 2));
+  fs.writeFileSync("cache/m4.json", JSON.stringify(m4SummaryData, null, 2));
+  fs.writeFileSync("cache/m4Point1.json", JSON.stringify(m4Point1SummaryData, null, 2));
 
   return testsPerDay;
 }

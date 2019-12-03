@@ -8,6 +8,9 @@ const DAILY_DATA = [];
 const DAILY_TOTALS = {};
 const COMPONENT_DATA = {};
 
+const IN_ORIGINAL_M4 = new URLSearchParams(window.location.search).has("original");
+const CACHE_FILE = IN_ORIGINAL_M4 ? "../cache/m4.json" : "../cache/m4Point1.json";
+
 // Set this to a lower number like 16 if we only want to show a subset of components
 // and group the rest into "others":
 const NUM_COMPONENTS_IN_DEFAULT = 1000;
@@ -138,7 +141,9 @@ function getNextColor() {
 }
 
 async function fetchDataJSON() {
-  let r = await fetch("../cache/m4.json");
+
+  IN_ORIGINAL_M4
+  let r = await fetch(CACHE_FILE);
   let obj = await r.json();
   return obj;
 }
@@ -159,6 +164,17 @@ function shouldIgnoreComponent(component) {
 }
 
 document.addEventListener("DOMContentLoaded", async function ready() {
+
+  // A little gross, but in order to support two separate graphs on the same page we
+  // change some text properties and links based on the presence of `?original` in GET
+  if (IN_ORIGINAL_M4) {
+    document.title = document.title.replace("4.1", "4");
+    document.querySelector("h1").textContent = document.querySelector("h1").textContent.replace("4.1", "4");
+    let alternateGraphLink = document.querySelector("#alternate-graph-link");
+    alternateGraphLink.setAttribute("href", "../m4/");
+    alternateGraphLink.textContent = alternateGraphLink.textContent.replace("4", "4.1");
+  }
+
   let data = await fetchDataJSON();
 
   // Home page: mini version of the chart, and links to other stuff
