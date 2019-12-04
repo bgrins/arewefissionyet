@@ -1,12 +1,78 @@
 {
-  "updateTime": 1575396421778,
+  "updateTime": 1575480452265,
   "removalSummary": {
-    "day": 2,
-    "week": 3,
-    "month": 66,
-    "remaining": 53
+    "day": 6,
+    "week": 8,
+    "month": 72,
+    "remaining": 47
   },
   "data": {
+    "2019-12-04": {
+      "removals": [
+        {
+          "path": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_always_activate.js",
+          "updateTime": 1575480452265,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584931",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        },
+        {
+          "path": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_ask_to_activate.js",
+          "updateTime": 1575480452265,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584931",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        },
+        {
+          "path": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_never_activate.js",
+          "updateTime": 1575480452265,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584931",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        },
+        {
+          "path": "toolkit/components/url-classifier/tests/browser/browser_flashblock_on_with_always_activate.js",
+          "updateTime": 1575480452265,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584931",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        },
+        {
+          "path": "toolkit/components/url-classifier/tests/browser/browser_flashblock_on_with_ask_to_activate.js",
+          "updateTime": 1575480452265,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584931",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        },
+        {
+          "path": "toolkit/components/url-classifier/tests/browser/browser_flashblock_on_with_never_activate.js",
+          "updateTime": 1575480452265,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1584931",
+            "assignee": "dlee",
+            "component": "Toolkit::Safe Browsing"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 47
+    },
     "2019-12-03": {
       "removals": [
         {

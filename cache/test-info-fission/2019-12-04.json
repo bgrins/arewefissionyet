@@ -2,9 +2,9 @@
   "summary": {
     "components": 37,
     "failed tests": 63,
-    "manifests": 1223,
-    "skipped tests": 155,
-    "tests": 199
+    "manifests": 1225,
+    "skipped tests": 148,
+    "tests": 192
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -673,30 +673,6 @@
       }
     ],
     "Toolkit::Safe Browsing": [
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_always_activate.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_ask_to_activate.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_off_with_never_activate.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_on_with_always_activate.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_on_with_ask_to_activate.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/url-classifier/tests/browser/browser_flashblock_on_with_never_activate.js"
-      },
       {
         "skip-if": "fission && debug",
         "test": "toolkit/components/url-classifier/tests/mochitest/test_classify_by_default.html"
