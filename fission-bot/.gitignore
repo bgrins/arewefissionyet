@@ -4,3 +4,4 @@ worker/
 package-lock.json
 build-env.js
 dist/main.js
+wrangler.toml

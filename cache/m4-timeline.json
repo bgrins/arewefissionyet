@@ -1,12 +1,17 @@
 {
-  "updateTime": 1575566889442,
+  "updateTime": 1575653312949,
   "removalSummary": {
     "day": 0,
     "week": 8,
-    "month": 64,
+    "month": 62,
     "remaining": 47
   },
   "data": {
+    "2019-12-06": {
+      "removals": [],
+      "additions": [],
+      "remaining": 47
+    },
     "2019-12-05": {
       "removals": [],
       "additions": [],
@@ -3057,7 +3062,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
-            "assignee": "kmaglione+bmo",
+            "assignee": "jkt",
             "component": "Core::Security: PSM"
           }
         }
@@ -3618,7 +3623,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
-            "assignee": "kmaglione+bmo",
+            "assignee": "jkt",
             "component": "Core::Security: PSM"
           }
         },
