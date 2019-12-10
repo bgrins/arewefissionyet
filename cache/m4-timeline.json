@@ -1,17 +1,12 @@
 {
-  "updateTime": 1575999067592,
+  "updateTime": 1575912697162,
   "removalSummary": {
     "day": 0,
-    "week": 6,
+    "week": 8,
     "month": 42,
     "remaining": 47
   },
   "data": {
-    "2019-12-10": {
-      "removals": [],
-      "additions": [],
-      "remaining": 47
-    },
     "2019-12-09": {
       "removals": [],
       "additions": [],
@@ -2411,8 +2406,7 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": null,
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2421,8 +2415,7 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": null,
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2431,8 +2424,7 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": null,
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2441,8 +2433,7 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": null,
             "component": "Core::Disability Access APIs"
           }
         }
