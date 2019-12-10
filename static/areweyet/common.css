@@ -103,6 +103,11 @@ html {
   --heading-background: var(--grey-20);
 }
 
+html {
+  font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
+  font: 400 14px/1.5 "Fira Sans";
+}
+
 body,
 html {
   margin: 0;

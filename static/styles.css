@@ -1,10 +1,5 @@
 @import url("./areweyet/common.css");
 
-html {
-  font-family: 'Fira Sans', 'Open Sans', sans-serif, Arial;
-  font: 400 14px/1.5 "Fira Sans";
-}
-
 html.dashboard #table-container {
   font-size: 12px;
 }
@@ -63,7 +58,7 @@ html.embed a:visited {
   display: flex;
 }
 
-h1 {
+#grid h1 {
   grid-area: header;
   justify-self: stretch;
 }
