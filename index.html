@@ -14,17 +14,20 @@
   </div>
 
   <footer id="footer">
-    <div id="desc" class="desc-box">
+    <div class="desc-box">
       <h2>What is Fission?</h2>
       <p>
         Fission is the Firefox's project to implement process isolation per-site (<a href="https://godoc.org/golang.org/x/net/publicsuffix">eTLD+1</a>). In a Fission-world, a webpage serving multiple cross-site iframes will be rendered over multiple processes, while multiple tabs or iframes from the same site will share the same process.
       </p>
       <p>
-        You can learn more about Fission on the <a href="https://wiki.mozilla.org/Project_Fission">the wiki</a> or on <a href="https://mana.mozilla.org/wiki/display/~nkochar@mozilla.com/Project+Fission">mana</a>.
+        You can learn more about Fission on the <a href="https://wiki.mozilla.org/Project_Fission">the wiki</a> or on <a href="https://mana.mozilla.org/wiki/display/~nkochar@mozilla.com/Project+Fission">mana</a>. The Fission team can be reached at #fission on slack or #domfission on IRC.
+      </p>
+      <p>
+      If you have questions about or find issues with this site, the source is available <a href="https://github.com/bgrins/arewefissionyet/">here</a>.
       </p>
     </div>
 
-    <div id="desc2" class="desc-box">
+    <div class="desc-box">
       <h2>Milestone 4.1</h2>
       <p>
         Fission's current milestone 4.1 aims to get all relevant mochitests to successfully pass in a Fission world. They are currently being run as a tier2 job on mozilla-central and can be seen in the M-fis suite.
@@ -34,13 +37,14 @@
         and tips to get started on fixing these tests can be found on <a href="https://wiki.mozilla.org/Project_Fission/Enabling_Tests_with_Fission">the wiki</a>.
       </p>
     </div>
-    <div id="desc3" class="desc-box">
-      <h2>Have Questions?</h2>
+
+    <div class="desc-box">
+      <h2>nsIDocShellTreeItem</h2>
       <p>
-      The Fission team can be reached at #fission on slack or #domfission on IRC.
+        We are replacing uses of <code>nsIDocShellTreeItem</code> with <code>BrowsingContext</code>.
       </p>
       <p>
-      If you have questions about or find issues with this site, the source is available <a href="https://github.com/bgrins/arewefissionyet/">here</a>.
+        This can be tracked on the <a href="./docshelltreeitem/">burndown chart</a> and the <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1467214">metabug</a>.
       </p>
     </div>
   </footer>
