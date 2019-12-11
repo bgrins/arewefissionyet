@@ -1,7 +1,7 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-09 22:02.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-11 09:59.",
   "summary": {
-    "components": 37,
+    "components": 38,
     "failed tests": 63,
     "manifests": 1226,
     "skipped tests": 149,
@@ -38,10 +38,6 @@
       {
         "skip-if": "fission",
         "test": "docshell/test/browser/browser_bug670318.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/remotebrowserutils/tests/browser/browser_httpResponseProcessSelection.js"
       }
     ],
     "Core::DOM: Security": [
@@ -109,10 +105,6 @@
     ],
     "Core::Permission Manager": [],
     "Core::Plug-ins": [
-      {
-        "skip-if": "fission || toolkit == \"gtk\"",
-        "test": "browser/base/content/test/plugins/browser_CTP_context_menu.js"
-      },
       {
         "skip-if": "fission || toolkit == \"gtk\"",
         "test": "browser/base/content/test/plugins/browser_CTP_context_menu.js"
@@ -580,6 +572,7 @@
         "test": "devtools/client/styleeditor/test/browser_styleeditor_fetch-from-netmonitor.js"
       }
     ],
+    "Firefox::Address Bar": [],
     "Firefox::File Handling": [],
     "Firefox::General": [
       {

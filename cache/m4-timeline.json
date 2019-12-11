@@ -1,12 +1,33 @@
 {
-  "updateTime": 1575912697162,
+  "updateTime": 1576085480097,
   "removalSummary": {
-    "day": 0,
-    "week": 8,
-    "month": 42,
-    "remaining": 47
+    "day": 1,
+    "week": 1,
+    "month": 43,
+    "remaining": 46
   },
   "data": {
+    "2019-12-11": {
+      "removals": [
+        {
+          "path": "toolkit/components/remotebrowserutils/tests/browser/browser_httpResponseProcessSelection.js",
+          "updateTime": 1576085480097,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596454",
+            "assignee": "tomica",
+            "component": "Core::DOM: Navigation"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 46
+    },
+    "2019-12-10": {
+      "removals": [],
+      "additions": [],
+      "remaining": 47
+    },
     "2019-12-09": {
       "removals": [],
       "additions": [],
@@ -2406,7 +2427,8 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "nobody",
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2415,7 +2437,8 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "nobody",
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2424,7 +2447,8 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "nobody",
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2433,7 +2457,8 @@
           "updateTime": 1572474029290,
           "metadata": {
             "milestone": "M4.1",
-            "assignee": null,
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "nobody",
             "component": "Core::Disability Access APIs"
           }
         }
