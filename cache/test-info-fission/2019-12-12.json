@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-10 21:40.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-12 15:56.",
   "summary": {
-    "components": 38,
+    "components": 37,
     "failed tests": 63,
     "manifests": 1226,
-    "skipped tests": 150,
-    "tests": 194
+    "skipped tests": 147,
+    "tests": 191
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -38,10 +38,6 @@
       {
         "skip-if": "fission",
         "test": "docshell/test/browser/browser_bug670318.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "toolkit/components/remotebrowserutils/tests/browser/browser_httpResponseProcessSelection.js"
       }
     ],
     "Core::DOM: Security": [
@@ -64,10 +60,6 @@
       }
     ],
     "Core::DOM: Service Workers": [
-      {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/browser_force_refresh.js"
-      },
       {
         "skip-if": "fission || serviceworker_e10s",
         "test": "dom/serviceworkers/test/browser_storage_recovery.js"
@@ -95,12 +87,6 @@
         "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
       }
     ],
-    "Core::Networking": [
-      {
-        "skip-if": "(fission && os == \"linux\")",
-        "test": "netwerk/test/mochitests/test_different_domain_in_hierarchy.html"
-      }
-    ],
     "Core::Networking: Cookies": [
       {
         "skip-if": "fission",
@@ -109,10 +95,6 @@
     ],
     "Core::Permission Manager": [],
     "Core::Plug-ins": [
-      {
-        "skip-if": "fission || toolkit == \"gtk\"",
-        "test": "browser/base/content/test/plugins/browser_CTP_context_menu.js"
-      },
       {
         "skip-if": "fission || toolkit == \"gtk\"",
         "test": "browser/base/content/test/plugins/browser_CTP_context_menu.js"
