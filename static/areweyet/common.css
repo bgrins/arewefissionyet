@@ -121,6 +121,10 @@ body {
   font: var(--main-font);
 }
 
+hr {
+  color: rgba(0, 0, 0, .2);
+}
+
 h1 {
   font-weight: 300;
   color: var(--heading-color);
@@ -129,6 +133,19 @@ h1 {
   text-align: center;
   margin: 0;
   margin-bottom: 5px;
+}
+
+.summary-box {
+  width: 95%;
+  margin: 0 auto;
+  padding-left: 33px;
+  padding-right: 17px;
+  padding-bottom: 30px;
+}
+
+.summary-box h2 {
+  text-align: center;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 .desc-box {
@@ -149,13 +166,15 @@ footer > .desc-box {
   padding-bottom: 18px;
 }
 
-.desc-box > h2 {
+.desc-box h2,
+.summary-box h2 {
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
 }
 
-.desc-box > p {
+.desc-box p,
+.summary-box p {
   font-size: 15px;
   font-weight: 300;
 }
