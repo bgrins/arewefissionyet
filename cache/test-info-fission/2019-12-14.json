@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-11 22:16.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-14 09:57.",
   "summary": {
-    "components": 38,
-    "failed tests": 63,
-    "manifests": 1226,
-    "skipped tests": 149,
-    "tests": 193
+    "components": 36,
+    "failed tests": 59,
+    "manifests": 1228,
+    "skipped tests": 144,
+    "tests": 187
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -52,10 +52,6 @@
     ],
     "Core::DOM: Service Workers": [
       {
-        "skip-if": "fission",
-        "test": "dom/serviceworkers/test/browser_force_refresh.js"
-      },
-      {
         "skip-if": "fission || serviceworker_e10s",
         "test": "dom/serviceworkers/test/browser_storage_recovery.js"
       },
@@ -80,12 +76,6 @@
       {
         "skip-if": "fission",
         "test": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js"
-      }
-    ],
-    "Core::Networking": [
-      {
-        "skip-if": "(fission && os == \"linux\")",
-        "test": "netwerk/test/mochitests/test_different_domain_in_hierarchy.html"
       }
     ],
     "Core::Networking: Cookies": [
@@ -293,12 +283,6 @@
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePictureDup.html"
       }
     ],
-    "Core::Storage: localStorage & sessionStorage": [
-      {
-        "fail-if": "fission",
-        "test": "dom/tests/mochitest/sessionstorage/test_sessionStorageReplace.html"
-      }
-    ],
     "Core::Window Management": [
       {
         "fail-if": "fission && !debug",
@@ -468,23 +452,8 @@
         "test": "devtools/client/responsive/test/browser/browser_container_tab.js"
       },
       {
-        "fail-if": "fission",
-        "skip-if": "!e10s || os == \"win\"",
-        "test": "devtools/client/responsive/test/browser/browser_contextual_identity.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "!e10s || os == \"win\"",
-        "test": "devtools/client/responsive/test/browser/browser_favicon.js"
-      },
-      {
         "skip-if": "(!e10s || os == \"win\") || (fission)",
         "test": "devtools/client/responsive/test/browser/browser_preloaded_newtab.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "!e10s || os == \"win\"",
-        "test": "devtools/client/responsive/test/browser/browser_tab_remoteness_change.js"
       },
       {
         "skip-if": "(!e10s || os == \"win\") || (fission && debug)",

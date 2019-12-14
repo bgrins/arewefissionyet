@@ -44,14 +44,6 @@
     ],
     "Core::DOM: Navigation": [
       {
-        "fail-if": "fission",
-        "test": "docshell/test/browser/browser_bug422543.js"
-      },
-      {
-        "skip-if": "fission",
-        "test": "docshell/test/browser/browser_bug670318.js"
-      },
-      {
         "skip-if": "fission",
         "test": "toolkit/components/remotebrowserutils/tests/browser/browser_httpResponseProcessSelection.js"
       }
