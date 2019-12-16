@@ -135,6 +135,28 @@ h1 {
   margin-bottom: 5px;
 }
 
+.iframe-container {
+  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.iframe-container > div {
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.iframe-container > div > iframe {
+  border: none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+}
+
 .summary-box {
   width: 95%;
   margin: 0 auto;
@@ -157,7 +179,7 @@ h1 {
   border-radius: 5px;
 }
 
-#milestones {
+.milestones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 90%;
@@ -165,7 +187,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-#milestones > .desc-box {
+.milestones > .desc-box {
   width: auto;
   margin: 10px;
   padding-bottom: 18px;
