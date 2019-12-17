@@ -1,12 +1,38 @@
 {
-  "updateTime": 1576517631787,
+  "updateTime": 1576604047166,
   "removalSummary": {
-    "day": 0,
-    "week": 4,
-    "month": 24,
-    "remaining": 50
+    "day": 2,
+    "week": 6,
+    "month": 21,
+    "remaining": 48
   },
   "data": {
+    "2019-12-17": {
+      "removals": [
+        {
+          "path": "dom/serviceworkers/test/browser_storage_recovery.js",
+          "updateTime": 1576604047166,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1589631",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        },
+        {
+          "path": "dom/serviceworkers/test/test_third_party_iframes.html",
+          "updateTime": 1576604047166,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1581477",
+            "assignee": "echuang",
+            "component": "Core::DOM: Service Workers"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 48
+    },
     "2019-12-16": {
       "removals": [],
       "additions": [],
@@ -3123,7 +3149,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-            "assignee": "nobody",
+            "assignee": "juhsu",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -4040,7 +4066,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
-            "assignee": "nobody",
+            "assignee": "juhsu",
             "component": "Toolkit::Password Manager"
           }
         },

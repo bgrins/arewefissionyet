@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-16 22:03.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-17 16:29.",
   "summary": {
     "components": 36,
     "failed tests": 59,
-    "manifests": 1228,
-    "skipped tests": 144,
-    "tests": 187
+    "manifests": 1229,
+    "skipped tests": 142,
+    "tests": 185
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -50,16 +50,7 @@
         "test": "dom/security/test/mixedcontentblocker/test_main.html"
       }
     ],
-    "Core::DOM: Service Workers": [
-      {
-        "skip-if": "fission || serviceworker_e10s",
-        "test": "dom/serviceworkers/test/browser_storage_recovery.js"
-      },
-      {
-        "skip-if": "\nfission",
-        "test": "dom/serviceworkers/test/test_third_party_iframes.html"
-      }
-    ],
+    "Core::DOM: Service Workers": [],
     "Core::Disability Access APIs": [
       {
         "skip-if": "fission",
@@ -657,7 +648,7 @@
       },
       {
         "fail-if": "fission",
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android')",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android' || (debug || asan))",
         "test": "toolkit/components/passwordmgr/test/mochitest/test_prompt_async.html"
       },
       {
