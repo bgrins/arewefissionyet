@@ -1,12 +1,17 @@
 {
-  "updateTime": 1576690475696,
+  "updateTime": 1576776912170,
   "removalSummary": {
     "day": 0,
-    "week": 5,
-    "month": 20,
+    "week": 3,
+    "month": 18,
     "remaining": 48
   },
   "data": {
+    "2019-12-19": {
+      "removals": [],
+      "additions": [],
+      "remaining": 48
+    },
     "2019-12-18": {
       "removals": [],
       "additions": [],
@@ -4379,7 +4384,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
-            "assignee": "nobody",
+            "assignee": "jkt",
             "component": "Core::DOM: Security"
           }
         },

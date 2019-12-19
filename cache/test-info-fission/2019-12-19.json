@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-18 21:22.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2019-12-19 10:04.",
   "summary": {
     "components": 36,
     "failed tests": 59,
     "manifests": 1229,
-    "skipped tests": 142,
-    "tests": 185
+    "skipped tests": 143,
+    "tests": 186
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -234,6 +234,10 @@
       {
         "skip-if": "fission",
         "test": "toolkit/components/antitracking/test/browser/browser_storageAccessSandboxed.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/components/antitracking/test/browser/browser_storageAccessThirdPartyChecks.js"
       },
       {
         "skip-if": "fission",
@@ -593,7 +597,7 @@
         "test": "browser/components/sessionstore/test/browser_sessionStorage.js"
       },
       {
-        "skip-if": "(os == 'linux' && !e10s) || ((fission && debug) || os == \"linux\" && !debug)",
+        "skip-if": "(os == 'linux' && !e10s) || ((fission && (debug || os == \"win\")) ||\nos == \"linux\" && !debug)",
         "test": "browser/components/sessionstore/test/browser_windowStateContainer.js"
       }
     ],
