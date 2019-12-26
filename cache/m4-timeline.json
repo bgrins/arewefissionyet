@@ -1,12 +1,17 @@
 {
-  "updateTime": 1577295426777,
+  "updateTime": 1577381828960,
   "removalSummary": {
     "day": 0,
     "week": 0,
-    "month": 16,
+    "month": 15,
     "remaining": 48
   },
   "data": {
+    "2019-12-26": {
+      "removals": [],
+      "additions": [],
+      "remaining": 48
+    },
     "2019-12-25": {
       "removals": [],
       "additions": [],
