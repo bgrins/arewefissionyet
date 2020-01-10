@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-01-09 21:56.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-01-10 10:05.",
   "summary": {
     "components": 36,
-    "failed tests": 59,
+    "failed tests": 58,
     "manifests": 1233,
     "skipped tests": 147,
-    "tests": 190
+    "tests": 189
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -546,10 +546,6 @@
       {
         "fail-if": "fission",
         "test": "browser/base/content/test/general/browser_tab_drag_drop_perwindow.js"
-      },
-      {
-        "fail-if": "fission",
-        "test": "browser/base/content/test/general/browser_unknownContentType_title.js"
       },
       {
         "fail-if": "fission",

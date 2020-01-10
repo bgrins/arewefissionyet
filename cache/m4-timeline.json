@@ -1,12 +1,28 @@
 {
-  "updateTime": 1578591906826,
+  "updateTime": 1578678340121,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
+    "day": 1,
+    "week": 1,
     "month": 6,
-    "remaining": 48
+    "remaining": 47
   },
   "data": {
+    "2020-01-10": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/general/browser_unknownContentType_title.js",
+          "updateTime": 1578678340121,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588143",
+            "assignee": "nobody",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 47
+    },
     "2020-01-09": {
       "removals": [],
       "additions": [],
