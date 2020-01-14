@@ -1,12 +1,28 @@
 {
-  "updateTime": 1578937570214,
+  "updateTime": 1579023998278,
   "removalSummary": {
-    "day": 0,
-    "week": 1,
-    "month": 3,
-    "remaining": 47
+    "day": 1,
+    "week": 2,
+    "month": 4,
+    "remaining": 46
   },
   "data": {
+    "2020-01-14": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/siteProtections/browser_protections_UI.js",
+          "updateTime": 1579023998278,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596782",
+            "assignee": "nobody",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 46
+    },
     "2020-01-13": {
       "removals": [],
       "additions": [],
