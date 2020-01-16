@@ -1,12 +1,17 @@
 {
-  "updateTime": 1579110439414,
+  "updateTime": 1579196828119,
   "removalSummary": {
     "day": 0,
     "week": 2,
-    "month": 4,
+    "month": 2,
     "remaining": 46
   },
   "data": {
+    "2020-01-16": {
+      "removals": [],
+      "additions": [],
+      "remaining": 46
+    },
     "2020-01-15": {
       "removals": [],
       "additions": [],
@@ -1987,7 +1992,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
-            "assignee": "jkt",
+            "assignee": "jonathan",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -3362,7 +3367,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
-            "assignee": "jkt",
+            "assignee": "jonathan",
             "component": "Core::Security: PSM"
           }
         }
@@ -3923,7 +3928,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
-            "assignee": "jkt",
+            "assignee": "jonathan",
             "component": "Core::Security: PSM"
           }
         },
@@ -4541,7 +4546,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
-            "assignee": "jkt",
+            "assignee": "jonathan",
             "component": "Core::DOM: Security"
           }
         },
