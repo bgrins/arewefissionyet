@@ -1,12 +1,28 @@
 {
-  "updateTime": 1581530480265,
+  "updateTime": 1581616957335,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
+    "day": 1,
+    "week": 1,
     "month": 1,
-    "remaining": 46
+    "remaining": 45
   },
   "data": {
+    "2020-02-13": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/popups/browser_popup_frames.js",
+          "updateTime": 1581616957335,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1611484",
+            "assignee": "mconley",
+            "component": "Firefox::Site Permissions"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 45
+    },
     "2020-02-12": {
       "removals": [],
       "additions": [],

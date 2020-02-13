@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-02-12 21:10.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-02-13 14:31.",
   "summary": {
     "components": 36,
-    "failed tests": 57,
+    "failed tests": 56,
     "manifests": 1241,
     "skipped tests": 133,
-    "tests": 174
+    "tests": 173
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -611,12 +611,7 @@
         "test": "browser/base/content/test/siteIdentity/browser_mixedContentFramesOnHttp.js"
       }
     ],
-    "Firefox::Site Permissions": [
-      {
-        "fail-if": "fission",
-        "test": "browser/base/content/test/popups/browser_popup_frames.js"
-      }
-    ],
+    "Firefox::Site Permissions": [],
     "Toolkit::Add-ons Manager": [],
     "Toolkit::General": [],
     "Toolkit::Notifications and Alerts": [
@@ -648,7 +643,7 @@
       },
       {
         "fail-if": "fission",
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android' || (debug || asan))",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android' || (debug || asan || tsan))",
         "test": "toolkit/components/passwordmgr/test/mochitest/test_prompt_async.html"
       },
       {
