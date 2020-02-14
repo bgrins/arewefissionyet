@@ -1,14 +1,29 @@
 {
-  "updateTime": 1581616957335,
+  "updateTime": 1581703392365,
   "removalSummary": {
-    "day": 1,
-    "week": 1,
-    "month": 1,
-    "remaining": 45
+    "day": 0,
+    "week": 2,
+    "month": 2,
+    "remaining": 44
   },
   "data": {
+    "2020-02-14": {
+      "removals": [],
+      "additions": [],
+      "remaining": 44
+    },
     "2020-02-13": {
       "removals": [
+        {
+          "path": "browser/base/content/test/general/browser_tab_drag_drop_perwindow.js",
+          "updateTime": 1581703392365,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596751",
+            "assignee": "dao+bmo",
+            "component": "Firefox::General"
+          }
+        },
         {
           "path": "browser/base/content/test/popups/browser_popup_frames.js",
           "updateTime": 1581616957335,
@@ -21,7 +36,7 @@
         }
       ],
       "additions": [],
-      "remaining": 45
+      "remaining": 44
     },
     "2020-02-12": {
       "removals": [],
