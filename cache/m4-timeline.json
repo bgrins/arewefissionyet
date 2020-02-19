@@ -1,5 +1,5 @@
 {
-  "updateTime": 1582049127145,
+  "updateTime": 1582135615880,
   "removalSummary": {
     "day": 0,
     "week": 2,
@@ -7,9 +7,35 @@
     "remaining": 44
   },
   "data": {
-    "2020-02-18": {
+    "2020-02-19": {
       "removals": [],
       "additions": [],
+      "remaining": 44
+    },
+    "2020-02-18": {
+      "removals": [
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html",
+          "updateTime": 1582135615880,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588091",
+            "assignee": "nobody",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "path": "browser/components/extensions/test/browser/browser_ext_search.js",
+          "updateTime": 1582135615880,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "WebExtensions::Untriaged"
+          }
+        }
+      ],
       "remaining": 44
     },
     "2020-02-17": {

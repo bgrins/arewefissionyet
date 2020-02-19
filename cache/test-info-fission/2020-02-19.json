@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-02-18 21:47.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-02-19 17:33.",
   "summary": {
     "components": 43,
-    "failed tests": 49,
+    "failed tests": 48,
     "manifests": 1240,
     "skipped tests": 137,
-    "tests": 172
+    "tests": 171
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -485,10 +485,6 @@
       {
         "fail-if": "fission",
         "test": "devtools/client/styleeditor/test/browser_styleeditor_bug_740541_iframes.js"
-      },
-      {
-        "fail-if": "fission",
-        "test": "devtools/client/styleeditor/test/browser_styleeditor_fetch-from-netmonitor.js"
       }
     ],
     "Firefox::Address Bar": [],
