@@ -1,16 +1,42 @@
 {
-  "updateTime": 1582222034719,
+  "updateTime": 1582308496718,
   "removalSummary": {
     "day": 0,
-    "week": 0,
-    "month": 2,
-    "remaining": 44
+    "week": -2,
+    "month": 0,
+    "remaining": 46
   },
   "data": {
-    "2020-02-20": {
+    "2020-02-21": {
       "removals": [],
       "additions": [],
-      "remaining": 44
+      "remaining": 46
+    },
+    "2020-02-20": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "browser/components/originattributes/test/browser/browser_postMessage.js",
+          "updateTime": 1582308496718,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586713",
+            "assignee": "tihuang",
+            "component": "Core::DOM: Security"
+          }
+        },
+        {
+          "path": "toolkit/components/reader/test/browser_readerMode_with_anchor.js",
+          "updateTime": 1582308496718,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        }
+      ],
+      "remaining": 46
     },
     "2020-02-19": {
       "removals": [],
