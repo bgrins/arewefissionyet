@@ -1,12 +1,63 @@
 {
-  "updateTime": 1582567775844,
+  "updateTime": 1582740615570,
   "removalSummary": {
-    "day": 0,
-    "week": -2,
-    "month": 0,
-    "remaining": 46
+    "day": 4,
+    "week": 2,
+    "month": 4,
+    "remaining": 42
   },
   "data": {
+    "2020-02-26": {
+      "removals": [
+        {
+          "path": "accessible/tests/browser/e10s/browser_caching_attributes.js",
+          "updateTime": 1582740615570,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "jteh",
+            "component": "Core::Disability Access APIs"
+          }
+        },
+        {
+          "path": "accessible/tests/browser/e10s/browser_caching_value.js",
+          "updateTime": 1582740615570,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "jteh",
+            "component": "Core::Disability Access APIs"
+          }
+        },
+        {
+          "path": "accessible/tests/browser/e10s/browser_events_caretmove.js",
+          "updateTime": 1582740615570,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "jteh",
+            "component": "Core::Disability Access APIs"
+          }
+        },
+        {
+          "path": "accessible/tests/browser/e10s/browser_treeupdate_select_dropdown.js",
+          "updateTime": 1582740615570,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
+            "assignee": "jteh",
+            "component": "Core::Disability Access APIs"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 42
+    },
+    "2020-02-25": {
+      "removals": [],
+      "additions": [],
+      "remaining": 46
+    },
     "2020-02-24": {
       "removals": [],
       "additions": [],
@@ -2951,7 +3002,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": "jteh",
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2961,7 +3012,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": "jteh",
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2971,7 +3022,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": "jteh",
             "component": "Core::Disability Access APIs"
           }
         },
@@ -2981,7 +3032,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602692",
-            "assignee": "nobody",
+            "assignee": "jteh",
             "component": "Core::Disability Access APIs"
           }
         }
