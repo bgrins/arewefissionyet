@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-03-03 21:52.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-03-04 16:32.",
   "summary": {
     "components": 45,
     "failed tests": 47,
     "manifests": 1237,
-    "skipped tests": 140,
-    "tests": 173
+    "skipped tests": 141,
+    "tests": 174
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -288,6 +288,10 @@
       {
         "skip-if": "fission",
         "test": "devtools/client/webconsole/test/browser/browser_webconsole_warning_group_content_blocking.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "devtools/client/webconsole/test/browser/browser_webconsole_warning_group_multiples.js"
       }
     ],
     "DevTools::Framework": [
