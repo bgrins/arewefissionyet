@@ -1,5 +1,5 @@
 {
-  "updateTime": 1585592803190,
+  "updateTime": 1585679241401,
   "removalSummary": {
     "day": 0,
     "week": 0,
@@ -7,6 +7,11 @@
     "remaining": 42
   },
   "data": {
+    "2020-03-31": {
+      "removals": [],
+      "additions": [],
+      "remaining": 42
+    },
     "2020-03-30": {
       "removals": [],
       "additions": [],
@@ -2663,7 +2668,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
-            "assignee": "kmaglione+bmo",
+            "assignee": "nika",
             "component": "WebExtensions::General"
           }
         }
@@ -3079,7 +3084,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580565",
-            "assignee": "kmaglione+bmo",
+            "assignee": "nika",
             "component": "WebExtensions::General"
           }
         },
