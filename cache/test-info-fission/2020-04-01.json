@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-03-31 23:08.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-01 10:03.",
   "summary": {
-    "components": 45,
+    "components": 44,
     "failed tests": 47,
     "manifests": 1238,
-    "skipped tests": 141,
-    "tests": 174
+    "skipped tests": 140,
+    "tests": 173
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -448,7 +448,6 @@
       }
     ],
     "Firefox::Address Bar": [],
-    "Firefox::File Handling": [],
     "Firefox::General": [
       {
         "fail-if": "fission",
