@@ -1,16 +1,31 @@
 {
-  "updateTime": 1585765655957,
+  "updateTime": 1585852116073,
   "removalSummary": {
     "day": 0,
-    "week": 0,
-    "month": 0,
-    "remaining": 42
+    "week": 1,
+    "month": 1,
+    "remaining": 41
   },
   "data": {
-    "2020-04-01": {
+    "2020-04-02": {
       "removals": [],
       "additions": [],
-      "remaining": 42
+      "remaining": 41
+    },
+    "2020-04-01": {
+      "removals": [
+        {
+          "path": "browser/components/extensions/test/browser/browser_ext_search.js",
+          "updateTime": 1585852116073,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "WebExtensions::Untriaged"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 41
     },
     "2020-03-31": {
       "removals": [],
