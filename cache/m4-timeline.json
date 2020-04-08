@@ -1,12 +1,28 @@
 {
-  "updateTime": 1586284238330,
+  "updateTime": 1586370721421,
   "removalSummary": {
-    "day": 0,
-    "week": 1,
-    "month": 1,
-    "remaining": 41
+    "day": -1,
+    "week": -1,
+    "month": 0,
+    "remaining": 42
   },
   "data": {
+    "2020-04-08": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "dom/base/test/browser_use_counters.js",
+          "updateTime": 1586370721421,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582744",
+            "assignee": "echen",
+            "component": "Core::DOM: Core & HTML"
+          }
+        }
+      ],
+      "remaining": 42
+    },
     "2020-04-07": {
       "removals": [],
       "additions": [],
