@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-08 21:53.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-09 13:25.",
   "summary": {
-    "components": 38,
+    "components": 37,
     "failed tests": 47,
     "manifests": 1240,
-    "skipped tests": 129,
-    "tests": 162
+    "skipped tests": 128,
+    "tests": 161
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -51,12 +51,6 @@
       }
     ],
     "Core::DOM: Service Workers": [],
-    "Core::Networking: Cookies": [
-      {
-        "skip-if": "fission",
-        "test": "netwerk/cookie/test/browser/browser_sharedWorker.js"
-      }
-    ],
     "Core::Permission Manager": [],
     "Core::Plug-ins": [
       {
