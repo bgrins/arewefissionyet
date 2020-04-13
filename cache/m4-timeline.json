@@ -1,12 +1,28 @@
 {
-  "updateTime": 1586716476953,
+  "updateTime": 1586802883145,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
-    "month": 1,
-    "remaining": 41
+    "day": -1,
+    "week": -1,
+    "month": 0,
+    "remaining": 42
   },
   "data": {
+    "2020-04-13": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
+          "updateTime": 1586802883145,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
+            "assignee": "kmaglione+bmo",
+            "component": "Core::Networking: Cookies"
+          }
+        }
+      ],
+      "remaining": 42
+    },
     "2020-04-12": {
       "removals": [],
       "additions": [],
