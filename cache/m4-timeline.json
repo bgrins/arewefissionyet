@@ -1,16 +1,42 @@
 {
-  "updateTime": 1586889284580,
+  "updateTime": 1586975682545,
   "removalSummary": {
     "day": 0,
-    "week": -1,
-    "month": 0,
-    "remaining": 42
+    "week": 2,
+    "month": 2,
+    "remaining": 40
   },
   "data": {
-    "2020-04-14": {
+    "2020-04-15": {
       "removals": [],
       "additions": [],
-      "remaining": 42
+      "remaining": 40
+    },
+    "2020-04-14": {
+      "removals": [
+        {
+          "path": "browser/components/sessionstore/test/browser_586068-reload.js",
+          "updateTime": 1586975682545,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1628953",
+            "assignee": "mconley",
+            "component": "Firefox::Session Restore"
+          }
+        },
+        {
+          "path": "browser/components/sessionstore/test/browser_615394-SSWindowState_events_undoCloseWindow.js",
+          "updateTime": 1586975682545,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1628953",
+            "assignee": "mconley",
+            "component": "Firefox::Session Restore"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 40
     },
     "2020-04-13": {
       "removals": [],
