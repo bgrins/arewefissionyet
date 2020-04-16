@@ -1,12 +1,38 @@
 {
-  "updateTime": 1586975682545,
+  "updateTime": 1587062084079,
   "removalSummary": {
-    "day": 0,
-    "week": 2,
-    "month": 2,
-    "remaining": 40
+    "day": 2,
+    "week": 3,
+    "month": 4,
+    "remaining": 38
   },
   "data": {
+    "2020-04-16": {
+      "removals": [
+        {
+          "path": "netwerk/cookie/test/browser/browser_sharedWorker.js",
+          "updateTime": 1587062084079,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582318",
+            "assignee": "kmaglione+bmo",
+            "component": "Core::Networking: Cookies"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_prompt_async.html",
+          "updateTime": 1587062084079,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
+            "assignee": "juhsu",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 38
+    },
     "2020-04-15": {
       "removals": [],
       "additions": [],
