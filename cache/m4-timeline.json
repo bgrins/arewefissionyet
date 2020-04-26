@@ -1,12 +1,28 @@
 {
-  "updateTime": 1587839893321,
+  "updateTime": 1587926322170,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
-    "month": 4,
-    "remaining": 38
+    "day": 1,
+    "week": 1,
+    "month": 5,
+    "remaining": 37
   },
   "data": {
+    "2020-04-26": {
+      "removals": [
+        {
+          "path": "browser/components/sessionstore/test/browser_broadcast.js",
+          "updateTime": 1587926322170,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602687",
+            "assignee": "nobody",
+            "component": "Firefox::Session Restore"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 37
+    },
     "2020-04-25": {
       "removals": [],
       "additions": [],

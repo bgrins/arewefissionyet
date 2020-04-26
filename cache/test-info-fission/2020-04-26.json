@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-25 22:09.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-26 09:55.",
   "summary": {
     "components": 37,
     "failed tests": 46,
     "manifests": 1237,
-    "skipped tests": 125,
-    "tests": 158
+    "skipped tests": 124,
+    "tests": 157
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -474,10 +474,6 @@
       {
         "skip-if": "(os == 'linux' && !e10s) || (fission)",
         "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission || (os == 'mac') || (os == 'linux' && !debug && bits == 64))",
-        "test": "browser/components/sessionstore/test/browser_broadcast.js"
       },
       {
         "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
