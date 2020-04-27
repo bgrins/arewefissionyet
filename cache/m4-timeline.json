@@ -1,12 +1,17 @@
 {
-  "updateTime": 1587926322170,
+  "updateTime": 1588012700732,
   "removalSummary": {
-    "day": 1,
+    "day": 0,
     "week": 1,
     "month": 5,
     "remaining": 37
   },
   "data": {
+    "2020-04-27": {
+      "removals": [],
+      "additions": [],
+      "remaining": 37
+    },
     "2020-04-26": {
       "removals": [
         {
@@ -2697,7 +2702,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
-            "assignee": "nobody",
+            "assignee": "ckerschb",
             "component": "Toolkit::Password Manager"
           }
         }
