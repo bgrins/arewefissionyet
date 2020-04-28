@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-27 22:00.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-28 16:37.",
   "summary": {
     "components": 37,
     "failed tests": 46,
-    "manifests": 1237,
-    "skipped tests": 127,
-    "tests": 160
+    "manifests": 1235,
+    "skipped tests": 126,
+    "tests": 159
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -252,10 +252,6 @@
       {
         "fail-if": "fission",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecureIframeRedirect.html"
-      },
-      {
-        "skip-if": "fission && debug",
-        "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePictureDup.html"
       }
     ],
     "Core::Window Management": [

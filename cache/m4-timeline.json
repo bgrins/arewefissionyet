@@ -1,12 +1,28 @@
 {
-  "updateTime": 1588012700732,
+  "updateTime": 1588099173870,
   "removalSummary": {
-    "day": 0,
-    "week": 1,
-    "month": 5,
-    "remaining": 37
+    "day": 1,
+    "week": 2,
+    "month": 6,
+    "remaining": 36
   },
   "data": {
+    "2020-04-28": {
+      "removals": [
+        {
+          "path": "security/manager/ssl/tests/mochitest/mixedcontent/test_unsecurePictureDup.html",
+          "updateTime": 1588099173870,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1594529",
+            "assignee": "agakhokidze",
+            "component": "Core::Security: PSM"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 36
+    },
     "2020-04-27": {
       "removals": [],
       "additions": [],
