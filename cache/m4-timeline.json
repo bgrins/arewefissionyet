@@ -1,12 +1,28 @@
 {
-  "updateTime": 1588185574414,
+  "updateTime": 1588272008584,
   "removalSummary": {
-    "day": 0,
-    "week": 5,
-    "month": 9,
-    "remaining": 33
+    "day": -1,
+    "week": 4,
+    "month": 8,
+    "remaining": 34
   },
   "data": {
+    "2020-04-30": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "dom/security/test/mixedcontentblocker/test_main.html",
+          "updateTime": 1588272008584,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
+            "assignee": "nobody",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "remaining": 34
+    },
     "2020-04-29": {
       "removals": [],
       "additions": [],

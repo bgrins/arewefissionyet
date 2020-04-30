@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-29 22:03.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-04-30 15:58.",
   "summary": {
     "components": 36,
-    "failed tests": 46,
-    "manifests": 1235,
-    "skipped tests": 122,
-    "tests": 155
+    "failed tests": 47,
+    "manifests": 1238,
+    "skipped tests": 123,
+    "tests": 156
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -44,6 +44,11 @@
         "fail-if": "fission",
         "skip-if": "webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
         "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "\n(toolkit == 'android') || webrender || (verify && !debug && (os == 'linux')) ||\ntsan",
+        "test": "dom/security/test/mixedcontentblocker/test_main.html"
       }
     ],
     "Core::DOM: Service Workers": [],
