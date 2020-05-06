@@ -1,12 +1,28 @@
 {
-  "updateTime": 1588704114171,
+  "updateTime": 1588790577505,
   "removalSummary": {
-    "day": 0,
-    "week": -1,
-    "month": 7,
-    "remaining": 34
+    "day": 1,
+    "week": 0,
+    "month": 8,
+    "remaining": 33
   },
   "data": {
+    "2020-05-06": {
+      "removals": [
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_prompt_http.html",
+          "updateTime": 1588790577505,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582117",
+            "assignee": "juhsu",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 33
+    },
     "2020-05-05": {
       "removals": [],
       "additions": [],
