@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-05-13 21:58.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-05-14 16:29.",
   "summary": {
-    "components": 36,
-    "failed tests": 47,
+    "components": 35,
+    "failed tests": 45,
     "manifests": 1239,
-    "skipped tests": 119,
-    "tests": 152
+    "skipped tests": 118,
+    "tests": 150
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -51,7 +51,6 @@
         "test": "dom/security/test/mixedcontentblocker/test_main.html"
       }
     ],
-    "Core::DOM: Service Workers": [],
     "Core::Permission Manager": [],
     "Core::Plug-ins": [
       {
@@ -523,11 +522,6 @@
       }
     ],
     "Toolkit::Password Manager": [
-      {
-        "fail-if": "fission",
-        "skip-if": "fission || verify",
-        "test": "toolkit/components/passwordmgr/test/browser/browser_autofill_http.js"
-      },
       {
         "fail-if": "fission",
         "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android')",

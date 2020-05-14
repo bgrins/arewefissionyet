@@ -1,12 +1,28 @@
 {
-  "updateTime": 1589395588799,
+  "updateTime": 1589481973505,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
-    "month": 9,
-    "remaining": 33
+    "day": 1,
+    "week": 1,
+    "month": 8,
+    "remaining": 32
   },
   "data": {
+    "2020-05-14": {
+      "removals": [
+        {
+          "path": "toolkit/components/passwordmgr/test/browser/browser_autofill_http.js",
+          "updateTime": 1589481973505,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
+            "assignee": "ckerschb",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 32
+    },
     "2020-05-13": {
       "removals": [],
       "additions": [],
