@@ -1,5 +1,5 @@
 {
-  "updateTime": 1589827662265,
+  "updateTime": 1589914092321,
   "removalSummary": {
     "day": 0,
     "week": 1,
@@ -7,6 +7,11 @@
     "remaining": 32
   },
   "data": {
+    "2020-05-19": {
+      "removals": [],
+      "additions": [],
+      "remaining": 32
+    },
     "2020-05-18": {
       "removals": [],
       "additions": [],
@@ -35,7 +40,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
-            "assignee": "ckerschb",
+            "assignee": "matt.woodrow",
             "component": "Toolkit::Password Manager"
           }
         }
@@ -2881,7 +2886,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1570243",
-            "assignee": "ckerschb",
+            "assignee": "matt.woodrow",
             "component": "Toolkit::Password Manager"
           }
         }
