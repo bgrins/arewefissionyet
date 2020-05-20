@@ -1,5 +1,5 @@
 {
-  "updateTime": 1589914092321,
+  "updateTime": 1590000446472,
   "removalSummary": {
     "day": 0,
     "week": 1,
@@ -7,6 +7,11 @@
     "remaining": 32
   },
   "data": {
+    "2020-05-20": {
+      "removals": [],
+      "additions": [],
+      "remaining": 32
+    },
     "2020-05-19": {
       "removals": [],
       "additions": [],
@@ -2630,7 +2635,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592544",
-            "assignee": "nobody",
+            "assignee": "jhofmann",
             "component": "Firefox::Private Browsing"
           }
         }
