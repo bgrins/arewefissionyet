@@ -1,12 +1,28 @@
 {
-  "updateTime": 1590000446472,
+  "updateTime": 1590086904906,
   "removalSummary": {
-    "day": 0,
+    "day": 1,
     "week": 1,
-    "month": 6,
-    "remaining": 32
+    "month": 7,
+    "remaining": 31
   },
   "data": {
+    "2020-05-21": {
+      "removals": [
+        {
+          "path": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js",
+          "updateTime": 1590086904906,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586726",
+            "assignee": "tihuang",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 31
+    },
     "2020-05-20": {
       "removals": [],
       "additions": [],
