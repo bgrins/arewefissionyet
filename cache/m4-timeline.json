@@ -1,12 +1,28 @@
 {
-  "updateTime": 1590086904906,
+  "updateTime": 1590173348197,
   "removalSummary": {
     "day": 1,
-    "week": 1,
-    "month": 7,
-    "remaining": 31
+    "week": 2,
+    "month": 8,
+    "remaining": 30
   },
   "data": {
+    "2020-05-22": {
+      "removals": [
+        {
+          "path": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js",
+          "updateTime": 1590173348197,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592544",
+            "assignee": "jhofmann",
+            "component": "Firefox::Private Browsing"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 30
+    },
     "2020-05-21": {
       "removals": [
         {
