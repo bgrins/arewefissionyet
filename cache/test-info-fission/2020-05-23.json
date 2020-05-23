@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-05-22 21:47.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-05-23 10:32.",
   "summary": {
     "components": 33,
     "failed tests": 44,
     "manifests": 1239,
-    "skipped tests": 113,
-    "tests": 145
+    "skipped tests": 114,
+    "tests": 146
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -258,6 +258,10 @@
       }
     ],
     "DevTools::Console": [
+      {
+        "skip-if": "fission && debug && os == \"linux\" && os_version == \"18.04\"",
+        "test": "devtools/client/webconsole/test/browser/browser_console_webconsole_private_browsing.js"
+      },
       {
         "fail-if": "fission",
         "test": "devtools/client/webconsole/test/browser/browser_webconsole_network_messages_openinnet.js"
