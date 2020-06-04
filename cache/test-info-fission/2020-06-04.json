@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-06-03 21:56.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-06-04 15:47.",
   "summary": {
-    "components": 32,
-    "failed tests": 41,
+    "components": 31,
+    "failed tests": 40,
     "manifests": 1243,
-    "skipped tests": 72,
-    "tests": 102
+    "skipped tests": 70,
+    "tests": 100
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
@@ -320,17 +320,6 @@
     "Toolkit::Add-ons Manager": [],
     "Toolkit::Crash Reporting": [],
     "Toolkit::General": [],
-    "Toolkit::Notifications and Alerts": [
-      {
-        "skip-if": "fission || (os == \"linux\" && (debug || asan)) || verify",
-        "test": "browser/base/content/test/popupNotifications/browser_popupNotification_3.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "toolkit == 'android' && !is_fennec",
-        "test": "dom/notification/test/mochitest/test_notification_tag.html"
-      }
-    ],
     "Toolkit::Password Manager": [
       {
         "fail-if": "fission",

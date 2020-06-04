@@ -1,12 +1,38 @@
 {
-  "updateTime": 1591210525548,
+  "updateTime": 1591296879675,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
-    "month": 7,
-    "remaining": 27
+    "day": 2,
+    "week": 2,
+    "month": 9,
+    "remaining": 25
   },
   "data": {
+    "2020-06-04": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/popupNotifications/browser_popupNotification_3.js",
+          "updateTime": 1591296879675,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592777",
+            "assignee": "kmadan",
+            "component": "Toolkit::Notifications and Alerts"
+          }
+        },
+        {
+          "path": "dom/notification/test/mochitest/test_notification_tag.html",
+          "updateTime": 1591296879675,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1592776",
+            "assignee": "sgiesecke",
+            "component": "Toolkit::Notifications and Alerts"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 25
+    },
     "2020-06-03": {
       "removals": [],
       "additions": [],
