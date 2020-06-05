@@ -1,12 +1,28 @@
 {
-  "updateTime": 1591296879675,
+  "updateTime": 1591383325695,
   "removalSummary": {
-    "day": 2,
-    "week": 2,
-    "month": 9,
-    "remaining": 25
+    "day": -1,
+    "week": 1,
+    "month": 7,
+    "remaining": 26
   },
   "data": {
+    "2020-06-05": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "browser/base/content/test/about/browser_aboutCertError.js",
+          "updateTime": 1591383325695,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1596315",
+            "assignee": "enndeakin",
+            "component": "Firefox::General"
+          }
+        }
+      ],
+      "remaining": 26
+    },
     "2020-06-04": {
       "removals": [
         {
