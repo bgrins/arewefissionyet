@@ -1,12 +1,28 @@
 {
-  "updateTime": 1591729180549,
+  "updateTime": 1591815565660,
   "removalSummary": {
-    "day": 0,
-    "week": 1,
-    "month": 7,
-    "remaining": 26
+    "day": 1,
+    "week": 2,
+    "month": 8,
+    "remaining": 25
   },
   "data": {
+    "2020-06-10": {
+      "removals": [
+        {
+          "path": "toolkit/components/reader/test/browser_readerMode_with_anchor.js",
+          "updateTime": 1591815565660,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586139",
+            "assignee": "gijskruitbosch+bugs",
+            "component": "Toolkit::Reader Mode"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 25
+    },
     "2020-06-09": {
       "removals": [],
       "additions": [],
