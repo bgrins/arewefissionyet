@@ -1,12 +1,17 @@
 {
-  "updateTime": 1591902024708,
+  "updateTime": 1591988439874,
   "removalSummary": {
     "day": 0,
-    "week": 0,
+    "week": 1,
     "month": 8,
     "remaining": 25
   },
   "data": {
+    "2020-06-12": {
+      "removals": [],
+      "additions": [],
+      "remaining": 25
+    },
     "2020-06-11": {
       "removals": [],
       "additions": [],
@@ -133,7 +138,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
-            "assignee": "nobody",
+            "assignee": "apavel",
             "component": "Core::DOM: Security"
           }
         },
@@ -344,7 +349,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
-            "assignee": "nobody",
+            "assignee": "apavel",
             "component": "Core::DOM: Security"
           }
         }
@@ -374,7 +379,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
-            "assignee": "nobody",
+            "assignee": "apavel",
             "component": "Core::DOM: Security"
           }
         },
@@ -5651,7 +5656,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1580771",
-            "assignee": "nobody",
+            "assignee": "apavel",
             "component": "Core::DOM: Security"
           }
         },
