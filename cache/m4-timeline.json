@@ -1,16 +1,32 @@
 {
-  "updateTime": 1592247740587,
+  "updateTime": 1592334174797,
   "removalSummary": {
     "day": 0,
-    "week": 1,
-    "month": 7,
-    "remaining": 25
+    "week": 2,
+    "month": 8,
+    "remaining": 24
   },
   "data": {
-    "2020-06-15": {
+    "2020-06-16": {
       "removals": [],
       "additions": [],
-      "remaining": 25
+      "remaining": 24
+    },
+    "2020-06-15": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/siteIdentity/browser_bug1045809.js",
+          "updateTime": 1592334174797,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1600874",
+            "assignee": "nhnt11",
+            "component": "Firefox::Site Identity"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 24
     },
     "2020-06-14": {
       "removals": [],
