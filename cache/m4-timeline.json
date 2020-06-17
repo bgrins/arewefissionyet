@@ -1,12 +1,17 @@
 {
-  "updateTime": 1592334174797,
+  "updateTime": 1592420624034,
   "removalSummary": {
     "day": 0,
-    "week": 2,
+    "week": 1,
     "month": 8,
     "remaining": 24
   },
   "data": {
+    "2020-06-17": {
+      "removals": [],
+      "additions": [],
+      "remaining": 24
+    },
     "2020-06-16": {
       "removals": [],
       "additions": [],
@@ -2412,7 +2417,7 @@
           "metadata": {
             "milestone": "M4.1",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586686",
-            "assignee": "nobody",
+            "assignee": "ckerschb",
             "component": "Core::DOM: Security"
           }
         }
