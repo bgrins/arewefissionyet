@@ -1,16 +1,32 @@
 {
-  "updateTime": 1592507111794,
+  "updateTime": 1592593453020,
   "removalSummary": {
     "day": 0,
-    "week": 1,
-    "month": 8,
-    "remaining": 24
+    "week": 2,
+    "month": 9,
+    "remaining": 23
   },
   "data": {
-    "2020-06-18": {
+    "2020-06-19": {
       "removals": [],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
+    },
+    "2020-06-18": {
+      "removals": [
+        {
+          "path": "docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html",
+          "updateTime": 1592593453020,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1586686",
+            "assignee": "ckerschb",
+            "component": "Core::DOM: Security"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 23
     },
     "2020-06-17": {
       "removals": [],
