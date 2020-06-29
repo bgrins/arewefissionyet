@@ -1,5 +1,5 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-06-28 09:48.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-06-28 21:39.",
   "summary": {
     "components": 27,
     "failed tests": 39,
@@ -276,23 +276,6 @@
     ],
     "Firefox::Search": [],
     "Firefox::Session Restore": [
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission || debug)",
-        "test": "browser/components/sessionstore/test/browser_async_remove_tab.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission)",
-        "test": "browser/components/sessionstore/test/browser_async_window_flushing.js"
-      },
-      {
-        "skip-if": "(os == 'linux' && !e10s) || (fission || (verify && debug))",
-        "test": "browser/components/sessionstore/test/browser_formdata.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "os == 'linux' && !e10s",
-        "test": "browser/components/sessionstore/test/browser_sessionHistory.js"
-      },
       {
         "fail-if": "fission",
         "skip-if": "os == 'linux' && !e10s",
