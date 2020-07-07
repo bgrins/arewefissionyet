@@ -9,27 +9,7 @@
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
-    "Core::DOM: Core & HTML": [
-      {
-        "skip-if": "fission",
-        "test": "dom/base/test/test_bug976673.html"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "fission && debug",
-        "test": "dom/base/test/test_window_cross_origin_props.html"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "!e10s || verify",
-        "test": "dom/tests/browser/browser_localStorage_e10s.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "\n!e10s ||\n(fission && debug)",
-        "test": "dom/tests/browser/browser_localStorage_snapshotting_e10s.js"
-      }
-    ],
+    "Core::DOM: Core & HTML": [],
     "Core::DOM: Navigation": [],
     "Core::DOM: Security": [
       {
@@ -278,11 +258,6 @@
     "Firefox::Search": [],
     "Firefox::Session Restore": [
       {
-        "fail-if": "fission",
-        "skip-if": "os == 'linux' && !e10s",
-        "test": "browser/components/sessionstore/test/browser_sessionStorage.js"
-      },
-      {
         "skip-if": "(os == 'linux' && !e10s) || ((fission && (debug || os == \"win\")) ||\nos == \"linux\" && !debug)",
         "test": "browser/components/sessionstore/test/browser_windowStateContainer.js"
       }
@@ -314,13 +289,7 @@
         "test": "dom/notification/test/mochitest/test_notification_tag.html"
       }
     ],
-    "Toolkit::Password Manager": [
-      {
-        "fail-if": "fission",
-        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android')",
-        "test": "toolkit/components/passwordmgr/test/mochitest/test_autofill_from_bfcache.html"
-      }
-    ],
+    "Toolkit::Password Manager": [],
     "Toolkit::Reader Mode": [
       {
         "skip-if": "fission",
