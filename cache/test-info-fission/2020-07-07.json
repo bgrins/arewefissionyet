@@ -1,5 +1,5 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-07 09:57.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-07 21:42.",
   "summary": {
     "components": 27,
     "failed tests": 39,
@@ -10,14 +10,13 @@
   "tests": {
     "Core::DOM: Core & HTML": [],
     "Core::DOM: Navigation": [],
-    "Core::DOM: Security": [
+    "Core::DOM: Security": [],
+    "Core::DOM: UI Events & Focus Handling": [
       {
-        "fail-if": "fission",
-        "skip-if": "webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)\n|| xorigin",
-        "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
+        "skip-if": "fission",
+        "test": "editor/libeditor/tests/test_bug1151186.html"
       }
     ],
-    "Core::DOM: UI Events & Focus Handling": [],
     "Core::Plug-ins": [
       {
         "skip-if": "fission || toolkit == \"gtk\"",
@@ -244,8 +243,21 @@
         "test": "devtools/client/styleeditor/test/browser_styleeditor_bug_740541_iframes.js"
       }
     ],
-    "Firefox::Address Bar": [],
+    "Firefox::Address Bar": [
+      {
+        "skip-if": "fission && os == 'linux' && debug",
+        "test": "browser/components/urlbar/tests/browser/browser_tabMatchesInAwesomebar.js"
+      }
+    ],
     "Firefox::General": [
+      {
+        "skip-if": "(fission && os == 'linux' && bits == 64 && os_version == '18.04')",
+        "test": "browser/base/content/test/fullscreen/browser_fullscreen_enterInUrlbar.js"
+      },
+      {
+        "skip-if": "os == 'mac' || (debug && fission && os == \"linux\" && os_version == \"18.04\")",
+        "test": "browser/base/content/test/fullscreen/browser_fullscreen_window_focus.js"
+      },
       {
         "fail-if": "fission",
         "skip-if": "os == \"linux\" && !e10s",
@@ -258,7 +270,12 @@
         "test": "browser/base/content/test/keyboard/browser_toolbarKeyNav.js"
       }
     ],
-    "Firefox::Search": [],
+    "Firefox::Search": [
+      {
+        "skip-if": "(fission && debug)",
+        "test": "browser/components/search/test/browser/browser_google_behavior.js"
+      }
+    ],
     "Firefox::Session Restore": [
       {
         "skip-if": "(os == 'linux' && !e10s) || ((fission && (debug || os == \"win\")) ||\nos == \"linux\" && !debug)",

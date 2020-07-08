@@ -34,11 +34,6 @@
         "test": "docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html"
       },
       {
-        "fail-if": "fission",
-        "skip-if": "webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
-        "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
-      },
-      {
         "skip-if": "\n(toolkit == 'android') || webrender || (verify && !debug && (os == 'linux')) ||\nfission",
         "test": "dom/security/test/mixedcontentblocker/test_main.html"
       }

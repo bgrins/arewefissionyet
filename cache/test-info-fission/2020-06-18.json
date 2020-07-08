@@ -10,13 +10,7 @@
   "tests": {
     "Core::DOM: Core & HTML": [],
     "Core::DOM: Navigation": [],
-    "Core::DOM: Security": [
-      {
-        "fail-if": "fission",
-        "skip-if": "webrender || (debug && (os == 'linux' || os == 'win')) || (os == 'win' && !debug)",
-        "test": "dom/security/test/mixedcontentblocker/test_frameNavigation.html"
-      }
-    ],
+    "Core::DOM: Security": [],
     "Core::Plug-ins": [
       {
         "skip-if": "fission || toolkit == \"gtk\"",
@@ -239,11 +233,24 @@
         "test": "devtools/client/styleeditor/test/browser_styleeditor_bug_740541_iframes.js"
       }
     ],
-    "Firefox::Address Bar": [],
+    "Firefox::Address Bar": [
+      {
+        "skip-if": "fission && os == 'linux' && debug",
+        "test": "browser/components/urlbar/tests/browser/browser_tabMatchesInAwesomebar.js"
+      }
+    ],
     "Firefox::General": [
       {
         "skip-if": "fission && os == \"linux\" && debug",
         "test": "browser/base/content/test/about/browser_aboutCertError.js"
+      },
+      {
+        "skip-if": "(fission && os == 'linux' && bits == 64 && os_version == '18.04')",
+        "test": "browser/base/content/test/fullscreen/browser_fullscreen_enterInUrlbar.js"
+      },
+      {
+        "skip-if": "os == 'mac' || (debug && fission && os == \"linux\" && os_version == \"18.04\")",
+        "test": "browser/base/content/test/fullscreen/browser_fullscreen_window_focus.js"
       },
       {
         "fail-if": "fission",
@@ -257,7 +264,12 @@
         "test": "browser/base/content/test/keyboard/browser_toolbarKeyNav.js"
       }
     ],
-    "Firefox::Search": [],
+    "Firefox::Search": [
+      {
+        "skip-if": "(fission && debug)",
+        "test": "browser/components/search/test/browser/browser_google_behavior.js"
+      }
+    ],
     "Firefox::Session Restore": [
       {
         "skip-if": "(os == 'linux' && !e10s) || ((fission && (debug || os == \"win\")) ||\nos == \"linux\" && !debug)",
