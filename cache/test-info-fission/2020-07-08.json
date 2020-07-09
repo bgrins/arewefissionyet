@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-08 09:49.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-08 21:57.",
   "summary": {
     "components": 27,
     "failed tests": 39,
-    "manifests": 1250,
-    "skipped tests": 66,
-    "tests": 95
+    "manifests": 1251,
+    "skipped tests": 65,
+    "tests": 94
   },
   "tests": {
     "Core::DOM: Core & HTML": [],
@@ -139,10 +139,6 @@
       }
     ],
     "DevTools::Inspector": [
-      {
-        "skip-if": "fission",
-        "test": "devtools/client/inspector/test/browser_inspector_inspect_node_contextmenu.js"
-      },
       {
         "skip-if": "fission",
         "test": "devtools/client/inspector/test/browser_inspector_navigate_to_errors.js"
