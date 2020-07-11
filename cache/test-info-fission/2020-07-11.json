@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-10 22:00.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-11 09:36.",
   "summary": {
     "components": 27,
     "failed tests": 39,
     "manifests": 1251,
-    "skipped tests": 65,
-    "tests": 94
+    "skipped tests": 63,
+    "tests": 92
   },
   "tests": {
     "Core::DOM: Core & HTML": [],
