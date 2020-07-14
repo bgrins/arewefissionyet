@@ -1,12 +1,97 @@
 {
-  "updateTime": 1594667666941,
+  "updateTime": 1594753983097,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
-    "month": 3,
-    "remaining": 20
+    "day": -8,
+    "week": -8,
+    "month": -5,
+    "remaining": 28
   },
   "data": {
+    "2020-07-14": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "dom/push/test/test_permissions.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
+            "assignee": "perry",
+            "component": "Core::DOM: Push Notifications"
+          }
+        },
+        {
+          "path": "dom/push/test/test_subscription_change.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582531",
+            "assignee": "agakhokidze",
+            "component": "Core::DOM: Push Notifications"
+          }
+        },
+        {
+          "path": "dom/tests/mochitest/localstorage/test_localStorageCookieSettings.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Core::Storage: localStorage & sessionStorage"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588091",
+            "assignee": "nobody",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_upgrade.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1588095",
+            "assignee": "MattN+bmo",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofill_highlight.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582113",
+            "assignee": "MattN+bmo",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_downgrade.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        },
+        {
+          "path": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_upgrade.html",
+          "updateTime": 1594753983097,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1567175",
+            "assignee": "enndeakin",
+            "component": "Toolkit::Password Manager"
+          }
+        }
+      ],
+      "remaining": 28
+    },
     "2020-07-13": {
       "removals": [],
       "additions": [],
