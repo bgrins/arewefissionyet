@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-15 16:20.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-15 22:01.",
   "summary": {
-    "components": 36,
-    "failed tests": 80,
+    "components": 35,
+    "failed tests": 79,
     "manifests": 2342,
     "skipped tests": 137,
-    "tests": 183
+    "tests": 182
   },
   "tests": {
     "Core::DOM: Core & HTML": [],
@@ -265,12 +265,6 @@
       {
         "fail-if": "fission",
         "test": "devtools/client/storage/test/browser_storage_sidebar_toggle.js"
-      }
-    ],
-    "DevTools::Style Editor": [
-      {
-        "fail-if": "fission",
-        "test": "devtools/client/styleeditor/test/browser_styleeditor_bug_740541_iframes.js"
       }
     ],
     "Firefox::Address Bar": [
