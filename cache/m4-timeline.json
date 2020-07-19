@@ -1,12 +1,42 @@
 {
-  "updateTime": 1595013259923,
+  "updateTime": 1595186197272,
   "removalSummary": {
-    "day": 0,
-    "week": -7,
-    "month": -5,
-    "remaining": 27
+    "day": 2,
+    "week": -5,
+    "month": -4,
+    "remaining": 25
   },
   "data": {
+    "2020-07-19": {
+      "removals": [
+        {
+          "path": "browser/base/content/test/fullscreen/browser_fullscreen_enterInUrlbar.js",
+          "updateTime": 1595186197272,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1651231",
+            "assignee": "nobody",
+            "component": "Firefox::General"
+          }
+        },
+        {
+          "path": "browser/components/uitour/test/browser_UITour_detach_tab.js",
+          "updateTime": 1595186197272,
+          "metadata": {
+            "milestone": "M4",
+            "assignee": null,
+            "component": "Firefox::Tours"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 25
+    },
+    "2020-07-18": {
+      "removals": [],
+      "additions": [],
+      "remaining": 27
+    },
     "2020-07-17": {
       "removals": [],
       "additions": [],
