@@ -11,6 +11,10 @@
     "Core::DOM: Core & HTML": [
       {
         "skip-if": "fission",
+        "test": "dom/permission/tests/test_cross_origin_iframe.html"
+      },
+      {
+        "skip-if": "fission",
         "test": "dom/tests/mochitest/bugs/test_navigator_buildID.html"
       }
     ],

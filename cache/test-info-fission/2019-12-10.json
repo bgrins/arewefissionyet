@@ -9,7 +9,12 @@
   },
   "tests": {
     "Core::Audio/Video: Playback": [],
-    "Core::DOM: Core & HTML": [],
+    "Core::DOM: Core & HTML": [
+      {
+        "skip-if": "fission",
+        "test": "dom/permission/tests/test_cross_origin_iframe.html"
+      }
+    ],
     "Core::DOM: Navigation": [
       {
         "skip-if": "fission",

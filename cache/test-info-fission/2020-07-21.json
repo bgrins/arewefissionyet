@@ -1,28 +1,34 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-05-28 22:08.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-21 16:19.",
   "summary": {
-    "components": 32,
-    "failed tests": 41,
-    "manifests": 1244,
-    "skipped tests": 71,
-    "tests": 101
+    "components": 34,
+    "failed tests": 78,
+    "manifests": 2351,
+    "skipped tests": 133,
+    "tests": 178
   },
   "tests": {
-    "Core::Audio/Video: Playback": [],
     "Core::DOM: Core & HTML": [
       {
+        "fail-if": "xorigin",
         "skip-if": "fission",
         "test": "dom/permission/tests/test_cross_origin_iframe.html"
       }
     ],
+    "Core::DOM: Editor": [],
     "Core::DOM: Navigation": [],
-    "Core::DOM: Security": [
+    "Core::DOM: Networking": [],
+    "Core::DOM: Push Notifications": [],
+    "Core::DOM: Security": [],
+    "Core::DOM: UI Events & Focus Handling": [
       {
-        "skip-if": "fission && os == 'linux' && debug && webrender",
-        "test": "docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html"
+        "skip-if": "fission",
+        "test": "editor/libeditor/tests/test_bug1151186.html"
       }
     ],
-    "Core::Disability Access APIs": [],
+    "Core::ImageLib": [],
+    "Core::Layout": [],
+    "Core::Panning and Zooming": [],
     "Core::Plug-ins": [
       {
         "skip-if": "fission || toolkit == \"gtk\"",
@@ -35,6 +41,37 @@
       {
         "skip-if": "fission",
         "test": "browser/base/content/test/plugins/browser_subframe_access_hidden_plugins.js"
+      },
+      {
+        "fail-if": "(xorigin && fission)",
+        "skip-if": "(headless) || (!crashreporter)",
+        "test": "dom/plugins/test/mochitest/test_bug1028200-1.html"
+      },
+      {
+        "fail-if": "(xorigin && fission)",
+        "skip-if": "(headless) || (!crashreporter)",
+        "test": "dom/plugins/test/mochitest/test_bug1028200-3.html"
+      },
+      {
+        "fail-if": "(xorigin && fission)",
+        "skip-if": "(headless) || (!crashreporter)",
+        "test": "dom/plugins/test/mochitest/test_bug1028200-4.html"
+      },
+      {
+        "fail-if": "(xorigin && fission)",
+        "skip-if": "(headless) || (!crashreporter)",
+        "test": "dom/plugins/test/mochitest/test_bug1028200-5.html"
+      },
+      {
+        "fail-if": "(xorigin && fission)",
+        "skip-if": "headless",
+        "test": "dom/plugins/test/mochitest/test_secondPlugin.html"
+      }
+    ],
+    "Core::Security: CAPS": [
+      {
+        "fail-if": "(xorigin && fission)",
+        "test": "caps/tests/mochitest/test_bug1367586.html"
       }
     ],
     "Core::Security: PSM": [
@@ -51,6 +88,8 @@
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecureIframeRedirect.html"
       }
     ],
+    "Core::Storage: IndexedDB": [],
+    "Core::Storage: localStorage & sessionStorage": [],
     "Core::Window Management": [
       {
         "fail-if": "fission && !debug",
@@ -134,6 +173,10 @@
       {
         "fail-if": "fission",
         "test": "devtools/server/tests/browser/browser_storage_updates.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "devtools/shared/resources/tests/browser_target_list_service_workers_navigation.js"
       },
       {
         "skip-if": "fission || (asan && os == \"linux\")",
@@ -235,12 +278,6 @@
         "test": "devtools/client/storage/test/browser_storage_sidebar_toggle.js"
       }
     ],
-    "DevTools::Style Editor": [
-      {
-        "fail-if": "fission",
-        "test": "devtools/client/styleeditor/test/browser_styleeditor_bug_740541_iframes.js"
-      }
-    ],
     "Firefox::Address Bar": [
       {
         "skip-if": "fission && os == 'linux' && debug",
@@ -249,17 +286,8 @@
     ],
     "Firefox::General": [
       {
-        "skip-if": "(fission && os == 'linux' && bits == 64 && os_version == '18.04')",
-        "test": "browser/base/content/test/fullscreen/browser_fullscreen_enterInUrlbar.js"
-      },
-      {
         "skip-if": "os == 'mac' || (debug && fission && os == \"linux\" && os_version == \"18.04\")",
         "test": "browser/base/content/test/fullscreen/browser_fullscreen_window_focus.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "os == \"linux\" && !e10s",
-        "test": "browser/base/content/test/general/browser_newwindow_focus.js"
       }
     ],
     "Firefox::Keyboard Navigation": [
@@ -280,38 +308,31 @@
         "test": "browser/components/sessionstore/test/browser_windowStateContainer.js"
       }
     ],
-    "Firefox::Site Identity": [
-      {
-        "fail-if": "fission",
-        "test": "browser/base/content/test/siteIdentity/browser_bug1045809.js"
-      },
-      {
-        "skip-if": "(fission && debug) || (os == \"linux\" && bits == 64)",
-        "test": "browser/base/content/test/siteIdentity/browser_identityPopup_clearSiteData.js"
-      }
-    ],
-    "Firefox::Site Permissions": [],
     "Firefox::Tabbed Browser": [],
-    "Firefox::Tours": [],
     "Toolkit::Add-ons Manager": [],
     "Toolkit::Crash Reporting": [],
     "Toolkit::General": [],
-    "Toolkit::Notifications and Alerts": [
+    "Toolkit::Password Manager": [
       {
-        "skip-if": "fission || (os == \"linux\" && (debug || asan)) || verify",
-        "test": "browser/base/content/test/popupNotifications/browser_popupNotification_3.js"
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug)\n|| (xorigin && fission))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_downgrade.html"
       },
       {
-        "fail-if": "fission",
-        "skip-if": "toolkit == 'android' && !is_fennec",
-        "test": "dom/notification/test/mochitest/test_notification_tag.html"
-      }
-    ],
-    "Toolkit::Password Manager": [],
-    "Toolkit::Reader Mode": [
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'  || (os == 'linux' && debug)\n|| (xorigin && fission))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autocomplete_https_upgrade.html"
+      },
       {
-        "skip-if": "fission",
-        "test": "toolkit/components/reader/test/browser_readerMode_with_anchor.js"
+        "fail-if": "xorigin",
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'\n|| (xorigin && fission))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autofill_highlight.html"
+      },
+      {
+        "skip-if": "(toolkit == 'android' && !is_fennec) || ((xorigin && fission))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_downgrade.html"
+      },
+      {
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (toolkit == 'android'\n|| (xorigin && fission))",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_upgrade.html"
       }
     ],
     "WebExtensions::General": [

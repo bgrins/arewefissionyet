@@ -8,7 +8,13 @@
     "tests": 183
   },
   "tests": {
-    "Core::DOM: Core & HTML": [],
+    "Core::DOM: Core & HTML": [
+      {
+        "fail-if": "xorigin",
+        "skip-if": "fission",
+        "test": "dom/permission/tests/test_cross_origin_iframe.html"
+      }
+    ],
     "Core::DOM: Editor": [],
     "Core::DOM: Navigation": [],
     "Core::DOM: Networking": [],
@@ -62,7 +68,12 @@
         "test": "dom/plugins/test/mochitest/test_secondPlugin.html"
       }
     ],
-    "Core::Security: CAPS": [],
+    "Core::Security: CAPS": [
+      {
+        "fail-if": "(xorigin && fission)",
+        "test": "caps/tests/mochitest/test_bug1367586.html"
+      }
+    ],
     "Core::Security: PSM": [
       {
         "skip-if": "fission && debug",

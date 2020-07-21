@@ -16,6 +16,10 @@
       },
       {
         "skip-if": "fission",
+        "test": "dom/permission/tests/test_cross_origin_iframe.html"
+      },
+      {
+        "skip-if": "fission",
         "test": "dom/tests/mochitest/bugs/test_bug260264_nested.html"
       },
       {

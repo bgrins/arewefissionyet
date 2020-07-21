@@ -8,7 +8,12 @@
     "tests": 95
   },
   "tests": {
-    "Core::DOM: Core & HTML": [],
+    "Core::DOM: Core & HTML": [
+      {
+        "skip-if": "fission",
+        "test": "dom/permission/tests/test_cross_origin_iframe.html"
+      }
+    ],
     "Core::DOM: Navigation": [],
     "Core::DOM: Security": [],
     "Core::DOM: UI Events & Focus Handling": [
