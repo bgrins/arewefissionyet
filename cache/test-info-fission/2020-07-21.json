@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-21 16:19.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-21 22:12.",
   "summary": {
-    "components": 34,
-    "failed tests": 78,
+    "components": 30,
+    "failed tests": 77,
     "manifests": 2351,
-    "skipped tests": 133,
-    "tests": 178
+    "skipped tests": 117,
+    "tests": 163
   },
   "tests": {
     "Core::DOM: Core & HTML": [
@@ -20,12 +20,7 @@
     "Core::DOM: Networking": [],
     "Core::DOM: Push Notifications": [],
     "Core::DOM: Security": [],
-    "Core::DOM: UI Events & Focus Handling": [
-      {
-        "skip-if": "fission",
-        "test": "editor/libeditor/tests/test_bug1151186.html"
-      }
-    ],
+    "Core::DOM: UI Events & Focus Handling": [],
     "Core::ImageLib": [],
     "Core::Layout": [],
     "Core::Panning and Zooming": [],
@@ -76,14 +71,6 @@
     ],
     "Core::Security: PSM": [
       {
-        "skip-if": "fission && debug",
-        "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug472986.html"
-      },
-      {
-        "skip-if": "fission",
-        "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_bug521461.html"
-      },
-      {
         "skip-if": "fission",
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecureIframeRedirect.html"
       }
@@ -92,8 +79,7 @@
     "Core::Storage: localStorage & sessionStorage": [],
     "Core::Window Management": [
       {
-        "fail-if": "fission && !debug",
-        "skip-if": "fission && debug",
+        "fail-if": "fission",
         "test": "toolkit/components/windowcreator/test/browser_bug1204626.js"
       }
     ],
@@ -147,14 +133,6 @@
         "test": "devtools/client/shared/test/browser_spectrum.js"
       },
       {
-        "skip-if": "\n(os == 'win' && processor == 'aarch64') ||\n(fission && debug)",
-        "test": "devtools/server/tests/browser/browser_accessibility_keyboard_audit.js"
-      },
-      {
-        "skip-if": "\n(os == 'win' && processor == 'aarch64') ||\n(fission && debug)",
-        "test": "devtools/server/tests/browser/browser_accessibility_text_label_audit.js"
-      },
-      {
         "fail-if": "fission",
         "test": "devtools/server/tests/browser/browser_animation_getSubTreeAnimations.js"
       },
@@ -191,11 +169,6 @@
       {
         "skip-if": "fission",
         "test": "devtools/client/inspector/test/browser_inspector_open_on_neterror.js"
-      },
-      {
-        "fail-if": "fission",
-        "skip-if": "fission && debug",
-        "test": "devtools/client/inspector/test/browser_inspector_remove-iframe-during-load.js"
       },
       {
         "fail-if": "fission",
@@ -290,26 +263,7 @@
         "test": "browser/base/content/test/fullscreen/browser_fullscreen_window_focus.js"
       }
     ],
-    "Firefox::Keyboard Navigation": [
-      {
-        "skip-if": "fission && debug",
-        "test": "browser/base/content/test/keyboard/browser_toolbarKeyNav.js"
-      }
-    ],
-    "Firefox::Search": [
-      {
-        "skip-if": "(fission && debug)",
-        "test": "browser/components/search/test/browser/browser_google_behavior.js"
-      }
-    ],
-    "Firefox::Session Restore": [
-      {
-        "skip-if": "(os == 'linux' && !e10s) || ((fission && (debug || os == \"win\")) ||\nos == \"linux\" && !debug)",
-        "test": "browser/components/sessionstore/test/browser_windowStateContainer.js"
-      }
-    ],
-    "Firefox::Tabbed Browser": [],
-    "Toolkit::Add-ons Manager": [],
+    "Firefox::Session Restore": [],
     "Toolkit::Crash Reporting": [],
     "Toolkit::General": [],
     "Toolkit::Password Manager": [
