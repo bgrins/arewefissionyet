@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-22 15:59.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-22 22:13.",
   "summary": {
     "components": 30,
     "failed tests": 77,
     "manifests": 2351,
-    "skipped tests": 117,
-    "tests": 163
+    "skipped tests": 118,
+    "tests": 164
   },
   "tests": {
     "Core::DOM: Core & HTML": [
@@ -115,6 +115,10 @@
       {
         "skip-if": "fission",
         "test": "devtools/client/webconsole/test/browser/browser_webconsole_warning_group_content_blocking.js"
+      },
+      {
+        "skip-if": "fission || (os == 'win' && debug)",
+        "test": "devtools/client/webconsole/test/browser/browser_webconsole_warning_group_storage_isolation.js"
       }
     ],
     "DevTools::Framework": [

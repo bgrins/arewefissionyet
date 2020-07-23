@@ -1,16 +1,21 @@
 {
-  "updateTime": 1595445398826,
+  "updateTime": 1595531817489,
   "removalSummary": {
     "day": 0,
-    "week": 13,
-    "month": 3,
-    "remaining": 18
+    "week": 12,
+    "month": 4,
+    "remaining": 17
   },
   "data": {
+    "2020-07-23": {
+      "removals": [],
+      "additions": [],
+      "remaining": 17
+    },
     "2020-07-22": {
       "removals": [],
       "additions": [],
-      "remaining": 18
+      "remaining": 17
     },
     "2020-07-21": {
       "removals": [
@@ -102,7 +107,7 @@
         }
       ],
       "additions": [],
-      "remaining": 18
+      "remaining": 17
     },
     "2020-07-20": {
       "removals": [
@@ -117,7 +122,7 @@
         }
       ],
       "additions": [],
-      "remaining": 27
+      "remaining": 26
     },
     "2020-07-19": {
       "removals": [
@@ -142,17 +147,17 @@
         }
       ],
       "additions": [],
-      "remaining": 28
+      "remaining": 27
     },
     "2020-07-18": {
       "removals": [],
       "additions": [],
-      "remaining": 30
+      "remaining": 29
     },
     "2020-07-17": {
       "removals": [],
       "additions": [],
-      "remaining": 30
+      "remaining": 29
     },
     "2020-07-16": {
       "removals": [
@@ -168,12 +173,12 @@
         }
       ],
       "additions": [],
-      "remaining": 30
+      "remaining": 29
     },
     "2020-07-15": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-07-14": {
       "removals": [],
@@ -277,97 +282,97 @@
           }
         }
       ],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-07-13": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-12": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-11": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-10": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-09": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-08": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-07": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-06": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-05": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-04": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-03": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-02": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-07-01": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-30": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-29": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-28": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-27": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-26": {
       "removals": [],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-25": {
       "removals": [
@@ -383,12 +388,12 @@
         }
       ],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-24": {
       "removals": [],
       "additions": [],
-      "remaining": 22
+      "remaining": 21
     },
     "2020-06-23": {
       "removals": [],
@@ -403,7 +408,7 @@
           }
         }
       ],
-      "remaining": 22
+      "remaining": 21
     },
     "2020-06-22": {
       "removals": [
@@ -419,22 +424,22 @@
         }
       ],
       "additions": [],
-      "remaining": 21
+      "remaining": 20
     },
     "2020-06-21": {
       "removals": [],
       "additions": [],
-      "remaining": 22
+      "remaining": 21
     },
     "2020-06-20": {
       "removals": [],
       "additions": [],
-      "remaining": 22
+      "remaining": 21
     },
     "2020-06-19": {
       "removals": [],
       "additions": [],
-      "remaining": 22
+      "remaining": 21
     },
     "2020-06-18": {
       "removals": [
@@ -450,17 +455,17 @@
         }
       ],
       "additions": [],
-      "remaining": 22
+      "remaining": 21
     },
     "2020-06-17": {
       "removals": [],
       "additions": [],
-      "remaining": 23
+      "remaining": 22
     },
     "2020-06-16": {
       "removals": [],
       "additions": [],
-      "remaining": 23
+      "remaining": 22
     },
     "2020-06-15": {
       "removals": [
@@ -476,27 +481,27 @@
         }
       ],
       "additions": [],
-      "remaining": 23
+      "remaining": 22
     },
     "2020-06-14": {
       "removals": [],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
     },
     "2020-06-13": {
       "removals": [],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
     },
     "2020-06-12": {
       "removals": [],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
     },
     "2020-06-11": {
       "removals": [],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
     },
     "2020-06-10": {
       "removals": [
@@ -512,27 +517,27 @@
         }
       ],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
     },
     "2020-06-09": {
       "removals": [],
       "additions": [],
-      "remaining": 25
+      "remaining": 24
     },
     "2020-06-08": {
       "removals": [],
       "additions": [],
-      "remaining": 25
+      "remaining": 24
     },
     "2020-06-07": {
       "removals": [],
       "additions": [],
-      "remaining": 25
+      "remaining": 24
     },
     "2020-06-06": {
       "removals": [],
       "additions": [],
-      "remaining": 25
+      "remaining": 24
     },
     "2020-06-05": {
       "removals": [],
@@ -548,7 +553,7 @@
           }
         }
       ],
-      "remaining": 25
+      "remaining": 24
     },
     "2020-06-04": {
       "removals": [
@@ -574,42 +579,42 @@
         }
       ],
       "additions": [],
-      "remaining": 24
+      "remaining": 23
     },
     "2020-06-03": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-06-02": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-06-01": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-05-31": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-05-30": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-05-29": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-05-28": {
       "removals": [],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-05-27": {
       "removals": [
@@ -645,27 +650,27 @@
         }
       ],
       "additions": [],
-      "remaining": 26
+      "remaining": 25
     },
     "2020-05-26": {
       "removals": [],
       "additions": [],
-      "remaining": 29
+      "remaining": 28
     },
     "2020-05-25": {
       "removals": [],
       "additions": [],
-      "remaining": 29
+      "remaining": 28
     },
     "2020-05-24": {
       "removals": [],
       "additions": [],
-      "remaining": 29
+      "remaining": 28
     },
     "2020-05-23": {
       "removals": [],
       "additions": [],
-      "remaining": 29
+      "remaining": 28
     },
     "2020-05-22": {
       "removals": [
@@ -681,7 +686,7 @@
         }
       ],
       "additions": [],
-      "remaining": 29
+      "remaining": 28
     },
     "2020-05-21": {
       "removals": [
@@ -697,37 +702,37 @@
         }
       ],
       "additions": [],
-      "remaining": 30
+      "remaining": 29
     },
     "2020-05-20": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-19": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-18": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-17": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-16": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-15": {
       "removals": [],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-14": {
       "removals": [
@@ -743,42 +748,42 @@
         }
       ],
       "additions": [],
-      "remaining": 31
+      "remaining": 30
     },
     "2020-05-13": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-12": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-11": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-10": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-09": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-08": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-07": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-06": {
       "removals": [
@@ -794,32 +799,32 @@
         }
       ],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-05-05": {
       "removals": [],
       "additions": [],
-      "remaining": 33
+      "remaining": 32
     },
     "2020-05-04": {
       "removals": [],
       "additions": [],
-      "remaining": 33
+      "remaining": 32
     },
     "2020-05-03": {
       "removals": [],
       "additions": [],
-      "remaining": 33
+      "remaining": 32
     },
     "2020-05-02": {
       "removals": [],
       "additions": [],
-      "remaining": 33
+      "remaining": 32
     },
     "2020-05-01": {
       "removals": [],
       "additions": [],
-      "remaining": 33
+      "remaining": 32
     },
     "2020-04-30": {
       "removals": [],
@@ -835,12 +840,12 @@
           }
         }
       ],
-      "remaining": 33
+      "remaining": 32
     },
     "2020-04-29": {
       "removals": [],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-04-28": {
       "removals": [
@@ -886,62 +891,62 @@
         }
       ],
       "additions": [],
-      "remaining": 32
+      "remaining": 31
     },
     "2020-04-27": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-26": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-25": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-24": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-23": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-22": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-21": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-20": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-19": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-18": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-17": {
       "removals": [],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-16": {
       "removals": [
@@ -967,12 +972,12 @@
         }
       ],
       "additions": [],
-      "remaining": 36
+      "remaining": 35
     },
     "2020-04-15": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-04-14": {
       "removals": [
@@ -998,7 +1003,7 @@
         }
       ],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-04-13": {
       "removals": [],
@@ -1014,22 +1019,22 @@
           }
         }
       ],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-04-12": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-11": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-10": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-09": {
       "removals": [
@@ -1045,7 +1050,7 @@
         }
       ],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-08": {
       "removals": [],
@@ -1061,37 +1066,37 @@
           }
         }
       ],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-04-07": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-06": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-05": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-04": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-03": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-02": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-04-01": {
       "removals": [
@@ -1106,92 +1111,92 @@
         }
       ],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-03-31": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-30": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-29": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-28": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-27": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-26": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-25": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-24": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-23": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-22": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-21": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-20": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-19": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-18": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-17": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-16": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-15": {
       "removals": [],
       "additions": [],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-14": {
       "removals": [],
@@ -1206,22 +1211,22 @@
           }
         }
       ],
-      "remaining": 40
+      "remaining": 39
     },
     "2020-03-13": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-03-12": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-03-11": {
       "removals": [],
       "additions": [],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-03-10": {
       "removals": [],
@@ -1236,52 +1241,42 @@
           }
         }
       ],
-      "remaining": 39
+      "remaining": 38
     },
     "2020-03-09": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-03-08": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-03-07": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-03-06": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-03-05": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-03-04": {
       "removals": [],
       "additions": [],
-      "remaining": 38
+      "remaining": 37
     },
     "2020-03-03": {
       "removals": [],
-      "additions": [
-        {
-          "path": "browser/modules/test/browser/browser_UnsubmittedCrashHandler.js",
-          "updateTime": 1594235605398,
-          "metadata": {
-            "milestone": "M4",
-            "assignee": null,
-            "component": "Toolkit::Crash Reporting"
-          }
-        }
-      ],
-      "remaining": 38
+      "additions": [],
+      "remaining": 37
     },
     "2020-03-02": {
       "removals": [],
