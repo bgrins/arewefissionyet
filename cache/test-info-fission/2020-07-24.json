@@ -1,13 +1,14 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-23 21:39.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-24 16:10.",
   "summary": {
-    "components": 30,
-    "failed tests": 77,
+    "components": 31,
+    "failed tests": 79,
     "manifests": 2351,
-    "skipped tests": 119,
-    "tests": 164
+    "skipped tests": 123,
+    "tests": 169
   },
   "tests": {
+    "Core::CSS Parsing and Computation": [],
     "Core::DOM: Core & HTML": [
       {
         "fail-if": "xorigin",
@@ -23,7 +24,6 @@
     "Core::DOM: UI Events & Focus Handling": [],
     "Core::ImageLib": [],
     "Core::Layout": [],
-    "Core::Panning and Zooming": [],
     "Core::Plug-ins": [
       {
         "skip-if": "fission || toolkit == \"gtk\"",
@@ -63,6 +63,7 @@
         "test": "dom/plugins/test/mochitest/test_secondPlugin.html"
       }
     ],
+    "Core::SVG": [],
     "Core::Security: CAPS": [
       {
         "fail-if": "(xorigin && fission)",
@@ -75,7 +76,6 @@
         "test": "security/manager/ssl/tests/mochitest/mixedcontent/test_dynUnsecureIframeRedirect.html"
       }
     ],
-    "Core::Storage: IndexedDB": [],
     "Core::Storage: localStorage & sessionStorage": [],
     "Core::Window Management": [
       {
@@ -294,6 +294,7 @@
         "test": "toolkit/components/passwordmgr/test/mochitest/test_autofill_https_upgrade.html"
       }
     ],
+    "Toolkit::Safe Browsing": [],
     "WebExtensions::General": [
       {
         "skip-if": "(!e10s || (os == 'android')) || ((os == 'android') || fission)",
