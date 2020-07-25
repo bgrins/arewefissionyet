@@ -1,16 +1,32 @@
 {
-  "updateTime": 1595618262030,
+  "updateTime": 1595704823854,
   "removalSummary": {
     "day": 0,
-    "week": 12,
-    "month": 4,
-    "remaining": 17
+    "week": 11,
+    "month": 2,
+    "remaining": 18
   },
   "data": {
-    "2020-07-24": {
+    "2020-07-25": {
       "removals": [],
       "additions": [],
-      "remaining": 17
+      "remaining": 18
+    },
+    "2020-07-24": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "browser/components/sessionstore/test/browser_windowStateContainer.js",
+          "updateTime": 1595704823854,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1602609",
+            "assignee": "continuation",
+            "component": "Firefox::Session Restore"
+          }
+        }
+      ],
+      "remaining": 18
     },
     "2020-07-23": {
       "removals": [],

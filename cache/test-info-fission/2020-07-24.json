@@ -1,5 +1,5 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-24 16:10.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-07-24 21:46.",
   "summary": {
     "components": 31,
     "failed tests": 79,
@@ -268,7 +268,12 @@
         "test": "browser/base/content/test/fullscreen/browser_fullscreen_window_focus.js"
       }
     ],
-    "Firefox::Session Restore": [],
+    "Firefox::Session Restore": [
+      {
+        "skip-if": "(os == 'linux' && !e10s) || ((fission && (debug || os == \"win\")) ||\nos == \"linux\" && !debug)",
+        "test": "browser/components/sessionstore/test/browser_windowStateContainer.js"
+      }
+    ],
     "Toolkit::Crash Reporting": [],
     "Toolkit::General": [],
     "Toolkit::Password Manager": [
