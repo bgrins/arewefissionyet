@@ -1,12 +1,27 @@
 {
-  "updateTime": 1595791199170,
+  "updateTime": 1595877564566,
   "removalSummary": {
-    "day": 0,
-    "week": 9,
-    "month": 2,
-    "remaining": 18
+    "day": -1,
+    "week": 7,
+    "month": 1,
+    "remaining": 19
   },
   "data": {
+    "2020-07-27": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "editor/libeditor/tests/test_bug1151186.html",
+          "updateTime": 1595877564566,
+          "metadata": {
+            "milestone": "M4.1",
+            "assignee": null,
+            "component": "Core::DOM: UI Events & Focus Handling"
+          }
+        }
+      ],
+      "remaining": 19
+    },
     "2020-07-26": {
       "removals": [],
       "additions": [],
