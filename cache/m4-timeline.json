@@ -1,12 +1,17 @@
 {
-  "updateTime": 1596136898639,
+  "updateTime": 1596223265118,
   "removalSummary": {
     "day": 0,
-    "week": -2,
+    "week": -1,
     "month": 1,
     "remaining": 19
   },
   "data": {
+    "2020-07-31": {
+      "removals": [],
+      "additions": [],
+      "remaining": 19
+    },
     "2020-07-30": {
       "removals": [],
       "additions": [],
@@ -254,7 +259,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-            "assignee": "perry",
+            "assignee": "me",
             "component": "Core::DOM: Push Notifications"
           }
         },
@@ -4913,7 +4918,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-            "assignee": "perry",
+            "assignee": "me",
             "component": "Core::DOM: Push Notifications"
           }
         },
@@ -5109,7 +5114,7 @@
           "metadata": {
             "milestone": "M4",
             "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1575185",
-            "assignee": "perry",
+            "assignee": "me",
             "component": "Core::DOM: Push Notifications"
           }
         }
