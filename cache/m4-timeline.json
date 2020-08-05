@@ -1,16 +1,32 @@
 {
-  "updateTime": 1596568969719,
+  "updateTime": 1596655371087,
   "removalSummary": {
     "day": 0,
-    "week": 1,
-    "month": 2,
-    "remaining": 18
+    "week": 2,
+    "month": 3,
+    "remaining": 17
   },
   "data": {
-    "2020-08-04": {
+    "2020-08-05": {
       "removals": [],
       "additions": [],
-      "remaining": 18
+      "remaining": 17
+    },
+    "2020-08-04": {
+      "removals": [
+        {
+          "path": "dom/permission/tests/test_cross_origin_iframe.html",
+          "updateTime": 1596655371087,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1582999",
+            "assignee": "nobody",
+            "component": "Core::DOM: Core & HTML"
+          }
+        }
+      ],
+      "additions": [],
+      "remaining": 17
     },
     "2020-08-03": {
       "removals": [],

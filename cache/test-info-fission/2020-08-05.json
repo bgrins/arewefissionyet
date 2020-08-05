@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-08-04 22:05.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-08-05 17:04.",
   "summary": {
     "components": 28,
-    "failed tests": 76,
+    "failed tests": 77,
     "manifests": 2354,
     "skipped tests": 119,
-    "tests": 164
+    "tests": 165
   },
   "tests": {
     "Core::DOM: Core & HTML": [],
@@ -151,6 +151,10 @@
       {
         "skip-if": "fission",
         "test": "devtools/shared/resources/tests/browser_target_list_service_workers_navigation.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "devtools/shared/resources/tests/browser_target_list_tab_workers.js"
       },
       {
         "skip-if": "fission || (asan && os == \"linux\")",
