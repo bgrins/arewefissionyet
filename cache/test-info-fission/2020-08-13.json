@@ -1,11 +1,11 @@
 {
-  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-08-12 21:59.",
+  "description": "Test summary report for tests, in all components, containing '['(?<!!)fission']' in manifest keys '['fail-if', 'fails-if', 'random-if', 'skip-if']' as of 2020-08-13 15:54.",
   "summary": {
-    "components": 28,
-    "failed tests": 77,
+    "components": 29,
+    "failed tests": 78,
     "manifests": 2355,
-    "skipped tests": 113,
-    "tests": 159
+    "skipped tests": 114,
+    "tests": 160
   },
   "tests": {
     "Core::DOM: Core & HTML": [],
@@ -75,6 +75,13 @@
       }
     ],
     "Core::Storage: localStorage & sessionStorage": [],
+    "Core::Window Management": [
+      {
+        "fail-if": "fission && !debug",
+        "skip-if": "fission && os == 'linux' && debug",
+        "test": "toolkit/components/windowcreator/test/browser_bug1204626.js"
+      }
+    ],
     "DevTools::Console": [
       {
         "skip-if": "fission && debug && os == \"linux\" && os_version == \"18.04\"",

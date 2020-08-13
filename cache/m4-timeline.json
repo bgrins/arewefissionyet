@@ -1,12 +1,28 @@
 {
-  "updateTime": 1597261340766,
+  "updateTime": 1597346947585,
   "removalSummary": {
-    "day": 0,
-    "week": 0,
-    "month": 3,
-    "remaining": 17
+    "day": -1,
+    "week": -1,
+    "month": 12,
+    "remaining": 18
   },
   "data": {
+    "2020-08-13": {
+      "removals": [],
+      "additions": [
+        {
+          "path": "toolkit/components/windowcreator/test/browser_bug1204626.js",
+          "updateTime": 1597346947585,
+          "metadata": {
+            "milestone": "M4.1",
+            "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1599616",
+            "assignee": "afarre",
+            "component": "Core::Window Management"
+          }
+        }
+      ],
+      "remaining": 18
+    },
     "2020-08-12": {
       "removals": [],
       "additions": [],
