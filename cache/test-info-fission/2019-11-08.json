@@ -8,9 +8,23 @@
   },
   "tests": {
     "Core::DOM: Content Processes": [],
-    "Core::DOM: Core & HTML": [],
+    "Core::DOM: Core & HTML": [
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/whatwg/test_postMessage_origin.xhtml"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/whatwg/test_postMessage_override.html"
+      }
+    ],
     "Core::DOM: Navigation": [],
-    "Core::DOM: Security": [],
+    "Core::DOM: Security": [
+      {
+        "skip-if": "fission && debug",
+        "test": "dom/security/test/general/test_same_site_cookies_laxByDefault.html"
+      }
+    ],
     "Core::DOM: Service Workers": [],
     "Core::Disability Access APIs": [],
     "Core::Networking": [],
@@ -451,14 +465,41 @@
     "Firefox::Address Bar": [],
     "Firefox::General": [],
     "Firefox::Keyboard Navigation": [],
-    "Firefox::PDF Viewer": [],
+    "Firefox::PDF Viewer": [
+      {
+        "skip-if": "fission",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_main.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_navigation.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_views.js"
+      },
+      {
+        "skip-if": "fission || (verify && debug && (os == 'win'))",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_zoom.js"
+      }
+    ],
     "Firefox::Private Browsing": [],
     "Firefox::Protections UI": [],
     "Firefox::Session Restore": [],
     "Firefox::Site Identity": [],
     "Firefox::Site Permissions": [],
-    "Firefox::Tabbed Browser": [],
-    "Toolkit::Crash Reporting": [],
+    "Firefox::Tabbed Browser": [
+      {
+        "skip-if": "fission",
+        "test": "toolkit/content/tests/browser/browser_isSynthetic.js"
+      }
+    ],
+    "Toolkit::Crash Reporting": [
+      {
+        "skip-if": "fission || !e10s || !crashreporter",
+        "test": "toolkit/content/tests/browser/browser_content_url_annotation.js"
+      }
+    ],
     "Toolkit::General": [],
     "Toolkit::Notifications and Alerts": [],
     "Toolkit::Password Manager": [],

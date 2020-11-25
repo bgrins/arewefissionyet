@@ -7,23 +7,338 @@
     "tests": 422
   },
   "tests": {
-    "Core::Audio/Video: Playback": [],
+    "Core::Audio/Video: Playback": [
+      {
+        "fail-if": "fission",
+        "skip-if": "((os == \"win\" && processor == \"aarch64\")) || (android_version >= '23')",
+        "test": "dom/media/test/test_autoplay_policy_activation.html"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(os == \"win\" && processor == \"aarch64\")",
+        "test": "toolkit/content/tests/browser/browser_autoplay_policy_iframe_hierarchy.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(os == \"win\" && processor == \"aarch64\")",
+        "test": "toolkit/content/tests/browser/browser_autoplay_videoDocument.js"
+      }
+    ],
     "Core::DOM: Content Processes": [],
-    "Core::DOM: Core & HTML": [],
-    "Core::DOM: Events": [],
-    "Core::DOM: File": [],
-    "Core::DOM: IndexedDB": [],
-    "Core::DOM: Networking": [],
-    "Core::DOM: Push Notifications": [],
-    "Core::DOM: Quota Manager": [],
-    "Core::DOM: Security": [],
-    "Core::DOM: Service Workers": [],
-    "Core::DOM: Web Storage": [],
-    "Core::DOM: Workers": [],
-    "Core::Document Navigation": [],
-    "Core::Geolocation": [],
-    "Core::Networking": [],
-    "Core::Networking: Cookies": [],
+    "Core::DOM: Core & HTML": [
+      {
+        "skip-if": "fission",
+        "test": "dom/base/test/browser_bug593387.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/base/test/test_bug1091883.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "dom/base/test/test_bug907892.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/dom-level0/test_setting_document.domain_idn.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/general/test_interfaces_secureContext.html"
+      },
+      {
+        "skip-if": "\nfission",
+        "test": "dom/tests/mochitest/general/test_vibrator.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/whatwg/test_postMessage_origin.xhtml"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/whatwg/test_postMessage_override.html"
+      }
+    ],
+    "Core::DOM: Events": [
+      {
+        "skip-if": "(toolkit == 'android') || (fission && debug)",
+        "test": "dom/events/test/test_bug812744.html"
+      }
+    ],
+    "Core::DOM: File": [
+      {
+        "skip-if": "fission || toolkit == 'android'",
+        "test": "dom/file/tests/test_mozfiledataurl.html"
+      }
+    ],
+    "Core::DOM: IndexedDB": [
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission || verify)",
+        "test": "dom/indexedDB/test/browser_forgetThisSite.js"
+      },
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission)",
+        "test": "dom/indexedDB/test/browser_permissionsPromptAllow.js"
+      },
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission)",
+        "test": "dom/indexedDB/test/browser_permissionsPromptDeny.js"
+      },
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission || verify)",
+        "test": "dom/indexedDB/test/browser_permissionsPromptWorker.js"
+      },
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission || os == 'linux' && debug)",
+        "test": "dom/indexedDB/test/browser_perwindow_privateBrowsing.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "os == 'android' && debug",
+        "test": "dom/indexedDB/test/test_third_party.html"
+      }
+    ],
+    "Core::DOM: Networking": [
+      {
+        "skip-if": "fission",
+        "test": "dom/xhr/tests/browser_xhr_onchange_leak.js"
+      }
+    ],
+    "Core::DOM: Push Notifications": [
+      {
+        "skip-if": "(os == \"android\") || (fission)",
+        "test": "dom/push/test/test_permissions.html"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(os == \"android\") || (serviceworker_e10s || !e10s || os == \"win\" || os ==\"linux\" && bits == 64 || os ==\"mac\")",
+        "test": "dom/push/test/test_serviceworker_lifetime.html"
+      }
+    ],
+    "Core::DOM: Quota Manager": [
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission)",
+        "test": "dom/quota/test/browser_permissionsPromptAllow.js"
+      },
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission)",
+        "test": "dom/quota/test/browser_permissionsPromptDeny.js"
+      },
+      {
+        "skip-if": "((buildapp != \"browser\")) || (fission)",
+        "test": "dom/quota/test/browser_permissionsPromptUnknown.js"
+      }
+    ],
+    "Core::DOM: Security": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/contextualidentity/test/browser/browser_serviceworkers.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(verify && debug && (os == 'win'))",
+        "test": "browser/components/originattributes/test/browser/browser_blobURLIsolation.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_broadcastChannel.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "verify",
+        "test": "browser/components/originattributes/test/browser/browser_cache.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_cacheAPI.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_cookieIsolation.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_favicon_firstParty.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_favicon_userContextId.js"
+      },
+      {
+        "skip-if": "fission || debug",
+        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_about_newtab.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_blobURI.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_firstPartyIsolation_js_uri.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_httpauth.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_localStorageIsolation.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_permissions.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_postMessage.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(os == 'win') || (os == \"mac\" && os_version == \"10.14\") || (os == \"linux\" && bits == 64)",
+        "test": "browser/components/originattributes/test/browser/browser_sanitize.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/components/originattributes/test/browser/browser_windowOpenerRestriction.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/csp/test_frameancestors.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/csp/test_frameancestors_userpass.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/csp/test_navigate_to.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "dom/security/test/general/browser_test_FTP_console_warning.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/general/browser_test_referrer_loadInOtherProcess.js"
+      },
+      {
+        "skip-if": "fission || verify",
+        "test": "dom/security/test/general/test_cache_split.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/general/test_same_site_cookies_about.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/general/test_same_site_cookies_iframe.html"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "dom/security/test/general/test_same_site_cookies_laxByDefault.html"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "dom/security/test/general/test_same_site_cookies_toplevel_nav.html"
+      }
+    ],
+    "Core::DOM: Service Workers": [
+      {
+        "skip-if": "\nserviceworker_e10s ||\nfission && debug",
+        "test": "dom/serviceworkers/test/browser_devtools_serviceworker_interception.js"
+      }
+    ],
+    "Core::DOM: Web Storage": [
+      {
+        "fail-if": "fission",
+        "test": "dom/tests/mochitest/localstorage/test_keySync.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsDiff.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsDomainDiffs.html"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "toolkit == 'android'",
+        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsEquals.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsPortDiffs.html"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "toolkit == 'android'",
+        "test": "dom/tests/mochitest/localstorage/test_localStorageOriginsSchemaDiffs.html"
+      }
+    ],
+    "Core::DOM: Workers": [
+      {
+        "skip-if": "fission && debug",
+        "test": "dom/workers/test/test_multi_sharedWorker.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "dom/workers/test/test_sharedWorker_thirdparty.html"
+      }
+    ],
+    "Core::Document Navigation": [
+      {
+        "skip-if": "fission",
+        "test": "docshell/test/browser/browser_browsingContext-03.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "!e10s",
+        "test": "docshell/test/browser/browser_cross_process_csp_inheritance.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "docshell/test/mochitest/test_bug529119-1.html"
+      },
+      {
+        "skip-if": "fission",
+        "test": "docshell/test/mochitest/test_bug529119-2.html"
+      },
+      {
+        "fail-if": "fission",
+        "test": "docshell/test/navigation/test_sibling-off-domain.html"
+      }
+    ],
+    "Core::Geolocation": [
+      {
+        "skip-if": "fission",
+        "test": "dom/tests/mochitest/geolocation/test_crossorigin_iframe.html"
+      }
+    ],
+    "Core::Networking": [
+      {
+        "skip-if": "fission",
+        "test": "dom/security/test/cors/browser_CORS-console-warnings.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "netwerk/test/browser/browser_cross_process_redirect.js"
+      }
+    ],
+    "Core::Networking: Cookies": [
+      {
+        "skip-if": "fission && debug",
+        "test": "netwerk/cookie/test/browser/browser_serviceWorker.js"
+      }
+    ],
     "Core::Permission Manager": [],
     "Core::Plug-ins": [
       {
@@ -213,11 +528,42 @@
         "test": "toolkit/components/antitracking/test/browser/browser_workerPropagation.js"
       }
     ],
-    "Core::Security": [],
+    "Core::Security": [
+      {
+        "skip-if": "fission",
+        "test": "docshell/test/navigation/test_bug13871.html"
+      }
+    ],
     "Core::Security: PSM": [],
-    "Core::WebRTC": [],
+    "Core::WebRTC": [
+      {
+        "skip-if": "fission || (os == \"linux\" && debug)",
+        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media.js"
+      },
+      {
+        "skip-if": "(debug && os == \"win\") || fission",
+        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media_multi_process.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media_tear_off_tab.js"
+      },
+      {
+        "skip-if": "fission || (os == \"win\" && bits == 64)",
+        "test": "browser/base/content/test/webrtc/browser_devices_get_user_media_unprompted_access_tear_off_tab.js"
+      }
+    ],
     "Core::Window Management": [],
-    "Core::XPConnect": [],
+    "Core::XPConnect": [
+      {
+        "fail-if": "fission",
+        "test": "js/xpconnect/tests/mochitest/test_bug940783.html"
+      },
+      {
+        "skip-if": "fission && webrender && debug",
+        "test": "js/xpconnect/tests/mochitest/test_bug965082.html"
+      }
+    ],
     "DevTools::Console": [
       {
         "skip-if": "fission",
@@ -461,31 +807,393 @@
         "test": "devtools/client/styleeditor/test/browser_styleeditor_fetch-from-netmonitor.js"
       }
     ],
-    "Firefox::Address Bar": [],
-    "Firefox::Bookmarks & History": [],
-    "Firefox::Enterprise Policies": [],
-    "Firefox::File Handling": [],
-    "Firefox::General": [],
+    "Firefox::Address Bar": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_autoFill_canonize.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_autocomplete_edit_completed.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_canonizeURL.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_inputHistory.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_inputHistory_emptystring.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_keepStateAcrossTabSwitches.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_keywordSearch.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_moz_action_link.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_urlbarEnterAfterMouseOver.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_urlbarSearchSingleWordNotification.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/urlbar/tests/browser/browser_urlbarSearchSuggestions.js"
+      },
+      {
+        "skip-if": "fission || (os == 'mac')",
+        "test": "browser/components/urlbar/tests/browser/browser_urlbarStop.js"
+      }
+    ],
+    "Firefox::Bookmarks & History": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/places/tests/browser/browser_bookmark_titles.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/places/tests/browser/browser_click_bookmarks_on_toolbar.js"
+      }
+    ],
+    "Firefox::Enterprise Policies": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/enterprisepolicies/tests/browser/browser_policy_extensionsettings.js"
+      }
+    ],
+    "Firefox::File Handling": [
+      {
+        "skip-if": "fission",
+        "test": "uriloader/exthandler/tests/mochitest/browser_web_protocol_handlers.js"
+      }
+    ],
+    "Firefox::General": [
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/about/browser_aboutHome_search_composing.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/about/browser_aboutHome_search_telemetry.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/base/content/test/favicons/browser_favicon_change_not_in_document.js"
+      },
+      {
+        "fail-if": "fission",
+        "test": "browser/base/content/test/general/browser_alltabslistener.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/general/browser_bug441778.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/general/browser_bug462673.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/general/browser_bug575561.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/general/browser_bug633691.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/general/browser_bug839103.js"
+      },
+      {
+        "skip-if": "fission || os == 'win'",
+        "test": "browser/base/content/test/general/browser_printpreview.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/general/browser_web_channel.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "!debug",
+        "test": "browser/base/content/test/performance/browser_preferences_usage.js"
+      }
+    ],
     "Firefox::Keyboard Navigation": [],
-    "Firefox::New Tab Page": [],
-    "Firefox::PDF Viewer": [],
-    "Firefox::Private Browsing": [],
+    "Firefox::New Tab Page": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/newtab/test/browser/browser_asrouter_cfr.js"
+      }
+    ],
+    "Firefox::PDF Viewer": [
+      {
+        "skip-if": "fission",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_main.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_navigation.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_views.js"
+      },
+      {
+        "skip-if": "fission || (verify && debug && (os == 'win'))",
+        "test": "browser/extensions/pdfjs/test/browser_pdfjs_zoom.js"
+      }
+    ],
+    "Firefox::Private Browsing": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js"
+      }
+    ],
     "Firefox::Session Restore": [],
-    "Firefox::Site Identity and Permission Panels": [],
+    "Firefox::Site Identity and Permission Panels": [
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/permissions/browser_permissions.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/permissions/browser_permissions_event_telemetry.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/permissions/browser_permissions_handling_user_input.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/permissions/browser_permissions_postPrompt.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/permissions/browser_temporary_permissions_expiry.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/base/content/test/siteIdentity/browser_insecureLoginForms.js"
+      }
+    ],
     "Firefox::Tabbed Browser": [],
-    "Firefox::Tabbed Browsing": [],
-    "Firefox::Tracking Protection": [],
-    "Toolkit::Add-ons Manager": [],
-    "Toolkit::Crash Reporting": [],
-    "Toolkit::Data Sanitization": [],
-    "Toolkit::Form Manager": [],
-    "Toolkit::General": [],
+    "Firefox::Tabbed Browsing": [
+      {
+        "skip-if": "fission",
+        "test": "toolkit/content/tests/browser/browser_isSynthetic.js"
+      }
+    ],
+    "Firefox::Tracking Protection": [
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/base/content/test/trackingUI/browser_trackingUI_shield_visibility.js"
+      }
+    ],
+    "Toolkit::Add-ons Manager": [
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/browser/browser_webapi_access.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/browser/browser_webapi_addon_listener.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "toolkit/mozapps/extensions/test/browser/browser_webapi_install.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_badargs.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_badargs2.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_enabled.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_enabled2.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_enabled3.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_localfile2.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/mozapps/extensions/test/xpinstall/browser_unsigned_trigger_xorigin.js"
+      }
+    ],
+    "Toolkit::Crash Reporting": [
+      {
+        "skip-if": "fission || !e10s || !crashreporter",
+        "test": "toolkit/content/tests/browser/browser_content_url_annotation.js"
+      }
+    ],
+    "Toolkit::Data Sanitization": [
+      {
+        "skip-if": "fission",
+        "test": "toolkit/components/cleardata/tests/browser/browser_serviceworkers.js"
+      }
+    ],
+    "Toolkit::Form Manager": [
+      {
+        "fail-if": "fission",
+        "skip-if": "toolkit == 'android'",
+        "test": "toolkit/components/satchel/test/test_form_submission.html"
+      }
+    ],
+    "Toolkit::General": [
+      {
+        "fail-if": "fission",
+        "skip-if": "toolkit == 'android' || verify",
+        "test": "toolkit/components/prompts/test/test_subresources_prompts.html"
+      },
+      {
+        "skip-if": "\n(os == \"win\" && processor == \"aarch64\") ||\n(fission && debug)",
+        "test": "toolkit/content/tests/browser/browser_media_wakelock.js"
+      }
+    ],
     "Toolkit::Notifications and Alerts": [],
-    "Toolkit::Password Manager": [],
+    "Toolkit::Password Manager": [
+      {
+        "skip-if": "(fission && debug)",
+        "test": "toolkit/components/passwordmgr/test/browser/browser_context_menu.js"
+      },
+      {
+        "skip-if": "verify || (fission && debug)",
+        "test": "toolkit/components/passwordmgr/test/browser/browser_context_menu_autocomplete_interaction.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/components/passwordmgr/test/browser/browser_context_menu_iframe.js"
+      },
+      {
+        "skip-if": "fission || verify",
+        "test": "toolkit/components/passwordmgr/test/browser/browser_hasInsecureLoginForms.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/components/passwordmgr/test/browser/browser_hasInsecureLoginForms_streamConverter.js"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "os == \"win\" && os_version == \"10.0\" && debug",
+        "test": "toolkit/components/passwordmgr/test/browser/browser_hidden_document_autofill.js"
+      },
+      {
+        "skip-if": "(toolkit == 'android' && !is_fennec) || (\ntoolkit == 'android' ||\nfission)",
+        "test": "toolkit/components/passwordmgr/test/mochitest/test_xhr.html"
+      }
+    ],
     "Toolkit::Reader Mode": [],
-    "Toolkit::Safe Browsing": [],
-    "Toolkit::Telemetry": [],
-    "WebExtensions::General": [],
-    "WebExtensions::Untriaged": []
+    "Toolkit::Safe Browsing": [
+      {
+        "skip-if": "fission",
+        "test": "browser/components/safebrowsing/content/test/browser_mixedcontent_aboutblocked.js"
+      }
+    ],
+    "Toolkit::Telemetry": [
+      {
+        "skip-if": "fission",
+        "test": "browser/modules/test/browser/browser_UsageTelemetry_domains.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "toolkit/components/telemetry/tests/browser/browser_HybridContentTelemetry.js"
+      }
+    ],
+    "WebExtensions::General": [
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || toolkit == 'android'))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_async_clipboard.html"
+      },
+      {
+        "fail-if": "fission",
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || ((os == 'linux' && debug) || (toolkit == 'android' && debug)))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_cache.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (\n(verify && debug && (os == 'linux')) ||\n(fission && debug)))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_contentscript_canvas.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission && debug))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_exclude_include_globs.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || (verify && debug && (os == 'linux' || os == 'mac'))))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_new_tab_processType.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission && debug))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_request_urlClassification.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission && debug))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_runtime_disconnect.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission && debug))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_storage_manager_capabilities.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || ((fission && debug) || (os == 'android' && debug)))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || (os == 'android' && debug) || (verify && (os == 'linux' || os == 'mac'))))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_webnavigation_filters.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission || os == 'android' || os == 'linux'))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_hsts.html"
+      },
+      {
+        "skip-if": "(!e10s) || ((toolkit == 'android' && !is_fennec) || (fission && debug))",
+        "test": "toolkit/components/extensions/test/mochitest/test_ext_webrequest_upgrade.html"
+      }
+    ],
+    "WebExtensions::Untriaged": [
+      {
+        "skip-if": "\n(debug && os == 'linux' && bits == 32) ||\nfission && debug",
+        "test": "browser/components/extensions/test/browser/browser_ext_browserAction_popup.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/components/extensions/test/browser/browser_ext_browserAction_popup_resize.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/components/extensions/test/browser/browser_ext_commands_execute_browser_action.js"
+      },
+      {
+        "skip-if": "fission && debug",
+        "test": "browser/components/extensions/test/browser/browser_ext_pageAction_title.js"
+      },
+      {
+        "skip-if": "fission",
+        "test": "browser/components/extensions/test/browser/browser_ext_tabs_readerMode.js"
+      }
+    ]
   }
 }
