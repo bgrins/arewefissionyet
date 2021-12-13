@@ -10,70 +10,18 @@
 
   <div style="display: flex">
     <div class="summary-box" style="flex: 10;">
+      <h3>Yes!</h3>
       <p>
-        <strong>Fission</strong> is the Firefox project to implement process isolation per-site (<a href="https://godoc.org/golang.org/x/net/publicsuffix">eTLD+1</a>). In a Fission-world, a webpage serving multiple cross-site iframes will be rendered over multiple processes, while multiple tabs or iframes from the same site will share the same process.
+        <strong>Fission</strong> (Site Isolation) is the Firefox project to implement process isolation per-site (<a href="https://godoc.org/golang.org/x/net/publicsuffix">eTLD+1</a>). In a Fission world, a webpage serving multiple cross-site iframes will be rendered by multiple processes, while multiple tabs or iframes from the same site will share the same process.
       </p>
       <p>
-        You can learn more about Fission on the <a href="https://wiki.mozilla.org/Project_Fission">the wiki</a> or on <a href="https://mana.mozilla.org/wiki/display/~nkochar@mozilla.com/Project+Fission">mana</a>. The Fission team can be reached at #fission on slack or #domfission on IRC.
+        Fission's rollout to the Firefox Release channel began in <a href="https://www.mozilla.org/en-US/firefox/94.0/releasenotes/">Firefox 94</a> (2021-11-02) and completed in <a href="https://www.mozilla.org/en-US/firefox/95.0/releasenotes/">Firefox 95</a> (2021-12-07).
+      </p>
+      <p>
+      You can learn more about Fission on the <a href="https://wiki.mozilla.org/Project_Fission">the wiki</a>. The Fission team can be reached at the <a href="https://chat.mozilla.org/#/room/#fission:mozilla.org">#fission room on chat.mozilla.org</a>.
         <hr />
       </p>
-      <p>
-      If you have questions about or find issues with this site, the source is available <a href="https://github.com/bgrins/arewefissionyet/">here</a>.
-        <hr />
-      </p>
-      <p>
-        Continue reading for a list of projects tracked on the site.
-      </p>
     </div>
-    <div class="iframe-container" style="flex: 8; align-self: center;">
-      <div>
-        <iframe src="./m4?embed"></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="milestones">
-    <div class="desc-box">
-      <h2>Milestone 4.1</h2>
-      <p>
-        Fission's current milestone 4.1 aims to get all relevant mochitests to successfully pass in a Fission world. They are currently being run as a tier2 job on mozilla-central and can be seen in the M-fis suite.
-        This can be tracked on the <a href="./m4/">burndown chart</a>.
-      </p>
-      <p>
-        More details of the failing tests can be found in <a href="https://docs.google.com/spreadsheets/d/1kjp32JTuB4axM3wKx0iIYL2Ado-HcyeBhoY-siGxYAs/edit#gid=1560718888">this doc</a>
-        and tips to get started on fixing these tests can be found on <a href="https://wiki.mozilla.org/Project_Fission/Enabling_Tests_with_Fission">the wiki</a>.
-      </p>
-    </div>
-
-    <div class="desc-box">
-      <h2>Milestone 5</h2>
-      <p>
-        Make Fission functional and stable enough for day to day testing with internal teams.
-      </p>
-      <p>
-        This can be tracked on the <a href="./m5/">burndown chart</a>.
-      </p>
-    </div>
-
-    <div class="desc-box">
-      <h2>nsIDocShellTreeItem</h2>
-      <p>
-        We are replacing uses of <code>nsIDocShellTreeItem</code> with <code>BrowsingContext</code>.
-      </p>
-      <p>
-        This can be tracked on the <a href="./docshelltreeitem/">burndown chart</a> and the <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1467214">metabug</a>.
-      </p>
-    </div>
-
-    <div class="desc-box">
-      <h2>DevTools</h2>
-      <p>
-        DevTools Fission work is tracked as "M1" (Multiprocess Browser Toolbox) and "M2" (Real Fission Support).
-      </p>
-      <p>
-        The can be tracked on the <a href="./devtools/">burndown chart</a>.
-      </p>
-    </div>
-  </div>
   </div>
 </body>
 </html>
