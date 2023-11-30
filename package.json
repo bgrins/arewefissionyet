@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   },
   "scripts": {
     "cache": "node scripts/fetch-test-info",
